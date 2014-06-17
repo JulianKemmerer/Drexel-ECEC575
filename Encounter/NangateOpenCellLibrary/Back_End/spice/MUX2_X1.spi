@@ -1,0 +1,64 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:17:01.
+* Main process id is 28033.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   MUX2_X1.                                                         *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:17:01 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT MUX2_X1 A B S Z VDD VSS 
+*.PININFO A:I B:I S:I Z:O VDD:P VSS:G 
+*.EQN Z=((S * B) + (A * !S))
+M_i_10 VSS S x1 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_4 net_1 A VSS VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_5 Z_neg x1 net_1 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_2 Z_neg S net_0 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_3 net_0 B VSS VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_0 Z Z_neg VSS VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_11 VDD S x1 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_8 VDD A net_2 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_6 net_2 S Z_neg VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_9 net_3 x1 Z_neg VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_7 VDD B net_3 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_1 Z Z_neg VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

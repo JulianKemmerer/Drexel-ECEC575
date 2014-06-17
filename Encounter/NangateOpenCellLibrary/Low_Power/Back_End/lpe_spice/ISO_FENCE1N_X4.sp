@@ -1,0 +1,171 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2011, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Tue, 4 Jan 2011, 14:44:43.
+* Main process id is 1680.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE1N_X4.                                                  *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 14:44:43 on Tue, 4 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE1N_X4 VDD VSS EN Z A 
+*.PININFO VDD:P VSS:G EN:I Z:O A:I 
+*.EQN Z=!(A * EN)
+M_M4 N_Z_M0_d N_EN_M0_g N_VDD_M0_s VDD PMOS_VTL W=0.415000U L=0.050000U
+M_M5 N_VDD_M1_d N_A_M1_g N_Z_M0_d VDD PMOS_VTL W=0.415000U L=0.050000U
+M_M6 N_Z_M2_d N_A_M2_g N_VDD_M1_d VDD PMOS_VTL W=0.415000U L=0.050000U
+M_M7 N_VDD_M3_d N_EN_M3_g N_Z_M2_d VDD PMOS_VTL W=0.415000U L=0.050000U
+M_M0 6 N_EN_M4_g N_VSS_M4_s VSS NMOS_VTL W=0.360000U L=0.050000U
+M_M1 N_Z_M5_d N_A_M5_g 6 VSS NMOS_VTL W=0.360000U L=0.050000U
+M_M2 7 N_A_M6_g N_Z_M5_d VSS NMOS_VTL W=0.360000U L=0.050000U
+M_M3 N_VSS_M7_d N_EN_M7_g 7 VSS NMOS_VTL W=0.360000U L=0.050000U
+C_x_PM_ISO_FENCE1N_X4%VDD_c0 VSS x_PM_ISO_FENCE1N_X4%VDD_41 2.83664e-18
+C_x_PM_ISO_FENCE1N_X4%VDD_c1 VSS x_PM_ISO_FENCE1N_X4%VDD_31 2.72843e-16
+C_x_PM_ISO_FENCE1N_X4%VDD_c2 VSS N_VDD_M3_d 2.31843e-17
+C_x_PM_ISO_FENCE1N_X4%VDD_c3 VSS x_PM_ISO_FENCE1N_X4%VDD_25 2.54131e-17
+C_x_PM_ISO_FENCE1N_X4%VDD_c4 VSS N_VDD_M1_d 2.31796e-17
+C_x_PM_ISO_FENCE1N_X4%VDD_c5 VSS x_PM_ISO_FENCE1N_X4%VDD_20 2.01219e-17
+C_x_PM_ISO_FENCE1N_X4%VDD_c6 VSS x_PM_ISO_FENCE1N_X4%VDD_19 2.45605e-17
+C_x_PM_ISO_FENCE1N_X4%VDD_c7 VSS N_VDD_M0_s 2.52216e-17
+C_x_PM_ISO_FENCE1N_X4%VDD_c8 VSS x_PM_ISO_FENCE1N_X4%VDD_14 1.92462e-17
+C_x_PM_ISO_FENCE1N_X4%VDD_c9 VSS x_PM_ISO_FENCE1N_X4%VDD_13 2.334e-16
+C_x_PM_ISO_FENCE1N_X4%VDD_c10 VSS x_PM_ISO_FENCE1N_X4%VDD_10 5.90809e-16
+R_x_PM_ISO_FENCE1N_X4%VDD_r11 VDD x_PM_ISO_FENCE1N_X4%VDD_42 0.457895
+R_x_PM_ISO_FENCE1N_X4%VDD_r12 x_PM_ISO_FENCE1N_X4%VDD_40 VDD 0.424928
+R_x_PM_ISO_FENCE1N_X4%VDD_r13 VDD x_PM_ISO_FENCE1N_X4%VDD_31 0.143847
+R_x_PM_ISO_FENCE1N_X4%VDD_r14 VDD x_PM_ISO_FENCE1N_X4%VDD_31 3.84471
+R_x_PM_ISO_FENCE1N_X4%VDD_r15 N_VDD_M3_d x_PM_ISO_FENCE1N_X4%VDD_42 0.393571
+R_x_PM_ISO_FENCE1N_X4%VDD_r16 x_PM_ISO_FENCE1N_X4%VDD_41 x_PM_ISO_FENCE1N_X4%VDD_26 0.073144
+R_x_PM_ISO_FENCE1N_X4%VDD_r17 x_PM_ISO_FENCE1N_X4%VDD_42 x_PM_ISO_FENCE1N_X4%VDD_25 0.075426
+R_x_PM_ISO_FENCE1N_X4%VDD_r18 x_PM_ISO_FENCE1N_X4%VDD_26 x_PM_ISO_FENCE1N_X4%VDD_25 0.692941
+R_x_PM_ISO_FENCE1N_X4%VDD_r19 x_PM_ISO_FENCE1N_X4%VDD_41 x_PM_ISO_FENCE1N_X4%VDD_21 0.145286
+R_x_PM_ISO_FENCE1N_X4%VDD_r20 N_VDD_M1_d x_PM_ISO_FENCE1N_X4%VDD_21 0.393571
+R_x_PM_ISO_FENCE1N_X4%VDD_r21 x_PM_ISO_FENCE1N_X4%VDD_40 x_PM_ISO_FENCE1N_X4%VDD_20 0.075366
+R_x_PM_ISO_FENCE1N_X4%VDD_r22 x_PM_ISO_FENCE1N_X4%VDD_41 x_PM_ISO_FENCE1N_X4%VDD_19 0.073144
+R_x_PM_ISO_FENCE1N_X4%VDD_r23 x_PM_ISO_FENCE1N_X4%VDD_20 x_PM_ISO_FENCE1N_X4%VDD_19 0.681765
+R_x_PM_ISO_FENCE1N_X4%VDD_r24 N_VDD_M0_s x_PM_ISO_FENCE1N_X4%VDD_40 0.393571
+R_x_PM_ISO_FENCE1N_X4%VDD_r25 VDD x_PM_ISO_FENCE1N_X4%VDD_14 0.140282
+R_x_PM_ISO_FENCE1N_X4%VDD_r26 VDD x_PM_ISO_FENCE1N_X4%VDD_13 0.143808
+R_x_PM_ISO_FENCE1N_X4%VDD_r27 x_PM_ISO_FENCE1N_X4%VDD_14 x_PM_ISO_FENCE1N_X4%VDD_13 7.68941
+R_x_PM_ISO_FENCE1N_X4%VDD_r28 VDD x_PM_ISO_FENCE1N_X4%VDD_10 9.15353
+C_x_PM_ISO_FENCE1N_X4%VSS_c0 VSS VSS 2.72286e-16
+C_x_PM_ISO_FENCE1N_X4%VSS_c1 VSS N_VSS_M7_d 2.92902e-17
+C_x_PM_ISO_FENCE1N_X4%VSS_c2 VSS x_PM_ISO_FENCE1N_X4%VSS_19 2.01478e-17
+C_x_PM_ISO_FENCE1N_X4%VSS_c3 VSS x_PM_ISO_FENCE1N_X4%VSS_18 4.96879e-17
+C_x_PM_ISO_FENCE1N_X4%VSS_c4 VSS N_VSS_M4_s 2.40586e-17
+C_x_PM_ISO_FENCE1N_X4%VSS_c5 VSS x_PM_ISO_FENCE1N_X4%VSS_11 5.90809e-16
+C_x_PM_ISO_FENCE1N_X4%VSS_c6 VSS x_PM_ISO_FENCE1N_X4%VSS_10 1.92462e-17
+C_x_PM_ISO_FENCE1N_X4%VSS_c7 VSS x_PM_ISO_FENCE1N_X4%VSS_9 2.334e-16
+R_x_PM_ISO_FENCE1N_X4%VSS_r8 VSS x_PM_ISO_FENCE1N_X4%VSS_35 0.457895
+R_x_PM_ISO_FENCE1N_X4%VSS_r9 x_PM_ISO_FENCE1N_X4%VSS_34 VSS 0.424928
+R_x_PM_ISO_FENCE1N_X4%VSS_r10 N_VSS_M7_d x_PM_ISO_FENCE1N_X4%VSS_35 1.39786
+R_x_PM_ISO_FENCE1N_X4%VSS_r11 x_PM_ISO_FENCE1N_X4%VSS_34 x_PM_ISO_FENCE1N_X4%VSS_19 0.075366
+R_x_PM_ISO_FENCE1N_X4%VSS_r12 VSS x_PM_ISO_FENCE1N_X4%VSS_19 0.782353
+R_x_PM_ISO_FENCE1N_X4%VSS_r13 x_PM_ISO_FENCE1N_X4%VSS_35 x_PM_ISO_FENCE1N_X4%VSS_18 0.075426
+R_x_PM_ISO_FENCE1N_X4%VSS_r14 VSS x_PM_ISO_FENCE1N_X4%VSS_18 0.748824
+R_x_PM_ISO_FENCE1N_X4%VSS_r15 N_VSS_M4_s x_PM_ISO_FENCE1N_X4%VSS_34 1.39786
+R_x_PM_ISO_FENCE1N_X4%VSS_r16 VSS x_PM_ISO_FENCE1N_X4%VSS_11 9.15353
+R_x_PM_ISO_FENCE1N_X4%VSS_r17 VSS x_PM_ISO_FENCE1N_X4%VSS_10 0.140282
+R_x_PM_ISO_FENCE1N_X4%VSS_r18 VSS x_PM_ISO_FENCE1N_X4%VSS_9 0.143808
+R_x_PM_ISO_FENCE1N_X4%VSS_r19 x_PM_ISO_FENCE1N_X4%VSS_10 x_PM_ISO_FENCE1N_X4%VSS_9 7.68941
+C_x_PM_ISO_FENCE1N_X4%EN_c0 VSS x_PM_ISO_FENCE1N_X4%EN_29 1.01357e-17
+C_x_PM_ISO_FENCE1N_X4%EN_c1 VSS x_PM_ISO_FENCE1N_X4%EN_27 5.59874e-17
+C_x_PM_ISO_FENCE1N_X4%EN_c2 VSS x_PM_ISO_FENCE1N_X4%EN_25 2.60601e-17
+C_x_PM_ISO_FENCE1N_X4%EN_c3 VSS x_PM_ISO_FENCE1N_X4%EN_24 1.56317e-16
+C_x_PM_ISO_FENCE1N_X4%EN_c4 VSS x_PM_ISO_FENCE1N_X4%EN_20 6.37169e-18
+C_x_PM_ISO_FENCE1N_X4%EN_c5 VSS x_PM_ISO_FENCE1N_X4%EN_18 3.0969e-17
+C_x_PM_ISO_FENCE1N_X4%EN_c6 VSS N_EN_M3_g 5.93948e-17
+C_x_PM_ISO_FENCE1N_X4%EN_c7 VSS N_EN_M7_g 6.63651e-17
+C_x_PM_ISO_FENCE1N_X4%EN_c8 VSS N_EN_M0_g 5.08393e-17
+C_x_PM_ISO_FENCE1N_X4%EN_c9 VSS N_EN_M4_g 6.1643e-17
+R_x_PM_ISO_FENCE1N_X4%EN_r10 x_PM_ISO_FENCE1N_X4%EN_36 x_PM_ISO_FENCE1N_X4%EN_29 4.7687
+R_x_PM_ISO_FENCE1N_X4%EN_r11 x_PM_ISO_FENCE1N_X4%EN_35 x_PM_ISO_FENCE1N_X4%EN_29 4.7687
+R_x_PM_ISO_FENCE1N_X4%EN_r12 x_PM_ISO_FENCE1N_X4%EN_29 x_PM_ISO_FENCE1N_X4%EN_27 25.0012
+R_x_PM_ISO_FENCE1N_X4%EN_r13 x_PM_ISO_FENCE1N_X4%EN_27 x_PM_ISO_FENCE1N_X4%EN_26 0.827857
+R_x_PM_ISO_FENCE1N_X4%EN_r14 x_PM_ISO_FENCE1N_X4%EN_26 x_PM_ISO_FENCE1N_X4%EN_24 0.212317
+R_x_PM_ISO_FENCE1N_X4%EN_r15 x_PM_ISO_FENCE1N_X4%EN_25 x_PM_ISO_FENCE1N_X4%EN_24 2.09
+R_x_PM_ISO_FENCE1N_X4%EN_r16 x_PM_ISO_FENCE1N_X4%EN_33 x_PM_ISO_FENCE1N_X4%EN_20 4.7687
+R_x_PM_ISO_FENCE1N_X4%EN_r17 x_PM_ISO_FENCE1N_X4%EN_32 x_PM_ISO_FENCE1N_X4%EN_20 4.7687
+R_x_PM_ISO_FENCE1N_X4%EN_r18 x_PM_ISO_FENCE1N_X4%EN_20 x_PM_ISO_FENCE1N_X4%EN_18 25.0012
+R_x_PM_ISO_FENCE1N_X4%EN_r19 EN x_PM_ISO_FENCE1N_X4%EN_18 0.005938
+R_x_PM_ISO_FENCE1N_X4%EN_r20 x_PM_ISO_FENCE1N_X4%EN_25 x_PM_ISO_FENCE1N_X4%EN_17 0.257632
+R_x_PM_ISO_FENCE1N_X4%EN_r21 EN x_PM_ISO_FENCE1N_X4%EN_17 0.320625
+R_x_PM_ISO_FENCE1N_X4%EN_r22 N_EN_M3_g x_PM_ISO_FENCE1N_X4%EN_36 44.07
+R_x_PM_ISO_FENCE1N_X4%EN_r23 N_EN_M7_g x_PM_ISO_FENCE1N_X4%EN_35 57.72
+R_x_PM_ISO_FENCE1N_X4%EN_r24 N_EN_M0_g x_PM_ISO_FENCE1N_X4%EN_33 41.73
+R_x_PM_ISO_FENCE1N_X4%EN_r25 N_EN_M4_g x_PM_ISO_FENCE1N_X4%EN_32 60.06
+C_x_PM_ISO_FENCE1N_X4%Z_c0 VSS x_PM_ISO_FENCE1N_X4%Z_19 6.20739e-17
+C_x_PM_ISO_FENCE1N_X4%Z_c1 VSS x_PM_ISO_FENCE1N_X4%Z_17 1.64719e-17
+C_x_PM_ISO_FENCE1N_X4%Z_c2 VSS x_PM_ISO_FENCE1N_X4%Z_16 4.42546e-17
+C_x_PM_ISO_FENCE1N_X4%Z_c3 VSS N_Z_M5_d 3.23035e-17
+C_x_PM_ISO_FENCE1N_X4%Z_c4 VSS x_PM_ISO_FENCE1N_X4%Z_4 1.707e-16
+R_x_PM_ISO_FENCE1N_X4%Z_r5 x_PM_ISO_FENCE1N_X4%Z_19 x_PM_ISO_FENCE1N_X4%Z_18 2.33429
+R_x_PM_ISO_FENCE1N_X4%Z_r6 x_PM_ISO_FENCE1N_X4%Z_18 x_PM_ISO_FENCE1N_X4%Z_16 0.212317
+R_x_PM_ISO_FENCE1N_X4%Z_r7 x_PM_ISO_FENCE1N_X4%Z_17 x_PM_ISO_FENCE1N_X4%Z_16 1.79143
+R_x_PM_ISO_FENCE1N_X4%Z_r8 Z N_Z_M5_d 0.013571
+R_x_PM_ISO_FENCE1N_X4%Z_r9 x_PM_ISO_FENCE1N_X4%Z_17 x_PM_ISO_FENCE1N_X4%Z_10 0.212317
+R_x_PM_ISO_FENCE1N_X4%Z_r10 Z x_PM_ISO_FENCE1N_X4%Z_10 0.271429
+R_x_PM_ISO_FENCE1N_X4%Z_r11 N_Z_M2_d N_Z_M0_d 2.03571
+R_x_PM_ISO_FENCE1N_X4%Z_r12 x_PM_ISO_FENCE1N_X4%Z_19 x_PM_ISO_FENCE1N_X4%Z_4 0.212317
+R_x_PM_ISO_FENCE1N_X4%Z_r13 N_Z_M2_d x_PM_ISO_FENCE1N_X4%Z_4 0.990714
+C_x_PM_ISO_FENCE1N_X4%A_c0 VSS x_PM_ISO_FENCE1N_X4%A_21 6.15181e-17
+C_x_PM_ISO_FENCE1N_X4%A_c1 VSS x_PM_ISO_FENCE1N_X4%A_20 4.24954e-18
+C_x_PM_ISO_FENCE1N_X4%A_c2 VSS x_PM_ISO_FENCE1N_X4%A_19 6.90872e-18
+C_x_PM_ISO_FENCE1N_X4%A_c3 VSS x_PM_ISO_FENCE1N_X4%A_18 4.82125e-18
+C_x_PM_ISO_FENCE1N_X4%A_c4 VSS N_A_M2_g 4.80591e-17
+C_x_PM_ISO_FENCE1N_X4%A_c5 VSS N_A_M6_g 4.64729e-17
+C_x_PM_ISO_FENCE1N_X4%A_c6 VSS N_A_M1_g 4.80874e-17
+C_x_PM_ISO_FENCE1N_X4%A_c7 VSS N_A_M5_g 4.21341e-17
+R_x_PM_ISO_FENCE1N_X4%A_r8 x_PM_ISO_FENCE1N_X4%A_23 x_PM_ISO_FENCE1N_X4%A_21 25.0012
+R_x_PM_ISO_FENCE1N_X4%A_r9 A x_PM_ISO_FENCE1N_X4%A_21 0.105556
+R_x_PM_ISO_FENCE1N_X4%A_r10 x_PM_ISO_FENCE1N_X4%A_23 x_PM_ISO_FENCE1N_X4%A_19 7.02
+R_x_PM_ISO_FENCE1N_X4%A_r11 x_PM_ISO_FENCE1N_X4%A_20 x_PM_ISO_FENCE1N_X4%A_19 0.043368
+R_x_PM_ISO_FENCE1N_X4%A_r12 x_PM_ISO_FENCE1N_X4%A_23 x_PM_ISO_FENCE1N_X4%A_17 7.54
+R_x_PM_ISO_FENCE1N_X4%A_r13 x_PM_ISO_FENCE1N_X4%A_18 x_PM_ISO_FENCE1N_X4%A_17 0.043368
+R_x_PM_ISO_FENCE1N_X4%A_r14 x_PM_ISO_FENCE1N_X4%A_20 x_PM_ISO_FENCE1N_X4%A_13 4.56151
+R_x_PM_ISO_FENCE1N_X4%A_r15 N_A_M2_g x_PM_ISO_FENCE1N_X4%A_13 47.19
+R_x_PM_ISO_FENCE1N_X4%A_r16 x_PM_ISO_FENCE1N_X4%A_20 x_PM_ISO_FENCE1N_X4%A_9 4.56151
+R_x_PM_ISO_FENCE1N_X4%A_r17 N_A_M6_g x_PM_ISO_FENCE1N_X4%A_9 54.6
+R_x_PM_ISO_FENCE1N_X4%A_r18 x_PM_ISO_FENCE1N_X4%A_18 x_PM_ISO_FENCE1N_X4%A_5 4.56151
+R_x_PM_ISO_FENCE1N_X4%A_r19 N_A_M1_g x_PM_ISO_FENCE1N_X4%A_5 47.19
+R_x_PM_ISO_FENCE1N_X4%A_r20 x_PM_ISO_FENCE1N_X4%A_18 x_PM_ISO_FENCE1N_X4%A_1 4.56151
+R_x_PM_ISO_FENCE1N_X4%A_r21 N_A_M5_g x_PM_ISO_FENCE1N_X4%A_1 54.6
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

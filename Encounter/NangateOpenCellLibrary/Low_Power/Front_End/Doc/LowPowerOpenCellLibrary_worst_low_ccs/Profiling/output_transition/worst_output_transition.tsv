@@ -1,0 +1,42 @@
+PROFILING Worst_Output_Transition			ps
+
+Worst_Output_Transition	"(-inf, 101.352ps]"	3 elements
+		ISO_FENCE0_X1	100.624	"A to Z -> rise (179.199ps, 10.2997fF)"
+		ISO_FENCE0_X4	100.859	"A to Z -> rise (179.199ps, 42.7246fF)"
+		ISO_FENCE0_X2	100.929	"A to Z -> rise (179.199ps, 21.3623fF)"
+	"(101.352ps, 106.281ps]"	17 elements
+		AON_BUF_X1	102.396	"A to Z -> rise (179.199ps, 11.6921fF)"
+		HEADER_OE_X1	102.454	"SLEEP to SLEEPOUT -> rise (179.199ps, 12.1689fF)"
+		ISO_FENCE1_X1	102.925	"EN to Z -> rise (179.199ps, 19.0353fF)"
+		LS_LH_X1	102.98	"A to Z -> rise (5.59997ps, 18.6157fF)"
+		ISO_FENCE0N_X1	102.985	"A to Z -> rise (179.199ps, 18.959fF)"
+		HEADER_OE_X2	103.146	"SLEEP to SLEEPOUT -> rise (179.199ps, 25.3677fF)"
+		AON_BUF_X2	103.179	"A to Z -> rise (179.199ps, 25.4822fF)"
+		LS_LH_X2	103.249	"A to Z -> rise (22.3999ps, 25.444fF)"
+		AON_BUF_X4	103.261	"A to Z -> rise (179.199ps, 50.7355fF)"
+		ISO_FENCE1_X2	103.42	"EN to Z -> rise (179.199ps, 39.5966fF)"
+		ISO_FENCE1_X4	103.431	"EN to Z -> rise (179.199ps, 79.0405fF)"
+		LS_LHEN_X2	103.592	"ISOLN to Z -> rise (179.199ps, 25.4059fF)"
+		ISO_FENCE0N_X2	103.622	"A to Z -> rise (179.199ps, 39.5203fF)"
+		ISO_FENCE0N_X4	103.808	"A to Z -> rise (179.199ps, 79.0405fF)"
+		HEADER_OE_X4	103.842	"SLEEP to SLEEPOUT -> rise (179.199ps, 51.8036fF)"
+		LS_LH_X4	104.049	"A to Z -> rise (179.199ps, 51.8799fF)"
+		LS_LHEN_X4	104.715	"ISOLN to Z -> rise (179.199ps, 56.4575fF)"
+	"(106.281ps, 111.211ps]"	6 elements
+		ISO_FENCE1N_X1	106.678	"EN to Z -> rise (179.199ps, 18.5394fF)"
+		AON_INV_X1	106.889	"A to Z -> rise (179.199ps, 11.7302fF)"
+		ISO_FENCE1N_X2	106.983	"EN to Z -> rise (179.199ps, 38.6047fF)"
+		ISO_FENCE1N_X4	107.146	"EN to Z -> rise (179.199ps, 77.2095fF)"
+		AON_INV_X2	107.384	"A to Z -> rise (179.199ps, 25.4822fF)"
+		AON_INV_X4	107.423	"A to Z -> rise (179.199ps, 50.9644fF)"
+	"(111.211ps, +inf)"	7 elements
+		LS_HL_X1	113.753	"A to Z -> rise (179.199ps, 13.9236fF)"
+		LS_HLEN_X1	113.786	"A to Z -> rise (179.199ps, 13.8473fF)"
+		LS_HL_X2	114.429	"A to Z -> rise (179.199ps, 28.9917fF)"
+		LS_HLEN_X2	114.619	"A to Z -> rise (179.199ps, 28.9154fF)"
+		LS_HL_X4	114.759	"A to Z -> rise (179.199ps, 57.6782fF)"
+		LS_HLEN_X4	114.999	"A to Z -> rise (179.199ps, 57.6782fF)"
+		LS_LHEN_X1	118.968	"ISOLN to Z -> fall (179.199ps, 21.5149fF)"
+
+Profiling Statistics	Average	106.281
+	Standard Deviation	4.92942

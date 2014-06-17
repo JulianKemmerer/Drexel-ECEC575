@@ -1,0 +1,45 @@
+PROFILING area			um2
+
+area	"(-inf, 0.638964um2]"	3 elements
+		HEADER_X1	0.532	""
+		HEADER_X2	0.532	""
+		HEADER_X4	0.532	""
+	"(0.638964um2, 1.53689um2]"	21 elements
+		ISO_FENCE0_X1	0.798	""
+		ISO_FENCE0_X2	0.798	""
+		ISO_FENCE1N_X1	0.798	""
+		ISO_FENCE1N_X2	0.798	""
+		LS_HL_X1	0.798	""
+		LS_HL_X2	0.798	""
+		ISO_FENCE0N_X1	1.064	""
+		ISO_FENCE0N_X2	1.064	""
+		ISO_FENCE1_X1	1.064	""
+		ISO_FENCE1_X2	1.064	""
+		LS_HLEN_X1	1.064	""
+		LS_HLEN_X2	1.064	""
+		LS_HL_X4	1.064	""
+		HEADER_OE_X1	1.33	""
+		HEADER_OE_X2	1.33	""
+		HEADER_OE_X4	1.33	""
+		ISO_FENCE0N_X4	1.33	""
+		ISO_FENCE0_X4	1.33	""
+		ISO_FENCE1N_X4	1.33	""
+		ISO_FENCE1_X4	1.33	""
+		LS_HLEN_X4	1.33	""
+	"(1.53689um2, 2.43481um2]"	6 elements
+		AON_INV_X1	1.596	""
+		AON_INV_X2	1.596	""
+		AON_BUF_X1	1.862	""
+		AON_BUF_X2	1.862	""
+		AON_INV_X4	1.862	""
+		AON_BUF_X4	2.128	""
+	"(2.43481um2, +inf)"	6 elements
+		LS_LH_X1	2.926	""
+		LS_LH_X2	2.926	""
+		LS_LH_X4	2.926	""
+		LS_LHEN_X1	3.724	""
+		LS_LHEN_X2	3.724	""
+		LS_LHEN_X4	3.724	""
+
+Profiling Statistics	Average	1.53689
+	Standard Deviation	0.897925

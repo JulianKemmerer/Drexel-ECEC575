@@ -1,0 +1,238 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:17:02.
+* Main process id is 28033.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   MUX2_X1.                                                         *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:17:02 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT MUX2_X1 VDD VSS S A B Z 
+*.PININFO VDD:P VSS:G S:I A:I B:I Z:O 
+*.EQN Z=((S * B) + (A * !S))
+M_M6 N_VDD_M0_d N_S_M0_g N_3_M0_s VDD PMOS_VTL W=0.315000U L=0.050000U
+M_M7 net_2 N_A_M1_g N_VDD_M0_d VDD PMOS_VTL W=0.315000U L=0.050000U
+M_M8 N_6_M2_d N_S_M2_g net_2 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_M9 net_3 N_3_M3_g N_6_M2_d VDD PMOS_VTL W=0.315000U L=0.050000U
+M_M10 N_VDD_M4_d N_B_M4_g net_3 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_M11 N_Z_M5_d N_6_M5_g N_VDD_M4_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M0 N_VSS_M6_d N_S_M6_g N_3_M6_s VSS NMOS_VTL W=0.210000U L=0.050000U
+M_M1 net_1 N_A_M7_g N_VSS_M6_d VSS NMOS_VTL W=0.210000U L=0.050000U
+M_M2 N_6_M8_d N_3_M8_g net_1 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_M3 net_0 N_S_M9_g N_6_M8_d VSS NMOS_VTL W=0.210000U L=0.050000U
+M_M4 N_VSS_M10_d N_B_M10_g net_0 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_M5 N_Z_M11_d N_6_M11_g N_VSS_M10_d VSS NMOS_VTL W=0.415000U L=0.050000U
+C_x_PM_MUX2_X1%VDD_c0 x_PM_MUX2_X1%VDD_43 VSS 3.52531e-17
+C_x_PM_MUX2_X1%VDD_c1 x_PM_MUX2_X1%VDD_40 VSS 2.74884e-18
+C_x_PM_MUX2_X1%VDD_c2 x_PM_MUX2_X1%VDD_39 VSS 2.72973e-18
+C_x_PM_MUX2_X1%VDD_c3 x_PM_MUX2_X1%VDD_38 VSS 1.0599e-17
+C_x_PM_MUX2_X1%VDD_c4 x_PM_MUX2_X1%VDD_37 VSS 2.334e-16
+C_x_PM_MUX2_X1%VDD_c5 x_PM_MUX2_X1%VDD_28 VSS 2.61603e-16
+C_x_PM_MUX2_X1%VDD_c6 N_VDD_M4_d VSS 7.73068e-17
+C_x_PM_MUX2_X1%VDD_c7 x_PM_MUX2_X1%VDD_20 VSS 6.6322e-17
+C_x_PM_MUX2_X1%VDD_c8 N_VDD_M0_d VSS 5.17737e-17
+C_x_PM_MUX2_X1%VDD_c9 x_PM_MUX2_X1%VDD_14 VSS 3.42618e-17
+C_x_PM_MUX2_X1%VDD_c10 x_PM_MUX2_X1%VDD_13 VSS 1.92462e-17
+C_x_PM_MUX2_X1%VDD_c11 x_PM_MUX2_X1%VDD_9 VSS 6.16516e-16
+R_x_PM_MUX2_X1%VDD_r12 VDD x_PM_MUX2_X1%VDD_43 0.13879
+R_x_PM_MUX2_X1%VDD_r13 VDD x_PM_MUX2_X1%VDD_38 0.138595
+R_x_PM_MUX2_X1%VDD_r14 VDD x_PM_MUX2_X1%VDD_37 0.138985
+R_x_PM_MUX2_X1%VDD_r15 VDD x_PM_MUX2_X1%VDD_28 0.13879
+R_x_PM_MUX2_X1%VDD_r16 x_PM_MUX2_X1%VDD_28 VDD 3.84471
+R_x_PM_MUX2_X1%VDD_r17 x_PM_MUX2_X1%VDD_27 x_PM_MUX2_X1%VDD_40 0.0731438
+R_x_PM_MUX2_X1%VDD_r18 x_PM_MUX2_X1%VDD_43 x_PM_MUX2_X1%VDD_27 0.715294
+R_x_PM_MUX2_X1%VDD_r19 x_PM_MUX2_X1%VDD_22 x_PM_MUX2_X1%VDD_40 0.145286
+R_x_PM_MUX2_X1%VDD_r20 x_PM_MUX2_X1%VDD_22 N_VDD_M4_d 0.719286
+R_x_PM_MUX2_X1%VDD_r21 x_PM_MUX2_X1%VDD_21 x_PM_MUX2_X1%VDD_39 0.0731438
+R_x_PM_MUX2_X1%VDD_r22 x_PM_MUX2_X1%VDD_20 x_PM_MUX2_X1%VDD_40 0.0731438
+R_x_PM_MUX2_X1%VDD_r23 x_PM_MUX2_X1%VDD_20 x_PM_MUX2_X1%VDD_21 1.54235
+R_x_PM_MUX2_X1%VDD_r24 x_PM_MUX2_X1%VDD_16 x_PM_MUX2_X1%VDD_39 0.145286
+R_x_PM_MUX2_X1%VDD_r25 x_PM_MUX2_X1%VDD_16 N_VDD_M0_d 0.393571
+R_x_PM_MUX2_X1%VDD_r26 x_PM_MUX2_X1%VDD_14 x_PM_MUX2_X1%VDD_39 0.0731438
+R_x_PM_MUX2_X1%VDD_r27 x_PM_MUX2_X1%VDD_14 x_PM_MUX2_X1%VDD_38 0.603529
+R_x_PM_MUX2_X1%VDD_r28 x_PM_MUX2_X1%VDD_13 VDD 0.140282
+R_x_PM_MUX2_X1%VDD_r29 x_PM_MUX2_X1%VDD_37 x_PM_MUX2_X1%VDD_13 7.68941
+R_x_PM_MUX2_X1%VDD_r30 x_PM_MUX2_X1%VDD_9 VDD 9.57824
+C_x_PM_MUX2_X1%VSS_c0 x_PM_MUX2_X1%VSS_41 VSS 2.68145e-18
+C_x_PM_MUX2_X1%VSS_c1 x_PM_MUX2_X1%VSS_40 VSS 2.68145e-18
+C_x_PM_MUX2_X1%VSS_c2 x_PM_MUX2_X1%VSS_38 VSS 2.334e-16
+C_x_PM_MUX2_X1%VSS_c3 VSS VSS 2.61603e-16
+C_x_PM_MUX2_X1%VSS_c4 x_PM_MUX2_X1%VSS_28 VSS 3.26174e-17
+C_x_PM_MUX2_X1%VSS_c5 N_VSS_M10_d VSS 2.3021e-17
+C_x_PM_MUX2_X1%VSS_c6 x_PM_MUX2_X1%VSS_20 VSS 7.27681e-17
+C_x_PM_MUX2_X1%VSS_c7 N_VSS_M6_d VSS 2.20247e-17
+C_x_PM_MUX2_X1%VSS_c8 x_PM_MUX2_X1%VSS_15 VSS 1.0599e-17
+C_x_PM_MUX2_X1%VSS_c9 x_PM_MUX2_X1%VSS_14 VSS 2.80366e-17
+C_x_PM_MUX2_X1%VSS_c10 x_PM_MUX2_X1%VSS_11 VSS 6.16516e-16
+C_x_PM_MUX2_X1%VSS_c11 x_PM_MUX2_X1%VSS_10 VSS 1.92462e-17
+R_x_PM_MUX2_X1%VSS_r12 VSS x_PM_MUX2_X1%VSS_38 0.138985
+R_x_PM_MUX2_X1%VSS_r13 x_PM_MUX2_X1%VSS_29 x_PM_MUX2_X1%VSS_41 0.0731438
+R_x_PM_MUX2_X1%VSS_r14 VSS x_PM_MUX2_X1%VSS_28 0.13879
+R_x_PM_MUX2_X1%VSS_r15 x_PM_MUX2_X1%VSS_28 x_PM_MUX2_X1%VSS_29 0.715294
+R_x_PM_MUX2_X1%VSS_r16 x_PM_MUX2_X1%VSS_24 x_PM_MUX2_X1%VSS_41 0.145286
+R_x_PM_MUX2_X1%VSS_r17 x_PM_MUX2_X1%VSS_24 N_VSS_M10_d 0.475
+R_x_PM_MUX2_X1%VSS_r18 x_PM_MUX2_X1%VSS_21 x_PM_MUX2_X1%VSS_40 0.0731438
+R_x_PM_MUX2_X1%VSS_r19 x_PM_MUX2_X1%VSS_21 VSS 0.827059
+R_x_PM_MUX2_X1%VSS_r20 x_PM_MUX2_X1%VSS_20 x_PM_MUX2_X1%VSS_41 0.0731438
+R_x_PM_MUX2_X1%VSS_r21 x_PM_MUX2_X1%VSS_20 VSS 0.715294
+R_x_PM_MUX2_X1%VSS_r22 x_PM_MUX2_X1%VSS_16 x_PM_MUX2_X1%VSS_40 0.145286
+R_x_PM_MUX2_X1%VSS_r23 x_PM_MUX2_X1%VSS_16 N_VSS_M6_d 0.475
+R_x_PM_MUX2_X1%VSS_r24 VSS x_PM_MUX2_X1%VSS_15 0.138595
+R_x_PM_MUX2_X1%VSS_r25 x_PM_MUX2_X1%VSS_14 x_PM_MUX2_X1%VSS_40 0.0731438
+R_x_PM_MUX2_X1%VSS_r26 x_PM_MUX2_X1%VSS_14 x_PM_MUX2_X1%VSS_15 0.603529
+R_x_PM_MUX2_X1%VSS_r27 x_PM_MUX2_X1%VSS_11 VSS 9.57824
+R_x_PM_MUX2_X1%VSS_r28 x_PM_MUX2_X1%VSS_10 VSS 0.140282
+R_x_PM_MUX2_X1%VSS_r29 x_PM_MUX2_X1%VSS_38 x_PM_MUX2_X1%VSS_10 7.68941
+C_x_PM_MUX2_X1%3_c0 x_PM_MUX2_X1%3_33 VSS 9.90847e-18
+C_x_PM_MUX2_X1%3_c1 x_PM_MUX2_X1%3_28 VSS 1.07748e-17
+C_x_PM_MUX2_X1%3_c2 x_PM_MUX2_X1%3_25 VSS 1.1182e-16
+C_x_PM_MUX2_X1%3_c3 x_PM_MUX2_X1%3_23 VSS 1.53492e-17
+C_x_PM_MUX2_X1%3_c4 x_PM_MUX2_X1%3_22 VSS 1.27454e-16
+C_x_PM_MUX2_X1%3_c5 x_PM_MUX2_X1%3_18 VSS 1.46615e-17
+C_x_PM_MUX2_X1%3_c6 x_PM_MUX2_X1%3_17 VSS 1.1266e-16
+C_x_PM_MUX2_X1%3_c7 N_3_M0_s VSS 4.74567e-17
+C_x_PM_MUX2_X1%3_c8 x_PM_MUX2_X1%3_12 VSS 2.54954e-17
+C_x_PM_MUX2_X1%3_c9 N_3_M3_g VSS 4.64492e-17
+C_x_PM_MUX2_X1%3_c10 N_3_M8_g VSS 3.66955e-17
+R_x_PM_MUX2_X1%3_r11 x_PM_MUX2_X1%3_27 x_PM_MUX2_X1%3_33 1.82
+R_x_PM_MUX2_X1%3_r12 x_PM_MUX2_X1%3_26 x_PM_MUX2_X1%3_27 25.0012
+R_x_PM_MUX2_X1%3_r13 x_PM_MUX2_X1%3_25 x_PM_MUX2_X1%3_26 0.0141545
+R_x_PM_MUX2_X1%3_r14 x_PM_MUX2_X1%3_24 x_PM_MUX2_X1%3_25 2.38857
+R_x_PM_MUX2_X1%3_r15 x_PM_MUX2_X1%3_22 x_PM_MUX2_X1%3_26 0.198162
+R_x_PM_MUX2_X1%3_r16 x_PM_MUX2_X1%3_22 x_PM_MUX2_X1%3_23 3.09429
+R_x_PM_MUX2_X1%3_r17 x_PM_MUX2_X1%3_20 x_PM_MUX2_X1%3_28 25.0012
+R_x_PM_MUX2_X1%3_r18 x_PM_MUX2_X1%3_18 x_PM_MUX2_X1%3_20 2.42929
+R_x_PM_MUX2_X1%3_r19 x_PM_MUX2_X1%3_17 x_PM_MUX2_X1%3_24 0.212317
+R_x_PM_MUX2_X1%3_r20 x_PM_MUX2_X1%3_17 x_PM_MUX2_X1%3_20 0.665
+R_x_PM_MUX2_X1%3_r21 x_PM_MUX2_X1%3_13 x_PM_MUX2_X1%3_23 0.212317
+R_x_PM_MUX2_X1%3_r22 x_PM_MUX2_X1%3_13 N_3_M0_s 1.15357
+R_x_PM_MUX2_X1%3_r23 x_PM_MUX2_X1%3_12 x_PM_MUX2_X1%3_18 0.212317
+R_x_PM_MUX2_X1%3_r24 N_3_M6_s x_PM_MUX2_X1%3_12 0.543196
+R_x_PM_MUX2_X1%3_r25 x1 x_PM_MUX2_X1%3_33 1.95
+R_x_PM_MUX2_X1%3_r26 x1 N_3_M3_g 33.15
+R_x_PM_MUX2_X1%3_r27 x_PM_MUX2_X1%3_28 x_PM_MUX2_X1%3_1 4.7687
+R_x_PM_MUX2_X1%3_r28 x_PM_MUX2_X1%3_1 N_3_M8_g 30.42
+C_x_PM_MUX2_X1%S_c0 x_PM_MUX2_X1%S_29 VSS 4.75143e-17
+C_x_PM_MUX2_X1%S_c1 x_PM_MUX2_X1%S_27 VSS 3.11757e-17
+C_x_PM_MUX2_X1%S_c2 x_PM_MUX2_X1%S_26 VSS 1.33329e-16
+C_x_PM_MUX2_X1%S_c3 x_PM_MUX2_X1%S_22 VSS 7.60256e-18
+C_x_PM_MUX2_X1%S_c4 x_PM_MUX2_X1%S_20 VSS 6.7291e-17
+C_x_PM_MUX2_X1%S_c5 N_S_M9_g VSS 6.32346e-17
+C_x_PM_MUX2_X1%S_c6 x_PM_MUX2_X1%S_13 VSS 2.57388e-17
+C_x_PM_MUX2_X1%S_c7 N_S_M2_g VSS 7.14114e-17
+C_x_PM_MUX2_X1%S_c8 x_PM_MUX2_X1%S_9 VSS 5.81508e-18
+C_x_PM_MUX2_X1%S_c9 N_S_M0_g VSS 7.51804e-17
+C_x_PM_MUX2_X1%S_c10 N_S_M6_g VSS 5.77738e-17
+R_x_PM_MUX2_X1%S_r11 x_PM_MUX2_X1%S_29 x_PM_MUX2_X1%S_31 25.0012
+R_x_PM_MUX2_X1%S_r12 x_PM_MUX2_X1%S_28 x_PM_MUX2_X1%S_29 0.882143
+R_x_PM_MUX2_X1%S_r13 x_PM_MUX2_X1%S_26 x_PM_MUX2_X1%S_28 0.212317
+R_x_PM_MUX2_X1%S_r14 x_PM_MUX2_X1%S_26 x_PM_MUX2_X1%S_27 1.84571
+R_x_PM_MUX2_X1%S_r15 x_PM_MUX2_X1%S_22 x_PM_MUX2_X1%S_35 4.74714
+R_x_PM_MUX2_X1%S_r16 x_PM_MUX2_X1%S_22 x_PM_MUX2_X1%S_34 4.74714
+R_x_PM_MUX2_X1%S_r17 x_PM_MUX2_X1%S_20 x_PM_MUX2_X1%S_22 25.0012
+R_x_PM_MUX2_X1%S_r18 x_PM_MUX2_X1%S_20 S 0.114
+R_x_PM_MUX2_X1%S_r19 x_PM_MUX2_X1%S_19 x_PM_MUX2_X1%S_27 0.235058
+R_x_PM_MUX2_X1%S_r20 x_PM_MUX2_X1%S_19 S 0.4104
+R_x_PM_MUX2_X1%S_r21 x_PM_MUX2_X1%S_15 N_S_M9_g 57.72
+R_x_PM_MUX2_X1%S_r22 x_PM_MUX2_X1%S_14 x_PM_MUX2_X1%S_31 0.917744
+R_x_PM_MUX2_X1%S_r23 x_PM_MUX2_X1%S_13 x_PM_MUX2_X1%S_15 4.58872
+R_x_PM_MUX2_X1%S_r24 x_PM_MUX2_X1%S_13 x_PM_MUX2_X1%S_14 14.56
+R_x_PM_MUX2_X1%S_r25 x_PM_MUX2_X1%S_9 x_PM_MUX2_X1%S_31 3.67098
+R_x_PM_MUX2_X1%S_r26 x_PM_MUX2_X1%S_9 N_S_M2_g 79.95
+R_x_PM_MUX2_X1%S_r27 x_PM_MUX2_X1%S_35 N_S_M0_g 81.51
+R_x_PM_MUX2_X1%S_r28 x_PM_MUX2_X1%S_34 N_S_M6_g 56.16
+C_x_PM_MUX2_X1%A_c0 x_PM_MUX2_X1%A_14 VSS 8.68467e-18
+C_x_PM_MUX2_X1%A_c1 x_PM_MUX2_X1%A_12 VSS 9.48858e-17
+C_x_PM_MUX2_X1%A_c2 N_A_M1_g VSS 7.82297e-17
+C_x_PM_MUX2_X1%A_c3 N_A_M7_g VSS 5.50542e-17
+R_x_PM_MUX2_X1%A_r4 x_PM_MUX2_X1%A_14 x_PM_MUX2_X1%A_18 4.7687
+R_x_PM_MUX2_X1%A_r5 x_PM_MUX2_X1%A_14 x_PM_MUX2_X1%A_17 4.7687
+R_x_PM_MUX2_X1%A_r6 x_PM_MUX2_X1%A_12 x_PM_MUX2_X1%A_14 25.0012
+R_x_PM_MUX2_X1%A_r7 A x_PM_MUX2_X1%A_12 0.135714
+R_x_PM_MUX2_X1%A_r8 x_PM_MUX2_X1%A_18 N_A_M1_g 81.51
+R_x_PM_MUX2_X1%A_r9 x_PM_MUX2_X1%A_17 N_A_M7_g 56.16
+C_x_PM_MUX2_X1%6_c0 x_PM_MUX2_X1%6_34 VSS 1.21799e-17
+C_x_PM_MUX2_X1%6_c1 x_PM_MUX2_X1%6_30 VSS 1.03745e-16
+C_x_PM_MUX2_X1%6_c2 x_PM_MUX2_X1%6_26 VSS 1.70686e-17
+C_x_PM_MUX2_X1%6_c3 x_PM_MUX2_X1%6_25 VSS 3.69928e-17
+C_x_PM_MUX2_X1%6_c4 x_PM_MUX2_X1%6_24 VSS 2.87848e-17
+C_x_PM_MUX2_X1%6_c5 x_PM_MUX2_X1%6_23 VSS 3.80869e-17
+C_x_PM_MUX2_X1%6_c6 x_PM_MUX2_X1%6_22 VSS 3.03228e-17
+C_x_PM_MUX2_X1%6_c7 x_PM_MUX2_X1%6_20 VSS 9.31161e-18
+C_x_PM_MUX2_X1%6_c8 x_PM_MUX2_X1%6_15 VSS 6.42199e-17
+C_x_PM_MUX2_X1%6_c9 x_PM_MUX2_X1%6_11 VSS 5.57534e-17
+C_x_PM_MUX2_X1%6_c10 N_6_M5_g VSS 8.17801e-17
+C_x_PM_MUX2_X1%6_c11 N_6_M11_g VSS 5.70896e-17
+R_x_PM_MUX2_X1%6_r12 x_PM_MUX2_X1%6_32 x_PM_MUX2_X1%6_34 3.9
+R_x_PM_MUX2_X1%6_r13 x_PM_MUX2_X1%6_30 x_PM_MUX2_X1%6_32 25.0012
+R_x_PM_MUX2_X1%6_r14 x_PM_MUX2_X1%6_28 x_PM_MUX2_X1%6_30 1.34357
+R_x_PM_MUX2_X1%6_r15 x_PM_MUX2_X1%6_27 x_PM_MUX2_X1%6_30 0.719286
+R_x_PM_MUX2_X1%6_r16 x_PM_MUX2_X1%6_25 x_PM_MUX2_X1%6_28 0.212317
+R_x_PM_MUX2_X1%6_r17 x_PM_MUX2_X1%6_25 x_PM_MUX2_X1%6_26 0.678571
+R_x_PM_MUX2_X1%6_r18 x_PM_MUX2_X1%6_23 x_PM_MUX2_X1%6_27 0.212317
+R_x_PM_MUX2_X1%6_r19 x_PM_MUX2_X1%6_23 x_PM_MUX2_X1%6_24 0.787143
+R_x_PM_MUX2_X1%6_r20 x_PM_MUX2_X1%6_21 x_PM_MUX2_X1%6_26 0.212317
+R_x_PM_MUX2_X1%6_r21 x_PM_MUX2_X1%6_21 x_PM_MUX2_X1%6_22 0.868571
+R_x_PM_MUX2_X1%6_r22 x_PM_MUX2_X1%6_20 x_PM_MUX2_X1%6_24 0.212317
+R_x_PM_MUX2_X1%6_r23 x_PM_MUX2_X1%6_19 x_PM_MUX2_X1%6_20 0.542857
+R_x_PM_MUX2_X1%6_r24 x_PM_MUX2_X1%6_15 x_PM_MUX2_X1%6_22 0.212317
+R_x_PM_MUX2_X1%6_r25 x_PM_MUX2_X1%6_15 N_6_M2_d 1.09929
+R_x_PM_MUX2_X1%6_r26 x_PM_MUX2_X1%6_11 x_PM_MUX2_X1%6_19 0.212317
+R_x_PM_MUX2_X1%6_r27 x_PM_MUX2_X1%6_11 N_6_M8_d 0.990714
+R_x_PM_MUX2_X1%6_r28 x_PM_MUX2_X1%6_5 x_PM_MUX2_X1%6_34 1.95
+R_x_PM_MUX2_X1%6_r29 x_PM_MUX2_X1%6_5 N_6_M5_g 56.94
+R_x_PM_MUX2_X1%6_r30 Z_neg x_PM_MUX2_X1%6_34 1.95
+R_x_PM_MUX2_X1%6_r31 Z_neg N_6_M11_g 40.17
+C_x_PM_MUX2_X1%B_c0 x_PM_MUX2_X1%B_14 VSS 9.2117e-18
+C_x_PM_MUX2_X1%B_c1 x_PM_MUX2_X1%B_12 VSS 8.39155e-17
+C_x_PM_MUX2_X1%B_c2 N_B_M4_g VSS 8.05504e-17
+C_x_PM_MUX2_X1%B_c3 N_B_M10_g VSS 5.58794e-17
+R_x_PM_MUX2_X1%B_r4 x_PM_MUX2_X1%B_14 x_PM_MUX2_X1%B_18 4.7687
+R_x_PM_MUX2_X1%B_r5 x_PM_MUX2_X1%B_14 x_PM_MUX2_X1%B_17 4.7687
+R_x_PM_MUX2_X1%B_r6 x_PM_MUX2_X1%B_12 x_PM_MUX2_X1%B_14 25.0012
+R_x_PM_MUX2_X1%B_r7 B x_PM_MUX2_X1%B_12 0.135714
+R_x_PM_MUX2_X1%B_r8 x_PM_MUX2_X1%B_18 N_B_M4_g 81.51
+R_x_PM_MUX2_X1%B_r9 x_PM_MUX2_X1%B_17 N_B_M10_g 56.16
+C_x_PM_MUX2_X1%Z_c0 N_Z_M11_d VSS 1.92442e-16
+R_x_PM_MUX2_X1%Z_r1 Z N_Z_M5_d 1.65722
+R_x_PM_MUX2_X1%Z_r2 N_Z_M11_d Z 1.57278
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

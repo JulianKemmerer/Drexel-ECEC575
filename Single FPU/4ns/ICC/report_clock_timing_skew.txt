@@ -1,0 +1,18 @@
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 1
+        -setup
+Design : fpu
+Version: E-2010.12-ICC-SP5
+Date   : Tue Jun  3 20:11:41 2014
+****************************************
+
+  Clock: gclk
+  Clock Pin                              Latency             Skew
+----------------------------------------------------------------------------
+  fpu_add/fpu_add_frac_dp/i_a5stg_rnd_frac/q_reg[26]/CLK
+                                         0.39                          wrp-+
+  fpu_out/fpu_out_dp/i_fp_cpx_data_ca_76_0/q_reg[15]/CLK
+                                         0.33                0.06      wrp-+
+----------------------------------------------------------------------------

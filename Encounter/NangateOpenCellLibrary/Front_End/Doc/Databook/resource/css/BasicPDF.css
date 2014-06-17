@@ -1,0 +1,40 @@
+/*	 
+	    Copyright (C) 2006, Nangate Inc.
+	    All rights reserved.                           
+	
+		Copyright Notice:
+
+			This document contains confidential and proprietary information.
+			Reproduction or usage of this document, in part or whole, by any means,
+			electrical, mechanical, optical, chemical or otherwise is prohibited,
+			without written permission from Nangate Inc.
+
+			The information contained herein is protected by Danish and international  
+			copyright laws.                                                            
+		
+		Author: 
+			Joao Daniel Togni
+*/	
+/*
+	Default Nangate colors:
+		122,160,193 >> 7A,A0,C1 -- Dark
+		215,227,237 >> D7,E3,ED -- Light
+*/
+
+BODY, FORM  {
+	font-size: 10px;
+}
+
+TABLE { 
+	border-color: #888888;
+}
+TD {
+	border-color: #888888;
+}
+TH {
+	background-color: #DDDDDD;
+	border-color: #888888;
+}
+
+A { color : #666666;  text-decoration : none; }
+

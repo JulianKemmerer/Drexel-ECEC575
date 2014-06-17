@@ -1,0 +1,42 @@
+PROFILING Worst_Output_Transition			ps
+
+Worst_Output_Transition	"(-inf, 73.1775ps]"	6 elements
+		LS_HLEN_X1	69.311	"A to Z -> rise (146.24ps, 13.8473fF)"
+		LS_HL_X1	69.333	"A to Z -> rise (146.24ps, 13.9236fF)"
+		LS_HL_X2	69.794	"A to Z -> rise (146.24ps, 28.9917fF)"
+		LS_HLEN_X2	69.872	"A to Z -> rise (146.24ps, 28.9154fF)"
+		LS_HL_X4	69.993	"A to Z -> rise (146.24ps, 57.6782fF)"
+		LS_HLEN_X4	70.133	"A to Z -> rise (146.24ps, 57.6782fF)"
+	"(73.1775ps, 80.2122ps]"	17 elements
+		LS_LH_X1	77.89	"A to Z -> rise (4.57ps, 18.6157fF)"
+		LS_LH_X2	78.104	"A to Z -> rise (18.28ps, 25.444fF)"
+		AON_BUF_X1	78.317	"A to Z -> rise (146.24ps, 11.6921fF)"
+		HEADER_OE_X1	78.364	"SLEEP to SLEEPOUT -> rise (146.24ps, 12.1689fF)"
+		AON_BUF_X4	78.662	"A to Z -> rise (146.24ps, 50.7355fF)"
+		LS_LH_X4	78.704	"A to Z -> rise (18.28ps, 51.8799fF)"
+		HEADER_OE_X2	78.778	"SLEEP to SLEEPOUT -> rise (146.24ps, 25.3677fF)"
+		LS_LHEN_X2	78.788	"ISOLN to Z -> rise (146.24ps, 25.4059fF)"
+		AON_BUF_X2	78.858	"A to Z -> rise (146.24ps, 25.4822fF)"
+		ISO_FENCE1_X1	78.872	"A to Z -> rise (146.24ps, 19.0353fF)"
+		ISO_FENCE0N_X1	79.105	"EN to Z -> rise (146.24ps, 18.959fF)"
+		HEADER_OE_X4	79.117	"SLEEP to SLEEPOUT -> rise (146.24ps, 51.8036fF)"
+		ISO_FENCE1_X2	79.151	"A to Z -> rise (146.24ps, 39.5966fF)"
+		ISO_FENCE1_X4	79.22	"A to Z -> rise (146.24ps, 79.0405fF)"
+		ISO_FENCE0N_X2	79.432	"EN to Z -> rise (146.24ps, 39.5203fF)"
+		LS_LHEN_X4	79.511	"ISOLN to Z -> rise (146.24ps, 56.4575fF)"
+		ISO_FENCE0N_X4	79.65	"EN to Z -> rise (146.24ps, 79.0405fF)"
+	"(80.2122ps, 87.247ps]"	3 elements
+		ISO_FENCE0_X1	81.759	"A to Z -> rise (146.24ps, 10.2997fF)"
+		ISO_FENCE0_X4	82.099	"A to Z -> rise (146.24ps, 42.7246fF)"
+		ISO_FENCE0_X2	82.12	"A to Z -> rise (146.24ps, 21.3623fF)"
+	"(87.247ps, +inf)"	7 elements
+		LS_LHEN_X1	90.528	"ISOLN to Z -> fall (146.24ps, 21.5149fF)"
+		AON_INV_X1	91.516	"A to Z -> rise (146.24ps, 11.7302fF)"
+		ISO_FENCE1N_X1	91.694	"EN to Z -> rise (146.24ps, 18.5394fF)"
+		AON_INV_X2	92.027	"A to Z -> rise (146.24ps, 25.4822fF)"
+		ISO_FENCE1N_X2	92.033	"EN to Z -> rise (146.24ps, 38.6047fF)"
+		AON_INV_X4	92.063	"A to Z -> rise (146.24ps, 50.9644fF)"
+		ISO_FENCE1N_X4	92.206	"EN to Z -> rise (146.24ps, 77.2095fF)"
+
+Profiling Statistics	Average	80.2122
+	Standard Deviation	7.03475

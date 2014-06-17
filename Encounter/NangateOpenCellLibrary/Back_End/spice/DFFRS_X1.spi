@@ -1,0 +1,91 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:01:54.
+* Main process id is 28033.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   DFFRS_X1.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:01:54 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT DFFRS_X1 D RN SN CK Q QN VDD VSS 
+*.PININFO D:I RN:I SN:I CK:I Q:O QN:O VDD:P VSS:G 
+M_MN81 QN z99 VSS VSS NMOS_VTL W=0.415000U L=0.050000U
+M_MN91_0_0 VSS z56 Q VSS NMOS_VTL W=0.415000U L=0.050000U
+M_transistor_0 z99 z56 nn99 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_transistor_1 nn99 SN VSS VSS NMOS_VTL W=0.210000U L=0.050000U
+M_MN51 VSS z41 nn5 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_MN52 nn5 RN z56 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_MN63 VSS SN nn62 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_MN62 nn62 z56 nn61 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_MN61 nn61 ckn_i z41 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_MN41 z41 ck_i nn4 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_MN42 nn4 z37 VSS VSS NMOS_VTL W=0.210000U L=0.050000U
+M_MP91_0 VSS z37 nn2 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_MP91_1 nn2 SN z51 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_MN101 VSS ckn_i ck_i VSS NMOS_VTL W=0.210000U L=0.050000U
+M_MN33 VSS RN nn32 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_MN32 nn32 z51 nn31 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_MN31 nn31 ck_i z37 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_MN11 z37 ckn_i nn1 VSS NMOS_VTL W=0.275000U L=0.050000U
+M_MN12 nn1 D VSS VSS NMOS_VTL W=0.275000U L=0.050000U
+M_MN91 ckn_i CK VSS VSS NMOS_VTL W=0.210000U L=0.050000U
+M_MP81_0 QN z99 VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+M_MP81_1 VDD z56 Q VDD PMOS_VTL W=0.630000U L=0.050000U
+M_transistor_2 VDD z56 z99 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_transistor_3 z99 SN VDD VDD PMOS_VTL W=0.315000U L=0.050000U
+M_MP51 z56 z41 VDD VDD PMOS_VTL W=0.315000U L=0.050000U
+M_MP52 VDD RN z56 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_MP63 VDD SN np61 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_MP61 VDD z56 np61 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_MP62 np61 ck_i z41 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_MP41 np4 ckn_i z41 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_MP42 VDD z37 np4 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_MP21 VDD z37 z51 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_MP22 z51 SN VDD VDD PMOS_VTL W=0.315000U L=0.050000U
+M_MP101 ck_i ckn_i VDD VDD PMOS_VTL W=0.315000U L=0.050000U
+M_MP33 VDD RN np32 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_MP31 VDD z51 np32 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_MP34 np32 ckn_i z37 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_MP12 np1 ck_i z37 VDD PMOS_VTL W=0.420000U L=0.050000U
+M_MP11 VDD D np1 VDD PMOS_VTL W=0.420000U L=0.050000U
+M_MP91 ckn_i CK VDD VDD PMOS_VTL W=0.315000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

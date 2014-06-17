@@ -1,0 +1,114 @@
+module plusplusfpu (
+        pcx_fpio_data_rdy_px2,
+        pcx_fpio_data_px2,
+        arst_l,
+        grst_l,
+        gclk,
+        cluster_cken,
+
+        fp_cpx_req_cq,
+        fp_cpx_data_ca,
+
+        ctu_tst_pre_grst_l,
+        global_shift_enable,
+        ctu_tst_scan_disable,
+        ctu_tst_scanmode,
+        ctu_tst_macrotest,
+        ctu_tst_short_chain,
+
+        si,
+        so
+);
+
+input           pcx_fpio_data_rdy_px2;  // FPU request ready from PCX
+input [123:0]   pcx_fpio_data_px2;      // FPU request data from PCX
+input           arst_l;                 // chip async. reset- asserted low
+input           grst_l;                 // chip sync. reset- asserted low
+input           gclk;                   // chip clock
+input           cluster_cken;                   // cluster clock enable
+
+output [7:0]    fp_cpx_req_cq;          // FPU result request to CPX
+output [144:0]  fp_cpx_data_ca;         // FPU result to CPX
+
+input                                           ctu_tst_pre_grst_l;
+input                                           global_shift_enable;
+input                                           ctu_tst_scan_disable;
+input                                           ctu_tst_scanmode;
+input                                   ctu_tst_macrotest;
+input                                   ctu_tst_short_chain;
+input           si;                     // scan in
+output          so;                     // scan out
+
+
+wire [123:0]    fpu_input_data0;        // Data sent to FPU0
+wire [123:0]    fpu_input_data1;        // Data sent to FPU1
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//      Instantiations.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+prep_data prep_data(
+        .data           (pcx_fpio_data_px2),
+        .out0           (fpu_input_data0),
+        .out1           (fpu_input_data1)
+);
+
+
+fpu fpu (
+        //Common Ports
+        .arst_l         (arst_l),
+        .grst_l         (grst_l),
+        .gclk           (gclk),
+
+        .cluster_cken           (cluster_cken),
+
+        .pcx_fpio_data_rdy_px2  (pcx_fpio_data_rdy_px2),
+        .pcx_fpio_data_px2              (fpu_input_data0),
+
+        .fp_cpx_req_cq          (fp_cpx_req_cq),
+        .fp_cpx_data_ca         (fp_cpx_data_ca),
+
+        .ctu_tst_pre_grst_l             (ctu_tst_pre_grst_l),
+        .global_shift_enable            (global_shift_enable),
+        .ctu_tst_scan_disable           (ctu_tst_scan_disable),
+        .ctu_tst_scanmode               (ctu_tst_scanmode),
+        .ctu_tst_macrotest              (ctu_tst_macrotest),
+        .ctu_tst_short_chain            (ctu_tst_short_chain),
+
+        .si             (si),
+        .so             (so)
+
+);
+
+fpu fpu2 (
+        //Common Ports
+        .arst_l         (arst_l),
+        .grst_l         (grst_l),
+        .gclk           (gclk),
+
+        .cluster_cken           (cluster_cken),
+
+        .pcx_fpio_data_rdy_px2  (pcx_fpio_data_rdy_px2),
+        .pcx_fpio_data_px2              (fpu_input_data1),
+
+        .fp_cpx_req_cq          (fp_cpx_req_cq),
+        .fp_cpx_data_ca         (fp_cpx_data_ca),
+
+        .ctu_tst_pre_grst_l             (ctu_tst_pre_grst_l),
+        .global_shift_enable            (global_shift_enable),
+        .ctu_tst_scan_disable           (ctu_tst_scan_disable),
+        .ctu_tst_scanmode               (ctu_tst_scanmode),
+        .ctu_tst_macrotest              (ctu_tst_macrotest),
+        .ctu_tst_short_chain            (ctu_tst_short_chain),
+
+        .si             (si),
+        .so             (so)
+
+);
+
+
+
+endmodule

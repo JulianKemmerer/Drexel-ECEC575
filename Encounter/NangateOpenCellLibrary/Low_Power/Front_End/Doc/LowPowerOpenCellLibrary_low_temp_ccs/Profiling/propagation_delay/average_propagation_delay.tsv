@@ -1,0 +1,42 @@
+PROFILING Average_Propagation_Delay			ps
+
+Average_Propagation_Delay	"(-inf, 3.57366ps]"	none
+	"(3.57366ps, 50.04ps]"	27 elements
+		ISO_FENCE0_X4	20.6475	""
+		ISO_FENCE0_X2	20.9305	""
+		ISO_FENCE0_X1	22.8462	""
+		AON_INV_X4	25.9744	""
+		AON_INV_X2	26.0103	""
+		AON_INV_X1	28.5487	""
+		ISO_FENCE1N_X2	28.5612	""
+		ISO_FENCE1N_X4	28.617	""
+		LS_HL_X1	29.3586	""
+		ISO_FENCE1N_X1	29.4096	""
+		LS_HL_X2	31.5032	""
+		ISO_FENCE0N_X1	32.6514	""
+		ISO_FENCE1_X1	32.8218	""
+		LS_HLEN_X1	32.8815	""
+		AON_BUF_X2	33.434	""
+		AON_BUF_X1	33.4638	""
+		HEADER_OE_X1	33.6454	""
+		LS_HLEN_X4	34.1229	""
+		ISO_FENCE0N_X4	34.4081	""
+		HEADER_OE_X2	34.7766	""
+		LS_HLEN_X2	34.8018	""
+		ISO_FENCE0N_X2	34.9229	""
+		ISO_FENCE1_X4	35.0776	""
+		ISO_FENCE1_X2	35.514	""
+		LS_HL_X4	36.0063	""
+		AON_BUF_X4	39.4944	""
+		HEADER_OE_X4	39.5922	""
+	"(50.04ps, 96.5064ps]"	3 elements
+		LS_LHEN_X4	86.86	""
+		LS_LH_X1	91.0503	""
+		LS_LH_X2	92.9841	""
+	"(96.5064ps, +inf)"	3 elements
+		LS_LH_X4	103.148	""
+		LS_LHEN_X2	207.149	""
+		LS_LHEN_X1	220.108	""
+
+Profiling Statistics	Average	50.04
+	Standard Deviation	46.4664

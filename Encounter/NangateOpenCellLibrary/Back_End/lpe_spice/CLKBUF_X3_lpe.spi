@@ -1,0 +1,198 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:27:24.
+* Main process id is 28006.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   CLKBUF_X3.                                                       *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:27:24 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT CLKBUF_X3 VDD VSS A Z 
+*.PININFO VDD:P VSS:G A:I Z:O 
+*.EQN Z=A
+M_M4 N_VDD_M0_d N_A_M0_g N_3_M0_s VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M5 N_Z_M1_d N_3_M1_g N_VDD_M0_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M6 N_VDD_M2_d N_3_M2_g N_Z_M1_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M7 N_Z_M3_d N_3_M3_g N_VDD_M2_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M0 N_VSS_M4_d N_A_M4_g N_3_M4_s VSS NMOS_VTL W=0.195000U L=0.050000U
+M_M1 N_Z_M5_d N_3_M5_g N_VSS_M4_d VSS NMOS_VTL W=0.195000U L=0.050000U
+M_M2 N_VSS_M6_d N_3_M6_g N_Z_M5_d VSS NMOS_VTL W=0.195000U L=0.050000U
+M_M3 N_Z_M7_d N_3_M7_g N_VSS_M6_d VSS NMOS_VTL W=0.195000U L=0.050000U
+C_x_PM_CLKBUF_X3%VDD_c0 x_PM_CLKBUF_X3%VDD_43 VSS 2.81395e-17
+C_x_PM_CLKBUF_X3%VDD_c1 x_PM_CLKBUF_X3%VDD_40 VSS 2.77014e-18
+C_x_PM_CLKBUF_X3%VDD_c2 x_PM_CLKBUF_X3%VDD_39 VSS 2.77014e-18
+C_x_PM_CLKBUF_X3%VDD_c3 x_PM_CLKBUF_X3%VDD_38 VSS 1.0599e-17
+C_x_PM_CLKBUF_X3%VDD_c4 x_PM_CLKBUF_X3%VDD_37 VSS 2.334e-16
+C_x_PM_CLKBUF_X3%VDD_c5 x_PM_CLKBUF_X3%VDD_28 VSS 2.61603e-16
+C_x_PM_CLKBUF_X3%VDD_c6 N_VDD_M2_d VSS 6.33615e-17
+C_x_PM_CLKBUF_X3%VDD_c7 x_PM_CLKBUF_X3%VDD_20 VSS 2.61594e-17
+C_x_PM_CLKBUF_X3%VDD_c8 N_VDD_M0_d VSS 7.67871e-17
+C_x_PM_CLKBUF_X3%VDD_c9 x_PM_CLKBUF_X3%VDD_14 VSS 2.5087e-17
+C_x_PM_CLKBUF_X3%VDD_c10 x_PM_CLKBUF_X3%VDD_13 VSS 1.92462e-17
+C_x_PM_CLKBUF_X3%VDD_c11 x_PM_CLKBUF_X3%VDD_9 VSS 5.90809e-16
+R_x_PM_CLKBUF_X3%VDD_r12 VDD x_PM_CLKBUF_X3%VDD_43 0.13879
+R_x_PM_CLKBUF_X3%VDD_r13 VDD x_PM_CLKBUF_X3%VDD_38 0.138595
+R_x_PM_CLKBUF_X3%VDD_r14 VDD x_PM_CLKBUF_X3%VDD_37 0.138985
+R_x_PM_CLKBUF_X3%VDD_r15 VDD x_PM_CLKBUF_X3%VDD_28 0.13879
+R_x_PM_CLKBUF_X3%VDD_r16 x_PM_CLKBUF_X3%VDD_28 VDD 3.84471
+R_x_PM_CLKBUF_X3%VDD_r17 x_PM_CLKBUF_X3%VDD_27 x_PM_CLKBUF_X3%VDD_40 0.0731438
+R_x_PM_CLKBUF_X3%VDD_r18 x_PM_CLKBUF_X3%VDD_43 x_PM_CLKBUF_X3%VDD_27 0.715294
+R_x_PM_CLKBUF_X3%VDD_r19 x_PM_CLKBUF_X3%VDD_22 x_PM_CLKBUF_X3%VDD_40 0.145286
+R_x_PM_CLKBUF_X3%VDD_r20 x_PM_CLKBUF_X3%VDD_22 N_VDD_M2_d 1.12643
+R_x_PM_CLKBUF_X3%VDD_r21 x_PM_CLKBUF_X3%VDD_21 x_PM_CLKBUF_X3%VDD_39 0.0731438
+R_x_PM_CLKBUF_X3%VDD_r22 x_PM_CLKBUF_X3%VDD_20 x_PM_CLKBUF_X3%VDD_40 0.0731438
+R_x_PM_CLKBUF_X3%VDD_r23 x_PM_CLKBUF_X3%VDD_20 x_PM_CLKBUF_X3%VDD_21 0.692941
+R_x_PM_CLKBUF_X3%VDD_r24 x_PM_CLKBUF_X3%VDD_16 x_PM_CLKBUF_X3%VDD_39 0.145286
+R_x_PM_CLKBUF_X3%VDD_r25 x_PM_CLKBUF_X3%VDD_16 N_VDD_M0_d 1.12643
+R_x_PM_CLKBUF_X3%VDD_r26 x_PM_CLKBUF_X3%VDD_14 x_PM_CLKBUF_X3%VDD_39 0.0731438
+R_x_PM_CLKBUF_X3%VDD_r27 x_PM_CLKBUF_X3%VDD_14 x_PM_CLKBUF_X3%VDD_38 0.603529
+R_x_PM_CLKBUF_X3%VDD_r28 x_PM_CLKBUF_X3%VDD_13 VDD 0.140282
+R_x_PM_CLKBUF_X3%VDD_r29 x_PM_CLKBUF_X3%VDD_37 x_PM_CLKBUF_X3%VDD_13 7.68941
+R_x_PM_CLKBUF_X3%VDD_r30 x_PM_CLKBUF_X3%VDD_9 VDD 9.15353
+C_x_PM_CLKBUF_X3%VSS_c0 x_PM_CLKBUF_X3%VSS_41 VSS 2.6792e-18
+C_x_PM_CLKBUF_X3%VSS_c1 x_PM_CLKBUF_X3%VSS_40 VSS 2.6792e-18
+C_x_PM_CLKBUF_X3%VSS_c2 x_PM_CLKBUF_X3%VSS_38 VSS 2.334e-16
+C_x_PM_CLKBUF_X3%VSS_c3 VSS VSS 2.61603e-16
+C_x_PM_CLKBUF_X3%VSS_c4 x_PM_CLKBUF_X3%VSS_28 VSS 3.17532e-17
+C_x_PM_CLKBUF_X3%VSS_c5 N_VSS_M6_d VSS 2.18515e-17
+C_x_PM_CLKBUF_X3%VSS_c6 x_PM_CLKBUF_X3%VSS_20 VSS 2.93533e-17
+C_x_PM_CLKBUF_X3%VSS_c7 N_VSS_M4_d VSS 2.2724e-17
+C_x_PM_CLKBUF_X3%VSS_c8 x_PM_CLKBUF_X3%VSS_15 VSS 1.0599e-17
+C_x_PM_CLKBUF_X3%VSS_c9 x_PM_CLKBUF_X3%VSS_14 VSS 2.91228e-17
+C_x_PM_CLKBUF_X3%VSS_c10 x_PM_CLKBUF_X3%VSS_11 VSS 5.90809e-16
+C_x_PM_CLKBUF_X3%VSS_c11 x_PM_CLKBUF_X3%VSS_10 VSS 1.92462e-17
+R_x_PM_CLKBUF_X3%VSS_r12 VSS x_PM_CLKBUF_X3%VSS_38 0.138985
+R_x_PM_CLKBUF_X3%VSS_r13 x_PM_CLKBUF_X3%VSS_29 x_PM_CLKBUF_X3%VSS_41 0.0731438
+R_x_PM_CLKBUF_X3%VSS_r14 VSS x_PM_CLKBUF_X3%VSS_28 0.13879
+R_x_PM_CLKBUF_X3%VSS_r15 x_PM_CLKBUF_X3%VSS_28 x_PM_CLKBUF_X3%VSS_29 0.715294
+R_x_PM_CLKBUF_X3%VSS_r16 x_PM_CLKBUF_X3%VSS_24 x_PM_CLKBUF_X3%VSS_41 0.145286
+R_x_PM_CLKBUF_X3%VSS_r17 x_PM_CLKBUF_X3%VSS_24 N_VSS_M6_d 0.447857
+R_x_PM_CLKBUF_X3%VSS_r18 x_PM_CLKBUF_X3%VSS_21 x_PM_CLKBUF_X3%VSS_40 0.0731438
+R_x_PM_CLKBUF_X3%VSS_r19 x_PM_CLKBUF_X3%VSS_21 VSS 0.402353
+R_x_PM_CLKBUF_X3%VSS_r20 x_PM_CLKBUF_X3%VSS_20 x_PM_CLKBUF_X3%VSS_41 0.0731438
+R_x_PM_CLKBUF_X3%VSS_r21 x_PM_CLKBUF_X3%VSS_20 VSS 0.290588
+R_x_PM_CLKBUF_X3%VSS_r22 x_PM_CLKBUF_X3%VSS_16 x_PM_CLKBUF_X3%VSS_40 0.145286
+R_x_PM_CLKBUF_X3%VSS_r23 x_PM_CLKBUF_X3%VSS_16 N_VSS_M4_d 0.447857
+R_x_PM_CLKBUF_X3%VSS_r24 VSS x_PM_CLKBUF_X3%VSS_15 0.138595
+R_x_PM_CLKBUF_X3%VSS_r25 x_PM_CLKBUF_X3%VSS_14 x_PM_CLKBUF_X3%VSS_40 0.0731438
+R_x_PM_CLKBUF_X3%VSS_r26 x_PM_CLKBUF_X3%VSS_14 x_PM_CLKBUF_X3%VSS_15 0.603529
+R_x_PM_CLKBUF_X3%VSS_r27 x_PM_CLKBUF_X3%VSS_11 VSS 9.15353
+R_x_PM_CLKBUF_X3%VSS_r28 x_PM_CLKBUF_X3%VSS_10 VSS 0.140282
+R_x_PM_CLKBUF_X3%VSS_r29 x_PM_CLKBUF_X3%VSS_38 x_PM_CLKBUF_X3%VSS_10 7.68941
+C_x_PM_CLKBUF_X3%3_c0 x_PM_CLKBUF_X3%3_46 VSS 8.27199e-17
+C_x_PM_CLKBUF_X3%3_c1 x_PM_CLKBUF_X3%3_42 VSS 1.56366e-17
+C_x_PM_CLKBUF_X3%3_c2 x_PM_CLKBUF_X3%3_41 VSS 4.91596e-17
+C_x_PM_CLKBUF_X3%3_c3 x_PM_CLKBUF_X3%3_40 VSS 1.239e-17
+C_x_PM_CLKBUF_X3%3_c4 x_PM_CLKBUF_X3%3_39 VSS 3.96948e-17
+C_x_PM_CLKBUF_X3%3_c5 N_3_M0_s VSS 4.46712e-17
+C_x_PM_CLKBUF_X3%3_c6 x_PM_CLKBUF_X3%3_34 VSS 2.69621e-17
+C_x_PM_CLKBUF_X3%3_c7 x_PM_CLKBUF_X3%3_30 VSS 7.04319e-18
+C_x_PM_CLKBUF_X3%3_c8 x_PM_CLKBUF_X3%3_29 VSS 1.29698e-18
+C_x_PM_CLKBUF_X3%3_c9 N_3_M3_g VSS 6.37301e-17
+C_x_PM_CLKBUF_X3%3_c10 N_3_M7_g VSS 4.61529e-17
+C_x_PM_CLKBUF_X3%3_c11 x_PM_CLKBUF_X3%3_19 VSS 1.17176e-17
+C_x_PM_CLKBUF_X3%3_c12 N_3_M2_g VSS 3.41375e-17
+C_x_PM_CLKBUF_X3%3_c13 N_3_M6_g VSS 2.90793e-17
+C_x_PM_CLKBUF_X3%3_c14 x_PM_CLKBUF_X3%3_10 VSS 6.97951e-18
+C_x_PM_CLKBUF_X3%3_c15 x_PM_CLKBUF_X3%3_9 VSS 1.17137e-17
+C_x_PM_CLKBUF_X3%3_c16 N_3_M1_g VSS 5.1873e-17
+C_x_PM_CLKBUF_X3%3_c17 N_3_M5_g VSS 3.67719e-17
+R_x_PM_CLKBUF_X3%3_r18 x_PM_CLKBUF_X3%3_48 x_PM_CLKBUF_X3%3_50 3.9
+R_x_PM_CLKBUF_X3%3_r19 x_PM_CLKBUF_X3%3_46 x_PM_CLKBUF_X3%3_48 25.0012
+R_x_PM_CLKBUF_X3%3_r20 x_PM_CLKBUF_X3%3_44 x_PM_CLKBUF_X3%3_46 0.936429
+R_x_PM_CLKBUF_X3%3_r21 x_PM_CLKBUF_X3%3_43 x_PM_CLKBUF_X3%3_46 0.773571
+R_x_PM_CLKBUF_X3%3_r22 x_PM_CLKBUF_X3%3_41 x_PM_CLKBUF_X3%3_44 0.212317
+R_x_PM_CLKBUF_X3%3_r23 x_PM_CLKBUF_X3%3_41 x_PM_CLKBUF_X3%3_42 0.922857
+R_x_PM_CLKBUF_X3%3_r24 x_PM_CLKBUF_X3%3_39 x_PM_CLKBUF_X3%3_43 0.212317
+R_x_PM_CLKBUF_X3%3_r25 x_PM_CLKBUF_X3%3_39 x_PM_CLKBUF_X3%3_40 0.922857
+R_x_PM_CLKBUF_X3%3_r26 x_PM_CLKBUF_X3%3_35 x_PM_CLKBUF_X3%3_42 0.212317
+R_x_PM_CLKBUF_X3%3_r27 x_PM_CLKBUF_X3%3_35 N_3_M0_s 1.47929
+R_x_PM_CLKBUF_X3%3_r28 x_PM_CLKBUF_X3%3_34 x_PM_CLKBUF_X3%3_40 0.212317
+R_x_PM_CLKBUF_X3%3_r29 N_3_M4_s x_PM_CLKBUF_X3%3_34 0.543196
+R_x_PM_CLKBUF_X3%3_r30 x_PM_CLKBUF_X3%3_25 x_PM_CLKBUF_X3%3_30 4.56151
+R_x_PM_CLKBUF_X3%3_r31 x_PM_CLKBUF_X3%3_25 N_3_M3_g 56.94
+R_x_PM_CLKBUF_X3%3_r32 x_PM_CLKBUF_X3%3_21 x_PM_CLKBUF_X3%3_30 4.56151
+R_x_PM_CLKBUF_X3%3_r33 x_PM_CLKBUF_X3%3_21 N_3_M7_g 57.33
+R_x_PM_CLKBUF_X3%3_r34 x_PM_CLKBUF_X3%3_20 x_PM_CLKBUF_X3%3_29 1.95
+R_x_PM_CLKBUF_X3%3_r35 x_PM_CLKBUF_X3%3_19 x_PM_CLKBUF_X3%3_30 0.043368
+R_x_PM_CLKBUF_X3%3_r36 x_PM_CLKBUF_X3%3_19 x_PM_CLKBUF_X3%3_20 14.56
+R_x_PM_CLKBUF_X3%3_r37 x_PM_CLKBUF_X3%3_15 x_PM_CLKBUF_X3%3_29 1.95
+R_x_PM_CLKBUF_X3%3_r38 x_PM_CLKBUF_X3%3_15 N_3_M2_g 56.94
+R_x_PM_CLKBUF_X3%3_r39 x_PM_CLKBUF_X3%3_11 x_PM_CLKBUF_X3%3_29 1.95
+R_x_PM_CLKBUF_X3%3_r40 x_PM_CLKBUF_X3%3_11 N_3_M6_g 57.33
+R_x_PM_CLKBUF_X3%3_r41 x_PM_CLKBUF_X3%3_10 x_PM_CLKBUF_X3%3_50 2.6
+R_x_PM_CLKBUF_X3%3_r42 x_PM_CLKBUF_X3%3_9 x_PM_CLKBUF_X3%3_29 1.95
+R_x_PM_CLKBUF_X3%3_r43 x_PM_CLKBUF_X3%3_9 x_PM_CLKBUF_X3%3_10 14.56
+R_x_PM_CLKBUF_X3%3_r44 x_PM_CLKBUF_X3%3_5 x_PM_CLKBUF_X3%3_50 1.95
+R_x_PM_CLKBUF_X3%3_r45 x_PM_CLKBUF_X3%3_5 N_3_M1_g 56.94
+R_x_PM_CLKBUF_X3%3_r46 Z_neg x_PM_CLKBUF_X3%3_50 1.95
+R_x_PM_CLKBUF_X3%3_r47 Z_neg N_3_M5_g 57.33
+C_x_PM_CLKBUF_X3%A_c0 x_PM_CLKBUF_X3%A_14 VSS 7.65505e-18
+C_x_PM_CLKBUF_X3%A_c1 x_PM_CLKBUF_X3%A_12 VSS 6.98788e-17
+C_x_PM_CLKBUF_X3%A_c2 N_A_M0_g VSS 8.04555e-17
+C_x_PM_CLKBUF_X3%A_c3 N_A_M4_g VSS 5.79475e-17
+R_x_PM_CLKBUF_X3%A_r4 x_PM_CLKBUF_X3%A_14 x_PM_CLKBUF_X3%A_18 4.7687
+R_x_PM_CLKBUF_X3%A_r5 x_PM_CLKBUF_X3%A_14 x_PM_CLKBUF_X3%A_17 4.7687
+R_x_PM_CLKBUF_X3%A_r6 x_PM_CLKBUF_X3%A_12 x_PM_CLKBUF_X3%A_14 25.0012
+R_x_PM_CLKBUF_X3%A_r7 A x_PM_CLKBUF_X3%A_12 0.135714
+R_x_PM_CLKBUF_X3%A_r8 x_PM_CLKBUF_X3%A_18 N_A_M0_g 56.94
+R_x_PM_CLKBUF_X3%A_r9 x_PM_CLKBUF_X3%A_17 N_A_M4_g 57.33
+C_x_PM_CLKBUF_X3%Z_c0 x_PM_CLKBUF_X3%Z_26 VSS 4.22762e-18
+C_x_PM_CLKBUF_X3%Z_c1 x_PM_CLKBUF_X3%Z_25 VSS 3.49568e-17
+C_x_PM_CLKBUF_X3%Z_c2 N_Z_M3_d VSS 5.70768e-17
+C_x_PM_CLKBUF_X3%Z_c3 N_Z_M7_d VSS 2.85603e-17
+C_x_PM_CLKBUF_X3%Z_c4 x_PM_CLKBUF_X3%Z_13 VSS 2.76744e-17
+C_x_PM_CLKBUF_X3%Z_c5 N_Z_M1_d VSS 1.10536e-16
+C_x_PM_CLKBUF_X3%Z_c6 N_Z_M5_d VSS 3.91904e-17
+R_x_PM_CLKBUF_X3%Z_r7 x_PM_CLKBUF_X3%Z_21 x_PM_CLKBUF_X3%Z_26 0.273842
+R_x_PM_CLKBUF_X3%Z_r8 x_PM_CLKBUF_X3%Z_21 N_Z_M3_d 2.97214
+R_x_PM_CLKBUF_X3%Z_r9 x_PM_CLKBUF_X3%Z_17 x_PM_CLKBUF_X3%Z_26 0.273842
+R_x_PM_CLKBUF_X3%Z_r10 x_PM_CLKBUF_X3%Z_17 N_Z_M7_d 0.936429
+R_x_PM_CLKBUF_X3%Z_r11 x_PM_CLKBUF_X3%Z_14 x_PM_CLKBUF_X3%Z_25 0.0307623
+R_x_PM_CLKBUF_X3%Z_r12 x_PM_CLKBUF_X3%Z_14 Z 0.461429
+R_x_PM_CLKBUF_X3%Z_r13 x_PM_CLKBUF_X3%Z_13 x_PM_CLKBUF_X3%Z_26 0.0307623
+R_x_PM_CLKBUF_X3%Z_r14 x_PM_CLKBUF_X3%Z_13 Z 0.352857
+R_x_PM_CLKBUF_X3%Z_r15 x_PM_CLKBUF_X3%Z_9 x_PM_CLKBUF_X3%Z_25 0.273842
+R_x_PM_CLKBUF_X3%Z_r16 x_PM_CLKBUF_X3%Z_9 N_Z_M1_d 2.97214
+R_x_PM_CLKBUF_X3%Z_r17 x_PM_CLKBUF_X3%Z_5 x_PM_CLKBUF_X3%Z_25 0.273842
+R_x_PM_CLKBUF_X3%Z_r18 x_PM_CLKBUF_X3%Z_5 N_Z_M5_d 0.936429
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

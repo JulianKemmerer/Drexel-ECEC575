@@ -1,0 +1,99 @@
+# 
+# ******************************************************************************
+# *                                                                            *
+# *                   Copyright (C) 2004-2011, Nangate Inc.                    *
+# *                           All rights reserved.                             *
+# *                                                                            *
+# * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+# *                                                                            *
+# * All trademarks, logos, software marks, and trade names (collectively the   *
+# * "Marks") in this program are proprietary to Nangate or other respective    *
+# * owners that have granted Nangate the right and license to use such Marks.  *
+# * You are not permitted to use the Marks without the prior written consent   *
+# * of Nangate or such third party that may own the Marks.                     *
+# *                                                                            *
+# * This file has been provided pursuant to a License Agreement containing     *
+# * restrictions on its use. This file contains valuable trade secrets and     *
+# * proprietary information of Nangate Inc., and is protected by U.S. and      *
+# * international laws and/or treaties.                                        *
+# *                                                                            *
+# * The copyright notice(s) in this file does not indicate actual or intended  *
+# * publication of this file.                                                  *
+# *                                                                            *
+# *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+# *                                                                            *
+# ******************************************************************************
+# 
+# 
+# Running on server08.nangate.com for user Giancarlo Franciscatto (gfr).
+# Local time is now Thu, 6 Jan 2011, 18:10:28.
+# Main process id is 3320.
+
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO HEADER_OE_X1
+  CLASS core ;
+  FOREIGN HEADER_OE_X1 0.0 0.0 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE FreePDK45_38x28_10R_NP_162NW_34O ;
+  SIZE 0.95 BY 1.4 ;
+  PIN SLEEP
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.0595 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.1469 LAYER metal1 ;
+    ANTENNAGATEAREA 0.018 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.15 0.56 0.575 0.56 0.575 0.7 0.15 0.7  ;
+    END
+  END SLEEP
+  PIN SLEEPOUT
+    DIRECTION OUTPUT ;
+    ANTENNAPARTIALMETALAREA 0.0595 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.2392 LAYER metal1 ;
+    ANTENNADIFFAREA 0.027 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.82 0.18 0.89 0.18 0.89 1.03 0.82 1.03  ;
+    END
+  END SLEEPOUT
+  PIN VDD
+    DIRECTION INOUT ;
+    USE power ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 1.315 0.045 1.315 0.045 1.115 0.115 1.115 0.115 1.315 0.58 1.315 0.58 0.99 0.715 0.99 0.715 1.315 0.75 1.315 0.95 1.315 0.95 1.485 0.75 1.485 0 1.485  ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE ground ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 -0.085 0.95 -0.085 0.95 0.085 0.715 0.085 0.715 0.265 0.58 0.265 0.58 0.085 0 0.085  ;
+    END
+  END VSS
+  PIN VVDD
+    DIRECTION INOUT ;
+    USE power ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.23 0.84 0.32 0.84 0.32 1.19 0.23 1.19  ;
+    END
+  END VVDD
+  OBS
+      LAYER metal1 ;
+        POLYGON 0.425 0.835 0.68 0.835 0.68 0.45 0.425 0.45 0.425 0.18 0.495 0.18 0.495 0.38 0.75 0.38 0.75 0.905 0.495 0.905 0.495 1.03 0.425 1.03  ;
+  END
+END HEADER_OE_X1
+
+END LIBRARY
+#
+# End of file
+#

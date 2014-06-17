@@ -1,0 +1,96 @@
+# 
+# ******************************************************************************
+# *                                                                            *
+# *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+# *                           All rights reserved.                             *
+# *                                                                            *
+# * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+# *                                                                            *
+# * All trademarks, logos, software marks, and trade names (collectively the   *
+# * "Marks") in this program are proprietary to Nangate or other respective    *
+# * owners that have granted Nangate the right and license to use such Marks.  *
+# * You are not permitted to use the Marks without the prior written consent   *
+# * of Nangate or such third party that may own the Marks.                     *
+# *                                                                            *
+# * This file has been provided pursuant to a License Agreement containing     *
+# * restrictions on its use. This file contains valuable trade secrets and     *
+# * proprietary information of Nangate Inc., and is protected by U.S. and      *
+# * international laws and/or treaties.                                        *
+# *                                                                            *
+# * The copyright notice(s) in this file does not indicate actual or intended  *
+# * publication of this file.                                                  *
+# *                                                                            *
+# *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+# *                                                                            *
+# ******************************************************************************
+# 
+# 
+# Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+# Local time is now Fri, 3 Dec 2010, 19:32:18.
+# Main process id is 27821.
+
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO NAND2_X2
+  CLASS core ;
+  FOREIGN NAND2_X2 0.0 0.0 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE FreePDK45_38x28_10R_NP_162NW_34O ;
+  SIZE 0.95 BY 1.4 ;
+  PIN A1
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.01225 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.0637 LAYER metal1 ;
+    ANTENNAGATEAREA 0.1045 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.44 0.525 0.51 0.525 0.51 0.7 0.44 0.7  ;
+    END
+  END A1
+  PIN A2
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.083625 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.3107 LAYER metal1 ;
+    ANTENNAGATEAREA 0.1045 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.175 0.525 0.32 0.525 0.32 0.77 0.74 0.77 0.74 0.525 0.81 0.525 0.81 0.84 0.25 0.84 0.25 0.66 0.175 0.66  ;
+    END
+  END A2
+  PIN ZN
+    DIRECTION OUTPUT ;
+    ANTENNAPARTIALMETALAREA 0.16555 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.6331 LAYER metal1 ;
+    ANTENNADIFFAREA 0.2345 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.11 0.905 0.7 0.905 0.7 1.25 0.63 1.25 0.63 0.975 0.32 0.975 0.32 1.25 0.25 1.25 0.25 0.975 0.04 0.975 0.04 0.39 0.44 0.39 0.44 0.15 0.51 0.15 0.51 0.46 0.11 0.46  ;
+    END
+  END ZN
+  PIN VDD
+    DIRECTION INOUT ;
+    USE power ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 1.315 0.065 1.315 0.065 1.04 0.135 1.04 0.135 1.315 0.44 1.315 0.44 1.04 0.51 1.04 0.51 1.315 0.82 1.315 0.82 1.04 0.89 1.04 0.89 1.315 0.95 1.315 0.95 1.485 0 1.485  ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE ground ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 -0.085 0.95 -0.085 0.95 0.085 0.89 0.085 0.89 0.425 0.82 0.425 0.82 0.085 0.135 0.085 0.135 0.285 0.065 0.285 0.065 0.085 0 0.085  ;
+    END
+  END VSS
+END NAND2_X2
+
+END LIBRARY
+#
+# End of file
+#

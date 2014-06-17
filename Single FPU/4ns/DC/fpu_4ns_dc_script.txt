@@ -1,0 +1,23 @@
+source ./scripts/fpu_3.tcl
+
+source ./scripts/fpu_3.con
+
+compile -power_effort high
+
+# Doesn't meet timing (Switch clk to 4ns)
+create_clock -period 4 [get_ports gclk]
+
+# Get rid of area constraint
+remove_attribute fpu max_area
+
+compile_ultra
+
+# Failed timing by 0.08
+compile_ultra -incremental
+
+write -hier -f ddc -output mapped/fpu_4ns.ddc
+write -hier -f verilog -output mapped/fpu_4ns.v
+
+
+
+

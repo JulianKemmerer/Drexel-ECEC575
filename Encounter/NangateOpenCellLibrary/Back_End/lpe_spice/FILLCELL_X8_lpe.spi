@@ -1,0 +1,80 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:26:41.
+* Main process id is 28034.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   FILLCELL_X8.                                                     *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:26:41 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT FILLCELL_X8 VDD VSS 
+*.PININFO VDD:P VSS:G 
+C_x_PM_FILLCELL_X8%VDD_c0 x_PM_FILLCELL_X8%VDD_27 VSS 1.09229e-16
+C_x_PM_FILLCELL_X8%VDD_c1 x_PM_FILLCELL_X8%VDD_24 VSS 1.08319e-17
+C_x_PM_FILLCELL_X8%VDD_c2 x_PM_FILLCELL_X8%VDD_23 VSS 2.334e-16
+C_x_PM_FILLCELL_X8%VDD_c3 x_PM_FILLCELL_X8%VDD_14 VSS 2.61813e-16
+C_x_PM_FILLCELL_X8%VDD_c4 x_PM_FILLCELL_X8%VDD_11 VSS 1.92462e-17
+C_x_PM_FILLCELL_X8%VDD_c5 x_PM_FILLCELL_X8%VDD_7 VSS 6.2937e-16
+R_x_PM_FILLCELL_X8%VDD_r6 x_PM_FILLCELL_X8%VDD_25 x_PM_FILLCELL_X8%VDD_27 0.13879
+R_x_PM_FILLCELL_X8%VDD_r7 x_PM_FILLCELL_X8%VDD_27 x_PM_FILLCELL_X8%VDD_24 3.59882
+R_x_PM_FILLCELL_X8%VDD_r8 x_PM_FILLCELL_X8%VDD_25 x_PM_FILLCELL_X8%VDD_24 0.138595
+R_x_PM_FILLCELL_X8%VDD_r9 x_PM_FILLCELL_X8%VDD_25 x_PM_FILLCELL_X8%VDD_23 0.138985
+R_x_PM_FILLCELL_X8%VDD_r10 x_PM_FILLCELL_X8%VDD_25 x_PM_FILLCELL_X8%VDD_14 0.13879
+R_x_PM_FILLCELL_X8%VDD_r11 x_PM_FILLCELL_X8%VDD_14 VDD 3.84471
+R_x_PM_FILLCELL_X8%VDD_r12 x_PM_FILLCELL_X8%VDD_11 x_PM_FILLCELL_X8%VDD_25 0.140282
+R_x_PM_FILLCELL_X8%VDD_r13 x_PM_FILLCELL_X8%VDD_23 x_PM_FILLCELL_X8%VDD_11 7.68941
+R_x_PM_FILLCELL_X8%VDD_r14 x_PM_FILLCELL_X8%VDD_7 VDD 9.79059
+C_x_PM_FILLCELL_X8%VSS_c0 x_PM_FILLCELL_X8%VSS_24 VSS 2.334e-16
+C_x_PM_FILLCELL_X8%VSS_c1 x_PM_FILLCELL_X8%VSS_22 VSS 2.61813e-16
+C_x_PM_FILLCELL_X8%VSS_c2 x_PM_FILLCELL_X8%VSS_13 VSS 1.08319e-17
+C_x_PM_FILLCELL_X8%VSS_c3 x_PM_FILLCELL_X8%VSS_12 VSS 1.09229e-16
+C_x_PM_FILLCELL_X8%VSS_c4 x_PM_FILLCELL_X8%VSS_9 VSS 6.2937e-16
+C_x_PM_FILLCELL_X8%VSS_c5 x_PM_FILLCELL_X8%VSS_8 VSS 1.92462e-17
+R_x_PM_FILLCELL_X8%VSS_r6 x_PM_FILLCELL_X8%VSS_22 x_PM_FILLCELL_X8%VSS_24 0.138985
+R_x_PM_FILLCELL_X8%VSS_r7 x_PM_FILLCELL_X8%VSS_22 x_PM_FILLCELL_X8%VSS_13 0.138595
+R_x_PM_FILLCELL_X8%VSS_r8 x_PM_FILLCELL_X8%VSS_13 VSS 1.79941
+R_x_PM_FILLCELL_X8%VSS_r9 x_PM_FILLCELL_X8%VSS_22 x_PM_FILLCELL_X8%VSS_12 0.13879
+R_x_PM_FILLCELL_X8%VSS_r10 x_PM_FILLCELL_X8%VSS_12 VSS 1.79941
+R_x_PM_FILLCELL_X8%VSS_r11 x_PM_FILLCELL_X8%VSS_9 VSS 9.79059
+R_x_PM_FILLCELL_X8%VSS_r12 x_PM_FILLCELL_X8%VSS_8 x_PM_FILLCELL_X8%VSS_22 0.140282
+R_x_PM_FILLCELL_X8%VSS_r13 x_PM_FILLCELL_X8%VSS_24 x_PM_FILLCELL_X8%VSS_8 7.68941
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

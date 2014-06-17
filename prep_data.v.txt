@@ -1,0 +1,21 @@
+module prep_data (data, out0, out1);
+input [123:0]  data;
+output[123:0]  out0;
+output[123:0]  out1;
+
+//Assign data_swap[0:123] to data[123:0]
+//Reverse bit order
+wire [123:0] data_swap;
+
+genvar i;
+generate
+for( i=0; i<124; i=i+1 )
+        begin : swiz
+        assign data_swap[i] = data[123-i];
+        end
+endgenerate
+
+assign out0 = data ^ data_swap;
+assign out1 = data & data_swap;
+
+endmodule

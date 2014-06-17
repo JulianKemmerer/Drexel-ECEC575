@@ -1,0 +1,226 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:16:19.
+* Main process id is 28006.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   NAND3_X2.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:16:19 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT NAND3_X2 VDD VSS ZN A3 A2 A1 
+*.PININFO VDD:P VSS:G ZN:O A3:I A2:I A1:I 
+*.EQN ZN=!((A1 * A2) * A3)
+M_M6 N_ZN_M0_d N_A3_M0_g N_VDD_M0_s VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M7 N_VDD_M1_d N_A2_M1_g N_ZN_M0_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M8 N_ZN_M2_d N_A1_M2_g N_VDD_M1_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M9 N_VDD_M3_d N_A1_M3_g N_ZN_M2_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M10 N_ZN_M4_d N_A2_M4_g N_VDD_M3_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M11 N_VDD_M5_d N_A3_M5_g N_ZN_M4_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M0 net_1__m0_0__m0_0 N_A3_M6_g N_VSS_M6_s VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M1 net_0__m0_0__m0_0 N_A2_M7_g net_1__m0_0__m0_0 VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M2 N_ZN_M8_d N_A1_M8_g net_0__m0_0__m0_0 VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M3 net_0__m0_0__m1 N_A1_M9_g N_ZN_M8_d VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M4 net_1__m0_0__m1 N_A2_M10_g net_0__m0_0__m1 VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M5 N_VSS_M11_d N_A3_M11_g net_1__m0_0__m1 VSS NMOS_VTL W=0.415000U L=0.050000U
+C_x_PM_NAND3_X2%VDD_c0 x_PM_NAND3_X2%VDD_49 VSS 2.72804e-18
+C_x_PM_NAND3_X2%VDD_c1 x_PM_NAND3_X2%VDD_48 VSS 2.72804e-18
+C_x_PM_NAND3_X2%VDD_c2 x_PM_NAND3_X2%VDD_38 VSS 2.70281e-16
+C_x_PM_NAND3_X2%VDD_c3 N_VDD_M5_d VSS 2.90537e-17
+C_x_PM_NAND3_X2%VDD_c4 x_PM_NAND3_X2%VDD_32 VSS 3.55502e-17
+C_x_PM_NAND3_X2%VDD_c5 N_VDD_M3_d VSS 5.63234e-17
+C_x_PM_NAND3_X2%VDD_c6 x_PM_NAND3_X2%VDD_26 VSS 3.51647e-17
+C_x_PM_NAND3_X2%VDD_c7 N_VDD_M1_d VSS 5.63085e-17
+C_x_PM_NAND3_X2%VDD_c8 x_PM_NAND3_X2%VDD_21 VSS 2.19024e-17
+C_x_PM_NAND3_X2%VDD_c9 x_PM_NAND3_X2%VDD_20 VSS 3.54129e-17
+C_x_PM_NAND3_X2%VDD_c10 N_VDD_M0_s VSS 4.49489e-17
+C_x_PM_NAND3_X2%VDD_c11 x_PM_NAND3_X2%VDD_15 VSS 1.92462e-17
+C_x_PM_NAND3_X2%VDD_c12 x_PM_NAND3_X2%VDD_14 VSS 2.334e-16
+C_x_PM_NAND3_X2%VDD_c13 x_PM_NAND3_X2%VDD_11 VSS 6.16516e-16
+R_x_PM_NAND3_X2%VDD_r14 x_PM_NAND3_X2%VDD_50 VDD 0.403252
+R_x_PM_NAND3_X2%VDD_r15 VDD x_PM_NAND3_X2%VDD_47 0.479534
+R_x_PM_NAND3_X2%VDD_r16 x_PM_NAND3_X2%VDD_38 VDD 0.143403
+R_x_PM_NAND3_X2%VDD_r17 x_PM_NAND3_X2%VDD_38 VDD 3.84471
+R_x_PM_NAND3_X2%VDD_r18 x_PM_NAND3_X2%VDD_50 N_VDD_M5_d 0.366429
+R_x_PM_NAND3_X2%VDD_r19 x_PM_NAND3_X2%VDD_33 x_PM_NAND3_X2%VDD_49 0.0731438
+R_x_PM_NAND3_X2%VDD_r20 x_PM_NAND3_X2%VDD_32 x_PM_NAND3_X2%VDD_50 0.075321
+R_x_PM_NAND3_X2%VDD_r21 x_PM_NAND3_X2%VDD_32 x_PM_NAND3_X2%VDD_33 0.692941
+R_x_PM_NAND3_X2%VDD_r22 x_PM_NAND3_X2%VDD_28 x_PM_NAND3_X2%VDD_49 0.145286
+R_x_PM_NAND3_X2%VDD_r23 x_PM_NAND3_X2%VDD_28 N_VDD_M3_d 0.366429
+R_x_PM_NAND3_X2%VDD_r24 x_PM_NAND3_X2%VDD_27 x_PM_NAND3_X2%VDD_48 0.0731438
+R_x_PM_NAND3_X2%VDD_r25 x_PM_NAND3_X2%VDD_26 x_PM_NAND3_X2%VDD_49 0.0731438
+R_x_PM_NAND3_X2%VDD_r26 x_PM_NAND3_X2%VDD_26 x_PM_NAND3_X2%VDD_27 0.692941
+R_x_PM_NAND3_X2%VDD_r27 x_PM_NAND3_X2%VDD_22 x_PM_NAND3_X2%VDD_48 0.145286
+R_x_PM_NAND3_X2%VDD_r28 x_PM_NAND3_X2%VDD_22 N_VDD_M1_d 0.366429
+R_x_PM_NAND3_X2%VDD_r29 x_PM_NAND3_X2%VDD_21 x_PM_NAND3_X2%VDD_47 0.0754648
+R_x_PM_NAND3_X2%VDD_r30 x_PM_NAND3_X2%VDD_20 x_PM_NAND3_X2%VDD_48 0.0731438
+R_x_PM_NAND3_X2%VDD_r31 x_PM_NAND3_X2%VDD_20 x_PM_NAND3_X2%VDD_21 0.681765
+R_x_PM_NAND3_X2%VDD_r32 x_PM_NAND3_X2%VDD_47 N_VDD_M0_s 0.366429
+R_x_PM_NAND3_X2%VDD_r33 x_PM_NAND3_X2%VDD_15 VDD 0.140282
+R_x_PM_NAND3_X2%VDD_r34 x_PM_NAND3_X2%VDD_14 VDD 0.144211
+R_x_PM_NAND3_X2%VDD_r35 x_PM_NAND3_X2%VDD_14 x_PM_NAND3_X2%VDD_15 7.68941
+R_x_PM_NAND3_X2%VDD_r36 x_PM_NAND3_X2%VDD_11 VDD 9.57824
+C_x_PM_NAND3_X2%VSS_c0 VSS VSS 2.70272e-16
+C_x_PM_NAND3_X2%VSS_c1 N_VSS_M11_d VSS 2.1331e-17
+C_x_PM_NAND3_X2%VSS_c2 x_PM_NAND3_X2%VSS_19 VSS 2.23058e-17
+C_x_PM_NAND3_X2%VSS_c3 x_PM_NAND3_X2%VSS_18 VSS 1.09822e-16
+C_x_PM_NAND3_X2%VSS_c4 N_VSS_M6_s VSS 2.21371e-17
+C_x_PM_NAND3_X2%VSS_c5 x_PM_NAND3_X2%VSS_11 VSS 6.16516e-16
+C_x_PM_NAND3_X2%VSS_c6 x_PM_NAND3_X2%VSS_10 VSS 1.92462e-17
+C_x_PM_NAND3_X2%VSS_c7 x_PM_NAND3_X2%VSS_9 VSS 2.334e-16
+R_x_PM_NAND3_X2%VSS_r8 x_PM_NAND3_X2%VSS_35 VSS 0.403252
+R_x_PM_NAND3_X2%VSS_r9 VSS x_PM_NAND3_X2%VSS_34 0.479534
+R_x_PM_NAND3_X2%VSS_r10 x_PM_NAND3_X2%VSS_35 N_VSS_M11_d 0.990714
+R_x_PM_NAND3_X2%VSS_r11 x_PM_NAND3_X2%VSS_19 x_PM_NAND3_X2%VSS_34 0.0754648
+R_x_PM_NAND3_X2%VSS_r12 x_PM_NAND3_X2%VSS_19 VSS 1.15118
+R_x_PM_NAND3_X2%VSS_r13 x_PM_NAND3_X2%VSS_18 x_PM_NAND3_X2%VSS_35 0.075321
+R_x_PM_NAND3_X2%VSS_r14 x_PM_NAND3_X2%VSS_18 VSS 1.22941
+R_x_PM_NAND3_X2%VSS_r15 x_PM_NAND3_X2%VSS_34 N_VSS_M6_s 0.230714
+R_x_PM_NAND3_X2%VSS_r16 x_PM_NAND3_X2%VSS_11 VSS 9.57824
+R_x_PM_NAND3_X2%VSS_r17 x_PM_NAND3_X2%VSS_10 VSS 0.140282
+R_x_PM_NAND3_X2%VSS_r18 x_PM_NAND3_X2%VSS_9 VSS 0.144211
+R_x_PM_NAND3_X2%VSS_r19 x_PM_NAND3_X2%VSS_9 x_PM_NAND3_X2%VSS_10 7.68941
+C_x_PM_NAND3_X2%ZN_c0 x_PM_NAND3_X2%ZN_32 VSS 1.64434e-17
+C_x_PM_NAND3_X2%ZN_c1 x_PM_NAND3_X2%ZN_31 VSS 1.64107e-17
+C_x_PM_NAND3_X2%ZN_c2 N_ZN_M4_d VSS 5.77176e-17
+C_x_PM_NAND3_X2%ZN_c3 x_PM_NAND3_X2%ZN_25 VSS 1.21068e-16
+C_x_PM_NAND3_X2%ZN_c4 N_ZN_M2_d VSS 5.54187e-17
+C_x_PM_NAND3_X2%ZN_c5 x_PM_NAND3_X2%ZN_19 VSS 9.83942e-17
+C_x_PM_NAND3_X2%ZN_c6 N_ZN_M0_d VSS 5.85594e-17
+C_x_PM_NAND3_X2%ZN_c7 x_PM_NAND3_X2%ZN_14 VSS 1.69268e-17
+C_x_PM_NAND3_X2%ZN_c8 x_PM_NAND3_X2%ZN_13 VSS 2.37031e-17
+C_x_PM_NAND3_X2%ZN_c9 N_ZN_M8_d VSS 1.00369e-16
+C_x_PM_NAND3_X2%ZN_c10 x_PM_NAND3_X2%ZN_9 VSS 1.62324e-17
+C_x_PM_NAND3_X2%ZN_c11 ZN VSS 7.54347e-17
+R_x_PM_NAND3_X2%ZN_r12 x_PM_NAND3_X2%ZN_27 N_ZN_M4_d 1.12643
+R_x_PM_NAND3_X2%ZN_r13 x_PM_NAND3_X2%ZN_26 x_PM_NAND3_X2%ZN_32 0.160909
+R_x_PM_NAND3_X2%ZN_r14 x_PM_NAND3_X2%ZN_25 x_PM_NAND3_X2%ZN_27 0.212317
+R_x_PM_NAND3_X2%ZN_r15 x_PM_NAND3_X2%ZN_25 x_PM_NAND3_X2%ZN_26 1.68286
+R_x_PM_NAND3_X2%ZN_r16 x_PM_NAND3_X2%ZN_21 x_PM_NAND3_X2%ZN_32 0.0418175
+R_x_PM_NAND3_X2%ZN_r17 x_PM_NAND3_X2%ZN_21 N_ZN_M2_d 1.12643
+R_x_PM_NAND3_X2%ZN_r18 x_PM_NAND3_X2%ZN_20 x_PM_NAND3_X2%ZN_31 0.160909
+R_x_PM_NAND3_X2%ZN_r19 x_PM_NAND3_X2%ZN_19 x_PM_NAND3_X2%ZN_32 0.160909
+R_x_PM_NAND3_X2%ZN_r20 x_PM_NAND3_X2%ZN_19 x_PM_NAND3_X2%ZN_20 1.68286
+R_x_PM_NAND3_X2%ZN_r21 x_PM_NAND3_X2%ZN_15 x_PM_NAND3_X2%ZN_31 0.0418175
+R_x_PM_NAND3_X2%ZN_r22 x_PM_NAND3_X2%ZN_15 N_ZN_M0_d 1.12643
+R_x_PM_NAND3_X2%ZN_r23 x_PM_NAND3_X2%ZN_13 x_PM_NAND3_X2%ZN_31 0.160909
+R_x_PM_NAND3_X2%ZN_r24 x_PM_NAND3_X2%ZN_13 x_PM_NAND3_X2%ZN_14 0.732857
+R_x_PM_NAND3_X2%ZN_r25 x_PM_NAND3_X2%ZN_9 N_ZN_M8_d 2.99929
+R_x_PM_NAND3_X2%ZN_r26 x_PM_NAND3_X2%ZN_6 x_PM_NAND3_X2%ZN_14 0.212317
+R_x_PM_NAND3_X2%ZN_r27 x_PM_NAND3_X2%ZN_6 ZN 0.732857
+R_x_PM_NAND3_X2%ZN_r28 x_PM_NAND3_X2%ZN_5 x_PM_NAND3_X2%ZN_9 0.212317
+R_x_PM_NAND3_X2%ZN_r29 x_PM_NAND3_X2%ZN_5 ZN 2.36143
+C_x_PM_NAND3_X2%A3_c0 A3 VSS 6.68856e-17
+C_x_PM_NAND3_X2%A3_c1 x_PM_NAND3_X2%A3_27 VSS 7.00508e-18
+C_x_PM_NAND3_X2%A3_c2 x_PM_NAND3_X2%A3_25 VSS 3.52183e-17
+C_x_PM_NAND3_X2%A3_c3 x_PM_NAND3_X2%A3_22 VSS 2.09253e-16
+C_x_PM_NAND3_X2%A3_c4 x_PM_NAND3_X2%A3_20 VSS 1.05e-17
+C_x_PM_NAND3_X2%A3_c5 x_PM_NAND3_X2%A3_18 VSS 4.18417e-17
+C_x_PM_NAND3_X2%A3_c6 N_A3_M5_g VSS 6.94188e-17
+C_x_PM_NAND3_X2%A3_c7 N_A3_M11_g VSS 5.43348e-17
+C_x_PM_NAND3_X2%A3_c8 N_A3_M0_g VSS 8.14936e-17
+C_x_PM_NAND3_X2%A3_c9 N_A3_M6_g VSS 5.82662e-17
+R_x_PM_NAND3_X2%A3_r10 A3 x_PM_NAND3_X2%A3_32 0.1064
+R_x_PM_NAND3_X2%A3_r11 A3 x_PM_NAND3_X2%A3_31 0.28578
+R_x_PM_NAND3_X2%A3_r12 x_PM_NAND3_X2%A3_27 x_PM_NAND3_X2%A3_39 4.74714
+R_x_PM_NAND3_X2%A3_r13 x_PM_NAND3_X2%A3_27 x_PM_NAND3_X2%A3_38 4.74714
+R_x_PM_NAND3_X2%A3_r14 x_PM_NAND3_X2%A3_25 x_PM_NAND3_X2%A3_27 25.0012
+R_x_PM_NAND3_X2%A3_r15 x_PM_NAND3_X2%A3_24 x_PM_NAND3_X2%A3_25 0.963571
+R_x_PM_NAND3_X2%A3_r16 x_PM_NAND3_X2%A3_23 x_PM_NAND3_X2%A3_32 0.095
+R_x_PM_NAND3_X2%A3_r17 x_PM_NAND3_X2%A3_22 x_PM_NAND3_X2%A3_24 0.212317
+R_x_PM_NAND3_X2%A3_r18 x_PM_NAND3_X2%A3_22 x_PM_NAND3_X2%A3_23 4.47857
+R_x_PM_NAND3_X2%A3_r19 x_PM_NAND3_X2%A3_20 x_PM_NAND3_X2%A3_36 4.74714
+R_x_PM_NAND3_X2%A3_r20 x_PM_NAND3_X2%A3_20 x_PM_NAND3_X2%A3_35 4.74714
+R_x_PM_NAND3_X2%A3_r21 x_PM_NAND3_X2%A3_18 x_PM_NAND3_X2%A3_20 25.0012
+R_x_PM_NAND3_X2%A3_r22 x_PM_NAND3_X2%A3_31 x_PM_NAND3_X2%A3_18 0.583571
+R_x_PM_NAND3_X2%A3_r23 x_PM_NAND3_X2%A3_39 N_A3_M5_g 56.94
+R_x_PM_NAND3_X2%A3_r24 x_PM_NAND3_X2%A3_38 N_A3_M11_g 40.17
+R_x_PM_NAND3_X2%A3_r25 x_PM_NAND3_X2%A3_36 N_A3_M0_g 56.94
+R_x_PM_NAND3_X2%A3_r26 x_PM_NAND3_X2%A3_35 N_A3_M6_g 40.17
+C_x_PM_NAND3_X2%A2_c0 x_PM_NAND3_X2%A2_27 VSS 8.55897e-18
+C_x_PM_NAND3_X2%A2_c1 x_PM_NAND3_X2%A2_25 VSS 6.75221e-17
+C_x_PM_NAND3_X2%A2_c2 x_PM_NAND3_X2%A2_23 VSS 1.3208e-17
+C_x_PM_NAND3_X2%A2_c3 x_PM_NAND3_X2%A2_22 VSS 9.50231e-17
+C_x_PM_NAND3_X2%A2_c4 x_PM_NAND3_X2%A2_20 VSS 8.72112e-18
+C_x_PM_NAND3_X2%A2_c5 x_PM_NAND3_X2%A2_18 VSS 2.34026e-17
+C_x_PM_NAND3_X2%A2_c6 N_A2_M4_g VSS 7.88171e-17
+C_x_PM_NAND3_X2%A2_c7 N_A2_M10_g VSS 4.95568e-17
+C_x_PM_NAND3_X2%A2_c8 N_A2_M1_g VSS 7.91285e-17
+C_x_PM_NAND3_X2%A2_c9 N_A2_M7_g VSS 5.36772e-17
+R_x_PM_NAND3_X2%A2_r10 x_PM_NAND3_X2%A2_27 x_PM_NAND3_X2%A2_36 4.7687
+R_x_PM_NAND3_X2%A2_r11 x_PM_NAND3_X2%A2_27 x_PM_NAND3_X2%A2_35 4.7687
+R_x_PM_NAND3_X2%A2_r12 x_PM_NAND3_X2%A2_25 x_PM_NAND3_X2%A2_27 25.0012
+R_x_PM_NAND3_X2%A2_r13 x_PM_NAND3_X2%A2_25 A2 0.109615
+R_x_PM_NAND3_X2%A2_r14 x_PM_NAND3_X2%A2_24 x_PM_NAND3_X2%A2_25 0.299615
+R_x_PM_NAND3_X2%A2_r15 x_PM_NAND3_X2%A2_22 x_PM_NAND3_X2%A2_24 0.238167
+R_x_PM_NAND3_X2%A2_r16 x_PM_NAND3_X2%A2_22 x_PM_NAND3_X2%A2_23 2.71429
+R_x_PM_NAND3_X2%A2_r17 x_PM_NAND3_X2%A2_20 x_PM_NAND3_X2%A2_33 4.7687
+R_x_PM_NAND3_X2%A2_r18 x_PM_NAND3_X2%A2_20 x_PM_NAND3_X2%A2_32 4.7687
+R_x_PM_NAND3_X2%A2_r19 x_PM_NAND3_X2%A2_18 x_PM_NAND3_X2%A2_20 25.0012
+R_x_PM_NAND3_X2%A2_r20 x_PM_NAND3_X2%A2_17 x_PM_NAND3_X2%A2_23 0.212317
+R_x_PM_NAND3_X2%A2_r21 x_PM_NAND3_X2%A2_17 x_PM_NAND3_X2%A2_18 0.556429
+R_x_PM_NAND3_X2%A2_r22 x_PM_NAND3_X2%A2_36 N_A2_M4_g 56.94
+R_x_PM_NAND3_X2%A2_r23 x_PM_NAND3_X2%A2_35 N_A2_M10_g 40.17
+R_x_PM_NAND3_X2%A2_r24 x_PM_NAND3_X2%A2_33 N_A2_M1_g 56.94
+R_x_PM_NAND3_X2%A2_r25 x_PM_NAND3_X2%A2_32 N_A2_M7_g 40.17
+C_x_PM_NAND3_X2%A1_c0 x_PM_NAND3_X2%A1_21 VSS 5.66232e-17
+C_x_PM_NAND3_X2%A1_c1 x_PM_NAND3_X2%A1_20 VSS 4.38543e-18
+C_x_PM_NAND3_X2%A1_c2 x_PM_NAND3_X2%A1_19 VSS 7.00845e-18
+C_x_PM_NAND3_X2%A1_c3 x_PM_NAND3_X2%A1_18 VSS 4.29255e-18
+C_x_PM_NAND3_X2%A1_c4 N_A1_M3_g VSS 6.04573e-17
+C_x_PM_NAND3_X2%A1_c5 N_A1_M9_g VSS 4.22662e-17
+C_x_PM_NAND3_X2%A1_c6 N_A1_M2_g VSS 6.01955e-17
+C_x_PM_NAND3_X2%A1_c7 N_A1_M8_g VSS 4.56637e-17
+R_x_PM_NAND3_X2%A1_r8 x_PM_NAND3_X2%A1_21 x_PM_NAND3_X2%A1_23 25.0012
+R_x_PM_NAND3_X2%A1_r9 x_PM_NAND3_X2%A1_21 A1 0.105556
+R_x_PM_NAND3_X2%A1_r10 x_PM_NAND3_X2%A1_19 x_PM_NAND3_X2%A1_23 9.62
+R_x_PM_NAND3_X2%A1_r11 x_PM_NAND3_X2%A1_19 x_PM_NAND3_X2%A1_20 0.043368
+R_x_PM_NAND3_X2%A1_r12 x_PM_NAND3_X2%A1_17 x_PM_NAND3_X2%A1_23 4.94
+R_x_PM_NAND3_X2%A1_r13 x_PM_NAND3_X2%A1_17 x_PM_NAND3_X2%A1_18 0.043368
+R_x_PM_NAND3_X2%A1_r14 x_PM_NAND3_X2%A1_13 x_PM_NAND3_X2%A1_20 4.56151
+R_x_PM_NAND3_X2%A1_r15 x_PM_NAND3_X2%A1_13 N_A1_M3_g 56.94
+R_x_PM_NAND3_X2%A1_r16 x_PM_NAND3_X2%A1_9 x_PM_NAND3_X2%A1_20 4.56151
+R_x_PM_NAND3_X2%A1_r17 x_PM_NAND3_X2%A1_9 N_A1_M9_g 40.17
+R_x_PM_NAND3_X2%A1_r18 x_PM_NAND3_X2%A1_5 x_PM_NAND3_X2%A1_18 4.56151
+R_x_PM_NAND3_X2%A1_r19 x_PM_NAND3_X2%A1_5 N_A1_M2_g 56.94
+R_x_PM_NAND3_X2%A1_r20 x_PM_NAND3_X2%A1_1 x_PM_NAND3_X2%A1_18 4.56151
+R_x_PM_NAND3_X2%A1_r21 x_PM_NAND3_X2%A1_1 N_A1_M8_g 40.17
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

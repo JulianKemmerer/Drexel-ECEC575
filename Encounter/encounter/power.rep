@@ -1,0 +1,94 @@
+*----------------------------------------------------------------------------------------
+*	Encounter 13.10-p003_1 (64bit) 04/17/2013 15:43 (Linux 2.6)
+*	
+*
+* 	Date & Time:	2014-Jun-02 12:38:52 (2014-Jun-02 16:38:52 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: fpu
+*
+*	Liberty Libraries used:
+*	        /data/research/encounter/ASIC_project/NangateOpenCellLibrary/Front_End/Liberty/ECSM/NangateOpenCellLibrary_typical_ecsm.lib
+*
+*	Power Domain used:
+*
+*       Power View : my_analysis_view_setup
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       20.08671582 	   56.6256%
+Total Switching Power:      14.05105735 	   39.6107%
+Total Leakage Power:         1.33507617 	    3.7637%
+Total Power:                35.47284932
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         9.405       2.877        0.52        12.8       36.09
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                      10.44       9.912      0.8049       21.16       59.65
+Clock (Combinational)             0.2397       1.262     0.01016       1.512       4.262
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              20.09       14.05       1.335       35.47         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default                   1.1      20.09       14.05       1.335       35.47         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk1                              0.2397       1.262     0.01016       1.512       4.262
+-----------------------------------------------------------------------------------------
+Total                             0.2397       1.262     0.01016       1.512       4.262
+-----------------------------------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power: fpu_add/fpu_add_exp_dp/clk__L2_I0 (INV_X16): 	    0.0622
+* 		Highest Leakage Power: fpu_out/fpu_out_dp/clk__L2_I0 (INV_X32): 	 0.0005273
+* 		Total Cap: 	1.97897e-10 F
+* 		Total instances in design: 34768
+* 		Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+report_power consumed time (real time) 00:00:01 : peak memory (884.902M) 
+1

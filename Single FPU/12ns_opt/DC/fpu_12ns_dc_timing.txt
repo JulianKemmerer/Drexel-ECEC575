@@ -1,0 +1,179 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fpu
+Version: H-2013.03-SP1
+Date   : Mon Jun  2 18:59:29 2014
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: fpu_add/fpu_add_frac_dp/i_a3stg_frac1/q_reg[0]
+              (rising edge-triggered flip-flop clocked by gclk)
+  Endpoint: fpu_add/fpu_add_frac_dp/i_a4stg_rnd_frac_pre3/q_reg[3]
+            (rising edge-triggered flip-flop clocked by gclk)
+  Path Group: gclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu_add            ForQA                 saed90nm_typ
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock gclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  fpu_add/fpu_add_frac_dp/i_a3stg_frac1/q_reg[0]/CLK (DFFX1)
+                                                          0.00       0.30 r
+  fpu_add/fpu_add_frac_dp/i_a3stg_frac1/q_reg[0]/QN (DFFX1)
+                                                          0.16       0.46 r
+  fpu_add/U741/Q (OR2X1)                                  0.12       0.58 r
+  fpu_add/U1396/QN (NAND3X0)                              0.09       0.66 f
+  fpu_add/U1783/QN (NAND2X0)                              0.07       0.74 r
+  fpu_add/U2549/QN (NAND3X0)                              0.09       0.83 f
+  fpu_add/U514/QN (NAND2X0)                               0.08       0.91 r
+  fpu_add/U523/QN (NAND3X0)                               0.09       1.00 f
+  fpu_add/U430/QN (NAND2X0)                               0.08       1.08 r
+  fpu_add/U432/QN (NAND3X0)                               0.10       1.17 f
+  fpu_add/U435/QN (NAND2X0)                               0.08       1.25 r
+  fpu_add/U437/QN (NAND3X0)                               0.09       1.35 f
+  fpu_add/U546/QN (NAND2X0)                               0.08       1.43 r
+  fpu_add/U548/QN (NAND3X0)                               0.09       1.52 f
+  fpu_add/U543/QN (NAND2X0)                               0.08       1.60 r
+  fpu_add/U544/QN (NAND3X0)                               0.09       1.70 f
+  fpu_add/U736/QN (NAND2X0)                               0.08       1.78 r
+  fpu_add/U737/QN (NAND3X0)                               0.09       1.87 f
+  fpu_add/U1781/QN (NAND2X0)                              0.08       1.95 r
+  fpu_add/U2517/QN (NAND3X0)                              0.10       2.05 f
+  fpu_add/U1777/QN (NAND2X0)                              0.08       2.13 r
+  fpu_add/U2520/QN (NAND3X0)                              0.10       2.22 f
+  fpu_add/U1774/QN (NAND2X0)                              0.08       2.31 r
+  fpu_add/U2524/QN (NAND3X0)                              0.10       2.40 f
+  fpu_add/U1771/QN (NAND2X0)                              0.08       2.48 r
+  fpu_add/U2527/QN (NAND3X0)                              0.10       2.58 f
+  fpu_add/U599/QN (NAND2X0)                               0.08       2.66 r
+  fpu_add/U378/QN (NAND3X0)                               0.10       2.75 f
+  fpu_add/U603/QN (NAND2X0)                               0.08       2.84 r
+  fpu_add/U374/QN (NAND3X0)                               0.10       2.93 f
+  fpu_add/U489/QN (NAND2X0)                               0.08       3.01 r
+  fpu_add/U491/QN (NAND3X0)                               0.10       3.11 f
+  fpu_add/U494/QN (NAND2X0)                               0.08       3.19 r
+  fpu_add/U496/QN (NAND3X0)                               0.09       3.28 f
+  fpu_add/U277/QN (NAND2X0)                               0.08       3.36 r
+  fpu_add/U278/QN (NAND3X0)                               0.09       3.46 f
+  fpu_add/U185/QN (NAND2X0)                               0.08       3.54 r
+  fpu_add/U186/QN (NAND3X0)                               0.10       3.63 f
+  fpu_add/U216/Q (OR2X1)                                  0.12       3.75 f
+  fpu_add/U740/Q (AND3X1)                                 0.11       3.86 f
+  fpu_add/U731/QN (NAND2X0)                               0.07       3.92 r
+  fpu_add/U336/QN (NAND3X0)                               0.08       4.00 f
+  fpu_add/U339/QN (NAND2X0)                               0.07       4.08 r
+  fpu_add/U341/QN (NAND3X0)                               0.09       4.17 f
+  fpu_add/U420/QN (NAND2X0)                               0.08       4.25 r
+  fpu_add/U422/QN (NAND3X0)                               0.09       4.35 f
+  fpu_add/U454/QN (NAND2X0)                               0.08       4.43 r
+  fpu_add/U456/QN (NAND3X0)                               0.09       4.52 f
+  fpu_add/U469/QN (NAND2X0)                               0.08       4.60 r
+  fpu_add/U470/QN (NAND3X0)                               0.09       4.70 f
+  fpu_add/U466/QN (NAND2X0)                               0.08       4.77 r
+  fpu_add/U462/Q (AND3X1)                                 0.11       4.88 r
+  fpu_add/U247/QN (NAND2X0)                               0.07       4.96 f
+  fpu_add/U250/QN (NAND3X0)                               0.10       5.06 r
+  fpu_add/U565/Q (OR2X1)                                  0.12       5.18 r
+  fpu_add/U606/QN (NAND3X0)                               0.09       5.27 f
+  fpu_add/U609/QN (NAND2X0)                               0.07       5.34 r
+  fpu_add/U373/QN (NAND3X0)                               0.09       5.44 f
+  fpu_add/U1770/QN (NAND2X0)                              0.08       5.52 r
+  fpu_add/U2538/QN (NAND3X0)                              0.10       5.61 f
+  fpu_add/U1768/QN (NAND2X0)                              0.08       5.69 r
+  fpu_add/U2541/QN (NAND3X0)                              0.09       5.79 f
+  fpu_add/U387/QN (NAND2X0)                               0.08       5.87 r
+  fpu_add/U401/QN (NAND3X0)                               0.09       5.96 f
+  fpu_add/U321/QN (NAND2X0)                               0.08       6.04 r
+  fpu_add/U322/QN (NAND3X0)                               0.09       6.14 f
+  fpu_add/U593/QN (NAND2X0)                               0.08       6.22 r
+  fpu_add/U376/QN (NAND3X0)                               0.10       6.31 f
+  fpu_add/U598/QN (NAND2X0)                               0.08       6.39 r
+  fpu_add/U343/Q (AND3X1)                                 0.12       6.51 r
+  fpu_add/U498/QN (NAND2X0)                               0.07       6.58 f
+  fpu_add/U460/Q (AND3X1)                                 0.12       6.70 f
+  fpu_add/U46/Q (AO221X1)                                 0.13       6.84 f
+  fpu_add/U1759/QN (NAND2X0)                              0.07       6.90 r
+  fpu_add/U2545/QN (NAND3X0)                              0.09       7.00 f
+  fpu_add/U1757/QN (NAND2X0)                              0.08       7.08 r
+  fpu_add/U2521/QN (NAND3X0)                              0.10       7.17 f
+  fpu_add/U1755/QN (NAND2X0)                              0.08       7.25 r
+  fpu_add/U616/Q (AND3X1)                                 0.11       7.36 r
+  fpu_add/U530/QN (NAND2X0)                               0.08       7.44 f
+  fpu_add/U2073/Q (AND3X1)                                0.12       7.56 f
+  fpu_add/U549/QN (NAND2X0)                               0.07       7.63 r
+  fpu_add/U551/QN (NAND3X0)                               0.09       7.72 f
+  fpu_add/U554/QN (NAND2X0)                               0.08       7.80 r
+  fpu_add/U556/QN (NAND3X0)                               0.09       7.89 f
+  fpu_add/U316/QN (NAND2X0)                               0.08       7.98 r
+  fpu_add/U318/QN (NAND3X0)                               0.09       8.07 f
+  fpu_add/U502/QN (NAND2X0)                               0.08       8.15 r
+  fpu_add/U503/QN (NAND3X0)                               0.09       8.24 f
+  fpu_add/U505/QN (NAND2X0)                               0.08       8.32 r
+  fpu_add/U507/QN (NAND3X0)                               0.10       8.42 f
+  fpu_add/U510/QN (NAND2X0)                               0.08       8.50 r
+  fpu_add/U380/QN (NAND3X0)                               0.09       8.59 f
+  fpu_add/U297/QN (NAND2X0)                               0.08       8.67 r
+  fpu_add/U299/QN (NAND3X0)                               0.10       8.77 f
+  fpu_add/U302/QN (NAND2X0)                               0.08       8.85 r
+  fpu_add/U304/QN (NAND3X0)                               0.09       8.95 f
+  fpu_add/U411/QN (NAND2X0)                               0.08       9.03 r
+  fpu_add/U413/QN (NAND3X0)                               0.09       9.12 f
+  fpu_add/U1753/QN (NAND2X0)                              0.08       9.20 r
+  fpu_add/U2534/QN (NAND3X0)                              0.10       9.30 f
+  fpu_add/U1751/QN (NAND2X0)                              0.08       9.38 r
+  fpu_add/U2537/QN (NAND3X0)                              0.09       9.47 f
+  fpu_add/U517/QN (NAND2X0)                               0.08       9.55 r
+  fpu_add/U519/QN (NAND3X0)                               0.09       9.64 f
+  fpu_add/U612/QN (NAND2X0)                               0.08       9.72 r
+  fpu_add/U615/QN (NAND3X0)                               0.09       9.81 f
+  fpu_add/U587/QN (NAND2X0)                               0.08       9.89 r
+  fpu_add/U379/QN (NAND3X0)                               0.09       9.98 f
+  fpu_add/U592/QN (NAND2X0)                               0.08      10.06 r
+  fpu_add/U375/QN (NAND3X0)                               0.09      10.15 f
+  fpu_add/U1748/QN (NAND2X0)                              0.08      10.23 r
+  fpu_add/U2530/QN (NAND3X0)                              0.10      10.32 f
+  fpu_add/U1747/QN (NAND2X0)                              0.08      10.41 r
+  fpu_add/U2533/QN (NAND3X0)                              0.09      10.50 f
+  fpu_add/U558/QN (NAND2X0)                               0.08      10.58 r
+  fpu_add/U559/QN (NAND3X0)                               0.10      10.68 f
+  fpu_add/U563/QN (NAND2X0)                               0.08      10.76 r
+  fpu_add/U564/QN (NAND3X0)                               0.09      10.85 f
+  fpu_add/U472/QN (NAND2X0)                               0.08      10.93 r
+  fpu_add/U473/QN (NAND3X0)                               0.10      11.03 f
+  fpu_add/U477/QN (NAND2X0)                               0.08      11.11 r
+  fpu_add/U478/QN (NAND3X0)                               0.09      11.20 f
+  fpu_add/U581/QN (NAND2X0)                               0.08      11.28 r
+  fpu_add/U377/QN (NAND3X0)                               0.10      11.37 f
+  fpu_add/U585/QN (NAND2X0)                               0.08      11.45 r
+  fpu_add/U353/QN (NAND3X0)                               0.10      11.55 f
+  fpu_add/U150/Q (XOR2X2)                                 0.16      11.71 r
+  fpu_add/U739/QN (NAND3X0)                               0.09      11.80 f
+  fpu_add/U169/QN (NOR2X0)                                0.10      11.90 r
+  fpu_add/U199/QN (AOI21X1)                               0.20      12.10 f
+  fpu_add/U4564/QN (NOR2X0)                               0.12      12.21 r
+  fpu_add/fpu_add_frac_dp/i_a4stg_rnd_frac_pre3/q_reg[3]/D (DFFX1)
+                                                          0.03      12.25 r
+  data arrival time                                                 12.25
+
+  clock gclk (rise edge)                                 12.00      12.00
+  clock network delay (ideal)                             0.30      12.30
+  fpu_add/fpu_add_frac_dp/i_a4stg_rnd_frac_pre3/q_reg[3]/CLK (DFFX1)
+                                                          0.00      12.30 r
+  library setup time                                     -0.05      12.25
+  data required time                                                12.25
+  --------------------------------------------------------------------------
+  data required time                                                12.25
+  data arrival time                                                -12.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00

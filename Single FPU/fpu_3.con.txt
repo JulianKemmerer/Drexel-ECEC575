@@ -1,0 +1,9 @@
+#create clock
+create_clock -period 2 [get_ports gclk]
+set_clock_latency -max 0.3 [get_ports gclk]
+set_clock_transition 0.12 [get_ports gclk]
+set_output_delay 1 -max -clock [get_clocks gclk] [all_outputs]
+
+#set wire load model
+set auto_wire_load_selection false
+set_wire_load_model -name 280000

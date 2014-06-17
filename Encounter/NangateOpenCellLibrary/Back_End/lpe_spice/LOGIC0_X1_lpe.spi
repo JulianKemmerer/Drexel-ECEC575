@@ -1,0 +1,101 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:24:01.
+* Main process id is 28034.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   LOGIC0_X1.                                                       *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:24:01 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LOGIC0_X1 VDD VSS Z 
+*.PININFO VDD:P VSS:G Z:O 
+M_M1 N_VDD_M0_d N_4_M0_g N_4_M0_s VDD PMOS_VTL W=0.090000U L=0.050000U
+M_M0 N_VSS_M1_d N_4_M1_g N_Z_M1_s VSS NMOS_VTL W=0.090000U L=0.050000U
+C_x_PM_LOGIC0_X1%VDD_c0 x_PM_LOGIC0_X1%VDD_28 VSS 3.24715e-17
+C_x_PM_LOGIC0_X1%VDD_c1 x_PM_LOGIC0_X1%VDD_27 VSS 1.04853e-17
+C_x_PM_LOGIC0_X1%VDD_c2 x_PM_LOGIC0_X1%VDD_26 VSS 2.334e-16
+C_x_PM_LOGIC0_X1%VDD_c3 x_PM_LOGIC0_X1%VDD_17 VSS 2.7177e-16
+C_x_PM_LOGIC0_X1%VDD_c4 x_PM_LOGIC0_X1%VDD_13 VSS 4.16859e-17
+C_x_PM_LOGIC0_X1%VDD_c5 x_PM_LOGIC0_X1%VDD_12 VSS 1.92462e-17
+C_x_PM_LOGIC0_X1%VDD_c6 x_PM_LOGIC0_X1%VDD_8 VSS 5.52247e-16
+R_x_PM_LOGIC0_X1%VDD_r7 x_PM_LOGIC0_X1%VDD_28 VDD 0.446873
+R_x_PM_LOGIC0_X1%VDD_r8 VDD x_PM_LOGIC0_X1%VDD_27 0.138595
+R_x_PM_LOGIC0_X1%VDD_r9 VDD x_PM_LOGIC0_X1%VDD_26 0.138985
+R_x_PM_LOGIC0_X1%VDD_r10 x_PM_LOGIC0_X1%VDD_17 VDD 0.143746
+R_x_PM_LOGIC0_X1%VDD_r11 x_PM_LOGIC0_X1%VDD_17 VDD 3.84471
+R_x_PM_LOGIC0_X1%VDD_r12 N_VDD_M0_d x_PM_LOGIC0_X1%VDD_28 0.543196
+R_x_PM_LOGIC0_X1%VDD_r13 x_PM_LOGIC0_X1%VDD_13 x_PM_LOGIC0_X1%VDD_28 0.0754011
+R_x_PM_LOGIC0_X1%VDD_r14 x_PM_LOGIC0_X1%VDD_13 x_PM_LOGIC0_X1%VDD_27 0.648235
+R_x_PM_LOGIC0_X1%VDD_r15 x_PM_LOGIC0_X1%VDD_12 VDD 0.140282
+R_x_PM_LOGIC0_X1%VDD_r16 x_PM_LOGIC0_X1%VDD_26 x_PM_LOGIC0_X1%VDD_12 7.68941
+R_x_PM_LOGIC0_X1%VDD_r17 x_PM_LOGIC0_X1%VDD_8 VDD 8.51647
+C_x_PM_LOGIC0_X1%VSS_c0 x_PM_LOGIC0_X1%VSS_29 VSS 2.25742e-17
+C_x_PM_LOGIC0_X1%VSS_c1 x_PM_LOGIC0_X1%VSS_27 VSS 2.334e-16
+C_x_PM_LOGIC0_X1%VSS_c2 VSS VSS 2.72113e-16
+C_x_PM_LOGIC0_X1%VSS_c3 x_PM_LOGIC0_X1%VSS_14 VSS 1.04828e-17
+C_x_PM_LOGIC0_X1%VSS_c4 x_PM_LOGIC0_X1%VSS_13 VSS 3.30019e-17
+C_x_PM_LOGIC0_X1%VSS_c5 x_PM_LOGIC0_X1%VSS_10 VSS 5.52247e-16
+C_x_PM_LOGIC0_X1%VSS_c6 x_PM_LOGIC0_X1%VSS_9 VSS 1.92462e-17
+R_x_PM_LOGIC0_X1%VSS_r7 x_PM_LOGIC0_X1%VSS_29 VSS 0.457895
+R_x_PM_LOGIC0_X1%VSS_r8 VSS x_PM_LOGIC0_X1%VSS_27 0.138985
+R_x_PM_LOGIC0_X1%VSS_r9 N_VSS_M1_d x_PM_LOGIC0_X1%VSS_29 0.543196
+R_x_PM_LOGIC0_X1%VSS_r10 VSS x_PM_LOGIC0_X1%VSS_14 0.138595
+R_x_PM_LOGIC0_X1%VSS_r11 x_PM_LOGIC0_X1%VSS_14 VSS 0.525294
+R_x_PM_LOGIC0_X1%VSS_r12 x_PM_LOGIC0_X1%VSS_13 x_PM_LOGIC0_X1%VSS_29 0.075426
+R_x_PM_LOGIC0_X1%VSS_r13 x_PM_LOGIC0_X1%VSS_13 VSS 0.111765
+R_x_PM_LOGIC0_X1%VSS_r14 x_PM_LOGIC0_X1%VSS_10 VSS 8.51647
+R_x_PM_LOGIC0_X1%VSS_r15 x_PM_LOGIC0_X1%VSS_9 VSS 0.140282
+R_x_PM_LOGIC0_X1%VSS_r16 x_PM_LOGIC0_X1%VSS_27 x_PM_LOGIC0_X1%VSS_9 7.68941
+C_x_PM_LOGIC0_X1%Z_c0 N_Z_M1_s VSS 9.29605e-17
+R_x_PM_LOGIC0_X1%Z_r1 N_Z_M1_s Z 1.47929
+C_x_PM_LOGIC0_X1%4_c0 x_PM_LOGIC0_X1%4_19 VSS 7.5714e-18
+C_x_PM_LOGIC0_X1%4_c1 x_PM_LOGIC0_X1%4_11 VSS 6.55595e-17
+C_x_PM_LOGIC0_X1%4_c2 N_4_M0_g VSS 2.15892e-17
+C_x_PM_LOGIC0_X1%4_c3 N_4_M1_g VSS 9.47541e-17
+R_x_PM_LOGIC0_X1%4_r4 x_PM_LOGIC0_X1%4_17 x_PM_LOGIC0_X1%4_19 3.9
+R_x_PM_LOGIC0_X1%4_r5 x_PM_LOGIC0_X1%4_11 N_4_M0_s 0.443333
+R_x_PM_LOGIC0_X1%4_r6 x_PM_LOGIC0_X1%4_11 x_PM_LOGIC0_X1%4_17 25.0012
+R_x_PM_LOGIC0_X1%4_r7 x_PM_LOGIC0_X1%4_5 x_PM_LOGIC0_X1%4_19 1.95
+R_x_PM_LOGIC0_X1%4_r8 x_PM_LOGIC0_X1%4_5 N_4_M0_g 17.16
+R_x_PM_LOGIC0_X1%4_r9 A x_PM_LOGIC0_X1%4_19 1.95
+R_x_PM_LOGIC0_X1%4_r10 A N_4_M1_g 124.02
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

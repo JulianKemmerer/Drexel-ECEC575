@@ -1,0 +1,217 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : plusplusfpu
+Version: E-2010.12-ICC-SP5
+Date   : Wed Jun  4 14:02:46 2014
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /home/DREXEL/daw77/classes/asic_2/project/OpenSPARC/OpenSPARC_data/Icc_1/Models/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+plusplusfpu            280000            saed90nm_typ
+fpu_1                  ForQA             saed90nm_typ
+fpu_0                  ForQA             saed90nm_typ
+fpu_div_1              ForQA             saed90nm_typ
+fpu_mul_1              ForQA             saed90nm_typ
+fpu_add_1              ForQA             saed90nm_typ
+bw_r_rf16x160_1        ForQA             saed90nm_typ
+fpu_in_1               ForQA             saed90nm_typ
+fpu_div_0              ForQA             saed90nm_typ
+fpu_mul_0              ForQA             saed90nm_typ
+fpu_add_0              ForQA             saed90nm_typ
+bw_r_rf16x160_0        ForQA             saed90nm_typ
+fpu_in_0               ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_1_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_1_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_1_0
+                       ForQA             saed90nm_typ
+fpu_div_frac_dp_1      ForQA             saed90nm_typ
+fpu_div_ctl_1          ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_1_0
+                       ForQA             saed90nm_typ
+mul64_1                ForQA             saed90nm_typ
+fpu_mul_frac_dp_1      ForQA             saed90nm_typ
+fpu_mul_ctl_1          ForQA             saed90nm_typ
+fpu_add_frac_dp_1      ForQA             saed90nm_typ
+fpu_add_exp_dp_1       ForQA             saed90nm_typ
+fpu_add_ctl_1          ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_bw_r_rf16x160_1_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_1_18
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_1_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_1_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_1_0
+                       ForQA             saed90nm_typ
+fpu_in_dp_1            ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_0_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_0_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_0_0
+                       ForQA             saed90nm_typ
+fpu_div_frac_dp_0      ForQA             saed90nm_typ
+fpu_div_ctl_0          ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_0_0
+                       ForQA             saed90nm_typ
+mul64_0                ForQA             saed90nm_typ
+fpu_mul_frac_dp_0      ForQA             saed90nm_typ
+fpu_mul_ctl_0          ForQA             saed90nm_typ
+fpu_add_frac_dp_0      ForQA             saed90nm_typ
+fpu_add_exp_dp_0       ForQA             saed90nm_typ
+fpu_add_ctl_0          ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_bw_r_rf16x160_0_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_0_18
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_0_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_0_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_0_0
+                       ForQA             saed90nm_typ
+fpu_in_dp_0            ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_1_4
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_1_3
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_1_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_1_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_1_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_1_7
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_1_6
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_1_5
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_1_4
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_1_3
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_1_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_1_1
+                       ForQA             saed90nm_typ
+mul_array2_1           ForQA             saed90nm_typ
+mul_array1_1           ForQA             saed90nm_typ
+mul_array1_2           ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_frac_dp_1_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_ctl_1_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_ctl_1_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_frac_dp_1_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_frac_dp_1_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_exp_dp_1_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_exp_dp_1_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_ctl_1_3
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_ctl_1_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_ctl_1_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_ctl_1_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_dp_1_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_0_4
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_0_3
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_0_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_0_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_0_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_0_7
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_0_6
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_0_5
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_0_4
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_0_3
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_0_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_ctl_0_1
+                       ForQA             saed90nm_typ
+mul_array2_0           ForQA             saed90nm_typ
+mul_array1_3           ForQA             saed90nm_typ
+mul_array1_0           ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_frac_dp_0_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_ctl_0_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_ctl_0_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_frac_dp_0_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_frac_dp_0_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_exp_dp_0_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_exp_dp_0_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_ctl_0_3
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_ctl_0_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_ctl_0_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_ctl_0_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_in_dp_0_0
+                       ForQA             saed90nm_typ
+mul_ppgenrow3_1        ForQA             saed90nm_typ
+mul_ppgenrow3_2        ForQA             saed90nm_typ
+mul_ppgenrow3_3        ForQA             saed90nm_typ
+mul_ppgenrow3_4        ForQA             saed90nm_typ
+mul_ppgenrow3_5        ForQA             saed90nm_typ
+mul_ppgenrow3_6        ForQA             saed90nm_typ
+mul_ppgenrow3_7        ForQA             saed90nm_typ
+mul_ppgenrow3_8        ForQA             saed90nm_typ
+mul_ppgenrow3_9        ForQA             saed90nm_typ
+mul_ppgenrow3_10       ForQA             saed90nm_typ
+mul_ppgenrow3_11       ForQA             saed90nm_typ
+mul_ppgenrow3_0        ForQA             saed90nm_typ
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 998.5160 uW   (37%)
+  Net Switching Power  =   1.6721 mW   (63%)
+                         ---------
+Total Dynamic Power    =   2.6706 mW  (100%)
+
+Cell Leakage Power     =   3.7204 mW

@@ -1,0 +1,120 @@
+\documentclass{article}
+
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{1.2}}
+
+\usepackage[version=0.96]{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,snakes,automata,backgrounds,petri,chains,shadows,calc,shadings}
+\usepackage[latin1]{inputenc}
+\usepackage{verbatim}
+
+\usetikzlibrary{chains}
+\usepackage{epstopdf}
+
+\setcounter{secnumdepth}{0}
+\usepackage{float}
+\usepackage{fullpage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\usepackage{graphicx} %for including pictures
+
+\usepackage{tikz-3dplot}
+
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\begin{document}
+
+\definecolor{pink}{HTML}{F781F3}
+\definecolor{myblue}{HTML}{106EA5}
+
+\begin{tikzpicture}[node distance=1cm, auto,background rectangle/.style={fill=myblue},
+                    show background rectangle]  
+\tikzset{
+    mynode/.style={rectangle,rounded corners,draw=black, top color=white, bottom color=yellow!50,very thick, inner sep=1em, minimum size=3em, text centered},
+    myarrow/.style={->, >=latex', shorten >=1pt, thick, color=white},
+    myarrow2/.style={ >=latex', shorten >=1pt, thick, color=white},
+    mylabel/.style={text width=14em,color=white, text centered} 
+}  
+
+\node[color=white] (data0) {Data Input[123:0]};  
+\node[mynode, below=1cm of data0] (FPU0) {FPU 0};  
+\node[color=white,below=1cm of FPU0] (dataout0) {FPU 0 Outputs};
+
+\node[color=white,left=1cm of FPU0, color=pink] (control0) {Control Inputs};  
+\draw[myarrow2, color=pink] (control0.east) -|(FPU0.west) ;
+\draw[myarrow] (data0.south) -|(FPU0.north) ;
+\draw[myarrow] (FPU0.south) -|(dataout0.north) ;
+
+\end{tikzpicture} 
+
+\begin{tikzpicture}[node distance=1cm, auto,background rectangle/.style={fill=myblue},
+                    show background rectangle]  
+\tikzset{
+    mynode/.style={rectangle,rounded corners,draw=black, top color=white, bottom color=yellow!50,very thick, inner sep=1em, minimum size=3em, text centered},
+    myarrow/.style={->, >=latex', shorten >=1pt, thick, color=white},
+    myarrow2/.style={ >=latex', shorten >=1pt, thick, color=white},
+    mylabel/.style={text width=14em,color=white, text centered} 
+}  
+
+\node[color=white] (data) {Data Input[123:0]};  
+\node[mynode, below=1cm of data] (prep) {Prep Data};  
+\node[below=3cm of prep] (dummy) {}; 
+\node[mynode, left=1cm of dummy] (FPU1) {FPU 1};  
+\node[mynode, right=1cm of dummy] (FPU2) {FPU 2};
+\node[mylabel, below left=of prep] (label1) {Transformed Data 1 [123:0]};  
+\node[mylabel, below right=of prep] (label2) {Transformed Data 2 [123:0]};
+\node[color=white,left=1cm of FPU1, color=pink] (control) {Control Inputs}; 
+\node[color=white,below=1cm of FPU1] (dataout1) {FPU 1 Outputs};
+\node[color=white,below=1cm of FPU2] (dataout2) {FPU 2 Outputs}; 
+% The text width of 7em forces the text to break into two lines. 
+
+\draw[myarrow2, color=pink] (control.east) -|(FPU1.west) ;
+\draw[myarrow2, color=pink] (control.east) -- ++(0,1) -- ++(4,0)-- ++(0,-1)-|(FPU2.west) ;
+\draw[myarrow] (data.south) -|(prep.north) ;
+\draw[myarrow] ([xshift=-0.5cm]prep.south)  -- ++(0,-1) -|  (FPU1.north);	
+\draw[myarrow] ([xshift=0.5cm]prep.south) -- ++(0,-1) -|  (FPU2.north);
+\draw[myarrow] (FPU1.south) -|(dataout1.north) ;
+\draw[myarrow] (FPU2.south) -|(dataout2.north) ;
+% There is a slight overlap of the arrows with the (manufacturer) south edge
+% because creating the offset in another way didn't compile. 
+ 
+%\draw[<->, >=latex', shorten >=2pt, shorten <=2pt, bend right=45, thick, dashed] 
+%    (FPU1.south) to node[auto, swap] {Competition}(FPU2.south); 
+
+% The swap command corrects the placement of the text.
+
+\end{tikzpicture} 
+
+\begin{tikzpicture}[node distance=1cm, auto,background rectangle/.style={fill=myblue},
+                    show background rectangle]  
+\tikzset{
+    mynode/.style={rectangle,rounded corners,draw=black, top color=white, bottom color=yellow!50,very thick, inner sep=1em, minimum size=3em, text centered},
+    myarrow/.style={->, >=latex', shorten >=1pt, thick, color=white},
+    mylabel/.style={text width=7em, text centered} 
+}  
+
+\node[] (dummy) {};
+\node[color=white,left=2cm of dummy] (d1) {Data Input[123:0]};  
+\node[color=white,right=2cm of dummy, color=pink] (d2) {Data Input[0:123]};  
+\node[below=2cm of dummy] (dummy2) {};
+\node[mynode,left=2cm of dummy2] (xor) {~~~~~~~~~~Bitwise XOR~~~~~~~~~~};  
+\node[mynode,right=2cm of dummy2] (and) {~~~~~~~~~~Bitwise AND~~~~~~~~~~}; 
+
+\draw[myarrow] (d1.south) --++ (0,-0.5) -|([xshift=1cm]xor.north west) ; 
+\draw[myarrow] (d1.south) --++ (0,-0.5) -|([xshift=1cm]and.north west) ; 
+
+\draw[myarrow, color=pink] (d2.south) --++ (0,-1) -|([xshift=-1cm]xor.north east) ; 
+\draw[myarrow, color=pink] (d2.south) --++ (0,-1) -|([xshift=-1cm]and.north east) ; 
+
+\node[below=1cm of xor, color=white] (dataout1) {Transformed Data Out 1};
+\node[below=1cm of and, color=white] (dataout2) {Transformed Data Out 2}; 
+
+\draw[myarrow] (xor.south) -|(dataout1.north) ;
+\draw[myarrow] (and.south) -|(dataout2.north) ;
+
+
+\end{tikzpicture} 
+
+\end{document}
+

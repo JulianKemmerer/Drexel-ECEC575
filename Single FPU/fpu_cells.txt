@@ -1,0 +1,27 @@
+****************************************
+Report : cell
+Design : fpu
+Version: H-2013.03-SP1
+Date   : Mon Jun  2 16:29:49 2014
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+bw_r_rf16x160             bw_r_rf16x160                   0.000000  h, n, u
+cluster_header            bw_clk_cl_fpu_cmp               0.000000  h, n, u
+fpu_add                   fpu_add                         0.000000  h, n, u
+fpu_div                   fpu_div                         0.000000  h, n, u
+fpu_in                    fpu_in                          0.000000  h, n, u
+fpu_mul                   fpu_mul                         0.000000  h, n, u
+fpu_out                   fpu_out                         0.000000  h, n, u
+fpu_rptr_groups           fpu_rptr_groups                 0.000000  h
+test_stub_scan            test_stub_scan                  0.000000  h, u
+--------------------------------------------------------------------------------
+Total 9 cells                                             0.000000

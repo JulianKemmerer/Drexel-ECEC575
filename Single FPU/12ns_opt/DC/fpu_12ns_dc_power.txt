@@ -1,0 +1,90 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : fpu
+Version: H-2013.03-SP1
+Date   : Mon Jun  2 18:57:48 2014
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /home/DREXEL/kjj39/classes/ECEC475/OpenSPARC/OpenSPARC/OpenSPARC_data/DC_ASIC/Models/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fpu                    280000            saed90nm_typ
+fpu_in                 ForQA             saed90nm_typ
+bw_r_rf16x160          ForQA             saed90nm_typ
+fpu_add                ForQA             saed90nm_typ
+fpu_mul                ForQA             saed90nm_typ
+fpu_div                ForQA             saed90nm_typ
+fpu_in_dp              ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_bw_r_rf16x160_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_frac_dp_0
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_exp_dp_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_add_exp_dp_0
+                       ForQA             saed90nm_typ
+fpu_mul_frac_dp        ForQA             saed90nm_typ
+mul64                  ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_1
+                       ForQA             saed90nm_typ
+fpu_div_frac_dp        ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_4
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_10
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_mul_frac_dp_0
+                       ForQA             saed90nm_typ
+mul_array1_0           ForQA             saed90nm_typ
+mul_array1_1           ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_1
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_2
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_3
+                       ForQA             saed90nm_typ
+SNPS_CLOCK_GATE_HIGH_fpu_div_frac_dp_4
+                       ForQA             saed90nm_typ
+
+
+Global Operating Voltage = 1.2
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 316.8517 uW   (37%)
+  Net Switching Power  = 542.2500 uW   (63%)
+                         ---------
+Total Dynamic Power    = 859.1017 uW  (100%)
+
+Cell Leakage Power     =   1.9968 mW
+
+Leakage power with reduced spread = 0
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     15.3876          433.0013        2.5783e+06          450.9672  (  15.79%)
+register         131.5582           26.5999        5.5879e+08          716.9498  (  25.10%)
+sequential     -2.1145e-01        4.0776e-02        3.7512e+08          374.9460 (  13.13%)
+combinational    170.1141           82.6068        1.0603e+09        1.3130e+03  (  45.98%)
+--------------------------------------------------------------------------------------------------
+Total            316.8484 uW       542.2488 uW     1.9968e+09 pW     2.8559e+03 uW

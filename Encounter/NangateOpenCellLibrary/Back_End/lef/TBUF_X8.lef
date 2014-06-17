@@ -1,0 +1,102 @@
+# 
+# ******************************************************************************
+# *                                                                            *
+# *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+# *                           All rights reserved.                             *
+# *                                                                            *
+# * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+# *                                                                            *
+# * All trademarks, logos, software marks, and trade names (collectively the   *
+# * "Marks") in this program are proprietary to Nangate or other respective    *
+# * owners that have granted Nangate the right and license to use such Marks.  *
+# * You are not permitted to use the Marks without the prior written consent   *
+# * of Nangate or such third party that may own the Marks.                     *
+# *                                                                            *
+# * This file has been provided pursuant to a License Agreement containing     *
+# * restrictions on its use. This file contains valuable trade secrets and     *
+# * proprietary information of Nangate Inc., and is protected by U.S. and      *
+# * international laws and/or treaties.                                        *
+# *                                                                            *
+# * The copyright notice(s) in this file does not indicate actual or intended  *
+# * publication of this file.                                                  *
+# *                                                                            *
+# *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+# *                                                                            *
+# ******************************************************************************
+# 
+# 
+# Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+# Local time is now Fri, 3 Dec 2010, 19:32:18.
+# Main process id is 27821.
+
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO TBUF_X8
+  CLASS core ;
+  FOREIGN TBUF_X8 0.0 0.0 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE FreePDK45_38x28_10R_NP_162NW_34O ;
+  SIZE 3.42 BY 1.4 ;
+  PIN A
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.0847 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.3328 LAYER metal1 ;
+    ANTENNAGATEAREA 0.209 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 1.95 0.56 2.14 0.56 2.14 0.39 2.79 0.39 2.79 0.66 2.72 0.66 2.72 0.46 2.21 0.46 2.21 0.63 1.95 0.63  ;
+    END
+  END A
+  PIN EN
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.08405 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.2821 LAYER metal1 ;
+    ANTENNAGATEAREA 0.15675 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 2.465 0.525 2.6 0.525 2.6 0.725 3.01 0.725 3.01 0.525 3.08 0.525 3.08 0.795 2.465 0.795  ;
+    END
+  END EN
+  PIN Z
+    DIRECTION OUTPUT ;
+    ANTENNAPARTIALMETALAREA 0.406725 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 1.2363 LAYER metal1 ;
+    ANTENNADIFFAREA 0.505675 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 1.425 0.775 1.43 0.775 1.43 1.01 1.505 1.01 1.505 1.08 1.36 1.08 1.36 0.84 1.09 0.84 1.09 1.25 1.02 1.25 1.02 0.84 0.715 0.84 0.715 1.25 0.645 1.25 0.645 0.84 0.335 0.84 0.335 1.25 0.265 1.25 0.265 0.2 0.335 0.2 0.335 0.7 0.645 0.7 0.645 0.2 0.715 0.2 0.715 0.7 1.02 0.7 1.02 0.2 1.095 0.2 1.095 0.7 1.355 0.7 1.355 0.375 1.505 0.375 1.505 0.445 1.425 0.445  ;
+    END
+  END Z
+  PIN VDD
+    DIRECTION INOUT ;
+    USE power ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 1.315 0.07 1.315 0.07 0.975 0.14 0.975 0.14 1.315 0.415 1.315 0.415 1.01 0.55 1.01 0.55 1.315 0.83 1.315 0.83 0.975 0.9 0.975 0.9 1.315 1.21 1.315 1.21 0.975 1.28 0.975 1.28 1.315 1.59 1.315 1.59 0.995 1.66 0.995 1.66 1.315 1.97 1.315 1.97 0.995 2.04 0.995 2.04 1.315 2.23 1.315 2.32 1.315 2.32 1.15 2.455 1.15 2.455 1.315 3.085 1.315 3.085 1.13 3.22 1.13 3.22 1.315 3.375 1.315 3.42 1.315 3.42 1.485 3.375 1.485 2.23 1.485 0 1.485  ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE ground ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 -0.085 3.42 -0.085 3.42 0.085 3.225 0.085 3.225 0.16 3.09 0.16 3.09 0.085 2.835 0.085 2.835 0.16 2.7 0.16 2.7 0.085 2.455 0.085 2.455 0.16 2.32 0.16 2.32 0.085 1.695 0.085 1.695 0.16 1.56 0.16 1.56 0.085 1.315 0.085 1.315 0.16 1.18 0.16 1.18 0.085 0.935 0.085 0.935 0.16 0.8 0.16 0.8 0.085 0.55 0.085 0.55 0.375 0.415 0.375 0.415 0.085 0.14 0.085 0.14 0.41 0.07 0.41 0.07 0.085 0 0.085  ;
+    END
+  END VSS
+  OBS
+      LAYER metal1 ;
+        POLYGON 1.64 0.86 2.23 0.86 2.23 1.25 2.16 1.25 2.16 0.93 1.85 0.93 1.85 1.25 1.78 1.25 1.78 0.93 1.57 0.93 1.57 0.75 1.49 0.75 1.49 0.615 1.57 0.615 1.57 0.39 2.075 0.39 2.075 0.46 1.64 0.46  ;
+        POLYGON 2.705 0.86 3.145 0.86 3.145 0.295 1.275 0.295 1.275 0.6 1.205 0.6 1.205 0.225 3.215 0.225 3.215 0.93 2.705 0.93  ;
+        POLYGON 1.705 0.525 1.775 0.525 1.775 0.725 2.275 0.725 2.275 0.525 2.365 0.525 2.365 0.995 3.305 0.995 3.305 0.2 3.375 0.2 3.375 1.25 3.305 1.25 3.305 1.065 2.295 1.065 2.295 0.795 1.705 0.795  ;
+  END
+END TBUF_X8
+
+END LIBRARY
+#
+# End of file
+#

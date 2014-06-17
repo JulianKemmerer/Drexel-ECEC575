@@ -1,0 +1,68 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:21:21.
+* Main process id is 28006.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   OR2_X4.                                                          *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:21:21 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT OR2_X4 A1 A2 ZN VDD VSS 
+*.PININFO A1:I A2:I ZN:O VDD:P VSS:G 
+*.EQN ZN=(A1 + A2)
+M_i_3__m0_x2__m1 ZN_neg A2 VSS VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_2__m0_x2__m1 VSS A1 ZN_neg VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_2__m0_x2__m0 ZN_neg A1 VSS VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_3__m0_x2__m0 VSS A2 ZN_neg VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_0_x4_0 ZN ZN_neg VSS VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_0_x4_2 VSS ZN_neg ZN VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_0_x4_3 ZN ZN_neg VSS VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_0_x4_1 VSS ZN_neg ZN VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_5__m0_m2__m1 net_0__m0_0__m1 A2 VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_4__m0_m2__m1 ZN_neg A1 net_0__m0_0__m1 VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_4__m0_m2__m0 net_0__m0_0__m0_0 A1 ZN_neg VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_5__m0_m2__m0 VDD A2 net_0__m0_0__m0_0 VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_1_0_x4_0 ZN ZN_neg VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_1_0_x4_2 VDD ZN_neg ZN VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_1_0_x4_3 ZN ZN_neg VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_1_0_x4_1 VDD ZN_neg ZN VDD PMOS_VTL W=0.630000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

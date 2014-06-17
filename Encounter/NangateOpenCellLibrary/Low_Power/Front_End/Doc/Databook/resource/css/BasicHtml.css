@@ -1,0 +1,105 @@
+/*	 
+	    Copyright (C) 2006, Nangate Inc.
+	    All rights reserved.                           
+	
+		Copyright Notice:
+
+			This document contains confidential and proprietary information.
+			Reproduction or usage of this document, in part or whole, by any means,
+			electrical, mechanical, optical, chemical or otherwise is prohibited,
+			without written permission from Nangate Inc.
+
+			The information contained herein is protected by Danish and international  
+			copyright laws.                                                            
+		
+		Author: 
+			Joao Daniel Togni
+*/	
+/*
+	Default Nangate colors:
+		122,160,193 >> 7A,A0,C1 -- Dark
+		215,227,237 >> D7,E3,ED -- Light
+*/
+
+BODY {
+	color : #666666;
+}
+
+TABLE { 
+	color: #000000;
+	border-color: #888888; 
+}
+
+TD {
+	color: #000000;
+	border-color: #888888;
+	align: center;
+}
+
+
+TH {
+	color: #444444;
+	background-color: #DAE8F3;
+	border-color: #888888;
+    white-space: nowrap;
+}
+
+H1 {
+   color: #FFFFFF;
+   font-size: 1px;
+}
+
+TH.reduced_title{
+  color: #000000;
+  background-color: #9AC0E1;
+  margin-left: 5px;
+}
+
+TH.failed {
+  background-color: #E0FFFF;
+  margin-left: 5px;
+}
+A { text-decoration : underline }
+
+a.normal {margin-left: 0px; margin-right: 0px;
+          text-decoration: underline }
+a.failed {color: #FF0000 }
+a:link 		 { color: #4C579A; }   
+a:visited 	 { color: #4C474A; }   
+
+a.menu:link  { color: #009900; }
+a.menu:hover { color: #00CC00; }
+
+a.ok {color: #00FF00 !important}
+a.ok:link {color: #00FF00 !important}
+a.ok:visited {color: #008000 !important}
+
+a.failed:link {color: #FF0000 !important }
+a.failed:visited 	 { color: #B22222; }  
+
+.text 		 { color: #4A7091}
+a.text:link  { color: #B335BD}
+a.text:hover { color: #000000}
+
+a.normalForced {
+  margin-left: 0px; margin-right: 0px;
+  text-decoration: underline !important;
+	background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	SCROLLBAR-FACE-COLOR: #CCCCCC;
+	SCROLLBAR-TRACK-COLOR: #F0F0F0;
+	SCROLLBAR-DARKSHADOW-COLOR: #666666;
+	SCROLLBAR-3DLIGHT-COLOR:#666666;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF;
+}
+
+.tooltip {
+	background-color: #9AC0E1; 
+	color: #000000;
+}
+
+IMG { vertical-align: middle}
+
+.hiddenBranch { display: none }

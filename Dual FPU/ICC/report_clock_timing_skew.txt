@@ -1,0 +1,18 @@
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 1
+        -setup
+Design : plusplusfpu
+Version: E-2010.12-ICC-SP5
+Date   : Wed Jun  4 14:04:59 2014
+****************************************
+
+  Clock: gclk
+  Clock Pin                              Latency             Skew
+----------------------------------------------------------------------------
+  fpu/fpu_out/fpu_out_ctl/i_dest_rdy/q_reg[1]/CLK
+                                         0.47                          wrp-+
+  fpu/fpu_mul/fpu_mul_frac_dp/clk_gate_i_mul_frac_in1/q_reg/latch/CLK
+                                         0.20                0.27      wrpi-
+----------------------------------------------------------------------------

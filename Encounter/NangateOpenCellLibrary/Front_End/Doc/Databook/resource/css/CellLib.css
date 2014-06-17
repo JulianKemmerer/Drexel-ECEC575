@@ -1,0 +1,94 @@
+/*	 
+	    Copyright (C) 2006, Nangate Inc.
+	    All rights reserved.                           
+	
+		Copyright Notice:
+
+			This document contains confidential and proprietary information.
+			Reproduction or usage of this document, in part or whole, by any means,
+			electrical, mechanical, optical, chemical or otherwise is prohibited,
+			without written permission from Nangate Inc.
+
+			The information contained herein is protected by Danish and international  
+			copyright laws.                                                            
+		
+		Author: 
+			Joao Daniel Togni
+*/	
+/* CellLib specific styles */
+.SubItem { margin-top: 5pt;	margin-bottom: 0pt; }
+
+.Summary { font-size: 14px; font-weight: bold; color: #4A7091; text-decoration: none; list-style: square }
+.Summary:active  { color: #4A7091; text-decoration: none; }
+.Summary:link    { color: #4A7091; text-decoration: none; }
+.Summary:visited { color: #4A7091; text-decoration: none; } 
+
+.Title_no_sp,.Title,.SubTitle,.Caption,.SubCaption
+{ font-size: 16px; font-weight: bold; margin-top: 10pt; text-decoration: none;
+	margin-bottom: 5pt;}
+
+.extra { font-size: 12px; font-weight: normal;  margin-top: 5pt; text-decoration: none;
+	margin-bottom: 0pt; color: #4C579A;}
+.legend, .legend_summary { font-size: 12px; font-weight: normal;  margin-top: 5pt; text-decoration: none;
+  margin-bottom: 0pt; color: #666666;}
+.legend_summary { font-size: 11px; }
+.legend_summaries { font-size: 12px; font-weight: normal;  margin-top: 5pt; text-decoration: none;
+  margin-bottom: 0pt; color: #666666; margin-left: 40px;}
+
+
+.Title { font-size: 28px; }
+.SubTitle { font-size: 20px; }
+.SubCaption { font-size: 14px; margin-top: 0pt; }
+
+/*
+P.Caption:before {content: counter(aaa) ". ";}
+P.Caption { counter-increment: aaa; }
+*/
+.Title_no_sp { margin-top: 5pt }
+
+
+HR.Title {
+	color: #FFFFFF; 
+	background-color: #CCCCCC; border: 0; height: 0px; 
+	text-align: left;/*this will align it for IE*/
+	margin: 0 auto 10pt 0; /*this will align it left for Mozilla*/
+	width: 300pt;
+}
+
+TABLE.big 		 {	margin-top: 5mm; }
+TABLE.navigation {	margin-left: 0; }
+TABLE.Caption 	 {	margin-left: 0; }
+TABLE.Summary      {	margin-left: 0; }
+/*TABLE.reduced	 {	margin-top: 2mm; margin-left: 12mm;} */
+TABLE.inner		 {	margin-top: 0mm; margin-left: 0mm;}
+
+HR.navigation_bt { margin-top:    1cm; }
+HR.navigation_bb { margin-bottom: 0cm; }
+HR.navigation_tt { margin-top:    0cm; }
+HR.navigation_tb { margin-bottom: 0cm; }
+TH.navigation 	 { font-size:20px;  background-color: #FFFFFF;}
+P.copyright { margin-top: 0cm; }
+
+.TOC1 A, .TOC1
+{ 
+	font-size: 18px; font-weight: bold; 
+	margin-bottom: 5pt; margin-top: 5pt; 
+}
+.TOC2 A, .TOC2 { 
+	font-size: 16px; font-weight: bold; 
+	margin-bottom: 5pt; margin-top: 5pt;
+}
+.TOC5 A, .TOC5 { 
+	font-size: 16px; font-weight: bold; 
+	margin-bottom: 5pt; margin-top: 5pt;
+  margin-left: 32pt;
+}
+.TOC3 A, .TOC3 { 
+	font-size: 14px; font-weight: bold; 
+	margin-bottom: 5pt; margin-top: 5pt; 
+}
+.TOC4 A, .TOC4 { 
+	font-size: 12px; font-weight: bold; 
+	margin-bottom: 5pt; margin-top: 5pt;
+}
+

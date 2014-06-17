@@ -1,0 +1,54 @@
+/*	 
+	    Copyright (C) 2006, Nangate Inc.
+	    All rights reserved.                           
+	
+		Copyright Notice:
+
+			This document contains confidential and proprietary information.
+			Reproduction or usage of this document, in part or whole, by any means,
+			electrical, mechanical, optical, chemical or otherwise is prohibited,
+			without written permission from Nangate Inc.
+
+			The information contained herein is protected by Danish and international  
+			copyright laws.                                                            
+		
+		Author: 
+			Joao Daniel Togni
+*/
+
+body.ctppage {
+             text-align : center;
+             background-color: #FFFFFF;
+}
+
+table.ctppage {
+             margin-left: auto;
+             margin-right: auto;
+}
+
+TH.ctppage {
+           border-style: solid;
+           background-color: #FFFFFF;
+}
+
+TD.ctppage {
+           border-style: solid;
+           padding: 20px;
+           text-align: center;
+}
+
+p.ctppage {
+          text-align:left;
+}
+
+.notea {
+      color: #FF0000;
+      text-align: center;
+      font-weight: bold;
+}
+
+.noteb {
+      color: #0000FF;
+      text-align:center;
+      font-weight: bold;
+}

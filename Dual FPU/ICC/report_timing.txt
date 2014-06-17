@@ -1,0 +1,74 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : plusplusfpu
+Version: E-2010.12-ICC-SP5
+Date   : Wed Jun  4 14:01:57 2014
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+        Parasitic source    : LPE
+        Parasitic mode      : RealRC
+        Extraction mode     : MIN_MAX
+        Extraction derating : 25/25/25
+
+Information: Percent of Arnoldi-based delays =  3.93%
+
+  Startpoint: fpu2/fpu_in/fpu_in_ctl/i_fp_type_in/q_reg[3]
+              (rising edge-triggered flip-flop clocked by gclk)
+  Endpoint: fpu2/fpu_in/clk_gate_fpu_in_ctl/i_inq_rdptr_dec/q_reg/latch
+            (positive level-sensitive latch clocked by gclk')
+  Path Group: gclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock gclk (rise edge)                                  0.00       0.00
+  clock network delay (propagated)                        0.45       0.45
+  fpu2/fpu_in/fpu_in_ctl/i_fp_type_in/q_reg[3]/CLK (DFFX1)
+                                                          0.00       0.45 r
+  fpu2/fpu_in/fpu_in_ctl/i_fp_type_in/q_reg[3]/QN (DFFX1)
+                                                          0.16       0.61 r
+  fpu2/fpu_in/U65/QN (NOR2X0)                             0.04 &     0.65 f
+  fpu2/fpu_in/U66/QN (NAND3X0)                            0.05 &     0.70 r
+  fpu2/fpu_in/U67/QN (NOR3X0)                             0.10 &     0.80 f
+  fpu2/fpu_in/U33/ZN (INVX0)                              0.08 &     0.89 r
+  fpu2/fpu_in/U11/QN (NOR3X0)                             0.11 &     0.99 f
+  fpu2/fpu_in/U10/QN (NAND3X0)                            0.14 &     1.13 r
+  fpu2/fpu_in/U32/ZN (INVX0)                              0.15 &     1.28 f
+  fpu2/fpu_in/U8/QN (NAND3X0)                             0.08 &     1.36 r
+  fpu2/fpu_in/U7/Q (OA21X1)                               0.11 &     1.48 r
+  fpu2/fpu_in/U146/Q (MUX21X1)                            0.17 &     1.65 f
+  fpu2/fpu_in/U164/Q (AO22X1)                             0.18 &     1.82 f
+  fpu2/fpu_in/U37/ZN (INVX0)                              0.09 &     1.91 r
+  fpu2/fpu_in/U31/QN (NAND2X0)                            0.05 &     1.96 f
+  fpu2/fpu_in/clk_gate_fpu_in_ctl/i_inq_rdptr_dec/q_reg/EN (SNPS_CLOCK_GATE_HIGH_fpu_in_1_0)
+                                                          0.00       1.96 f
+  fpu2/fpu_in/clk_gate_fpu_in_ctl/i_inq_rdptr_dec/q_reg/latch/D (LATCHX1)
+                                                          0.00 &     1.96 f
+  data arrival time                                                  1.96
+
+  clock gclk' (rise edge)                                 6.00       6.00
+  clock network delay (propagated)                        0.27       6.27
+  fpu2/fpu_in/clk_gate_fpu_in_ctl/i_inq_rdptr_dec/q_reg/latch/CLK (LATCHX1)
+                                                          0.00       6.27 r
+  time borrowed from endpoint                             0.00       6.27
+  data required time                                                 6.27
+  --------------------------------------------------------------------------
+  data required time                                                 6.27
+  data arrival time                                                 -1.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.31
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  gclk' pulse width                                       6.00   
+  library setup time                                     -0.08   
+  --------------------------------------------------------------
+  max time borrow                                         5.93   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------

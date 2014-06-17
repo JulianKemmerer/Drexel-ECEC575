@@ -1,0 +1,104 @@
+# 
+# ******************************************************************************
+# *                                                                            *
+# *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+# *                           All rights reserved.                             *
+# *                                                                            *
+# * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+# *                                                                            *
+# * All trademarks, logos, software marks, and trade names (collectively the   *
+# * "Marks") in this program are proprietary to Nangate or other respective    *
+# * owners that have granted Nangate the right and license to use such Marks.  *
+# * You are not permitted to use the Marks without the prior written consent   *
+# * of Nangate or such third party that may own the Marks.                     *
+# *                                                                            *
+# * This file has been provided pursuant to a License Agreement containing     *
+# * restrictions on its use. This file contains valuable trade secrets and     *
+# * proprietary information of Nangate Inc., and is protected by U.S. and      *
+# * international laws and/or treaties.                                        *
+# *                                                                            *
+# * The copyright notice(s) in this file does not indicate actual or intended  *
+# * publication of this file.                                                  *
+# *                                                                            *
+# *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+# *                                                                            *
+# ******************************************************************************
+# 
+# 
+# Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+# Local time is now Fri, 3 Dec 2010, 19:32:18.
+# Main process id is 27821.
+
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO CLKGATE_X8
+  CLASS core ;
+  FOREIGN CLKGATE_X8 0.0 0.0 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE FreePDK45_38x28_10R_NP_162NW_34O ;
+  SIZE 4.94 BY 1.4 ;
+  PIN CK
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.1453 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.533 LAYER metal1 ;
+    ANTENNAGATEAREA 0.23525 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 1.625 0.86 2.13 0.86 2.13 0.525 2.22 0.525 2.22 0.86 2.865 0.86 2.865 0.525 2.935 0.525 2.935 0.93 1.625 0.93  ;
+    END
+  END CK
+  PIN E
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.0231 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.0793 LAYER metal1 ;
+    ANTENNAGATEAREA 0.03475 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.345 0.56 0.51 0.56 0.51 0.7 0.345 0.7  ;
+    END
+  END E
+  PIN GCK
+    DIRECTION OUTPUT ;
+    ANTENNAPARTIALMETALAREA 0.4326 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 1.3312 LAYER metal1 ;
+    ANTENNADIFFAREA 0.462 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 3.485 0.15 3.555 0.15 3.555 0.42 3.855 0.42 3.855 0.15 3.925 0.15 3.925 0.42 4.235 0.42 4.235 0.15 4.305 0.15 4.305 0.42 4.615 0.42 4.615 0.15 4.685 0.15 4.685 1.235 4.615 1.235 4.615 0.56 4.305 0.56 4.305 1.235 4.235 1.235 4.235 0.56 3.925 0.56 3.925 1.235 3.855 1.235 3.855 0.56 3.555 0.56 3.555 1.235 3.485 1.235  ;
+    END
+  END GCK
+  PIN VDD
+    DIRECTION INOUT ;
+    USE power ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 1.315 0.23 1.315 0.23 0.96 0.3 0.96 0.3 1.315 1.005 1.315 1.005 0.995 1.075 0.995 1.075 1.315 1.355 1.315 1.355 1.175 1.49 1.175 1.49 1.315 1.645 1.315 1.725 1.315 1.725 1.065 1.795 1.065 1.795 1.315 2.12 1.315 2.12 1.205 2.19 1.205 2.19 1.315 2.5 1.315 2.5 1.205 2.57 1.205 2.57 1.315 2.88 1.315 2.88 1.205 2.95 1.205 2.95 1.315 3.275 1.315 3.275 0.96 3.345 0.96 3.345 1.315 3.42 1.315 3.665 1.315 3.665 0.96 3.735 0.96 3.735 1.315 4.045 1.315 4.045 0.96 4.115 0.96 4.115 1.315 4.425 1.315 4.425 0.96 4.495 0.96 4.495 1.315 4.805 1.315 4.805 0.96 4.875 0.96 4.875 1.315 4.94 1.315 4.94 1.485 3.42 1.485 1.645 1.485 0 1.485  ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE ground ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 -0.085 4.94 -0.085 4.94 0.085 4.875 0.085 4.875 0.285 4.805 0.285 4.805 0.085 4.495 0.085 4.495 0.285 4.425 0.285 4.425 0.085 4.115 0.085 4.115 0.285 4.045 0.285 4.045 0.085 3.74 0.085 3.74 0.285 3.67 0.285 3.67 0.085 3.38 0.085 3.38 0.16 3.245 0.16 3.245 0.085 2.605 0.085 2.605 0.16 2.47 0.16 2.47 0.085 1.85 0.085 1.85 0.16 1.715 0.16 1.715 0.085 1.49 0.085 1.49 0.16 1.355 0.16 1.355 0.085 1.075 0.085 1.075 0.285 1.005 0.285 1.005 0.085 0.335 0.085 0.335 0.25 0.2 0.25 0.2 0.085 0 0.085  ;
+    END
+  END VSS
+  OBS
+      LAYER metal1 ;
+        POLYGON 0.045 0.15 0.115 0.15 0.115 0.39 0.8 0.39 0.8 0.46 0.645 0.46 0.645 0.87 0.575 0.87 0.575 0.46 0.115 0.46 0.115 1.235 0.045 1.235  ;
+        POLYGON 0.585 1.01 0.735 1.01 0.735 0.525 0.865 0.525 0.865 0.25 0.585 0.25 0.585 0.18 0.935 0.18 0.935 0.525 1.14 0.525 1.14 0.66 0.805 0.66 0.805 1.08 0.585 1.08  ;
+        POLYGON 1.56 1.005 1.645 1.005 1.645 1.075 1.49 1.075 1.49 0.93 0.94 0.93 0.94 1.22 0.44 1.22 0.44 0.835 0.18 0.835 0.18 0.605 0.25 0.605 0.25 0.765 0.51 0.765 0.51 1.15 0.87 1.15 0.87 0.86 1.49 0.86 1.49 0.43 1.645 0.43 1.645 0.5 1.56 0.5  ;
+        POLYGON 0.87 0.725 1.205 0.725 1.205 0.15 1.275 0.15 1.275 0.255 3.225 0.255 3.225 0.66 3.155 0.66 3.155 0.325 2.57 0.325 2.57 0.66 2.5 0.66 2.5 0.325 1.895 0.325 1.895 0.66 1.825 0.66 1.825 0.325 1.275 0.325 1.275 0.795 0.87 0.795  ;
+        POLYGON 1.905 0.995 3.07 0.995 3.07 0.795 3.005 0.795 3.005 0.46 2.74 0.46 2.74 0.795 2.31 0.795 2.31 0.46 2.095 0.46 2.095 0.39 2.38 0.39 2.38 0.725 2.67 0.725 2.67 0.39 3.075 0.39 3.075 0.725 3.35 0.725 3.35 0.525 3.42 0.525 3.42 0.795 3.14 0.795 3.14 1.235 3.07 1.235 3.07 1.065 2.795 1.065 2.795 1.2 2.66 1.2 2.66 1.065 2.415 1.065 2.415 1.2 2.28 1.2 2.28 1.065 2.04 1.065 2.04 1.2 1.905 1.2  ;
+  END
+END CLKGATE_X8
+
+END LIBRARY
+#
+# End of file
+#

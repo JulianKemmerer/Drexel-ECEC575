@@ -1,0 +1,29 @@
+****************************************
+Report : area
+Design : plusplusfpu
+Version: E-2010.12-ICC-SP5
+Date   : Wed Jun  4 14:00:14 2014
+****************************************
+
+Information: Updating design information... (UID-85)
+Information: Input delay ('rise') on clock port 'gclk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'gclk' will be added to the clock's propagated skew. (TIM-112)
+Library(s) Used:
+
+    saed90nm_typ (File: /home/DREXEL/daw77/classes/asic_2/project/OpenSPARC/OpenSPARC_data/Icc_1/Models/saed90nm_typ.db)
+
+Number of ports:                          292
+Number of nets:                           734
+Number of cells:                          300
+Number of combinational cells:            298
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                         51
+Number of references:                      11
+
+Combinational area:       432284.777363
+Noncombinational area:    324831.744389
+Net Interconnect area:    200406.520944
+
+Total cell area:          757116.521752
+Total area:               957523.042696

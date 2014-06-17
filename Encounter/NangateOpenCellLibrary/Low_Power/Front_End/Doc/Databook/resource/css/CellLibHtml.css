@@ -1,0 +1,32 @@
+/*	 
+	    Copyright (C) 2006, Nangate Inc.
+	    All rights reserved.                           
+	
+		Copyright Notice:
+
+			This document contains confidential and proprietary information.
+			Reproduction or usage of this document, in part or whole, by any means,
+			electrical, mechanical, optical, chemical or otherwise is prohibited,
+			without written permission from Nangate Inc.
+
+			The information contained herein is protected by Danish and international  
+			copyright laws.                                                            
+		
+		Author: 
+			Joao Daniel Togni
+*/	
+/* CellLib specific styles */
+.Title_no_sp,.Title,.SubTitle,.Caption,.SubCaption
+{ color: #4A7091; }
+
+a.Title_no_sp:visited, a.Title:visited, a.SubTitle:visited, a.SubCaption:visited, a.Caption:visited 
+{ color: #4A7091; }
+
+
+.TOC1 A, .TOC1 { color: #2A5071; text-decoration:none; }
+.TOC2 A, .TOC2 { color: #3A6081; text-decoration:none; }
+.TOC5 A, .TOC5 { color: #3A6081; text-decoration:none; }
+.TOC3 A, .TOC3 { color: #437289; text-decoration:none; }
+.TOC4 A, .TOC4 { text-decoration:none; }
+
+.TOC3hidden { display: none }

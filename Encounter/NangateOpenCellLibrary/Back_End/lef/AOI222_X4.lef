@@ -1,0 +1,143 @@
+# 
+# ******************************************************************************
+# *                                                                            *
+# *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+# *                           All rights reserved.                             *
+# *                                                                            *
+# * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+# *                                                                            *
+# * All trademarks, logos, software marks, and trade names (collectively the   *
+# * "Marks") in this program are proprietary to Nangate or other respective    *
+# * owners that have granted Nangate the right and license to use such Marks.  *
+# * You are not permitted to use the Marks without the prior written consent   *
+# * of Nangate or such third party that may own the Marks.                     *
+# *                                                                            *
+# * This file has been provided pursuant to a License Agreement containing     *
+# * restrictions on its use. This file contains valuable trade secrets and     *
+# * proprietary information of Nangate Inc., and is protected by U.S. and      *
+# * international laws and/or treaties.                                        *
+# *                                                                            *
+# * The copyright notice(s) in this file does not indicate actual or intended  *
+# * publication of this file.                                                  *
+# *                                                                            *
+# *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+# *                                                                            *
+# ******************************************************************************
+# 
+# 
+# Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+# Local time is now Fri, 3 Dec 2010, 19:32:18.
+# Main process id is 27821.
+
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO AOI222_X4
+  CLASS core ;
+  FOREIGN AOI222_X4 0.0 0.0 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE FreePDK45_38x28_10R_NP_162NW_34O ;
+  SIZE 2.66 BY 1.4 ;
+  PIN A1
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.030625 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.091 LAYER metal1 ;
+    ANTENNAGATEAREA 0.05225 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.06 0.525 0.235 0.525 0.235 0.7 0.06 0.7  ;
+    END
+  END A1
+  PIN A2
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.021875 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.078 LAYER metal1 ;
+    ANTENNAGATEAREA 0.05225 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.385 0.525 0.51 0.525 0.51 0.7 0.385 0.7  ;
+    END
+  END A2
+  PIN B1
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.021875 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.078 LAYER metal1 ;
+    ANTENNAGATEAREA 0.05225 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.765 0.525 0.89 0.525 0.89 0.7 0.765 0.7  ;
+    END
+  END B1
+  PIN B2
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.021875 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.078 LAYER metal1 ;
+    ANTENNAGATEAREA 0.05225 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.575 0.525 0.7 0.525 0.7 0.7 0.575 0.7  ;
+    END
+  END B2
+  PIN C1
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.021875 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.078 LAYER metal1 ;
+    ANTENNAGATEAREA 0.05225 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 1.01 0.525 1.135 0.525 1.135 0.7 1.01 0.7  ;
+    END
+  END C1
+  PIN C2
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.023625 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.0806 LAYER metal1 ;
+    ANTENNAGATEAREA 0.05225 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 1.2 0.525 1.335 0.525 1.335 0.7 1.2 0.7  ;
+    END
+  END C2
+  PIN ZN
+    DIRECTION OUTPUT ;
+    ANTENNAPARTIALMETALAREA 0.2037 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.6318 LAYER metal1 ;
+    ANTENNADIFFAREA 0.2926 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 1.95 0.15 2.02 0.15 2.02 0.56 2.325 0.56 2.325 0.15 2.41 0.15 2.41 1.205 2.33 1.205 2.33 0.7 2.02 0.7 2.02 1.205 1.95 1.205  ;
+    END
+  END ZN
+  PIN VDD
+    DIRECTION INOUT ;
+    USE power ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 1.315 0.91 1.315 0.995 1.315 0.995 1.065 1.065 1.065 1.065 1.315 1.25 1.315 1.37 1.315 1.37 0.93 1.44 0.93 1.44 1.315 1.505 1.315 1.75 1.315 1.75 0.93 1.82 0.93 1.82 1.315 1.885 1.315 2.13 1.315 2.13 0.93 2.2 0.93 2.2 1.315 2.51 1.315 2.51 0.93 2.58 0.93 2.58 1.315 2.66 1.315 2.66 1.485 1.885 1.485 1.505 1.485 1.25 1.485 0.91 1.485 0 1.485  ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE ground ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 -0.085 2.66 -0.085 2.66 0.085 2.58 0.085 2.58 0.425 2.51 0.425 2.51 0.085 2.21 0.085 2.21 0.425 2.14 0.425 2.14 0.085 1.82 0.085 1.82 0.425 1.75 0.425 1.75 0.085 1.44 0.085 1.44 0.285 1.37 0.285 1.37 0.085 0.53 0.085 0.53 0.285 0.46 0.285 0.46 0.085 0 0.085  ;
+    END
+  END VSS
+  OBS
+      LAYER metal1 ;
+        POLYGON 0.09 0.93 0.16 0.93 0.16 1.135 0.46 1.135 0.46 0.93 0.53 0.93 0.53 1.135 0.84 1.135 0.84 1.07 0.91 1.07 0.91 1.205 0.09 1.205  ;
+        POLYGON 0.66 0.93 1.25 0.93 1.25 1.205 1.18 1.205 1.18 1 0.73 1 0.73 1.065 0.66 1.065  ;
+        POLYGON 0.28 0.765 1.435 0.765 1.435 0.425 0.09 0.425 0.09 0.15 0.16 0.15 0.16 0.355 0.84 0.355 0.84 0.15 0.91 0.15 0.91 0.355 1.505 0.355 1.505 0.835 0.35 0.835 0.35 1.04 0.28 1.04  ;
+        POLYGON 1.57 0.15 1.64 0.15 1.64 0.525 1.885 0.525 1.885 0.66 1.64 0.66 1.64 1.205 1.57 1.205  ;
+  END
+END AOI222_X4
+
+END LIBRARY
+#
+# End of file
+#

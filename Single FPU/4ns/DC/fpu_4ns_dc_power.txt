@@ -1,0 +1,75 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : fpu
+Version: H-2013.03-SP1
+Date   : Mon Jun  2 16:56:41 2014
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /home/DREXEL/kjj39/classes/ECEC475/OpenSPARC/OpenSPARC/OpenSPARC_data/DC_ASIC/Models/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fpu                    280000            saed90nm_typ
+fpu_in                 ForQA             saed90nm_typ
+bw_r_rf16x160          ForQA             saed90nm_typ
+fpu_add                ForQA             saed90nm_typ
+fpu_mul                ForQA             saed90nm_typ
+fpu_div                ForQA             saed90nm_typ
+fpu_in_dp              ForQA             saed90nm_typ
+fpu_add_ctl            ForQA             saed90nm_typ
+fpu_add_exp_dp         ForQA             saed90nm_typ
+fpu_add_frac_dp        ForQA             saed90nm_typ
+fpu_mul_ctl            ForQA             saed90nm_typ
+fpu_mul_exp_dp         ForQA             saed90nm_typ
+fpu_mul_frac_dp        ForQA             saed90nm_typ
+mul64                  ForQA             saed90nm_typ
+fpu_div_ctl            ForQA             saed90nm_typ
+fpu_div_frac_dp        ForQA             saed90nm_typ
+mul_array1_0           ForQA             saed90nm_typ
+mul_array1_1           ForQA             saed90nm_typ
+mul_array2             ForQA             saed90nm_typ
+mul_ppgenrow3_0        ForQA             saed90nm_typ
+mul_ppgenrow3_5        ForQA             saed90nm_typ
+mul_ppgenrow3_4        ForQA             saed90nm_typ
+mul_ppgenrow3_3        ForQA             saed90nm_typ
+mul_ppgenrow3_1        ForQA             saed90nm_typ
+mul_ppgenrow3_2        ForQA             saed90nm_typ
+
+
+Global Operating Voltage = 1.2
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 975.2659 uW   (37%)
+  Net Switching Power  =   1.6835 mW   (63%)
+                         ---------
+Total Dynamic Power    =   2.6588 mW  (100%)
+
+Cell Leakage Power     =   2.1280 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      5.4159        1.2988e+03        2.4805e+05        1.3045e+03  (  27.25%)
+register         403.9422           62.2284        6.1228e+08        1.0784e+03  (  22.53%)
+sequential     -6.0027e-01        9.4667e-02        3.7680e+08          376.2971 (   7.86%)
+combinational    566.5117          322.3641        1.1387e+09        2.0276e+03  (  42.36%)
+--------------------------------------------------------------------------------------------------
+Total            975.2695 uW     1.6835e+03 uW     2.1280e+09 pW     4.7868e+03 uW

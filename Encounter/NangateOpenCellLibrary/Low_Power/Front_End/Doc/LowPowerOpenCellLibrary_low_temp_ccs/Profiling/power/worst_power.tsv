@@ -1,0 +1,42 @@
+PROFILING Worst_Power			uW/GHz
+
+Worst_Power	"(-inf, 1.28162uW/GHz]"	none
+	"(1.28162uW/GHz, 10.7461uW/GHz]"	20 elements
+		HEADER_OE_X2	2.68633	"SLEEP to SLEEPOUT -> fall (125.146ps, 0.365616fF)"
+		LS_HL_X1	2.86101	"A to Z -> fall (125.146ps, 13.9236fF)"
+		HEADER_OE_X1	3.05071	"SLEEP to SLEEPOUT -> fall (125.146ps, 0.365616fF)"
+		LS_HLEN_X1	3.26966	"ISOLN to Z -> fall (125.146ps, 13.8473fF)"
+		LS_HL_X2	3.34514	"A to Z -> fall (125.146ps, 28.9917fF)"
+		AON_INV_X1	3.37693	"A to Z -> rise (125.146ps, 0.365616fF)"
+		HEADER_OE_X4	3.50975	"SLEEP to SLEEPOUT -> fall (0.872315ps, 12.9509fF)"
+		LS_HLEN_X2	3.78636	"ISOLN to Z -> fall (125.146ps, 28.9154fF)"
+		AON_BUF_X1	4.81881	"A to Z -> fall (125.146ps, 11.6921fF)"
+		LS_HL_X4	4.92283	"A to Z -> fall (125.146ps, 0.365616fF)"
+		AON_BUF_X2	5.09747	"A to Z -> fall (125.146ps, 12.7411fF)"
+		ISO_FENCE0_X1	5.59525	"A to Z -> rise (125.146ps, 0.365616fF)"
+		ISO_FENCE1N_X1	5.92385	"EN to Z -> rise (125.146ps, 0.365616fF)"
+		AON_INV_X2	7.05645	"A to Z -> rise (125.146ps, 0.365616fF)"
+		LS_HLEN_X4	7.16409	"ISOLN to Z -> fall (125.146ps, 57.6782fF)"
+		ISO_FENCE1_X1	7.4131	"A to Z -> fall (125.146ps, 19.0353fF)"
+		AON_BUF_X4	7.62415	"A to Z -> fall (125.146ps, 0.365616fF)"
+		ISO_FENCE0N_X1	7.77467	"EN to Z -> fall (125.146ps, 18.959fF)"
+		ISO_FENCE1_X2	8.1844	"A to Z -> fall (125.146ps, 9.89915fF)"
+		ISO_FENCE0N_X2	8.7353	"EN to Z -> fall (125.146ps, 1.23501fF)"
+	"(10.7461uW/GHz, 20.2107uW/GHz]"	9 elements
+		ISO_FENCE0_X2	11.2835	"A to Z -> rise (125.146ps, 0.365616fF)"
+		LS_LH_X1	11.4912	"A to Z -> fall (125.146ps, 9.66949fF)"
+		LS_LHEN_X4	11.6079	"A to Z -> fall (125.146ps, 0.365616fF)"
+		ISO_FENCE1N_X2	11.9283	"EN to Z -> rise (125.146ps, 1.2064fF)"
+		LS_LH_X2	12.1559	"A to Z -> fall (125.146ps, 3.1805fF)"
+		AON_INV_X4	13.8946	"A to Z -> rise (125.146ps, 0.365616fF)"
+		LS_LH_X4	14.4277	"A to Z -> fall (125.146ps, 0.365616fF)"
+		ISO_FENCE1_X4	15.5164	"A to Z -> fall (125.146ps, 0.365616fF)"
+		ISO_FENCE0N_X4	16.9534	"EN to Z -> fall (125.146ps, 0.365616fF)"
+	"(20.2107uW/GHz, +inf)"	4 elements
+		ISO_FENCE0_X4	22.4354	"A to Z -> rise (125.146ps, 0.365616fF)"
+		ISO_FENCE1N_X4	23.9214	"EN to Z -> rise (125.146ps, 2.4128fF)"
+		LS_LHEN_X2	39.6013	"A to Z -> rise (0.872315ps, 1.58787fF)"
+		LS_LHEN_X1	43.2094	"A to Z -> rise (0.872315ps, 2.80467fF)"
+
+Profiling Statistics	Average	10.7461
+	Standard Deviation	9.46452

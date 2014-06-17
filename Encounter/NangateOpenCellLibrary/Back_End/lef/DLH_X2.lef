@@ -1,0 +1,103 @@
+# 
+# ******************************************************************************
+# *                                                                            *
+# *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+# *                           All rights reserved.                             *
+# *                                                                            *
+# * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+# *                                                                            *
+# * All trademarks, logos, software marks, and trade names (collectively the   *
+# * "Marks") in this program are proprietary to Nangate or other respective    *
+# * owners that have granted Nangate the right and license to use such Marks.  *
+# * You are not permitted to use the Marks without the prior written consent   *
+# * of Nangate or such third party that may own the Marks.                     *
+# *                                                                            *
+# * This file has been provided pursuant to a License Agreement containing     *
+# * restrictions on its use. This file contains valuable trade secrets and     *
+# * proprietary information of Nangate Inc., and is protected by U.S. and      *
+# * international laws and/or treaties.                                        *
+# *                                                                            *
+# * The copyright notice(s) in this file does not indicate actual or intended  *
+# * publication of this file.                                                  *
+# *                                                                            *
+# *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+# *                                                                            *
+# ******************************************************************************
+# 
+# 
+# Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+# Local time is now Fri, 3 Dec 2010, 19:32:18.
+# Main process id is 27821.
+
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO DLH_X2
+  CLASS core ;
+  FOREIGN DLH_X2 0.0 0.0 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE FreePDK45_38x28_10R_NP_162NW_34O ;
+  SIZE 2.09 BY 1.4 ;
+  PIN D
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.023625 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.0806 LAYER metal1 ;
+    ANTENNAGATEAREA 0.03475 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 1.135 0.525 1.27 0.525 1.27 0.7 1.135 0.7  ;
+    END
+  END D
+  PIN G
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.0245 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.0819 LAYER metal1 ;
+    ANTENNAGATEAREA 0.02625 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.18 0.525 0.32 0.525 0.32 0.7 0.18 0.7  ;
+    END
+  END G
+  PIN Q
+    DIRECTION OUTPUT ;
+    ANTENNAPARTIALMETALAREA 0.042 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.1742 LAYER metal1 ;
+    ANTENNADIFFAREA 0.1463 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.44 0.185 0.51 0.185 0.51 0.785 0.44 0.785  ;
+    END
+  END Q
+  PIN VDD
+    DIRECTION INOUT ;
+    USE power ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 1.315 0.24 1.315 0.24 1.055 0.31 1.055 0.31 1.315 0.62 1.315 0.62 1 0.69 1 0.69 1.315 0.78 1.315 1.03 1.315 1.03 1.04 1.1 1.04 1.1 1.315 1.78 1.315 1.78 1.08 1.85 1.08 1.85 1.315 1.91 1.315 2.045 1.315 2.09 1.315 2.09 1.485 2.045 1.485 1.91 1.485 0.78 1.485 0 1.485  ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE ground ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 -0.085 2.09 -0.085 2.09 0.085 1.85 0.085 1.85 0.32 1.78 0.32 1.78 0.085 1.1 0.085 1.1 0.32 1.03 0.32 1.03 0.085 0.69 0.085 0.69 0.255 0.62 0.255 0.62 0.085 0.31 0.085 0.31 0.255 0.24 0.255 0.24 0.085 0 0.085  ;
+    END
+  END VSS
+  OBS
+      LAYER metal1 ;
+        POLYGON 0.045 0.185 0.115 0.185 0.115 0.85 0.71 0.85 0.71 0.375 0.78 0.375 0.78 0.92 0.115 0.92 0.115 1.24 0.045 1.24  ;
+        POLYGON 0.82 0.975 0.85 0.975 0.85 0.31 0.82 0.31 0.82 0.175 0.92 0.175 0.92 0.39 1.475 0.39 1.475 0.67 1.405 0.67 1.405 0.46 0.92 0.46 0.92 1.25 0.82 1.25  ;
+        POLYGON 0.985 0.525 1.055 0.525 1.055 0.78 1.545 0.78 1.545 0.32 1.41 0.32 1.41 0.185 1.615 0.185 1.615 0.74 1.91 0.74 1.91 0.875 1.47 0.875 1.47 1.2 1.4 1.2 1.4 0.85 0.985 0.85  ;
+        POLYGON 1.705 0.495 1.975 0.495 1.975 0.185 2.045 0.185 2.045 1.215 1.975 1.215 1.975 0.63 1.705 0.63  ;
+  END
+END DLH_X2
+
+END LIBRARY
+#
+# End of file
+#

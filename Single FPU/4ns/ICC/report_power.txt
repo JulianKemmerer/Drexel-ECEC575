@@ -1,0 +1,41 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : fpu
+Version: E-2010.12-ICC-SP5
+Date   : Tue Jun  3 20:05:04 2014
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /home/DREXEL/kjj39/classes/ECEC475/OpenSPARC/OpenSPARC/OpenSPARC_data/Icc_ASIC/Models/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fpu                    280000            saed90nm_typ
+fpu_add                ForQA             saed90nm_typ
+bw_r_rf16x160          ForQA             saed90nm_typ
+mul_array2             ForQA             saed90nm_typ
+mul_ppgenrow3_1        ForQA             saed90nm_typ
+
+
+Global Operating Voltage = 1.2
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.8068 mW   (38%)
+  Net Switching Power  =   3.0108 mW   (62%)
+                         ---------
+Total Dynamic Power    =   4.8176 mW  (100%)
+
+Cell Leakage Power     =   2.0737 mW

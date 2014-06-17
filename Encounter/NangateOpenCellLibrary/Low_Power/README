@@ -1,0 +1,53 @@
+Nangate 45nm Low Power Open Cell Library
+------------------------------
+
+The Nangate Open Cell Library is an open-source, standard-cell library provided for the purposes of testing and exploring EDA flows.
+
+Nangate has developed and donated this library to Si2.org for open use. The library is intended to aid university research programs
+and organizations such as Si2 in developing flows, developing circuits and exercising new algorithms. In its first release the 
+Low Power Open Cell Library contains always-on cells, isolation cells, level shifters and power-switches. All 
+the different cell functions come in multiple drive strength variants. 
+
+The Low Power Open Cell library contains the following cells types:
+
+    * Always-on cell 
+      A special cell located in a switched-off domain, and whose power supply is continuous even when the power supply for the 
+      remaining logic in the power domain is off.
+
+    * Isolation cell
+      Logic used to isolate signals between two power domains where one is switched on and one is switched off. The most common 
+      usage of such cell is to isolate signals originating in a power domain that is being switched off, from the power domain 
+      that receives these signals and that remains switched on.
+
+    * Level-shifter cell
+      Logic to pass data signals between power domains operating at different voltages.
+
+    * Power-switch (header) cell
+      Logic used to connect and disconnect the power supply from the gates in a power domain.
+
+
+The library was generated using Nangate's Library Creator™ and the 45nm FreePDK Base Kit from North Carolina State University (NCSU) 
+and characterization was done using the Predictive Technology Model (PTM) from Arizona State University (ASU). 
+
+The library will be enhanced over time based on user suggestions and requests. If you have suggestions for development of 
+the library then please fill out the request form you can find at www.opencelllibrary.org with your suggestions.
+
+The Low Power Open Cell Library contains the following views:
+
+    * Liberty (.lib) with NLDM/NLPM, CCS Timing and ECSM Timing data
+    * LEF View
+    * Verilog(R)
+    * VITAL (VHDL Initiative Towards ASIC Libraries)
+    * Spice netlists (pre and post extraction)
+    * GDSII
+    * Schematics
+    * Library databook in HTML/XML format
+    * OpenAccess library databases with layouts and netlists
+
+See the LICENSE file for information on license terms.
+
+Revision History:
+----------------------------------------------------
+
+Version v2010_12 (released August 2011)
+- Initial release of the Low Power Open Cell Library

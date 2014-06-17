@@ -1,0 +1,30 @@
+# PPCMD 1 
+# addRing -spacing_bottom 2 -width_left 5 -width_bottom 5 -width_top 5 -spacing_top 2 -layer_bottom metal1 -center 1 -stacked_via_top_layer metal10 -width_right 5 -around core -jog_distance 0.095 -offset_bottom 0.095 -layer_top metal1 -threshold 0.095 -offset_left 0.095 -spacing_right 2 -spacing_left 2 -offset_right 0.095 -offset_top 0.095 -layer_right metal2 -nets {VDD VSS} -stacked_via_bottom_layer metal1 -layer_left metal2
+# 1 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 10000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 319600 13020 319600 624240 
+# END_RING_PT_INFO_LIST 
+# VSS 10000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 13140 318630 626060 318630 
+# END_RING_PT_INFO_LIST 
+# VDD 10000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 319600 27020 319600 610240 
+# END_RING_PT_INFO_LIST 
+# VDD 10000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 27140 318630 612060 318630 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+

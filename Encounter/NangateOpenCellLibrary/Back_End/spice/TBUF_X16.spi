@@ -1,0 +1,102 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:20:34.
+* Main process id is 28034.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   TBUF_X16.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:20:34 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT TBUF_X16 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=A
+M_i_0_6_6_40_125 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_13_45_122 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_6_37_112 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_42_108 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_6_6_43 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_13_120 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_6_106 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_116 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_6_6_40 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_13_45 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_6_37 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_42 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_6_6 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_13 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_6 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0 VSS x Z VSS NMOS_VTL W=0.355000U L=0.050000U
+M_i_0_14_47 VSS NEN dummy1a VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_15_63 dummy1a A y VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_15_63_69 dummy1 A y VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_14_47_77 VSS NEN dummy1 VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_14_113 VSS EN x VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_15_129 VSS A x VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_15 VSS A x VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_0_14 VSS EN x VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_17 VSS EN NEN VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_24_3_19_50_12 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_8_39_66 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_3_18_103 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_9_17 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_3_19_51 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_8_42 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_3_83 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_10 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_3_19_50 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_8_39 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_3_18 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_9 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_3_19 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_8 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_3 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24 VDD y Z VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_24_1_48 y NEN VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_24_0_64 VDD A y VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_24_0_64_92 VDD A y VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_24_1_48_94 y NEN VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_24_1_114 dummy0a EN VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_24_0_130 x A dummy0a VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_24_0 x A dummy0 VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_24_1 dummy0 EN VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_42 VDD EN NEN VDD PMOS_VTL W=0.630000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

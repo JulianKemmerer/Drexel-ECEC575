@@ -1,0 +1,3236 @@
+(edif NangateSchematicElements
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap
+		(keywordLevel 0)
+	)
+	(library NangateSchematicElements
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 5000000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(true)
+				)
+				(color 0 0 80)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup graphic
+				(visible
+					(true)
+				)
+				(color 0 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(true)
+				)
+				(color 0 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instancename
+				(visible
+					(true)
+				)
+				(color 255 204 0)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 0 0 80)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 0 33 255)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 0 33 255)
+				(pathWidth 0)
+			)
+			(figureGroup porttext
+				(visible
+					(true)
+				)
+				(color 0 33 255)
+				(pathWidth 0)
+			)
+			(figureGroup portlabel
+				(visible
+					(true)
+				)
+				(color 0 33 255)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 255 01 0)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 0 80 0)
+				(pathWidth 1)
+			)
+		)
+		(cell PMOS
+			(cellType GENERIC)
+			(view PMOS3
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property AD
+						(string "0")
+						(property Callback
+							(string "CalcProperty AD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "0")
+						(property Callback
+							(string "CalcProperty AS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property Model
+						(string "PMOS")
+						(comment "MOSFET model name.")
+					)
+					(property PD
+						(string "0")
+						(property Callback
+							(string "CalcProperty PD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "0")
+						(property Callback
+							(string "CalcProperty PS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_ORDER "SPICE.ORDER")
+						(integer 25)
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~ GEO~ TABLES~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property L
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(property W
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(symbol
+						(boundingBox
+							(rectangle
+								(pt 0 -625)
+								(pt 625 375)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 325-350)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt 175 160)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 750 -375)
+									)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 750 -125)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 625 375)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 375)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 367)
+									(pt 633 383)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 -125)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 -133)
+									(pt 8 -117)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 625 -625)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 -625)
+									)
+								)
+							)
+                                                        (figure portshape
+								(rectangle
+									(pt 617 -633)
+									(pt 633 -617)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 310 -250)
+									(pt 310 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 360 -250)
+									(pt 360 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 375)
+									(pt 625 0)
+									(pt 360 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -125)
+									(pt 210 -125)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 -625)
+									(pt 625 -250)
+									(pt 360 -250)
+								)
+							)
+						)
+						(figure device
+							(circle
+								(pt 210 -125)
+								(pt 310 -125)
+							)
+						)
+					)
+				)
+			)
+			(view PMOS4
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(port B)
+					(property AD
+						(string "0")
+						(property Callback
+							(string "CalcProperty AD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Bulk "ANNOTATE.Bulk")
+						(string "[ annotate port B ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "0")
+						(property Callback
+							(string "CalcProperty AS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property Model
+						(string "PMOS")
+						(comment "MOSFET model name.")
+					)
+					(property PD
+						(string "0")
+						(property Callback
+							(string "CalcProperty PD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "0")
+						(property Callback
+							(string "CalcProperty PS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_ORDER "SPICE.ORDER")
+						(integer 25)
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~ GEO~ TABLES~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property L
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(property W
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(symbol
+						(boundingBox
+							(rectangle
+								(pt 0 -625)
+								(pt 625 375)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 325 -350)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt 175 260)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 750 250)
+									)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 750 125)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 625 375)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 375)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 367)
+									(pt 633 383)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 -125)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 -133)
+									(pt 8 -117)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 625 -625)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 -625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 -633)
+									(pt 633 -617)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 -125)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 -133)
+									(pt 633 -117)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 310 -250)
+									(pt 310 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 360 -250)
+									(pt 360 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 375)
+									(pt 625 0)
+									(pt 360 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -125)
+									(pt 210 -125)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 -625)
+									(pt 625 -250)
+									(pt 360 -250)
+								)
+							)
+						)
+						(figure device
+							(circle
+								(pt 210 -125)
+								(pt 310 -125)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 -125)
+									(pt 360 -125)
+								)
+							)
+						)
+					)
+				)
+			)
+			(view PMOS4HUP
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(port B)
+					(property AD
+						(string "0")
+						(property Callback
+							(string "CalcProperty AD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Bulk "ANNOTATE.Bulk")
+						(string "[ annotate port B ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "0")
+						(property Callback
+							(string "CalcProperty AS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property Model
+						(string "NMOS")
+						(comment "MOSFET model name.")
+					)
+					(property PD
+						(string "0")
+						(property Callback
+							(string "CalcProperty PD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "0")
+						(property Callback
+							(string "CalcProperty PS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_ORDER "SPICE.ORDER")
+						(integer 25)
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~ GEO~ TABLES~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property L
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(property W
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+                                        (symbol
+						(boundingBox
+							(rectangle
+								(pt 0 0)
+								(pt 1125 625)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 350 350)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt 300 250)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(justify CENTERCENTER)
+									(origin
+                                                                                (pt 625 -250)
+									)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(justify CENTERCENTER)
+									(origin
+                                                                                (pt 625 -375)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 0 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 -8)
+									(pt 8 8)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 617)
+									(pt 633 633)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 1125 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1125 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1117 -8)
+									(pt 1133 8)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 -8)
+									(pt 633 8)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 500 300)
+									(pt 750 300)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 500 250)
+									(pt 750 250)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1125 0)
+									(pt 750 0)
+									(pt 750 250)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 625)
+									(pt 625 400)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 0)
+									(pt 500 0)
+									(pt 500 250)
+								)
+							)
+						)
+						(figure device
+							(circle
+								(pt 625 400)
+								(pt 625 300)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625  250)
+									(pt 625 0)
+								)
+							)
+						)
+					)
+				)
+			)
+			(view PMOS4HDN
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(port B)
+					(property AD
+						(string "0")
+						(property Callback
+							(string "CalcProperty AD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Bulk "ANNOTATE.Bulk")
+						(string "[ annotate port B ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "0")
+						(property Callback
+							(string "CalcProperty AS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property Model
+						(string "PMOS")
+						(comment "MOSFET model name.")
+					)
+					(property PD
+						(string "0")
+						(property Callback
+							(string "CalcProperty PD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "0")
+						(property Callback
+							(string "CalcProperty PS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_ORDER "SPICE.ORDER")
+						(integer 25)
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~ GEO~ TABLES~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property L
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(property W
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+                                        (symbol
+						(boundingBox
+							(rectangle
+								(pt 0 0)
+								(pt 1125 625)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 350 350)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt 300 360)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(justify CENTERCENTER)
+									(origin
+                                                                                (pt 625 875)
+									)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(justify CENTERCENTER)
+									(origin
+                                                                                (pt 625 1125)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 0 625)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 617)
+									(pt 8 633)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 -8)
+									(pt 633 8)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 1125 625)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1125 625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1117 617)
+									(pt 1133 633)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 617)
+									(pt 633 633)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 500 310)
+									(pt 750 310)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 500 360)
+									(pt 750 360)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1125 625)
+									(pt 750 625)
+									(pt 750 360)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 0)
+									(pt 625 210)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 625)
+									(pt 500 625)
+									(pt 500 360)
+								)
+							)
+						)
+						(figure device
+							(circle
+								(pt 625 310)
+								(pt 625 210)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 360)
+									(pt 625 625)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell NMOS
+			(cellType GENERIC)
+			(view NMOS3
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property AD
+						(string "0")
+						(property Callback
+							(string "CalcProperty AD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "0")
+						(property Callback
+							(string "CalcProperty AS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property PD
+						(string "0")
+						(property Callback
+							(string "CalcProperty PD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "0")
+						(property Callback
+							(string "CalcProperty PS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property Model
+						(string "NMOS")
+						(comment "MOSFET model name.")
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~ GEO~ TABLES~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_ORDER "SPICE.ORDER")
+						(integer 25)
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property L
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(property W
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(symbol
+						(boundingBox
+							(rectangle
+								(pt 0 -625)
+								(pt 625 375)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 325 -610)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt 175 160)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 750 -375)
+									)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 750 -125)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 625 375)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 375)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 367)
+									(pt 633 383)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 -125)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 -133)
+									(pt 8 -117)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 625 -625)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 -625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 -633)
+									(pt 633 -617)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 310 -250)
+									(pt 310 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 360 -250)
+									(pt 360 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 375)
+									(pt 625 0)
+									(pt 360 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -125)
+									(pt 310 -125)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 -625)
+									(pt 625 -250)
+									(pt 360 -250)
+								)
+							)
+						)
+					)
+				)
+			)
+			(view NMOS4
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(port B)
+					(property AD
+						(string "0")
+						(property Callback
+							(string "CalcProperty AD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "0")
+						(property Callback
+							(string "CalcProperty AS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property PD
+						(string "0")
+						(property Callback
+							(string "CalcProperty PD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "0")
+						(property Callback
+							(string "CalcProperty PS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property Model
+						(string "NMOS")
+						(comment "MOSFET model name.")
+					)
+					(property
+						(rename SPICE_PERIOD_ORDER "SPICE.ORDER")
+						(integer 25)
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~ GEO~ TABLES~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property L
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(property W
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(symbol
+						(boundingBox
+							(rectangle
+								(pt 0 -625)
+								(pt 625 375)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 325 -350)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt 175 260)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 750 250)
+									)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 750 125)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 625 375)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 375)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 367)
+									(pt 633 383)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 -125)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 -133)
+									(pt 8 -117)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 625 -625)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 -625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 -633)
+									(pt 633 -617)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 -125)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 -133)
+									(pt 633 -117)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 310 -250)
+									(pt 310 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 360 -250)
+									(pt 360 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 375)
+									(pt 625 0)
+									(pt 360 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -125)
+									(pt 310 -125)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 -625)
+									(pt 625 -250)
+									(pt 360 -250)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 -125)
+									(pt 360 -125)
+								)
+							)
+						)
+					)
+				)
+			)
+			(view NMOS4HUP
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(port B)
+					(property AD
+						(string "0")
+						(property Callback
+							(string "CalcProperty AD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Bulk "ANNOTATE.Bulk")
+						(string "[ annotate port B ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "0")
+						(property Callback
+							(string "CalcProperty AS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property Model
+						(string "NMOS")
+						(comment "MOSFET model name.")
+					)
+					(property PD
+						(string "0")
+						(property Callback
+							(string "CalcProperty PD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "0")
+						(property Callback
+							(string "CalcProperty PS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_ORDER "SPICE.ORDER")
+						(integer 25)
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~ GEO~ TABLES~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property L
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(property W
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+                                        (symbol
+						(boundingBox
+							(rectangle
+								(pt 0 0)
+								(pt 1125 625)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 350 350)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt 300 250)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(justify CENTERCENTER)
+									(origin
+                                                                                (pt 625 -250)
+									)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(justify CENTERCENTER)
+									(origin
+                                                                                (pt 625 -375)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 0 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 -8)
+									(pt 8 8)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 617)
+									(pt 633 633)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 1125 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1125 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1117 -8)
+									(pt 1133 8)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 -8)
+									(pt 633 8)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 500 300)
+									(pt 750 300)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 500 250)
+									(pt 750 250)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1125 0)
+									(pt 750 0)
+									(pt 750 250)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 625)
+									(pt 625 300)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 0)
+									(pt 500 0)
+									(pt 500 250)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625  250)
+									(pt 625 0)
+								)
+							)
+						)
+					)
+				)
+			)
+			(view NMOS4HDN
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(port B)
+					(property AD
+						(string "0")
+						(property Callback
+							(string "CalcProperty AD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Bulk "ANNOTATE.Bulk")
+						(string "[ annotate port B ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "0")
+						(property Callback
+							(string "CalcProperty AS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property Model
+						(string "NMOS")
+						(comment "MOSFET model name.")
+					)
+					(property PD
+						(string "0")
+						(property Callback
+							(string "CalcProperty PD")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "0")
+						(property Callback
+							(string "CalcProperty PS")
+						)
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_ORDER "SPICE.ORDER")
+						(integer 25)
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~ GEO~ TABLES~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property L
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+					(property W
+						(string "0")
+						(property Type
+							(string "Double")
+						)
+					)
+                                        (symbol
+						(boundingBox
+							(rectangle
+								(pt 0 0)
+								(pt 1125 625)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 350 350)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt 300 360)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(justify CENTERCENTER)
+									(origin
+                                                                                (pt 625 875)
+									)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(justify CENTERCENTER)
+									(origin
+                                                                                (pt 625 1125)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 0 625)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 617)
+									(pt 8 633)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 -8)
+									(pt 633 8)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 1125 625)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1125 625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1117 617)
+									(pt 1133 633)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 625 625)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 617 617)
+									(pt 633 633)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 500 310)
+									(pt 750 310)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 500 360)
+									(pt 750 360)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1125 625)
+									(pt 750 625)
+									(pt 750 360)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 0)
+									(pt 625 310)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 625)
+									(pt 500 625)
+									(pt 500 360)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 625 360)
+									(pt 625 625)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell Vdd
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port  VDD
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property						(rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT")						(string "[]")						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")						(boolean (true))						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename TPR_PERIOD_OUTPUT "TPR.OUTPUT")						(string )						(property Type							(string "String")						)					)					(property						(rename VERILOG_PERIOD_OUTPUT "VERILOG.OUTPUT")						(string "[]")						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename VERILOG_PERIOD_PRIMITIVE "VERILOG.PRIMITIVE")						(boolean (true))						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename VHDL_PERIOD_OUTPUT "VHDL.OUTPUT")						(string "[]")						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename VHDL_PERIOD_PRIMITIVE "VHDL.PRIMITIVE")						(boolean (true))						(property InterfaceParameter							(boolean								(false)							)						)					)					(symbol
+						(boundingBox
+							(rectangle
+								(pt -175 0)
+								(pt 175 250)
+							)
+						)
+						(portImplementation
+							(name  VDD
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 -8)
+									(pt 8 8)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -175 250)
+									(pt 175 250)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 0)
+									(pt 0 250)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell Vss
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port VSS
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property						(rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT")						(string "[]")						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")						(boolean (true))						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename TPR_PERIOD_OUTPUT "TPR.OUTPUT")						(string )						(property Type							(string "String")						)					)					(property						(rename VERILOG_PERIOD_OUTPUT "VERILOG.OUTPUT")						(string "[]")						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename VERILOG_PERIOD_PRIMITIVE "VERILOG.PRIMITIVE")						(boolean (true))						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename VHDL_PERIOD_OUTPUT "VHDL.OUTPUT")						(string "[]")						(property InterfaceParameter							(boolean								(false)							)						)					)					(property						(rename VHDL_PERIOD_PRIMITIVE "VHDL.PRIMITIVE")						(boolean (true))						(property InterfaceParameter							(boolean								(false)							)						)					)					(symbol
+						(boundingBox
+							(rectangle
+								(pt -150 -210)
+								(pt 150 0)
+							)
+						)
+						(portImplementation
+							(name VSS
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -8 -8)
+									(pt 8 8)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -150 -150)
+									(pt 150 -150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -100 -180)
+									(pt 100 -180)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -50 -210)
+									(pt 50 -210)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 0)
+									(pt 0 -150)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+)

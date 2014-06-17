@@ -1,0 +1,103 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:25:53.
+* Main process id is 28006.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   INV_X1.                                                          *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:25:53 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT INV_X1 VDD VSS A ZN 
+*.PININFO VDD:P VSS:G A:I ZN:O 
+*.EQN ZN=!A
+M_M1 N_ZN_M0_d N_A_M0_g N_VDD_M0_s VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M0 N_ZN_M1_d N_A_M1_g N_VSS_M1_s VSS NMOS_VTL W=0.415000U L=0.050000U
+C_x_PM_INV_X1%VDD_c0 x_PM_INV_X1%VDD_31 VSS 4.13109e-17
+C_x_PM_INV_X1%VDD_c1 x_PM_INV_X1%VDD_19 VSS 2.61599e-16
+C_x_PM_INV_X1%VDD_c2 x_PM_INV_X1%VDD_18 VSS 1.89932e-17
+C_x_PM_INV_X1%VDD_c3 N_VDD_M0_s VSS 3.88255e-17
+C_x_PM_INV_X1%VDD_c4 x_PM_INV_X1%VDD_12 VSS 1.92462e-17
+C_x_PM_INV_X1%VDD_c5 x_PM_INV_X1%VDD_11 VSS 2.334e-16
+C_x_PM_INV_X1%VDD_c6 x_PM_INV_X1%VDD_8 VSS 5.52247e-16
+R_x_PM_INV_X1%VDD_r7 VDD x_PM_INV_X1%VDD_31 0.13879
+R_x_PM_INV_X1%VDD_r8 VDD x_PM_INV_X1%VDD_28 0.392137
+R_x_PM_INV_X1%VDD_r9 VDD x_PM_INV_X1%VDD_19 0.13879
+R_x_PM_INV_X1%VDD_r10 x_PM_INV_X1%VDD_19 VDD 3.84471
+R_x_PM_INV_X1%VDD_r11 x_PM_INV_X1%VDD_18 x_PM_INV_X1%VDD_28 0.0752999
+R_x_PM_INV_X1%VDD_r12 x_PM_INV_X1%VDD_31 x_PM_INV_X1%VDD_18 0.704118
+R_x_PM_INV_X1%VDD_r13 x_PM_INV_X1%VDD_28 N_VDD_M0_s 0.719286
+R_x_PM_INV_X1%VDD_r14 x_PM_INV_X1%VDD_12 VDD 0.140282
+R_x_PM_INV_X1%VDD_r15 x_PM_INV_X1%VDD_11 VDD 0.143516
+R_x_PM_INV_X1%VDD_r16 x_PM_INV_X1%VDD_11 x_PM_INV_X1%VDD_12 7.68941
+R_x_PM_INV_X1%VDD_r17 x_PM_INV_X1%VDD_8 VDD 8.51647
+C_x_PM_INV_X1%VSS_c0 VSS VSS 2.61599e-16
+C_x_PM_INV_X1%VSS_c1 x_PM_INV_X1%VSS_18 VSS 1.89932e-17
+C_x_PM_INV_X1%VSS_c2 x_PM_INV_X1%VSS_17 VSS 4.14709e-17
+C_x_PM_INV_X1%VSS_c3 N_VSS_M1_s VSS 4.35792e-17
+C_x_PM_INV_X1%VSS_c4 x_PM_INV_X1%VSS_10 VSS 5.52247e-16
+C_x_PM_INV_X1%VSS_c5 x_PM_INV_X1%VSS_9 VSS 1.92462e-17
+C_x_PM_INV_X1%VSS_c6 x_PM_INV_X1%VSS_8 VSS 2.334e-16
+R_x_PM_INV_X1%VSS_r7 VSS x_PM_INV_X1%VSS_29 0.392137
+R_x_PM_INV_X1%VSS_r8 x_PM_INV_X1%VSS_18 x_PM_INV_X1%VSS_29 0.0752999
+R_x_PM_INV_X1%VSS_r9 x_PM_INV_X1%VSS_18 VSS 0.178824
+R_x_PM_INV_X1%VSS_r10 VSS x_PM_INV_X1%VSS_17 0.13879
+R_x_PM_INV_X1%VSS_r11 x_PM_INV_X1%VSS_17 VSS 0.525294
+R_x_PM_INV_X1%VSS_r12 x_PM_INV_X1%VSS_29 N_VSS_M1_s 1.47929
+R_x_PM_INV_X1%VSS_r13 x_PM_INV_X1%VSS_10 VSS 8.51647
+R_x_PM_INV_X1%VSS_r14 x_PM_INV_X1%VSS_9 VSS 0.140282
+R_x_PM_INV_X1%VSS_r15 x_PM_INV_X1%VSS_8 VSS 0.143516
+R_x_PM_INV_X1%VSS_r16 x_PM_INV_X1%VSS_8 x_PM_INV_X1%VSS_9 7.68941
+C_x_PM_INV_X1%A_c0 x_PM_INV_X1%A_18 VSS 1.01215e-17
+C_x_PM_INV_X1%A_c1 x_PM_INV_X1%A_9 VSS 4.4957e-17
+C_x_PM_INV_X1%A_c2 N_A_M0_g VSS 8.65621e-17
+C_x_PM_INV_X1%A_c3 N_A_M1_g VSS 6.49671e-17
+R_x_PM_INV_X1%A_r4 x_PM_INV_X1%A_11 x_PM_INV_X1%A_18 3.9
+R_x_PM_INV_X1%A_r5 x_PM_INV_X1%A_9 x_PM_INV_X1%A_11 25.0012
+R_x_PM_INV_X1%A_r6 x_PM_INV_X1%A_9 A 0.135714
+R_x_PM_INV_X1%A_r7 x_PM_INV_X1%A_5 x_PM_INV_X1%A_18 1.95
+R_x_PM_INV_X1%A_r8 x_PM_INV_X1%A_5 N_A_M0_g 56.94
+R_x_PM_INV_X1%A_r9 x_PM_INV_X1%A_1 x_PM_INV_X1%A_18 1.95
+R_x_PM_INV_X1%A_r10 x_PM_INV_X1%A_1 N_A_M1_g 40.17
+C_x_PM_INV_X1%ZN_c0 N_ZN_M1_d VSS 1.95828e-16
+R_x_PM_INV_X1%ZN_r1 ZN N_ZN_M0_d 2.21
+R_x_PM_INV_X1%ZN_r2 N_ZN_M1_d ZN 1.09
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

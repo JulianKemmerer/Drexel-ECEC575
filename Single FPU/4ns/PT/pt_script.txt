@@ -1,0 +1,9 @@
+source synopsys_dc.setup
+
+read_milkyway -library design_lib_fpu_2 fpu_route_opt_final
+
+report_analysis_coverage
+
+gui_start
+
+produce histogram of end point slack

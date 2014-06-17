@@ -1,0 +1,1755 @@
+/* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2011, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *   NGLibraryCharacterizer, v2011.05-QR02-2011-05-18_32 - build 1107011217   *
+* *                                                                            *
+* ******************************************************************************
+*
+* Spice engine            : Nanspice v2011.05-QR02-2011-05-18_32-1107011217
+* Liberty export type     : functional
+*
+*
+****************************************************************************/
+
+library (LowPowerOpenCellLibrary) {
+
+  /* Documentation Attributes */
+  date                    		: "Wed 17 Aug 2011, 19:29:05";
+  revision                		: "revision 1.0";
+  comment                 		: "Copyright (c) 2004-2010 Nangate Inc. All Rights Reserved.";
+
+  define(drive_strength, cell, float);
+  define(ng_build_equation, cell, string);
+
+  /******************************************************************************************
+   Module          	: AON_BUF_X1
+   Cell Description	: Combinational cell (AON_BUF_X1) with drive strength X1
+  *******************************************************************************************/
+
+  cell (AON_BUF_X1) {
+
+	drive_strength     	: 1;
+
+	area               	: 1.862000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDBAK) {
+		voltage_name : VDDBAK;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+		function		: "A";
+		power_down_function	: "(!VDDBAK | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: AON_BUF_X2
+   Cell Description	: Combinational cell (AON_BUF_X2) with drive strength X2
+  *******************************************************************************************/
+
+  cell (AON_BUF_X2) {
+
+	drive_strength     	: 2;
+
+	area               	: 1.862000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDBAK) {
+		voltage_name : VDDBAK;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+		function		: "A";
+		power_down_function	: "(!VDDBAK | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: AON_BUF_X4
+   Cell Description	: Combinational cell (AON_BUF_X4) with drive strength X4
+  *******************************************************************************************/
+
+  cell (AON_BUF_X4) {
+
+	drive_strength     	: 4;
+
+	area               	: 2.128000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDBAK) {
+		voltage_name : VDDBAK;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+		function		: "A";
+		power_down_function	: "(!VDDBAK | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: AON_INV_X1
+   Cell Description	: Combinational cell (AON_INV_X1) with drive strength X1
+  *******************************************************************************************/
+
+  cell (AON_INV_X1) {
+
+	drive_strength     	: 1;
+
+	area               	: 1.596000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDBAK) {
+		voltage_name : VDDBAK;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+		function		: "!A";
+		power_down_function	: "(!VDDBAK | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: AON_INV_X2
+   Cell Description	: Combinational cell (AON_INV_X2) with drive strength X2
+  *******************************************************************************************/
+
+  cell (AON_INV_X2) {
+
+	drive_strength     	: 2;
+
+	area               	: 1.596000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDBAK) {
+		voltage_name : VDDBAK;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+		function		: "!A";
+		power_down_function	: "(!VDDBAK | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: AON_INV_X4
+   Cell Description	: Combinational cell (AON_INV_X4) with drive strength X4
+  *******************************************************************************************/
+
+  cell (AON_INV_X4) {
+
+	drive_strength     	: 4;
+
+	area               	: 1.862000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDBAK) {
+		voltage_name : VDDBAK;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDBAK";
+		related_ground_pin	: "VSS";
+		function		: "!A";
+		power_down_function	: "(!VDDBAK | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: HEADER_OE_X1
+   Cell Description	: Combinational cell (HEADER_OE_X1) with drive strength X1
+  *******************************************************************************************/
+
+  cell (HEADER_OE_X1) {
+
+	drive_strength     	: 1;
+
+	area               	: 1.330000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+	pg_pin(VVDD) {
+		voltage_name : VVDD;
+		pg_type      : primary_power;
+	}
+
+	pin (SLEEP) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (SLEEPOUT) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "SLEEP";
+		power_down_function	: "(!VDD & VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: HEADER_OE_X2
+   Cell Description	: Combinational cell (HEADER_OE_X2) with drive strength X2
+  *******************************************************************************************/
+
+  cell (HEADER_OE_X2) {
+
+	drive_strength     	: 2;
+
+	area               	: 1.330000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+	pg_pin(VVDD) {
+		voltage_name : VVDD;
+		pg_type      : primary_power;
+	}
+
+	pin (SLEEP) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (SLEEPOUT) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "SLEEP";
+		power_down_function	: "(!VDD & VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: HEADER_OE_X4
+   Cell Description	: Combinational cell (HEADER_OE_X4) with drive strength X4
+  *******************************************************************************************/
+
+  cell (HEADER_OE_X4) {
+
+	drive_strength     	: 4;
+
+	area               	: 1.330000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+	pg_pin(VVDD) {
+		voltage_name : VVDD;
+		pg_type      : primary_power;
+	}
+
+	pin (SLEEP) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (SLEEPOUT) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "SLEEP";
+		power_down_function	: "(!VDD & VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: HEADER_X1
+   Cell Description	: Physical cell (HEADER_X1)
+  *******************************************************************************************/
+
+  cell (HEADER_X1) {
+
+	drive_strength     	: 1;
+
+	dont_touch	: true;
+	dont_use	: true;
+
+	area               	: 0.532000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+	pg_pin(VVDD) {
+		voltage_name : VVDD;
+		pg_type      : primary_power;
+	}
+
+	pin (SLEEP) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: HEADER_X2
+   Cell Description	: Physical cell (HEADER_X2)
+  *******************************************************************************************/
+
+  cell (HEADER_X2) {
+
+	drive_strength     	: 2;
+
+	dont_touch	: true;
+	dont_use	: true;
+
+	area               	: 0.532000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+	pg_pin(VVDD) {
+		voltage_name : VVDD;
+		pg_type      : primary_power;
+	}
+
+	pin (SLEEP) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: HEADER_X4
+   Cell Description	: Physical cell (HEADER_X4)
+  *******************************************************************************************/
+
+  cell (HEADER_X4) {
+
+	drive_strength     	: 4;
+
+	dont_touch	: true;
+	dont_use	: true;
+
+	area               	: 0.532000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+	pg_pin(VVDD) {
+		voltage_name : VVDD;
+		pg_type      : primary_power;
+	}
+
+	pin (SLEEP) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE0N_X1
+   Cell Description	: Combinational cell (ISO_FENCE0N_X1) with drive strength X1
+  *******************************************************************************************/
+
+  cell (ISO_FENCE0N_X1) {
+
+	drive_strength     	: 1;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 1.064000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "(A & EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE0N_X2
+   Cell Description	: Combinational cell (ISO_FENCE0N_X2) with drive strength X2
+  *******************************************************************************************/
+
+  cell (ISO_FENCE0N_X2) {
+
+	drive_strength     	: 2;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 1.064000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "(A & EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE0N_X4
+   Cell Description	: Combinational cell (ISO_FENCE0N_X4) with drive strength X4
+  *******************************************************************************************/
+
+  cell (ISO_FENCE0N_X4) {
+
+	drive_strength     	: 4;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 1.330000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "(A & EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE0_X1
+   Cell Description	: Combinational cell (ISO_FENCE0_X1) with drive strength X1
+  *******************************************************************************************/
+
+  cell (ISO_FENCE0_X1) {
+
+	drive_strength     	: 1;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 0.798000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "!(A | EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE0_X2
+   Cell Description	: Combinational cell (ISO_FENCE0_X2) with drive strength X2
+  *******************************************************************************************/
+
+  cell (ISO_FENCE0_X2) {
+
+	drive_strength     	: 2;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 0.798000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "!(A | EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE0_X4
+   Cell Description	: Combinational cell (ISO_FENCE0_X4) with drive strength X4
+  *******************************************************************************************/
+
+  cell (ISO_FENCE0_X4) {
+
+	drive_strength     	: 4;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 1.330000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "!(A | EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE1N_X1
+   Cell Description	: Combinational cell (ISO_FENCE1N_X1) with drive strength X1
+  *******************************************************************************************/
+
+  cell (ISO_FENCE1N_X1) {
+
+	drive_strength     	: 1;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 0.798000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "!(A & EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE1N_X2
+   Cell Description	: Combinational cell (ISO_FENCE1N_X2) with drive strength X2
+  *******************************************************************************************/
+
+  cell (ISO_FENCE1N_X2) {
+
+	drive_strength     	: 2;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 0.798000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "!(A & EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE1N_X4
+   Cell Description	: Combinational cell (ISO_FENCE1N_X4) with drive strength X4
+  *******************************************************************************************/
+
+  cell (ISO_FENCE1N_X4) {
+
+	drive_strength     	: 4;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 1.330000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "!(A & EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE1_X1
+   Cell Description	: Combinational cell (ISO_FENCE1_X1) with drive strength X1
+  *******************************************************************************************/
+
+  cell (ISO_FENCE1_X1) {
+
+	drive_strength     	: 1;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 1.064000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "(A | EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE1_X2
+   Cell Description	: Combinational cell (ISO_FENCE1_X2) with drive strength X2
+  *******************************************************************************************/
+
+  cell (ISO_FENCE1_X2) {
+
+	drive_strength     	: 2;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 1.064000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "(A | EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: ISO_FENCE1_X4
+   Cell Description	: Combinational cell (ISO_FENCE1_X4) with drive strength X4
+  *******************************************************************************************/
+
+  cell (ISO_FENCE1_X4) {
+
+	drive_strength     	: 4;
+
+	dont_touch	: true;
+	dont_use	: true;
+	is_isolation_cell	: true;
+
+	area               	: 1.330000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (EN) {
+
+		direction		: input;
+		isolation_cell_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "(A | EN)";
+		power_down_function	: "(!VDD | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_HLEN_X1
+   Cell Description	: Level-shifter cell (LS_HLEN_X1) with enable pin and drive strength X1
+  *******************************************************************************************/
+
+  cell (LS_HLEN_X1) {
+
+	drive_strength     	: 1;
+
+	input_voltage_range	 (1.10 , 1.30);
+	is_level_shifter	: true;
+	level_shifter_type	: HL;
+	output_voltage_range	 (0.70 , 0.90);
+
+	area               	: 1.064000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		level_shifter_data_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (ISOLN) {
+
+		direction		: input;
+		level_shifter_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+		function		: "(A & ISOLN)";
+		power_down_function	: "(!VDDL | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_HLEN_X2
+   Cell Description	: Level-shifter cell (LS_HLEN_X2) with enable pin and drive strength X2
+  *******************************************************************************************/
+
+  cell (LS_HLEN_X2) {
+
+	drive_strength     	: 2;
+
+	input_voltage_range	 (1.10 , 1.30);
+	is_level_shifter	: true;
+	level_shifter_type	: HL;
+	output_voltage_range	 (0.70 , 0.90);
+
+	area               	: 1.064000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		level_shifter_data_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (ISOLN) {
+
+		direction		: input;
+		level_shifter_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+		function		: "(A & ISOLN)";
+		power_down_function	: "(!VDDL | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_HLEN_X4
+   Cell Description	: Level-shifter cell (LS_HLEN_X4) with enable pin and drive strength X4
+  *******************************************************************************************/
+
+  cell (LS_HLEN_X4) {
+
+	drive_strength     	: 4;
+
+	input_voltage_range	 (1.10 , 1.30);
+	is_level_shifter	: true;
+	level_shifter_type	: HL;
+	output_voltage_range	 (0.70 , 0.90);
+
+	area               	: 1.330000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		level_shifter_data_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (ISOLN) {
+
+		direction		: input;
+		level_shifter_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+		function		: "(A & ISOLN)";
+		power_down_function	: "(!VDDL | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_HL_X1
+   Cell Description	: Level-shifter cell (LS_HL_X1) with drive strength X1
+  *******************************************************************************************/
+
+  cell (LS_HL_X1) {
+
+	drive_strength     	: 1;
+
+	input_voltage_range	 (1.10 , 1.30);
+	is_level_shifter	: true;
+	level_shifter_type	: HL;
+	output_voltage_range	 (0.70 , 0.90);
+
+	area               	: 0.798000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		level_shifter_data_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+		function		: "A";
+		power_down_function	: "(!VDDL | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_HL_X2
+   Cell Description	: Level-shifter cell (LS_HL_X2) with drive strength X2
+  *******************************************************************************************/
+
+  cell (LS_HL_X2) {
+
+	drive_strength     	: 2;
+
+	input_voltage_range	 (1.10 , 1.30);
+	is_level_shifter	: true;
+	level_shifter_type	: HL;
+	output_voltage_range	 (0.70 , 0.90);
+
+	area               	: 0.798000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		level_shifter_data_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+		function		: "A";
+		power_down_function	: "(!VDDL | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_HL_X4
+   Cell Description	: Level-shifter cell (LS_HL_X4) with drive strength X4
+  *******************************************************************************************/
+
+  cell (LS_HL_X4) {
+
+	drive_strength     	: 4;
+
+	input_voltage_range	 (1.10 , 1.30);
+	is_level_shifter	: true;
+	level_shifter_type	: HL;
+	output_voltage_range	 (0.70 , 0.90);
+
+	area               	: 1.064000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		level_shifter_data_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+		function		: "A";
+		power_down_function	: "(!VDDL | VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_LHEN_X1
+   Cell Description	: Level-shifter cell (LS_LHEN_X1) with enable pin and drive strength X1
+  *******************************************************************************************/
+
+  cell (LS_LHEN_X1) {
+
+	drive_strength     	: 1;
+
+	input_voltage_range	 (0.70 , 0.90);
+	is_level_shifter	: true;
+	level_shifter_type	: LH;
+	output_voltage_range	 (1.10 , 1.30);
+
+	area               	: 3.724000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+		std_cell_main_rail : true;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (ISOLN) {
+
+		direction		: input;
+		level_shifter_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "(A & ISOLN)";
+		power_down_function	: "(!VDD & VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_LHEN_X2
+   Cell Description	: Level-shifter cell (LS_LHEN_X2) with enable pin and drive strength X2
+  *******************************************************************************************/
+
+  cell (LS_LHEN_X2) {
+
+	drive_strength     	: 2;
+
+	input_voltage_range	 (0.70 , 0.90);
+	is_level_shifter	: true;
+	level_shifter_type	: LH;
+	output_voltage_range	 (1.10 , 1.30);
+
+	area               	: 3.724000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+		std_cell_main_rail : true;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (ISOLN) {
+
+		direction		: input;
+		level_shifter_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "(A & ISOLN)";
+		power_down_function	: "(!VDD & VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_LHEN_X4
+   Cell Description	: Level-shifter cell (LS_LHEN_X4) with enable pin and drive strength X4
+  *******************************************************************************************/
+
+  cell (LS_LHEN_X4) {
+
+	drive_strength     	: 4;
+
+	input_voltage_range	 (0.70 , 0.90);
+	is_level_shifter	: true;
+	level_shifter_type	: LH;
+	output_voltage_range	 (1.10 , 1.30);
+
+	area               	: 3.724000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+		std_cell_main_rail : true;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (ISOLN) {
+
+		direction		: input;
+		level_shifter_enable_pin		: true;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "(A & ISOLN)";
+		power_down_function	: "(!VDD & VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_LH_X1
+   Cell Description	: Level-shifter cell (LS_LH_X1) with drive strength X1
+  *******************************************************************************************/
+
+  cell (LS_LH_X1) {
+
+	drive_strength     	: 1;
+
+	input_voltage_range	 (0.70 , 0.90);
+	is_level_shifter	: true;
+	level_shifter_type	: LH;
+	output_voltage_range	 (1.10 , 1.30);
+
+	area               	: 2.926000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+		std_cell_main_rail : true;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "A";
+		power_down_function	: "(!VDD & VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_LH_X2
+   Cell Description	: Level-shifter cell (LS_LH_X2) with drive strength X2
+  *******************************************************************************************/
+
+  cell (LS_LH_X2) {
+
+	drive_strength     	: 2;
+
+	input_voltage_range	 (0.70 , 0.90);
+	is_level_shifter	: true;
+	level_shifter_type	: LH;
+	output_voltage_range	 (1.10 , 1.30);
+
+	area               	: 2.926000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+		std_cell_main_rail : true;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "A";
+		power_down_function	: "(!VDD & VSS)";
+	}
+
+  }
+
+
+  /******************************************************************************************
+   Module          	: LS_LH_X4
+   Cell Description	: Level-shifter cell (LS_LH_X4) with drive strength X4
+  *******************************************************************************************/
+
+  cell (LS_LH_X4) {
+
+	drive_strength     	: 4;
+
+	input_voltage_range	 (0.70 , 0.90);
+	is_level_shifter	: true;
+	level_shifter_type	: LH;
+	output_voltage_range	 (1.10 , 1.30);
+
+	area               	: 2.926000;
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type      : primary_power;
+	}
+	pg_pin(VDDL) {
+		voltage_name : VDDL;
+		pg_type      : primary_power;
+		std_cell_main_rail : true;
+	}
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type      : primary_ground;
+	}
+
+	pin (A) {
+
+		direction		: input;
+		related_power_pin	: "VDDL";
+		related_ground_pin	: "VSS";
+	}
+
+	pin (Z) {
+
+		direction		: output;
+		related_power_pin	: "VDD";
+		related_ground_pin	: "VSS";
+		function		: "A";
+		power_down_function	: "(!VDD & VSS)";
+	}
+
+  }
+
+}
+/*
+* End of file
+*/

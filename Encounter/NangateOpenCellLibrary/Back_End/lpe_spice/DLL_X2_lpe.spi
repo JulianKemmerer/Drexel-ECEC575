@@ -1,0 +1,312 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 18:58:21.
+* Main process id is 28006.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   DLL_X2.                                                          *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 18:58:21 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT DLL_X2 VDD VSS D Q GN 
+*.PININFO VDD:P VSS:G D:I Q:O GN:I 
+M_M9 N_VDD_M0_d N_7_M0_g N_3_M0_s VDD PMOS_VTL W=0.315000U L=0.050000U
+M_M10 net_006 N_D_M1_g N_VDD_M0_d VDD PMOS_VTL W=0.420000U L=0.050000U
+M_M11 N_5_M2_d N_3_M2_g net_006 VDD PMOS_VTL W=0.420000U L=0.050000U
+M_M12 net_007 N_7_M3_g N_5_M2_d VDD PMOS_VTL W=0.090000U L=0.050000U
+M_M13 N_VDD_M4_d N_6_M4_g net_007 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_M14 N_6_M5_d N_5_M5_g N_VDD_M4_d VDD PMOS_VTL W=0.090000U L=0.050000U
+M_M15 N_Q_M6_d N_5_M6_g N_VDD_M6_s VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M16 N_VDD_M7_d N_5_M7_g N_Q_M6_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M17 N_7_M8_d N_GN_M8_g N_VDD_M7_d VDD PMOS_VTL W=0.315000U L=0.050000U
+M_M0 N_VSS_M9_d N_7_M9_g N_3_M9_s VSS NMOS_VTL W=0.210000U L=0.050000U
+M_M1 net_002 N_D_M10_g N_VSS_M9_d VSS NMOS_VTL W=0.275000U L=0.050000U
+M_M2 N_5_M11_d N_7_M11_g net_002 VSS NMOS_VTL W=0.275000U L=0.050000U
+M_M3 net_004 N_3_M12_g N_5_M11_d VSS NMOS_VTL W=0.090000U L=0.050000U
+M_M4 N_VSS_M13_d N_6_M13_g net_004 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_M5 N_6_M14_d N_5_M14_g N_VSS_M13_d VSS NMOS_VTL W=0.090000U L=0.050000U
+M_M6 N_Q_M15_d N_5_M15_g N_VSS_M15_s VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M7 N_VSS_M16_d N_5_M16_g N_Q_M15_d VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M8 N_7_M17_d N_GN_M17_g N_VSS_M16_d VSS NMOS_VTL W=0.210000U L=0.050000U
+C_x_PM_DLL_X2%VDD_c0 x_PM_DLL_X2%VDD_59 VSS 3.73313e-17
+C_x_PM_DLL_X2%VDD_c1 x_PM_DLL_X2%VDD_56 VSS 2.65998e-18
+C_x_PM_DLL_X2%VDD_c2 x_PM_DLL_X2%VDD_55 VSS 2.72943e-18
+C_x_PM_DLL_X2%VDD_c3 x_PM_DLL_X2%VDD_54 VSS 4.68763e-18
+C_x_PM_DLL_X2%VDD_c4 x_PM_DLL_X2%VDD_53 VSS 4.68106e-18
+C_x_PM_DLL_X2%VDD_c5 x_PM_DLL_X2%VDD_52 VSS 1.0599e-17
+C_x_PM_DLL_X2%VDD_c6 x_PM_DLL_X2%VDD_51 VSS 2.334e-16
+C_x_PM_DLL_X2%VDD_c7 x_PM_DLL_X2%VDD_42 VSS 2.61598e-16
+C_x_PM_DLL_X2%VDD_c8 N_VDD_M7_d VSS 2.50279e-17
+C_x_PM_DLL_X2%VDD_c9 x_PM_DLL_X2%VDD_34 VSS 3.5849e-17
+C_x_PM_DLL_X2%VDD_c10 N_VDD_M6_s VSS 2.77895e-17
+C_x_PM_DLL_X2%VDD_c11 x_PM_DLL_X2%VDD_28 VSS 5.87001e-17
+C_x_PM_DLL_X2%VDD_c12 N_VDD_M4_d VSS 5.96518e-17
+C_x_PM_DLL_X2%VDD_c13 x_PM_DLL_X2%VDD_22 VSS 6.98148e-17
+C_x_PM_DLL_X2%VDD_c14 N_VDD_M0_d VSS 6.65294e-17
+C_x_PM_DLL_X2%VDD_c15 x_PM_DLL_X2%VDD_16 VSS 2.44931e-17
+C_x_PM_DLL_X2%VDD_c16 x_PM_DLL_X2%VDD_15 VSS 1.92462e-17
+C_x_PM_DLL_X2%VDD_c17 x_PM_DLL_X2%VDD_11 VSS 6.67932e-16
+R_x_PM_DLL_X2%VDD_r18 VDD x_PM_DLL_X2%VDD_59 0.13879
+R_x_PM_DLL_X2%VDD_r19 VDD x_PM_DLL_X2%VDD_52 0.138595
+R_x_PM_DLL_X2%VDD_r20 VDD x_PM_DLL_X2%VDD_51 0.138985
+R_x_PM_DLL_X2%VDD_r21 VDD x_PM_DLL_X2%VDD_42 0.13879
+R_x_PM_DLL_X2%VDD_r22 x_PM_DLL_X2%VDD_42 VDD 3.84471
+R_x_PM_DLL_X2%VDD_r23 x_PM_DLL_X2%VDD_41 x_PM_DLL_X2%VDD_56 0.0731438
+R_x_PM_DLL_X2%VDD_r24 x_PM_DLL_X2%VDD_59 x_PM_DLL_X2%VDD_41 0.681765
+R_x_PM_DLL_X2%VDD_r25 x_PM_DLL_X2%VDD_36 x_PM_DLL_X2%VDD_56 0.145286
+R_x_PM_DLL_X2%VDD_r26 x_PM_DLL_X2%VDD_36 N_VDD_M7_d 0.230714
+R_x_PM_DLL_X2%VDD_r27 x_PM_DLL_X2%VDD_35 x_PM_DLL_X2%VDD_55 0.0731438
+R_x_PM_DLL_X2%VDD_r28 x_PM_DLL_X2%VDD_34 x_PM_DLL_X2%VDD_56 0.0731438
+R_x_PM_DLL_X2%VDD_r29 x_PM_DLL_X2%VDD_34 x_PM_DLL_X2%VDD_35 0.681765
+R_x_PM_DLL_X2%VDD_r30 x_PM_DLL_X2%VDD_30 x_PM_DLL_X2%VDD_55 0.145286
+R_x_PM_DLL_X2%VDD_r31 x_PM_DLL_X2%VDD_30 N_VDD_M6_s 0.230714
+R_x_PM_DLL_X2%VDD_r32 x_PM_DLL_X2%VDD_29 x_PM_DLL_X2%VDD_54 0.0731438
+R_x_PM_DLL_X2%VDD_r33 x_PM_DLL_X2%VDD_28 x_PM_DLL_X2%VDD_55 0.0731438
+R_x_PM_DLL_X2%VDD_r34 x_PM_DLL_X2%VDD_28 x_PM_DLL_X2%VDD_29 0.737647
+R_x_PM_DLL_X2%VDD_r35 x_PM_DLL_X2%VDD_24 x_PM_DLL_X2%VDD_54 0.145286
+R_x_PM_DLL_X2%VDD_r36 x_PM_DLL_X2%VDD_24 N_VDD_M4_d 1.96786
+R_x_PM_DLL_X2%VDD_r37 x_PM_DLL_X2%VDD_23 x_PM_DLL_X2%VDD_53 0.0731438
+R_x_PM_DLL_X2%VDD_r38 x_PM_DLL_X2%VDD_22 x_PM_DLL_X2%VDD_54 0.0731438
+R_x_PM_DLL_X2%VDD_r39 x_PM_DLL_X2%VDD_22 x_PM_DLL_X2%VDD_23 1.54235
+R_x_PM_DLL_X2%VDD_r40 x_PM_DLL_X2%VDD_18 x_PM_DLL_X2%VDD_53 0.145286
+R_x_PM_DLL_X2%VDD_r41 x_PM_DLL_X2%VDD_18 N_VDD_M0_d 1.12643
+R_x_PM_DLL_X2%VDD_r42 x_PM_DLL_X2%VDD_16 x_PM_DLL_X2%VDD_53 0.0731438
+R_x_PM_DLL_X2%VDD_r43 x_PM_DLL_X2%VDD_16 x_PM_DLL_X2%VDD_52 0.603529
+R_x_PM_DLL_X2%VDD_r44 x_PM_DLL_X2%VDD_15 VDD 0.140282
+R_x_PM_DLL_X2%VDD_r45 x_PM_DLL_X2%VDD_51 x_PM_DLL_X2%VDD_15 7.68941
+R_x_PM_DLL_X2%VDD_r46 x_PM_DLL_X2%VDD_11 VDD 10.4276
+C_x_PM_DLL_X2%VSS_c0 x_PM_DLL_X2%VSS_60 VSS 2.91558e-17
+C_x_PM_DLL_X2%VSS_c1 x_PM_DLL_X2%VSS_57 VSS 2.65998e-18
+C_x_PM_DLL_X2%VSS_c2 x_PM_DLL_X2%VSS_56 VSS 2.80899e-18
+C_x_PM_DLL_X2%VSS_c3 x_PM_DLL_X2%VSS_54 VSS 4.64232e-18
+C_x_PM_DLL_X2%VSS_c4 x_PM_DLL_X2%VSS_52 VSS 2.334e-16
+C_x_PM_DLL_X2%VSS_c5 VSS VSS 2.61598e-16
+C_x_PM_DLL_X2%VSS_c6 N_VSS_M16_d VSS 1.12944e-17
+C_x_PM_DLL_X2%VSS_c7 x_PM_DLL_X2%VSS_36 VSS 2.86783e-17
+C_x_PM_DLL_X2%VSS_c8 N_VSS_M15_s VSS 2.95929e-17
+C_x_PM_DLL_X2%VSS_c9 x_PM_DLL_X2%VSS_30 VSS 2.15429e-17
+C_x_PM_DLL_X2%VSS_c10 N_VSS_M13_d VSS 4.83104e-17
+C_x_PM_DLL_X2%VSS_c11 VSS VSS 3.00216e-18
+C_x_PM_DLL_X2%VSS_c12 x_PM_DLL_X2%VSS_22 VSS 8.02585e-17
+C_x_PM_DLL_X2%VSS_c13 N_VSS_M9_d VSS 3.78096e-17
+C_x_PM_DLL_X2%VSS_c14 x_PM_DLL_X2%VSS_17 VSS 1.0599e-17
+C_x_PM_DLL_X2%VSS_c15 x_PM_DLL_X2%VSS_16 VSS 2.33609e-17
+C_x_PM_DLL_X2%VSS_c16 x_PM_DLL_X2%VSS_13 VSS 6.67932e-16
+C_x_PM_DLL_X2%VSS_c17 x_PM_DLL_X2%VSS_12 VSS 1.92462e-17
+R_x_PM_DLL_X2%VSS_r18 VSS x_PM_DLL_X2%VSS_60 0.13879
+R_x_PM_DLL_X2%VSS_r19 VSS x_PM_DLL_X2%VSS_52 0.138985
+R_x_PM_DLL_X2%VSS_r20 x_PM_DLL_X2%VSS_43 x_PM_DLL_X2%VSS_57 0.0731438
+R_x_PM_DLL_X2%VSS_r21 x_PM_DLL_X2%VSS_60 x_PM_DLL_X2%VSS_43 0.681765
+R_x_PM_DLL_X2%VSS_r22 x_PM_DLL_X2%VSS_38 x_PM_DLL_X2%VSS_57 0.145286
+R_x_PM_DLL_X2%VSS_r23 x_PM_DLL_X2%VSS_38 N_VSS_M16_d 0.230714
+R_x_PM_DLL_X2%VSS_r24 x_PM_DLL_X2%VSS_37 x_PM_DLL_X2%VSS_56 0.0731438
+R_x_PM_DLL_X2%VSS_r25 x_PM_DLL_X2%VSS_36 x_PM_DLL_X2%VSS_57 0.0731438
+R_x_PM_DLL_X2%VSS_r26 x_PM_DLL_X2%VSS_36 x_PM_DLL_X2%VSS_37 0.681765
+R_x_PM_DLL_X2%VSS_r27 x_PM_DLL_X2%VSS_32 x_PM_DLL_X2%VSS_56 0.145286
+R_x_PM_DLL_X2%VSS_r28 x_PM_DLL_X2%VSS_32 N_VSS_M15_s 1.31643
+R_x_PM_DLL_X2%VSS_r29 x_PM_DLL_X2%VSS_30 x_PM_DLL_X2%VSS_56 0.0731438
+R_x_PM_DLL_X2%VSS_r30 x_PM_DLL_X2%VSS_30 x_PM_DLL_X2%VSS_31 0.737647
+R_x_PM_DLL_X2%VSS_r31 VSS N_VSS_M13_d 1.66929
+R_x_PM_DLL_X2%VSS_r32 x_PM_DLL_X2%VSS_31 VSS 0.0731438
+R_x_PM_DLL_X2%VSS_r33 x_PM_DLL_X2%VSS_23 x_PM_DLL_X2%VSS_54 0.0731438
+R_x_PM_DLL_X2%VSS_r34 x_PM_DLL_X2%VSS_22 VSS 0.0731438
+R_x_PM_DLL_X2%VSS_r35 x_PM_DLL_X2%VSS_22 x_PM_DLL_X2%VSS_23 1.54235
+R_x_PM_DLL_X2%VSS_r36 x_PM_DLL_X2%VSS_18 x_PM_DLL_X2%VSS_54 0.145286
+R_x_PM_DLL_X2%VSS_r37 x_PM_DLL_X2%VSS_18 N_VSS_M9_d 1.18071
+R_x_PM_DLL_X2%VSS_r38 VSS x_PM_DLL_X2%VSS_17 0.138595
+R_x_PM_DLL_X2%VSS_r39 x_PM_DLL_X2%VSS_16 x_PM_DLL_X2%VSS_54 0.0731438
+R_x_PM_DLL_X2%VSS_r40 x_PM_DLL_X2%VSS_16 x_PM_DLL_X2%VSS_17 0.603529
+R_x_PM_DLL_X2%VSS_r41 x_PM_DLL_X2%VSS_13 VSS 10.4276
+R_x_PM_DLL_X2%VSS_r42 x_PM_DLL_X2%VSS_12 VSS 0.140282
+R_x_PM_DLL_X2%VSS_r43 x_PM_DLL_X2%VSS_52 x_PM_DLL_X2%VSS_12 7.68941
+C_x_PM_DLL_X2%3_c0 x_PM_DLL_X2%3_36 VSS 1.1157e-17
+C_x_PM_DLL_X2%3_c1 x_PM_DLL_X2%3_34 VSS 1.40147e-17
+C_x_PM_DLL_X2%3_c2 x_PM_DLL_X2%3_31 VSS 2.1333e-18
+C_x_PM_DLL_X2%3_c3 x_PM_DLL_X2%3_28 VSS 4.54846e-17
+C_x_PM_DLL_X2%3_c4 x_PM_DLL_X2%3_26 VSS 1.60775e-17
+C_x_PM_DLL_X2%3_c5 x_PM_DLL_X2%3_23 VSS 1.03767e-16
+C_x_PM_DLL_X2%3_c6 x_PM_DLL_X2%3_19 VSS 7.47107e-17
+C_x_PM_DLL_X2%3_c7 N_3_M0_s VSS 4.04672e-17
+C_x_PM_DLL_X2%3_c8 N_3_M9_s VSS 4.45694e-17
+C_x_PM_DLL_X2%3_c9 N_3_M12_g VSS 2.60187e-17
+C_x_PM_DLL_X2%3_c10 N_3_M2_g VSS 5.35213e-17
+R_x_PM_DLL_X2%3_r11 x_PM_DLL_X2%3_28 x_PM_DLL_X2%3_36 25.0012
+R_x_PM_DLL_X2%3_r12 x_PM_DLL_X2%3_26 x_PM_DLL_X2%3_28 1.09929
+R_x_PM_DLL_X2%3_r13 x_PM_DLL_X2%3_25 x_PM_DLL_X2%3_34 3.38
+R_x_PM_DLL_X2%3_r14 x_PM_DLL_X2%3_23 x_PM_DLL_X2%3_25 25.0012
+R_x_PM_DLL_X2%3_r15 x_PM_DLL_X2%3_22 x_PM_DLL_X2%3_23 0.475
+R_x_PM_DLL_X2%3_r16 x_PM_DLL_X2%3_21 x_PM_DLL_X2%3_26 0.212317
+R_x_PM_DLL_X2%3_r17 x_PM_DLL_X2%3_21 x_PM_DLL_X2%3_23 2.23929
+R_x_PM_DLL_X2%3_r18 x_PM_DLL_X2%3_20 x_PM_DLL_X2%3_31 0.0418175
+R_x_PM_DLL_X2%3_r19 x_PM_DLL_X2%3_19 x_PM_DLL_X2%3_22 0.212317
+R_x_PM_DLL_X2%3_r20 x_PM_DLL_X2%3_19 x_PM_DLL_X2%3_20 1.98143
+R_x_PM_DLL_X2%3_r21 x_PM_DLL_X2%3_15 x_PM_DLL_X2%3_31 0.160909
+R_x_PM_DLL_X2%3_r22 x_PM_DLL_X2%3_15 N_3_M0_s 1.31643
+R_x_PM_DLL_X2%3_r23 x_PM_DLL_X2%3_11 x_PM_DLL_X2%3_31 0.160909
+R_x_PM_DLL_X2%3_r24 x_PM_DLL_X2%3_11 N_3_M9_s 2.15786
+R_x_PM_DLL_X2%3_r25 x_PM_DLL_X2%3_36 x_PM_DLL_X2%3_5 4.7687
+R_x_PM_DLL_X2%3_r26 x_PM_DLL_X2%3_5 N_3_M12_g 21.06
+R_x_PM_DLL_X2%3_r27 net_001 x_PM_DLL_X2%3_34 1.95
+R_x_PM_DLL_X2%3_r28 net_001 N_3_M2_g 40.56
+C_x_PM_DLL_X2%D_c0 x_PM_DLL_X2%D_14 VSS 9.63363e-18
+C_x_PM_DLL_X2%D_c1 x_PM_DLL_X2%D_12 VSS 6.57052e-17
+C_x_PM_DLL_X2%D_c2 N_D_M1_g VSS 6.58902e-17
+C_x_PM_DLL_X2%D_c3 N_D_M10_g VSS 3.80236e-17
+R_x_PM_DLL_X2%D_r4 x_PM_DLL_X2%D_14 x_PM_DLL_X2%D_18 4.7687
+R_x_PM_DLL_X2%D_r5 x_PM_DLL_X2%D_14 x_PM_DLL_X2%D_17 4.7687
+R_x_PM_DLL_X2%D_r6 x_PM_DLL_X2%D_12 x_PM_DLL_X2%D_14 25.0012
+R_x_PM_DLL_X2%D_r7 D x_PM_DLL_X2%D_12 0.125
+R_x_PM_DLL_X2%D_r8 x_PM_DLL_X2%D_18 N_D_M1_g 56.16
+R_x_PM_DLL_X2%D_r9 x_PM_DLL_X2%D_17 N_D_M10_g 29.25
+C_x_PM_DLL_X2%5_c0 x_PM_DLL_X2%5_46 VSS 3.59816e-17
+C_x_PM_DLL_X2%5_c1 x_PM_DLL_X2%5_43 VSS 1.24247e-16
+C_x_PM_DLL_X2%5_c2 N_5_M2_d VSS 5.69432e-17
+C_x_PM_DLL_X2%5_c3 N_5_M11_d VSS 5.72491e-17
+C_x_PM_DLL_X2%5_c4 x_PM_DLL_X2%5_30 VSS 5.0097e-18
+C_x_PM_DLL_X2%5_c5 x_PM_DLL_X2%5_29 VSS 6.72026e-19
+C_x_PM_DLL_X2%5_c6 N_5_M7_g VSS 5.83771e-17
+C_x_PM_DLL_X2%5_c7 N_5_M16_g VSS 3.98041e-17
+C_x_PM_DLL_X2%5_c8 x_PM_DLL_X2%5_19 VSS 1.16372e-17
+C_x_PM_DLL_X2%5_c9 N_5_M6_g VSS 5.94167e-17
+C_x_PM_DLL_X2%5_c10 N_5_M15_g VSS 4.61016e-17
+C_x_PM_DLL_X2%5_c11 x_PM_DLL_X2%5_10 VSS 6.24282e-18
+C_x_PM_DLL_X2%5_c12 x_PM_DLL_X2%5_9 VSS 3.21496e-17
+C_x_PM_DLL_X2%5_c13 N_5_M5_g VSS 5.03239e-17
+C_x_PM_DLL_X2%5_c14 N_5_M14_g VSS 3.00654e-17
+R_x_PM_DLL_X2%5_r15 x_PM_DLL_X2%5_47 x_PM_DLL_X2%5_49 2.86
+R_x_PM_DLL_X2%5_r16 x_PM_DLL_X2%5_43 x_PM_DLL_X2%5_47 25.0012
+R_x_PM_DLL_X2%5_r17 x_PM_DLL_X2%5_41 x_PM_DLL_X2%5_46 0.0272847
+R_x_PM_DLL_X2%5_r18 x_PM_DLL_X2%5_41 x_PM_DLL_X2%5_43 1.14704
+R_x_PM_DLL_X2%5_r19 x_PM_DLL_X2%5_37 x_PM_DLL_X2%5_46 0.266978
+R_x_PM_DLL_X2%5_r20 x_PM_DLL_X2%5_37 N_5_M2_d 1.56071
+R_x_PM_DLL_X2%5_r21 x_PM_DLL_X2%5_33 x_PM_DLL_X2%5_46 0.266978
+R_x_PM_DLL_X2%5_r22 x_PM_DLL_X2%5_33 N_5_M11_d 0.665
+R_x_PM_DLL_X2%5_r23 x_PM_DLL_X2%5_25 x_PM_DLL_X2%5_30 4.56151
+R_x_PM_DLL_X2%5_r24 x_PM_DLL_X2%5_25 N_5_M7_g 56.94
+R_x_PM_DLL_X2%5_r25 x_PM_DLL_X2%5_21 x_PM_DLL_X2%5_30 4.56151
+R_x_PM_DLL_X2%5_r26 x_PM_DLL_X2%5_21 N_5_M16_g 40.17
+R_x_PM_DLL_X2%5_r27 x_PM_DLL_X2%5_20 x_PM_DLL_X2%5_29 1.95
+R_x_PM_DLL_X2%5_r28 x_PM_DLL_X2%5_19 x_PM_DLL_X2%5_30 0.043368
+R_x_PM_DLL_X2%5_r29 x_PM_DLL_X2%5_19 x_PM_DLL_X2%5_20 14.56
+R_x_PM_DLL_X2%5_r30 x_PM_DLL_X2%5_15 x_PM_DLL_X2%5_29 1.95
+R_x_PM_DLL_X2%5_r31 x_PM_DLL_X2%5_15 N_5_M6_g 56.94
+R_x_PM_DLL_X2%5_r32 x_PM_DLL_X2%5_11 x_PM_DLL_X2%5_29 1.95
+R_x_PM_DLL_X2%5_r33 x_PM_DLL_X2%5_11 N_5_M15_g 40.17
+R_x_PM_DLL_X2%5_r34 x_PM_DLL_X2%5_10 x_PM_DLL_X2%5_49 2.6
+R_x_PM_DLL_X2%5_r35 x_PM_DLL_X2%5_9 x_PM_DLL_X2%5_29 1.95
+R_x_PM_DLL_X2%5_r36 x_PM_DLL_X2%5_9 x_PM_DLL_X2%5_10 35.88
+R_x_PM_DLL_X2%5_r37 x_PM_DLL_X2%5_5 x_PM_DLL_X2%5_49 1.95
+R_x_PM_DLL_X2%5_r38 x_PM_DLL_X2%5_5 N_5_M5_g 49.14
+R_x_PM_DLL_X2%5_r39 net_003 x_PM_DLL_X2%5_49 1.95
+R_x_PM_DLL_X2%5_r40 net_003 N_5_M14_g 24.18
+C_x_PM_DLL_X2%6_c0 x_PM_DLL_X2%6_22 VSS 3.61705e-18
+C_x_PM_DLL_X2%6_c1 x_PM_DLL_X2%6_21 VSS 4.03356e-17
+C_x_PM_DLL_X2%6_c2 x_PM_DLL_X2%6_14 VSS 7.68601e-18
+C_x_PM_DLL_X2%6_c3 net_005 VSS 6.81705e-17
+C_x_PM_DLL_X2%6_c4 N_6_M14_d VSS 6.5763e-17
+C_x_PM_DLL_X2%6_c5 N_6_M4_g VSS 2.50616e-17
+C_x_PM_DLL_X2%6_c6 N_6_M13_g VSS 4.76804e-17
+R_x_PM_DLL_X2%6_r7 x_PM_DLL_X2%6_21 x_PM_DLL_X2%6_22 0.160909
+R_x_PM_DLL_X2%6_r8 N_6_M5_d x_PM_DLL_X2%6_21 0.570339
+R_x_PM_DLL_X2%6_r9 x_PM_DLL_X2%6_16 x_PM_DLL_X2%6_22 0.160909
+R_x_PM_DLL_X2%6_r10 x_PM_DLL_X2%6_14 x_PM_DLL_X2%6_25 4.7687
+R_x_PM_DLL_X2%6_r11 x_PM_DLL_X2%6_14 x_PM_DLL_X2%6_24 4.7687
+R_x_PM_DLL_X2%6_r12 x_PM_DLL_X2%6_12 x_PM_DLL_X2%6_14 25.0012
+R_x_PM_DLL_X2%6_r13 net_005 x_PM_DLL_X2%6_22 0.0418175
+R_x_PM_DLL_X2%6_r14 net_005 x_PM_DLL_X2%6_12 1.47929
+R_x_PM_DLL_X2%6_r15 x_PM_DLL_X2%6_16 N_6_M14_d 1.83214
+R_x_PM_DLL_X2%6_r16 x_PM_DLL_X2%6_25 N_6_M4_g 22.62
+R_x_PM_DLL_X2%6_r17 x_PM_DLL_X2%6_24 N_6_M13_g 50.7
+C_x_PM_DLL_X2%7_c0 x_PM_DLL_X2%7_41 VSS 2.23474e-18
+C_x_PM_DLL_X2%7_c1 x_PM_DLL_X2%7_39 VSS 1.3656e-17
+C_x_PM_DLL_X2%7_c2 x_PM_DLL_X2%7_35 VSS 7.2335e-17
+C_x_PM_DLL_X2%7_c3 N_7_M8_d VSS 2.52261e-17
+C_x_PM_DLL_X2%7_c4 x_PM_DLL_X2%7_25 VSS 8.93278e-17
+C_x_PM_DLL_X2%7_c5 N_7_M17_d VSS 9.66865e-17
+C_x_PM_DLL_X2%7_c6 x_PM_DLL_X2%7_21 VSS 4.4619e-18
+C_x_PM_DLL_X2%7_c7 x_PM_DLL_X2%7_19 VSS 6.06531e-17
+C_x_PM_DLL_X2%7_c8 N_7_M3_g VSS 4.76423e-17
+C_x_PM_DLL_X2%7_c9 N_7_M11_g VSS 5.4867e-17
+C_x_PM_DLL_X2%7_c10 x_PM_DLL_X2%7_10 VSS 6.65993e-18
+C_x_PM_DLL_X2%7_c11 x_PM_DLL_X2%7_9 VSS 6.35585e-17
+C_x_PM_DLL_X2%7_c12 x_PM_DLL_X2%7_8 VSS 6.83865e-18
+C_x_PM_DLL_X2%7_c13 x_PM_DLL_X2%7_7 VSS 4.35178e-17
+C_x_PM_DLL_X2%7_c14 N_7_M9_g VSS 1.29837e-16
+R_x_PM_DLL_X2%7_r15 x_PM_DLL_X2%7_37 x_PM_DLL_X2%7_39 25.0012
+R_x_PM_DLL_X2%7_r16 x_PM_DLL_X2%7_35 x_PM_DLL_X2%7_37 0.316667
+R_x_PM_DLL_X2%7_r17 x_PM_DLL_X2%7_31 x_PM_DLL_X2%7_41 0.160909
+R_x_PM_DLL_X2%7_r18 x_PM_DLL_X2%7_31 N_7_M8_d 0.176429
+R_x_PM_DLL_X2%7_r19 x_PM_DLL_X2%7_27 x_PM_DLL_X2%7_41 0.160909
+R_x_PM_DLL_X2%7_r20 x_PM_DLL_X2%7_26 x_PM_DLL_X2%7_35 0.095
+R_x_PM_DLL_X2%7_r21 x_PM_DLL_X2%7_25 x_PM_DLL_X2%7_41 0.0418175
+R_x_PM_DLL_X2%7_r22 x_PM_DLL_X2%7_25 x_PM_DLL_X2%7_26 3.44714
+R_x_PM_DLL_X2%7_r23 x_PM_DLL_X2%7_27 N_7_M17_d 4.38357
+R_x_PM_DLL_X2%7_r24 x_PM_DLL_X2%7_22 x_PM_DLL_X2%7_39 9.62
+R_x_PM_DLL_X2%7_r25 x_PM_DLL_X2%7_20 x_PM_DLL_X2%7_21 3.30287
+R_x_PM_DLL_X2%7_r26 x_PM_DLL_X2%7_19 x_PM_DLL_X2%7_22 4.58872
+R_x_PM_DLL_X2%7_r27 x_PM_DLL_X2%7_19 x_PM_DLL_X2%7_20 70.2
+R_x_PM_DLL_X2%7_r28 x_PM_DLL_X2%7_15 x_PM_DLL_X2%7_21 0.858359
+R_x_PM_DLL_X2%7_r29 x_PM_DLL_X2%7_15 N_7_M3_g 56.94
+R_x_PM_DLL_X2%7_r30 x_PM_DLL_X2%7_11 N_7_M11_g 40.95
+R_x_PM_DLL_X2%7_r31 x_PM_DLL_X2%7_9 x_PM_DLL_X2%7_21 3.30287
+R_x_PM_DLL_X2%7_r32 x_PM_DLL_X2%7_9 x_PM_DLL_X2%7_10 81.12
+R_x_PM_DLL_X2%7_r33 x_PM_DLL_X2%7_7 x_PM_DLL_X2%7_11 4.35808
+R_x_PM_DLL_X2%7_r34 x_PM_DLL_X2%7_7 x_PM_DLL_X2%7_8 51.48
+R_x_PM_DLL_X2%7_r35 N_7_M9_g N_7_M0_g 110.37
+R_x_PM_DLL_X2%7_r36 x_PM_DLL_X2%7_2 x_PM_DLL_X2%7_10 4.35808
+R_x_PM_DLL_X2%7_r37 x_PM_DLL_X2%7_2 N_7_M0_g 44.07
+R_x_PM_DLL_X2%7_r38 net_000 x_PM_DLL_X2%7_8 4.35808
+R_x_PM_DLL_X2%7_r39 net_000 N_7_M9_g 35.88
+C_x_PM_DLL_X2%Q_c0 N_Q_M15_d VSS 1.07137e-16
+R_x_PM_DLL_X2%Q_r1 Q N_Q_M6_d 1.66929
+R_x_PM_DLL_X2%Q_r2 N_Q_M15_d Q 0.882143
+C_x_PM_DLL_X2%GN_c0 x_PM_DLL_X2%GN_18 VSS 1.22858e-17
+C_x_PM_DLL_X2%GN_c1 x_PM_DLL_X2%GN_12 VSS 5.46359e-17
+C_x_PM_DLL_X2%GN_c2 N_GN_M8_g VSS 8.58562e-17
+C_x_PM_DLL_X2%GN_c3 N_GN_M17_g VSS 5.87851e-17
+R_x_PM_DLL_X2%GN_r4 x_PM_DLL_X2%GN_14 x_PM_DLL_X2%GN_18 3.9
+R_x_PM_DLL_X2%GN_r5 x_PM_DLL_X2%GN_12 x_PM_DLL_X2%GN_14 25.0012
+R_x_PM_DLL_X2%GN_r6 GN x_PM_DLL_X2%GN_12 0.114
+R_x_PM_DLL_X2%GN_r7 x_PM_DLL_X2%GN_5 x_PM_DLL_X2%GN_18 1.95
+R_x_PM_DLL_X2%GN_r8 x_PM_DLL_X2%GN_5 N_GN_M8_g 81.51
+R_x_PM_DLL_X2%GN_r9 x_PM_DLL_X2%GN_1 x_PM_DLL_X2%GN_18 1.95
+R_x_PM_DLL_X2%GN_r10 x_PM_DLL_X2%GN_1 N_GN_M17_g 56.16
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

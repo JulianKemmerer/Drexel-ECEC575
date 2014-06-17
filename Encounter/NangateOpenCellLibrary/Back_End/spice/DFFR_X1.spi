@@ -1,0 +1,83 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:01:01.
+* Main process id is 28006.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   DFFR_X1.                                                         *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:01:01 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT DFFR_X1 D RN CK Q QN VDD VSS 
+*.PININFO D:I RN:I CK:I Q:O QN:O VDD:P VSS:G 
+M_i_0 VSS CK net_000 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_7 net_001 net_000 VSS VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_13 net_002 D VSS VSS NMOS_VTL W=0.275000U L=0.050000U
+M_i_18 net_003 net_000 net_002 VSS NMOS_VTL W=0.275000U L=0.050000U
+M_i_24 net_004 net_001 net_003 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_28 net_005 net_006 net_004 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_32 VSS RN net_005 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_38 VSS net_003 net_006 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_45 net_007 net_003 VSS VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_49 net_008 net_001 net_007 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_55 net_009 net_000 net_008 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_59 VSS net_011 net_009 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_65 net_010 RN VSS VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_70 net_011 net_008 net_010 VSS NMOS_VTL W=0.210000U L=0.050000U
+M_i_76 VSS net_008 QN VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_83 Q net_011 VSS VSS NMOS_VTL W=0.415000U L=0.050000U
+M_i_89 VDD CK net_000 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_96 net_001 net_000 VDD VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_103 net_012 D VDD VDD PMOS_VTL W=0.420000U L=0.050000U
+M_i_108 net_003 net_001 net_012 VDD PMOS_VTL W=0.420000U L=0.050000U
+M_i_114 net_013 net_000 net_003 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_i_119 VDD net_006 net_013 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_i_125 net_013 RN VDD VDD PMOS_VTL W=0.090000U L=0.050000U
+M_i_136 VDD net_003 net_006 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_143 net_015 net_003 VDD VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_147 net_008 net_000 net_015 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_153 net_016 net_001 net_008 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_i_159 VDD net_011 net_016 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_i_165 net_011 RN VDD VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_172 VDD net_008 net_011 VDD PMOS_VTL W=0.315000U L=0.050000U
+M_i_180 VDD net_008 QN VDD PMOS_VTL W=0.630000U L=0.050000U
+M_i_187 Q net_011 VDD VDD PMOS_VTL W=0.630000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

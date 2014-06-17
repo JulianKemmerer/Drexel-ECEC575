@@ -1,0 +1,69 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fpu
+Version: E-2010.12-ICC-SP5
+Date   : Tue Jun  3 20:11:05 2014
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+
+Information: Percent of Arnoldi-based delays =  3.81%
+
+  Startpoint: fpu_in/fpu_in_ctl/i_fp_type_in/q_reg[1]
+              (rising edge-triggered flip-flop clocked by gclk)
+  Endpoint: fpu_div/fpu_div_frac_dp/ckbuf_div_frac_dp/clken_reg
+            (positive level-sensitive latch clocked by gclk')
+  Path Group: gclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock gclk (rise edge)                                  0.00       0.00
+  clock network delay (propagated)                        0.33       0.33
+  fpu_in/fpu_in_ctl/i_fp_type_in/q_reg[1]/CLK (DFFX1)     0.00       0.33 r
+  fpu_in/fpu_in_ctl/i_fp_type_in/q_reg[1]/QN (DFFX1)      0.21       0.54 r
+  fpu_in/U74/QN (NOR2X0)                                  0.06 &     0.60 f
+  fpu_in/U81/QN (NAND3X0)                                 0.07 &     0.67 r
+  fpu_in/U82/QN (NOR3X0)                                  0.15 &     0.83 f
+  fpu_in/U73/ZN (INVX0)                                   0.08 &     0.90 r
+  fpu_in/U37/QN (NOR3X0)                                  0.10 &     1.00 f
+  fpu_in/U34/QN (NAND2X1)                                 0.07 &     1.07 r
+  fpu_in/U16/QN (NOR2X0)                                  0.18 &     1.25 f
+  fpu_in/U32/QN (NAND3X0)                                 0.09 &     1.34 r
+  fpu_in/U5/Q (OA21X1)                                    0.11 &     1.45 r
+  fpu_in/U14/Q (AO22X1)                                   0.14 &     1.59 r
+  fpu_in/U111/QN (NOR4X0)                                 0.11 &     1.70 f
+  fpu_in/fdiv_clken_l (fpu_in)                            0.00       1.70 f
+  fpu_div/fdiv_clken_l (fpu_div)                          0.00       1.70 f
+  fpu_div/fpu_div_frac_dp/fdiv_clken_l (fpu_div_frac_dp)
+                                                          0.00       1.70 f
+  fpu_div/fpu_div_frac_dp/U350/QN (NAND2X1)               0.05 &     1.75 r
+  fpu_div/fpu_div_frac_dp/ckbuf_div_frac_dp/clken_reg/D (LATCHX1)
+                                                          0.00 &     1.75 r
+  data arrival time                                                  1.75
+
+  clock gclk' (rise edge)                                 2.00       2.00
+  clock network delay (propagated)                        0.37       2.37
+  fpu_div/fpu_div_frac_dp/ckbuf_div_frac_dp/clken_reg/CLK (LATCHX1)
+                                                          0.00       2.37 r
+  time borrowed from endpoint                             0.00       2.37
+  data required time                                                 2.37
+  --------------------------------------------------------------------------
+  data required time                                                 2.37
+  data arrival time                                                 -1.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.62
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  gclk' pulse width                                       2.00
+  library setup time                                     -0.05
+  --------------------------------------------------------------
+  max time borrow                                         1.95
+  actual time borrow                                      0.00
+  --------------------------------------------------------------

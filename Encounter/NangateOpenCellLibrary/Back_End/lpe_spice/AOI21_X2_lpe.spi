@@ -1,0 +1,222 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *         buildcell, v2010.08-HR32-SP3-2010-08-05 - build 1009061800         *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+* Local time is now Fri, 3 Dec 2010, 19:17:41.
+* Main process id is 28033.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   AOI21_X2.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr)     *
+* at 19:17:41 on Fri, 3 Dec 2010.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT AOI21_X2 VDD VSS A ZN B2 B1 
+*.PININFO VDD:P VSS:G A:I ZN:O B2:I B1:I 
+*.EQN ZN=!(A + (B1 * B2))
+M_M6 N_VDD_M0_d N_A_M0_g N_3_M0_s VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M7 N_3_M1_d N_A_M1_g N_VDD_M0_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M8 N_ZN_M2_d N_B2_M2_g N_3_M1_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M9 N_3_M3_d N_B1_M3_g N_ZN_M2_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M10 N_ZN_M4_d N_B1_M4_g N_3_M3_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M11 N_3_M5_d N_B2_M5_g N_ZN_M4_d VDD PMOS_VTL W=0.630000U L=0.050000U
+M_M0 N_ZN_M6_d N_A_M6_g N_VSS_M6_s VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M1 N_VSS_M7_d N_A_M7_g N_ZN_M6_d VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M2 net_0__m0_0__m1 N_B2_M8_g N_VSS_M7_d VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M3 N_ZN_M9_d N_B1_M9_g net_0__m0_0__m1 VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M4 net_0__m0_0__m0_0 N_B1_M10_g N_ZN_M9_d VSS NMOS_VTL W=0.415000U L=0.050000U
+M_M5 N_VSS_M11_d N_B2_M11_g net_0__m0_0__m0_0 VSS NMOS_VTL W=0.415000U L=0.050000U
+C_x_PM_AOI21_X2%VDD_c0 x_PM_AOI21_X2%VDD_35 VSS 1.24129e-16
+C_x_PM_AOI21_X2%VDD_c1 x_PM_AOI21_X2%VDD_32 VSS 2.65998e-18
+C_x_PM_AOI21_X2%VDD_c2 x_PM_AOI21_X2%VDD_31 VSS 1.06135e-17
+C_x_PM_AOI21_X2%VDD_c3 x_PM_AOI21_X2%VDD_30 VSS 2.334e-16
+C_x_PM_AOI21_X2%VDD_c4 x_PM_AOI21_X2%VDD_21 VSS 2.62034e-16
+C_x_PM_AOI21_X2%VDD_c5 N_VDD_M0_d VSS 2.87994e-17
+C_x_PM_AOI21_X2%VDD_c6 x_PM_AOI21_X2%VDD_13 VSS 3.96169e-17
+C_x_PM_AOI21_X2%VDD_c7 x_PM_AOI21_X2%VDD_12 VSS 1.92462e-17
+C_x_PM_AOI21_X2%VDD_c8 x_PM_AOI21_X2%VDD_8 VSS 6.16516e-16
+R_x_PM_AOI21_X2%VDD_r9 VDD x_PM_AOI21_X2%VDD_35 0.13879
+R_x_PM_AOI21_X2%VDD_r10 VDD x_PM_AOI21_X2%VDD_31 0.138595
+R_x_PM_AOI21_X2%VDD_r11 VDD x_PM_AOI21_X2%VDD_30 0.138985
+R_x_PM_AOI21_X2%VDD_r12 VDD x_PM_AOI21_X2%VDD_21 0.13879
+R_x_PM_AOI21_X2%VDD_r13 x_PM_AOI21_X2%VDD_21 VDD 3.84471
+R_x_PM_AOI21_X2%VDD_r14 x_PM_AOI21_X2%VDD_20 x_PM_AOI21_X2%VDD_32 0.0731438
+R_x_PM_AOI21_X2%VDD_r15 x_PM_AOI21_X2%VDD_35 x_PM_AOI21_X2%VDD_20 2.32471
+R_x_PM_AOI21_X2%VDD_r16 x_PM_AOI21_X2%VDD_15 x_PM_AOI21_X2%VDD_32 0.145286
+R_x_PM_AOI21_X2%VDD_r17 x_PM_AOI21_X2%VDD_15 N_VDD_M0_d 0.230714
+R_x_PM_AOI21_X2%VDD_r18 x_PM_AOI21_X2%VDD_13 x_PM_AOI21_X2%VDD_32 0.0731438
+R_x_PM_AOI21_X2%VDD_r19 x_PM_AOI21_X2%VDD_13 x_PM_AOI21_X2%VDD_31 0.692941
+R_x_PM_AOI21_X2%VDD_r20 x_PM_AOI21_X2%VDD_12 VDD 0.140282
+R_x_PM_AOI21_X2%VDD_r21 x_PM_AOI21_X2%VDD_30 x_PM_AOI21_X2%VDD_12 7.68941
+R_x_PM_AOI21_X2%VDD_r22 x_PM_AOI21_X2%VDD_8 VDD 9.57824
+C_x_PM_AOI21_X2%VSS_c0 VSS VSS 2.70302e-16
+C_x_PM_AOI21_X2%VSS_c1 x_PM_AOI21_X2%VSS_40 VSS 2.70045e-18
+C_x_PM_AOI21_X2%VSS_c2 N_VSS_M11_d VSS 2.68136e-17
+C_x_PM_AOI21_X2%VSS_c3 x_PM_AOI21_X2%VSS_23 VSS 6.89315e-17
+C_x_PM_AOI21_X2%VSS_c4 x_PM_AOI21_X2%VSS_22 VSS 3.69202e-17
+C_x_PM_AOI21_X2%VSS_c5 x_PM_AOI21_X2%VSS_20 VSS 2.17432e-17
+C_x_PM_AOI21_X2%VSS_c6 x_PM_AOI21_X2%VSS_19 VSS 3.76124e-17
+C_x_PM_AOI21_X2%VSS_c7 N_VSS_M6_s VSS 3.96421e-17
+C_x_PM_AOI21_X2%VSS_c8 x_PM_AOI21_X2%VSS_12 VSS 6.16516e-16
+C_x_PM_AOI21_X2%VSS_c9 x_PM_AOI21_X2%VSS_11 VSS 1.92462e-17
+C_x_PM_AOI21_X2%VSS_c10 x_PM_AOI21_X2%VSS_10 VSS 2.334e-16
+R_x_PM_AOI21_X2%VSS_r11 x_PM_AOI21_X2%VSS_41 VSS 0.403252
+R_x_PM_AOI21_X2%VSS_r12 VSS x_PM_AOI21_X2%VSS_39 0.479534
+R_x_PM_AOI21_X2%VSS_r13 x_PM_AOI21_X2%VSS_41 N_VSS_M11_d 1.47929
+R_x_PM_AOI21_X2%VSS_r14 x_PM_AOI21_X2%VSS_24 x_PM_AOI21_X2%VSS_40 0.0731438
+R_x_PM_AOI21_X2%VSS_r15 x_PM_AOI21_X2%VSS_24 VSS 0.312941
+R_x_PM_AOI21_X2%VSS_r16 x_PM_AOI21_X2%VSS_23 x_PM_AOI21_X2%VSS_41 0.075321
+R_x_PM_AOI21_X2%VSS_r17 x_PM_AOI21_X2%VSS_23 VSS 1.22941
+R_x_PM_AOI21_X2%VSS_r18 x_PM_AOI21_X2%VSS_22 x_PM_AOI21_X2%VSS_40 0.145286
+R_x_PM_AOI21_X2%VSS_r19 N_VSS_M7_d x_PM_AOI21_X2%VSS_22 0.543196
+R_x_PM_AOI21_X2%VSS_r20 x_PM_AOI21_X2%VSS_20 x_PM_AOI21_X2%VSS_39 0.0754648
+R_x_PM_AOI21_X2%VSS_r21 x_PM_AOI21_X2%VSS_19 x_PM_AOI21_X2%VSS_40 0.0731438
+R_x_PM_AOI21_X2%VSS_r22 x_PM_AOI21_X2%VSS_19 x_PM_AOI21_X2%VSS_20 0.681765
+R_x_PM_AOI21_X2%VSS_r23 x_PM_AOI21_X2%VSS_39 N_VSS_M6_s 1.47929
+R_x_PM_AOI21_X2%VSS_r24 x_PM_AOI21_X2%VSS_12 VSS 9.57824
+R_x_PM_AOI21_X2%VSS_r25 x_PM_AOI21_X2%VSS_11 VSS 0.140282
+R_x_PM_AOI21_X2%VSS_r26 x_PM_AOI21_X2%VSS_10 VSS 0.144211
+R_x_PM_AOI21_X2%VSS_r27 x_PM_AOI21_X2%VSS_10 x_PM_AOI21_X2%VSS_11 7.68941
+C_x_PM_AOI21_X2%3_c0 x_PM_AOI21_X2%3_24 VSS 1.16912e-17
+C_x_PM_AOI21_X2%3_c1 x_PM_AOI21_X2%3_23 VSS 1.16741e-17
+C_x_PM_AOI21_X2%3_c2 x_PM_AOI21_X2%3_11 VSS 1.66879e-16
+C_x_PM_AOI21_X2%3_c3 N_3_M0_s VSS 2.60444e-17
+C_x_PM_AOI21_X2%3_c4 N_3_M5_d VSS 2.40827e-17
+R_x_PM_AOI21_X2%3_r5 x_PM_AOI21_X2%3_19 x_PM_AOI21_X2%3_24 0.160909
+R_x_PM_AOI21_X2%3_r6 N_3_M1_d N_3_M3_d 2.06286
+R_x_PM_AOI21_X2%3_r7 x_PM_AOI21_X2%3_12 x_PM_AOI21_X2%3_23 0.0418175
+R_x_PM_AOI21_X2%3_r8 x_PM_AOI21_X2%3_12 N_3_M1_d 1.83214
+R_x_PM_AOI21_X2%3_r9 x_PM_AOI21_X2%3_11 x_PM_AOI21_X2%3_24 0.0418175
+R_x_PM_AOI21_X2%3_r10 x_PM_AOI21_X2%3_11 N_3_M3_d 1.85929
+R_x_PM_AOI21_X2%3_r11 net_1 x_PM_AOI21_X2%3_23 0.160909
+R_x_PM_AOI21_X2%3_r12 net_1 N_3_M0_s 0.230714
+R_x_PM_AOI21_X2%3_r13 x_PM_AOI21_X2%3_19 N_3_M5_d 0.230714
+C_x_PM_AOI21_X2%A_c0 x_PM_AOI21_X2%A_21 VSS 2.80871e-17
+C_x_PM_AOI21_X2%A_c1 x_PM_AOI21_X2%A_20 VSS 4.7599e-18
+C_x_PM_AOI21_X2%A_c2 x_PM_AOI21_X2%A_19 VSS 6.21276e-18
+C_x_PM_AOI21_X2%A_c3 x_PM_AOI21_X2%A_18 VSS 3.30246e-18
+C_x_PM_AOI21_X2%A_c4 N_A_M1_g VSS 5.72353e-17
+C_x_PM_AOI21_X2%A_c5 N_A_M7_g VSS 4.28298e-17
+C_x_PM_AOI21_X2%A_c6 N_A_M0_g VSS 5.6277e-17
+C_x_PM_AOI21_X2%A_c7 N_A_M6_g VSS 4.34759e-17
+R_x_PM_AOI21_X2%A_r8 x_PM_AOI21_X2%A_21 x_PM_AOI21_X2%A_23 25.0012
+R_x_PM_AOI21_X2%A_r9 x_PM_AOI21_X2%A_21 A 0.105556
+R_x_PM_AOI21_X2%A_r10 x_PM_AOI21_X2%A_19 x_PM_AOI21_X2%A_23 9.62
+R_x_PM_AOI21_X2%A_r11 x_PM_AOI21_X2%A_19 x_PM_AOI21_X2%A_20 0.043368
+R_x_PM_AOI21_X2%A_r12 x_PM_AOI21_X2%A_17 x_PM_AOI21_X2%A_23 4.94
+R_x_PM_AOI21_X2%A_r13 x_PM_AOI21_X2%A_17 x_PM_AOI21_X2%A_18 0.043368
+R_x_PM_AOI21_X2%A_r14 x_PM_AOI21_X2%A_13 x_PM_AOI21_X2%A_20 4.56151
+R_x_PM_AOI21_X2%A_r15 x_PM_AOI21_X2%A_13 N_A_M1_g 56.94
+R_x_PM_AOI21_X2%A_r16 x_PM_AOI21_X2%A_9 x_PM_AOI21_X2%A_20 4.56151
+R_x_PM_AOI21_X2%A_r17 x_PM_AOI21_X2%A_9 N_A_M7_g 40.17
+R_x_PM_AOI21_X2%A_r18 x_PM_AOI21_X2%A_5 x_PM_AOI21_X2%A_18 4.56151
+R_x_PM_AOI21_X2%A_r19 x_PM_AOI21_X2%A_5 N_A_M0_g 56.94
+R_x_PM_AOI21_X2%A_r20 x_PM_AOI21_X2%A_1 x_PM_AOI21_X2%A_18 4.56151
+R_x_PM_AOI21_X2%A_r21 x_PM_AOI21_X2%A_1 N_A_M6_g 40.17
+C_x_PM_AOI21_X2%ZN_c0 N_ZN_M9_d VSS 4.41003e-17
+C_x_PM_AOI21_X2%ZN_c1 x_PM_AOI21_X2%ZN_23 VSS 1.26022e-17
+C_x_PM_AOI21_X2%ZN_c2 N_ZN_M4_d VSS 1.68326e-16
+C_x_PM_AOI21_X2%ZN_c3 x_PM_AOI21_X2%ZN_14 VSS 1.78677e-17
+C_x_PM_AOI21_X2%ZN_c4 x_PM_AOI21_X2%ZN_12 VSS 4.14862e-17
+C_x_PM_AOI21_X2%ZN_c5 x_PM_AOI21_X2%ZN_11 VSS 8.36346e-17
+C_x_PM_AOI21_X2%ZN_c6 x_PM_AOI21_X2%ZN_8 VSS 8.98005e-18
+C_x_PM_AOI21_X2%ZN_c7 x_PM_AOI21_X2%ZN_5 VSS 7.44004e-17
+R_x_PM_AOI21_X2%ZN_r8 N_ZN_M2_d N_ZN_M4_d 2.06286
+R_x_PM_AOI21_X2%ZN_r9 x_PM_AOI21_X2%ZN_14 N_ZN_M2_d 0.963571
+R_x_PM_AOI21_X2%ZN_r10 x_PM_AOI21_X2%ZN_13 x_PM_AOI21_X2%ZN_23 0.160909
+R_x_PM_AOI21_X2%ZN_r11 x_PM_AOI21_X2%ZN_12 N_ZN_M9_d 0.198162
+R_x_PM_AOI21_X2%ZN_r12 x_PM_AOI21_X2%ZN_12 x_PM_AOI21_X2%ZN_13 1.79143
+R_x_PM_AOI21_X2%ZN_r13 x_PM_AOI21_X2%ZN_11 x_PM_AOI21_X2%ZN_14 0.212317
+R_x_PM_AOI21_X2%ZN_r14 x_PM_AOI21_X2%ZN_10 x_PM_AOI21_X2%ZN_23 0.0418175
+R_x_PM_AOI21_X2%ZN_r15 x_PM_AOI21_X2%ZN_10 x_PM_AOI21_X2%ZN_11 2.60571
+R_x_PM_AOI21_X2%ZN_r16 x_PM_AOI21_X2%ZN_9 N_ZN_M6_d 0.18025
+R_x_PM_AOI21_X2%ZN_r17 x_PM_AOI21_X2%ZN_8 x_PM_AOI21_X2%ZN_23 0.160909
+R_x_PM_AOI21_X2%ZN_r18 x_PM_AOI21_X2%ZN_8 x_PM_AOI21_X2%ZN_9 0.542857
+R_x_PM_AOI21_X2%ZN_r19 x_PM_AOI21_X2%ZN_5 N_ZN_M6_d 0.0346635
+R_x_PM_AOI21_X2%ZN_r20 x_PM_AOI21_X2%ZN_5 ZN 0.0223529
+C_x_PM_AOI21_X2%B2_c0 x_PM_AOI21_X2%B2_28 VSS 8.82959e-18
+C_x_PM_AOI21_X2%B2_c1 x_PM_AOI21_X2%B2_26 VSS 7.75435e-17
+C_x_PM_AOI21_X2%B2_c2 x_PM_AOI21_X2%B2_24 VSS 7.57805e-18
+C_x_PM_AOI21_X2%B2_c3 x_PM_AOI21_X2%B2_22 VSS 9.87502e-18
+C_x_PM_AOI21_X2%B2_c4 x_PM_AOI21_X2%B2_20 VSS 2.41538e-17
+C_x_PM_AOI21_X2%B2_c5 x_PM_AOI21_X2%B2_19 VSS 1.26536e-16
+C_x_PM_AOI21_X2%B2_c6 x_PM_AOI21_X2%B2_18 VSS 7.39248e-18
+C_x_PM_AOI21_X2%B2_c7 N_B2_M5_g VSS 7.35532e-17
+C_x_PM_AOI21_X2%B2_c8 N_B2_M11_g VSS 5.62319e-17
+C_x_PM_AOI21_X2%B2_c9 N_B2_M2_g VSS 7.86866e-17
+C_x_PM_AOI21_X2%B2_c10 N_B2_M8_g VSS 5.55817e-17
+R_x_PM_AOI21_X2%B2_r11 B2 x_PM_AOI21_X2%B2_32 0.285042
+R_x_PM_AOI21_X2%B2_r12 x_PM_AOI21_X2%B2_28 x_PM_AOI21_X2%B2_35 4.7687
+R_x_PM_AOI21_X2%B2_r13 x_PM_AOI21_X2%B2_28 x_PM_AOI21_X2%B2_34 4.7687
+R_x_PM_AOI21_X2%B2_r14 x_PM_AOI21_X2%B2_26 x_PM_AOI21_X2%B2_28 25.0012
+R_x_PM_AOI21_X2%B2_r15 x_PM_AOI21_X2%B2_26 B2 0.109615
+R_x_PM_AOI21_X2%B2_r16 x_PM_AOI21_X2%B2_24 x_PM_AOI21_X2%B2_38 4.7687
+R_x_PM_AOI21_X2%B2_r17 x_PM_AOI21_X2%B2_24 x_PM_AOI21_X2%B2_37 4.7687
+R_x_PM_AOI21_X2%B2_r18 x_PM_AOI21_X2%B2_22 x_PM_AOI21_X2%B2_24 25.0012
+R_x_PM_AOI21_X2%B2_r19 x_PM_AOI21_X2%B2_21 x_PM_AOI21_X2%B2_22 0.963571
+R_x_PM_AOI21_X2%B2_r20 x_PM_AOI21_X2%B2_19 x_PM_AOI21_X2%B2_21 0.212317
+R_x_PM_AOI21_X2%B2_r21 x_PM_AOI21_X2%B2_19 x_PM_AOI21_X2%B2_20 2.22571
+R_x_PM_AOI21_X2%B2_r22 x_PM_AOI21_X2%B2_18 x_PM_AOI21_X2%B2_20 0.212317
+R_x_PM_AOI21_X2%B2_r23 x_PM_AOI21_X2%B2_32 x_PM_AOI21_X2%B2_18 0.38
+R_x_PM_AOI21_X2%B2_r24 x_PM_AOI21_X2%B2_38 N_B2_M5_g 56.94
+R_x_PM_AOI21_X2%B2_r25 x_PM_AOI21_X2%B2_37 N_B2_M11_g 40.17
+R_x_PM_AOI21_X2%B2_r26 x_PM_AOI21_X2%B2_35 N_B2_M2_g 56.94
+R_x_PM_AOI21_X2%B2_r27 x_PM_AOI21_X2%B2_34 N_B2_M8_g 40.17
+C_x_PM_AOI21_X2%B1_c0 x_PM_AOI21_X2%B1_21 VSS 6.22916e-17
+C_x_PM_AOI21_X2%B1_c1 x_PM_AOI21_X2%B1_20 VSS 4.29255e-18
+C_x_PM_AOI21_X2%B1_c2 x_PM_AOI21_X2%B1_19 VSS 6.72956e-18
+C_x_PM_AOI21_X2%B1_c3 x_PM_AOI21_X2%B1_18 VSS 4.49942e-18
+C_x_PM_AOI21_X2%B1_c4 N_B1_M4_g VSS 6.42004e-17
+C_x_PM_AOI21_X2%B1_c5 N_B1_M10_g VSS 3.87755e-17
+C_x_PM_AOI21_X2%B1_c6 N_B1_M3_g VSS 6.393e-17
+C_x_PM_AOI21_X2%B1_c7 N_B1_M9_g VSS 4.19844e-17
+R_x_PM_AOI21_X2%B1_r8 x_PM_AOI21_X2%B1_21 x_PM_AOI21_X2%B1_23 25.0012
+R_x_PM_AOI21_X2%B1_r9 x_PM_AOI21_X2%B1_21 B1 0.105556
+R_x_PM_AOI21_X2%B1_r10 x_PM_AOI21_X2%B1_19 x_PM_AOI21_X2%B1_23 11.7
+R_x_PM_AOI21_X2%B1_r11 x_PM_AOI21_X2%B1_19 x_PM_AOI21_X2%B1_20 0.043368
+R_x_PM_AOI21_X2%B1_r12 x_PM_AOI21_X2%B1_17 x_PM_AOI21_X2%B1_23 2.86
+R_x_PM_AOI21_X2%B1_r13 x_PM_AOI21_X2%B1_17 x_PM_AOI21_X2%B1_18 0.043368
+R_x_PM_AOI21_X2%B1_r14 x_PM_AOI21_X2%B1_13 x_PM_AOI21_X2%B1_20 4.56151
+R_x_PM_AOI21_X2%B1_r15 x_PM_AOI21_X2%B1_13 N_B1_M4_g 56.94
+R_x_PM_AOI21_X2%B1_r16 x_PM_AOI21_X2%B1_9 x_PM_AOI21_X2%B1_20 4.56151
+R_x_PM_AOI21_X2%B1_r17 x_PM_AOI21_X2%B1_9 N_B1_M10_g 40.17
+R_x_PM_AOI21_X2%B1_r18 x_PM_AOI21_X2%B1_5 x_PM_AOI21_X2%B1_18 4.56151
+R_x_PM_AOI21_X2%B1_r19 x_PM_AOI21_X2%B1_5 N_B1_M3_g 56.94
+R_x_PM_AOI21_X2%B1_r20 x_PM_AOI21_X2%B1_1 x_PM_AOI21_X2%B1_18 4.56151
+R_x_PM_AOI21_X2%B1_r21 x_PM_AOI21_X2%B1_1 N_B1_M9_g 40.17
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

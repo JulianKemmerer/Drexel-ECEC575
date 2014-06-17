@@ -1,0 +1,132 @@
+/*	 
+	    Copyright (C) 2006, Nangate Inc.
+	    All rights reserved.                           
+	
+		Copyright Notice:
+
+			This document contains confidential and proprietary information.
+			Reproduction or usage of this document, in part or whole, by any means,
+			electrical, mechanical, optical, chemical or otherwise is prohibited,
+			without written permission from Nangate Inc.
+
+			The information contained herein is protected by Danish and international  
+			copyright laws.                                                            
+		
+		Author: 
+			Joao Daniel Togni
+*/	
+
+BODY {
+	background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	SCROLLBAR-FACE-COLOR: #CCCCCC;
+	SCROLLBAR-TRACK-COLOR: #F0F0F0;
+	SCROLLBAR-DARKSHADOW-COLOR: #666666;
+	SCROLLBAR-3DLIGHT-COLOR:#666666;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF;
+}
+
+BODY, FORM  {
+	margin-top   : 0px;	margin-left   : 5px;	
+	margin-right : 5px;	margin-bottom : 0px;
+}
+
+TABLE { 
+	font-size: 12px;
+	border-collapse: collapse; 
+	margin-left: 2cm;
+}
+table.splitPage { margin-left: 0cm }
+TD.splitPage { padding: 0 }
+
+TD {
+	font-size: 12px;
+	padding: 2pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+TD.num { 
+	text-align: center; 
+	width: 70px;
+}
+TD.stOrder { 
+	text-align: center; 
+	width: 120px;
+}
+TD.ok {color: #00FF00}
+TD.failed {color: #FF0000}
+td.textInTop { vertical-align: top }
+
+TH {
+	font-size: 12px;
+	padding: 2pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+TH.white_bg {
+	background-color: #FFFFFF;
+}
+SUP { font-size: 10px; }
+
+.noborder {border : none;}
+.norepeat {background-repeat: no-repeat;}
+.erU { 	
+			text-align: center; 
+			width: 70px;
+			font-weight: bold;
+			color: #FF0000; 
+}
+.erD { 
+			text-align: center; 
+			width: 70px;
+			font-weight: bold; 
+			color: #0000FF; 
+}
+.neg { 
+			text-align: center; 
+		    width: 70px;
+			background-color: #EFFFFF; 
+}
+.comment { font-weight: bold; color: #888888;}
+.weakComment { font-weight: normal; color: #888888;}
+.highlightNum {text-align: center; 
+			width: 70px;
+			background-color: #77FF77; }
+.highlight1st {text-align: center; 
+		width: 120px;
+		background-color: #77FF77; }
+.bold { font-weight: bold; }
+
+.tooltip {
+	position: absolute;
+	margin-left:-10pt;
+	margin-top:0pt;
+	display: none;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+ul {list-style-type:none }
+
+ul.no { 
+  background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+  text-decoration: underline;
+  text-align: left;
+  margin-left: 0cm;
+}
+
+ul.yes { 
+  background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+  text-align: left;
+  margin-left: 0cm;
+}
+
+select {
+  margin-left: 2cm;
+  margin-right: 2cm;
+}

@@ -1,0 +1,30 @@
+****************************************
+Report : area
+Design : plusplusfpu
+Version: H-2013.03-SP1
+Date   : Wed Jun  4 11:59:38 2014
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'plusplusfpu' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed90nm_typ (File: /home/DREXEL/daw77/classes/asic_2/project/OpenSPARC/OpenSPARC_data/DC_3/Models/saed90nm_typ.db)
+
+Number of ports:                          290
+Number of nets:                           618
+Number of cells:                          274
+Number of combinational cells:            272
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         25
+Number of references:                       7
+
+Combinational area:             431459.945383
+Buf/Inv area:                    20018.995703
+Noncombinational area:          324902.707594
+Macro/Black Box area:                0.000000
+Net Interconnect area:           27217.301666
+
+Total cell area:                756362.652977
+Total area:                     783579.954643

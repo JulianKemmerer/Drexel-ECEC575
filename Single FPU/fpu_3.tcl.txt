@@ -1,0 +1,48 @@
+analyze -f verilog [list ./design/common/cluster_header.v \
+./design/common/swrvr_clib.v \
+./design/common/swrvr_dlib.v \
+./design/common/synchronizer_asr.v \
+./design/rtl/bw_clk_cl_fpu_cmp.v \
+./design/rtl/fpu_add_ctl.v \
+./design/rtl/fpu_add_exp_dp.v \
+./design/rtl/fpu_add_frac_dp.v \
+./design/rtl/fpu_add.v \
+./design/rtl/fpu_cnt_lead0_53b.v \
+./design/rtl/fpu_cnt_lead0_64b.v \
+./design/rtl/fpu_cnt_lead0_lvl1.v \
+./design/rtl/fpu_cnt_lead0_lvl2.v \
+./design/rtl/fpu_cnt_lead0_lvl3.v \
+./design/rtl/fpu_cnt_lead0_lvl4.v \
+./design/rtl/fpu_denorm_3b.v \
+./design/rtl/fpu_denorm_3to1.v \
+./design/rtl/fpu_denorm_frac.v \
+./design/rtl/fpu_div_ctl.v \
+./design/rtl/fpu_div_exp_dp.v \
+./design/rtl/fpu_div_frac_dp.v \
+./design/rtl/fpu_div.v \
+./design/rtl/fpu_in2_gt_in1_2b.v \
+./design/rtl/fpu_in2_gt_in1_3b.v \
+./design/rtl/fpu_in2_gt_in1_3to1.v \
+./design/rtl/fpu_in2_gt_in1_frac.v \
+./design/rtl/fpu_in_ctl.v \
+./design/rtl/fpu_in_dp.v \
+./design/rtl/fpu_in.v \
+./design/rtl/fpu_mul_ctl.v \
+./design/rtl/fpu_mul_exp_dp.v \
+./design/rtl/fpu_mul_frac_dp.v \
+./design/rtl/fpu_mul.v \
+./design/rtl/fpu_out_ctl.v \
+./design/rtl/fpu_out_dp.v \
+./design/rtl/fpu_out.v \
+./design/rtl/fpu_rptr_groups.v \
+./design/rtl/fpu_rptr_macros.v \
+./design/rtl/fpu_rptr_min_global.v \
+./design/pr_macro/mul64.v \
+./design/common/test_stub_scan.v \
+./design/srams/bw_r_rf16x160.v ]
+
+read_file -f verilog ./design/rtl/fpu.v
+
+current_design fpu
+
+link

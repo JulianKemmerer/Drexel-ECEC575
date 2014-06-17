@@ -1,0 +1,42 @@
+PROFILING Average_Output_Transition			ps
+
+Average_Output_Transition	"(-inf, 101.336ps]"	4 elements
+		ISO_FENCE0N_X4	99.5537	""
+		ISO_FENCE0N_X2	99.6274	""
+		AON_BUF_X2	100.823	""
+		ISO_FENCE0N_X1	101.037	""
+	"(101.336ps, 108.271ps]"	16 elements
+		LS_LHEN_X2	101.872	""
+		HEADER_OE_X2	101.925	""
+		LS_LH_X2	102.099	""
+		LS_HL_X2	102.309	""
+		LS_HLEN_X4	103.154	""
+		LS_HLEN_X2	103.56	""
+		ISO_FENCE1_X1	103.653	""
+		ISO_FENCE1_X4	103.842	""
+		ISO_FENCE1_X2	104.037	""
+		HEADER_OE_X4	105.325	""
+		LS_LH_X1	106.102	""
+		AON_BUF_X4	106.168	""
+		LS_HL_X1	107.062	""
+		ISO_FENCE0_X4	107.297	""
+		LS_HL_X4	107.524	""
+		LS_LH_X4	107.694	""
+	"(108.271ps, 115.206ps]"	8 elements
+		LS_HLEN_X1	108.625	""
+		ISO_FENCE0_X2	108.918	""
+		AON_BUF_X1	110.526	""
+		HEADER_OE_X1	110.598	""
+		AON_INV_X4	110.875	""
+		AON_INV_X2	111.066	""
+		LS_LHEN_X4	113.552	""
+		LS_LHEN_X1	114.187	""
+	"(115.206ps, +inf)"	5 elements
+		ISO_FENCE1N_X2	120.679	""
+		ISO_FENCE0_X1	120.704	""
+		ISO_FENCE1N_X4	120.788	""
+		AON_INV_X1	122.429	""
+		ISO_FENCE1N_X1	125.335	""
+
+Profiling Statistics	Average	108.271
+	Standard Deviation	6.93497

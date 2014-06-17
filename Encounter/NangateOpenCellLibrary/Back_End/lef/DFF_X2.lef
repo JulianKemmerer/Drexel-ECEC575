@@ -1,0 +1,115 @@
+# 
+# ******************************************************************************
+# *                                                                            *
+# *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+# *                           All rights reserved.                             *
+# *                                                                            *
+# * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+# *                                                                            *
+# * All trademarks, logos, software marks, and trade names (collectively the   *
+# * "Marks") in this program are proprietary to Nangate or other respective    *
+# * owners that have granted Nangate the right and license to use such Marks.  *
+# * You are not permitted to use the Marks without the prior written consent   *
+# * of Nangate or such third party that may own the Marks.                     *
+# *                                                                            *
+# * This file has been provided pursuant to a License Agreement containing     *
+# * restrictions on its use. This file contains valuable trade secrets and     *
+# * proprietary information of Nangate Inc., and is protected by U.S. and      *
+# * international laws and/or treaties.                                        *
+# *                                                                            *
+# * The copyright notice(s) in this file does not indicate actual or intended  *
+# * publication of this file.                                                  *
+# *                                                                            *
+# *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+# *                                                                            *
+# ******************************************************************************
+# 
+# 
+# Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+# Local time is now Fri, 3 Dec 2010, 19:32:18.
+# Main process id is 27821.
+
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO DFF_X2
+  CLASS core ;
+  FOREIGN DFF_X2 0.0 0.0 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE FreePDK45_38x28_10R_NP_162NW_34O ;
+  SIZE 3.61 BY 1.4 ;
+  PIN D
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.0196 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.0728 LAYER metal1 ;
+    ANTENNAGATEAREA 0.03475 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.94 0.56 1.08 0.56 1.08 0.7 0.94 0.7  ;
+    END
+  END D
+  PIN CK
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.0112 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.0572 LAYER metal1 ;
+    ANTENNAGATEAREA 0.02625 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 1.57 0.56 1.65 0.56 1.65 0.7 1.57 0.7  ;
+    END
+  END CK
+  PIN Q
+    DIRECTION OUTPUT ;
+    ANTENNAPARTIALMETALAREA 0.06055 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.2431 LAYER metal1 ;
+    ANTENNADIFFAREA 0.1463 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 3.29 0.25 3.36 0.25 3.36 1.115 3.29 1.115  ;
+    END
+  END Q
+  PIN QN
+    DIRECTION OUTPUT ;
+    ANTENNAPARTIALMETALAREA 0.04725 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.1937 LAYER metal1 ;
+    ANTENNADIFFAREA 0.1463 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 2.91 0.25 2.98 0.25 2.98 0.925 2.91 0.925  ;
+    END
+  END QN
+  PIN VDD
+    DIRECTION INOUT ;
+    USE power ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 1.315 0.255 1.315 0.255 0.965 0.325 0.965 0.325 1.315 1.015 1.315 1.015 1.08 1.085 1.08 1.085 1.315 1.62 1.315 1.62 0.9 1.69 0.9 1.69 1.315 2.35 1.315 2.35 0.875 2.485 0.875 2.485 1.315 2.73 1.315 2.73 1.205 2.8 1.205 2.8 1.315 3.105 1.315 3.105 1.205 3.175 1.205 3.175 1.315 3.215 1.315 3.485 1.315 3.485 0.84 3.555 0.84 3.555 1.315 3.61 1.315 3.61 1.485 3.215 1.485 0 1.485  ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE ground ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 -0.085 3.61 -0.085 3.61 0.085 3.555 0.085 3.555 0.46 3.485 0.46 3.485 0.085 3.175 0.085 3.175 0.46 3.105 0.46 3.105 0.085 2.8 0.085 2.8 0.46 2.73 0.46 2.73 0.085 2.485 0.085 2.485 0.45 2.35 0.45 2.35 0.085 1.69 0.085 1.69 0.385 1.62 0.385 1.62 0.085 1.12 0.085 1.12 0.215 0.985 0.215 0.985 0.085 0.325 0.085 0.325 0.385 0.255 0.385 0.255 0.085 0 0.085  ;
+    END
+  END VSS
+  OBS
+      LAYER metal1 ;
+        POLYGON 0.075 0.325 0.145 0.325 0.145 0.765 0.555 0.765 0.555 0.565 0.625 0.565 0.625 0.835 0.145 0.835 0.145 1.055 0.075 1.055  ;
+        POLYGON 0.61 1 0.69 1 0.69 0.355 0.61 0.355 0.61 0.285 0.76 0.285 0.76 0.765 1.145 0.765 1.145 0.565 1.215 0.565 1.215 0.835 0.76 0.835 0.76 1.07 0.61 1.07  ;
+        POLYGON 0.39 0.15 0.895 0.15 0.895 0.285 1.355 0.285 1.355 1.115 1.285 1.115 1.285 0.355 0.825 0.355 0.825 0.22 0.46 0.22 0.46 0.7 0.39 0.7  ;
+        POLYGON 0.5 1.18 0.865 1.18 0.865 0.945 1.22 0.945 1.22 1.18 1.435 1.18 1.435 0.25 1.505 0.25 1.505 0.765 1.875 0.765 1.875 0.215 2.215 0.215 2.215 0.285 1.945 0.285 1.945 0.835 1.505 0.835 1.505 1.25 1.15 1.25 1.15 1.015 0.935 1.015 0.935 1.25 0.5 1.25  ;
+        POLYGON 2.01 0.35 2.08 0.35 2.08 0.525 2.51 0.525 2.51 0.66 2.08 0.66 2.08 0.975 2.01 0.975  ;
+        POLYGON 2.245 0.735 2.575 0.735 2.575 0.2 2.645 0.2 2.645 1.045 3.145 1.045 3.145 0.525 3.215 0.525 3.215 1.115 2.575 1.115 2.575 0.805 2.245 0.805  ;
+  END
+END DFF_X2
+
+END LIBRARY
+#
+# End of file
+#

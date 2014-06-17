@@ -1,0 +1,62 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2011, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on server08.nangate.com for user Giancarlo Franciscatto (gfr).
+* Local time is now Thu, 6 Jan 2011, 19:45:48.
+* Main process id is 3320.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_LH_X1.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:48 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_LH_X1 A Z VDD VDDL VSS 
+*.PININFO A:I Z:O VDD:P VDDL:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 net_001 net_000 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_13 VSS net_000 net_002 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_20 net_003 net_001 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_26 Z net_003 VSS VSS NMOS_VTL W=0.120000U L=0.050000U
+M_i_33 VDDL A net_000 VDDL PMOS_VTL W=0.135000U L=0.050000U
+M_i_40 net_001 net_000 VDDL VDDL PMOS_VTL W=0.135000U L=0.050000U
+M_i_46 VDD net_003 net_002 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_52 net_003 net_002 VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_58 Z net_003 VDD VDD PMOS_VTL W=0.200000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

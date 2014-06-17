@@ -1,0 +1,25 @@
+<html>
+  
+  <head>
+    <script type="text/javascript" src="highlight.js"/>	
+  </head>
+  
+  <body onLoad="readFilters()">
+    
+    <form name="displayform" type="hidden">
+      <select name="filters" size="5" multiple=""/>
+    </form>
+    
+    <form name="selectform">
+      <br/>
+      <input type="button" value="Remove Selected" onClick="removeSelected()"/>
+      <br/>
+      <input name="filtertext" type="text" value="filter"/>
+      <input type="button" value="Add to list" onClick="passText(this.form.filtertext.value);"/>
+      <br/>
+      <input type="button" value="Submit" onClick="sendValue()"/>
+    </form>
+    
+  </body>
+  
+</html>

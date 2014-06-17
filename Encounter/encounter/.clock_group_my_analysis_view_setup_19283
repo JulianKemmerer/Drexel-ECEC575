@@ -1,0 +1,3 @@
+#Timing Groups: 3
+set_timing_group { clk1  } 
+set_timing_group { @  } 

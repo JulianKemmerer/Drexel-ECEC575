@@ -1,0 +1,833 @@
+* 
+* ******************************************************************************
+* *                                                                            *
+* *                   Copyright (C) 2004-2011, Nangate Inc.                    *
+* *                           All rights reserved.                             *
+* *                                                                            *
+* * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+* *                                                                            *
+* * All trademarks, logos, software marks, and trade names (collectively the   *
+* * "Marks") in this program are proprietary to Nangate or other respective    *
+* * owners that have granted Nangate the right and license to use such Marks.  *
+* * You are not permitted to use the Marks without the prior written consent   *
+* * of Nangate or such third party that may own the Marks.                     *
+* *                                                                            *
+* * This file has been provided pursuant to a License Agreement containing     *
+* * restrictions on its use. This file contains valuable trade secrets and     *
+* * proprietary information of Nangate Inc., and is protected by U.S. and      *
+* * international laws and/or treaties.                                        *
+* *                                                                            *
+* * The copyright notice(s) in this file does not indicate actual or intended  *
+* * publication of this file.                                                  *
+* *                                                                            *
+* *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+* *                                                                            *
+* ******************************************************************************
+* 
+* 
+* Running on server08.nangate.com for user Giancarlo Franciscatto (gfr).
+* Local time is now Thu, 6 Jan 2011, 19:45:43.
+* Main process id is 3320.
+*
+********************************************************************************
+*                                                                              *
+* Cellname:   AON_BUF_X1.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:43 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT AON_BUF_X1 A Z VDD VDDBAK VSS
+*.PININFO A:I Z:O VDD:P VDDBAK:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 Z net_000 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_13 VDDBAK A net_000 VDDBAK PMOS_VTL W=0.130000U L=0.050000U
+M_i_20 Z net_000 VDDBAK VDDBAK PMOS_VTL W=0.130000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   AON_BUF_X2.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:43 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT AON_BUF_X2 A Z VDD VDDBAK VSS
+*.PININFO A:I Z:O VDD:P VDDBAK:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 Z net_000 VSS VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_14 VDDBAK A net_000 VDDBAK PMOS_VTL W=0.130000U L=0.050000U
+M_i_21 Z net_000 VDDBAK VDDBAK PMOS_VTL W=0.270000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   AON_BUF_X4.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:43 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT AON_BUF_X4 A Z VDD VDDBAK VSS
+*.PININFO A:I Z:O VDD:P VDDBAK:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 Z net_000 VSS VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_14 VSS net_000 Z VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_20 VDDBAK A net_000 VDDBAK PMOS_VTL W=0.130000U L=0.050000U
+M_i_27 Z net_000 VDDBAK VDDBAK PMOS_VTL W=0.270000U L=0.050000U
+M_i_33 VDDBAK net_000 Z VDDBAK PMOS_VTL W=0.270000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   AON_INV_X1.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:43 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT AON_INV_X1 A Z VDD VDDBAK VSS 
+*.PININFO A:I Z:O VDD:P VDDBAK:P VSS:G 
+*.EQN Z=!A
+M_i_0 Z A VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 Z A VDDBAK VDDBAK PMOS_VTL W=0.130000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   AON_INV_X2.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:43 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT AON_INV_X2 A Z VDD VDDBAK VSS 
+*.PININFO A:I Z:O VDD:P VDDBAK:P VSS:G 
+*.EQN Z=!A
+M_i_0 Z A VSS VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_7 Z A VDDBAK VDDBAK PMOS_VTL W=0.270000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   AON_INV_X4.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:44 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT AON_INV_X4 A Z VDD VDDBAK VSS 
+*.PININFO A:I Z:O VDD:P VDDBAK:P VSS:G 
+*.EQN Z=!A
+M_i_0 Z A VSS VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_7 VSS A Z VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_13 Z A VDDBAK VDDBAK PMOS_VTL W=0.270000U L=0.050000U
+M_i_20 VDDBAK A Z VDDBAK PMOS_VTL W=0.270000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   HEADER_OE_X1.                                                    *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:44 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT HEADER_OE_X1 SLEEP SLEEPOUT VDD VSS VVDD 
+*.PININFO SLEEP:I SLEEPOUT:O VDD:P VSS:G VVDD:P 
+*.EQN SLEEPOUT=SLEEP
+M_i_0 VSS SLEEP net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 SLEEPOUT net_000 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_13 VVDD SLEEP VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_20 VDD SLEEP net_000 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_27 SLEEPOUT net_000 VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   HEADER_OE_X2.                                                    *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:44 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT HEADER_OE_X2 SLEEP SLEEPOUT VDD VSS VVDD 
+*.PININFO SLEEP:I SLEEPOUT:O VDD:P VSS:G VVDD:P 
+*.EQN SLEEPOUT=SLEEP
+M_i_0 VSS SLEEP net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 SLEEPOUT net_000 VSS VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_14 VVDD SLEEP VDD VDD PMOS_VTL W=0.270000U L=0.050000U
+M_i_21 VDD SLEEP net_000 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_28 SLEEPOUT net_000 VDD VDD PMOS_VTL W=0.270000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   HEADER_OE_X4.                                                    *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:44 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT HEADER_OE_X4 SLEEP SLEEPOUT VDD VSS VVDD 
+*.PININFO SLEEP:I SLEEPOUT:O VDD:P VSS:G VVDD:P 
+*.EQN SLEEPOUT=SLEEP
+M_i_0 VSS SLEEP net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 SLEEPOUT net_000 VSS VSS NMOS_VTL W=0.360000U L=0.050000U
+M_i_14 VVDD SLEEP VDD VDD PMOS_VTL W=0.540000U L=0.050000U
+M_i_21 VDD SLEEP net_000 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_28 SLEEPOUT net_000 VDD VDD PMOS_VTL W=0.540000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   HEADER_X1.                                                       *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:44 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT HEADER_X1 SLEEP VDD VSS VVDD 
+*.PININFO SLEEP:I VDD:P VSS:G VVDD:P 
+M_i_0 VVDD SLEEP VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   HEADER_X2.                                                       *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:44 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT HEADER_X2 SLEEP VDD VSS VVDD 
+*.PININFO SLEEP:I VDD:P VSS:G VVDD:P 
+M_i_0 VVDD SLEEP VDD VDD PMOS_VTL W=0.270000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   HEADER_X4.                                                       *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:44 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT HEADER_X4 SLEEP VDD VSS VVDD 
+*.PININFO SLEEP:I VDD:P VSS:G VVDD:P 
+M_i_0 VVDD SLEEP VDD VDD PMOS_VTL W=0.540000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE0N_X1.                                                  *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:45 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE0N_X1 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G
+*.EQN Z=(A * EN)
+M_i_0 net_001 A net_000 VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_5 VSS EN net_001 VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_11 Z net_000 VSS VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_17 net_000 A VDD VDD PMOS_VTL W=0.205000U L=0.050000U
+M_i_24 VDD EN net_000 VDD PMOS_VTL W=0.205000U L=0.050000U
+M_i_30 Z net_000 VDD VDD PMOS_VTL W=0.205000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE0N_X2.                                                  *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:45 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE0N_X2 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=(A * EN)
+M_i_0 net_001 A net_000 VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_5 VSS EN net_001 VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_11 Z net_000 VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_18 net_000 A VDD VDD PMOS_VTL W=0.205000U L=0.050000U
+M_i_25 VDD EN net_000 VDD PMOS_VTL W=0.205000U L=0.050000U
+M_i_31 Z net_000 VDD VDD PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE0N_X4.                                                  *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:45 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE0N_X4 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=(A * EN)
+M_i_0 net_001 A net_000 VSS NMOS_VTL W=0.340000U L=0.050000U
+M_i_5 VSS EN net_001 VSS NMOS_VTL W=0.340000U L=0.050000U
+M_i_11 Z net_000 VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_17 VSS net_000 Z VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_23 net_000 A VDD VDD PMOS_VTL W=0.390000U L=0.050000U
+M_i_30 VDD EN net_000 VDD PMOS_VTL W=0.390000U L=0.050000U
+M_i_36 Z net_000 VDD VDD PMOS_VTL W=0.415000U L=0.050000U
+M_i_42 VDD net_000 Z VDD PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE0_X1.                                                   *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:45 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE0_X1 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=!(A + EN)
+M_i_0 Z EN VSS VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_7 VSS A Z VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_13 net_000 EN VDD VDD PMOS_VTL W=0.250000U L=0.050000U
+M_i_18 Z A net_000 VDD PMOS_VTL W=0.250000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE0_X2.                                                   *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:45 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE0_X2 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=!(A + EN)
+M_i_0 Z EN VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_7 VSS A Z VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_13 net_000 EN VDD VDD PMOS_VTL W=0.505000U L=0.050000U
+M_i_18 Z A net_000 VDD PMOS_VTL W=0.505000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE0_X4.                                                   *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:45 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE0_X4 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=!(A + EN)
+M_i_0 Z EN VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_7 VSS A Z VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_13 Z A VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_19 VSS EN Z VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_25 net_000 EN VDD VDD PMOS_VTL W=0.505000U L=0.050000U
+M_i_30 Z A net_000 VDD PMOS_VTL W=0.505000U L=0.050000U
+M_i_36 net_001 A Z VDD PMOS_VTL W=0.505000U L=0.050000U
+M_i_40 VDD EN net_001 VDD PMOS_VTL W=0.505000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE1N_X1.                                                  *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:45 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE1N_X1 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=!(A * EN)
+M_i_0 net_000 EN VSS VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_5 Z A net_000 VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_11 Z EN VDD VDD PMOS_VTL W=0.205000U L=0.050000U
+M_i_18 VDD A Z VDD PMOS_VTL W=0.205000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE1N_X2.                                                  *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:46 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE1N_X2 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=!(A * EN)
+M_i_0 net_000 EN VSS VSS NMOS_VTL W=0.360000U L=0.050000U
+M_i_5 Z A net_000 VSS NMOS_VTL W=0.360000U L=0.050000U
+M_i_11 Z EN VDD VDD PMOS_VTL W=0.415000U L=0.050000U
+M_i_18 VDD A Z VDD PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE1N_X4.                                                  *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:46 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE1N_X4 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=!(A * EN)
+M_i_0 net_000 EN VSS VSS NMOS_VTL W=0.360000U L=0.050000U
+M_i_5 Z A net_000 VSS NMOS_VTL W=0.360000U L=0.050000U
+M_i_11 net_001 A Z VSS NMOS_VTL W=0.360000U L=0.050000U
+M_i_15 VSS EN net_001 VSS NMOS_VTL W=0.360000U L=0.050000U
+M_i_21 Z EN VDD VDD PMOS_VTL W=0.415000U L=0.050000U
+M_i_27 VDD A Z VDD PMOS_VTL W=0.415000U L=0.050000U
+M_i_33 Z A VDD VDD PMOS_VTL W=0.415000U L=0.050000U
+M_i_38 VDD EN Z VDD PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE1_X1.                                                   *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:46 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE1_X1 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=(A + EN)
+M_i_0 net_000 A VSS VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_7 VSS EN net_000 VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_13 Z net_000 VSS VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_19 net_001 A net_000 VDD PMOS_VTL W=0.250000U L=0.050000U
+M_i_24 VDD EN net_001 VDD PMOS_VTL W=0.250000U L=0.050000U
+M_i_30 Z net_000 VDD VDD PMOS_VTL W=0.205000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE1_X2.                                                   *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:46 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE1_X2 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=(A + EN)
+M_i_0 net_000 A VSS VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_7 VSS EN net_000 VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_13 Z net_000 VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_20 net_001 A net_000 VDD PMOS_VTL W=0.250000U L=0.050000U
+M_i_25 VDD EN net_001 VDD PMOS_VTL W=0.250000U L=0.050000U
+M_i_31 Z net_000 VDD VDD PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   ISO_FENCE1_X4.                                                   *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:46 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT ISO_FENCE1_X4 A EN Z VDD VSS 
+*.PININFO A:I EN:I Z:O VDD:P VSS:G 
+*.EQN Z=(A + EN)
+M_i_0 net_000 A VSS VSS NMOS_VTL W=0.280000U L=0.050000U
+M_i_7 VSS EN net_000 VSS NMOS_VTL W=0.280000U L=0.050000U
+M_i_13 Z net_000 VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_20 VSS net_000 Z VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_26 net_001 A net_000 VDD PMOS_VTL W=0.460000U L=0.050000U
+M_i_31 VDD EN net_001 VDD PMOS_VTL W=0.460000U L=0.050000U
+M_i_37 Z net_000 VDD VDD PMOS_VTL W=0.415000U L=0.050000U
+M_i_44 VDD net_000 Z VDD PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_HLEN_X1.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:46 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_HLEN_X1 A ISOLN Z VDDL VSS 
+*.PININFO A:I ISOLN:I Z:O VDDL:P VSS:G
+*.EQN Z=(A * ISOLN)
+M_i_0 net_001 A net_000 VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_5 VSS ISOLN net_001 VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_11 Z net_000 VSS VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_17 net_000 A VDDL VDDL PMOS_VTL W=0.205000U L=0.050000U
+M_i_24 VDDL ISOLN net_000 VDDL PMOS_VTL W=0.205000U L=0.050000U
+M_i_30 Z net_000 VDDL VDDL PMOS_VTL W=0.205000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_HLEN_X2.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:46 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_HLEN_X2 A ISOLN Z VDDL VSS
+*.PININFO A:I ISOLN:I Z:O VDDL:P VSS:G 
+*.EQN Z=(A * ISOLN)
+M_i_0 net_001 A net_000 VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_5 VSS ISOLN net_001 VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_11 Z net_000 VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_18 net_000 A VDDL VDDL PMOS_VTL W=0.205000U L=0.050000U
+M_i_25 VDDL ISOLN net_000 VDDL PMOS_VTL W=0.205000U L=0.050000U
+M_i_31 Z net_000 VDDL VDDL PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_HLEN_X4.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:47 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_HLEN_X4 A ISOLN Z VDDL VSS
+*.PININFO A:I ISOLN:I Z:O VDDL:P VSS:G
+*.EQN Z=(A * ISOLN)
+M_i_0 net_001 A net_000 VSS NMOS_VTL W=0.340000U L=0.050000U
+M_i_5 VSS ISOLN net_001 VSS NMOS_VTL W=0.340000U L=0.050000U
+M_i_11 Z net_000 VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_17 VSS net_000 Z VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_23 net_000 A VDDL VDDL PMOS_VTL W=0.390000U L=0.050000U
+M_i_30 VDDL ISOLN net_000 VDDL PMOS_VTL W=0.390000U L=0.050000U
+M_i_36 Z net_000 VDDL VDDL PMOS_VTL W=0.415000U L=0.050000U
+M_i_42 VDDL net_000 Z VDDL PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_HL_X1.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:47 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_HL_X1 A Z VDDL VSS 
+*.PININFO A:I Z:O VDDL:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_7 Z net_000 VSS VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_13 VDDL A net_000 VDDL PMOS_VTL W=0.205000U L=0.050000U
+M_i_20 Z net_000 VDDL VDDL PMOS_VTL W=0.205000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_HL_X2.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:47 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_HL_X2 A Z VDDL VSS 
+*.PININFO A:I Z:O VDDL:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.155000U L=0.050000U
+M_i_7 Z net_000 VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_14 VDDL A net_000 VDDL PMOS_VTL W=0.205000U L=0.050000U
+M_i_21 Z net_000 VDDL VDDL PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_HL_X4.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:47 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_HL_X4 A Z VDDL VSS 
+*.PININFO A:I Z:O VDDL:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.170000U L=0.050000U
+M_i_7 Z net_000 VSS VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_14 VSS net_000 Z VSS NMOS_VTL W=0.305000U L=0.050000U
+M_i_20 VDDL A net_000 VDDL PMOS_VTL W=0.230000U L=0.050000U
+M_i_27 Z net_000 VDDL VDDL PMOS_VTL W=0.415000U L=0.050000U
+M_i_34 VDDL net_000 Z VDDL PMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_LHEN_X1.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:47 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_LHEN_X1 A ISOLN Z VDD VDDL VSS 
+*.PININFO A:I ISOLN:I Z:O VDD:P VDDL:P VSS:G 
+*.EQN Z=(A * ISOLN)
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 net_001 net_000 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_13 net_002 ISOLN VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_18 net_003 net_001 net_002 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_24 net_005 net_000 net_004 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_29 VSS ISOLN net_005 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_35 net_007 ISOLN net_006 VSS NMOS_VTL W=0.140000U L=0.050000U
+M_i_40 VSS net_004 net_007 VSS NMOS_VTL W=0.140000U L=0.050000U
+M_i_46 Z net_006 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_52 VDDL A net_000 VDDL PMOS_VTL W=0.190000U L=0.050000U
+M_i_59 net_001 net_000 VDDL VDDL PMOS_VTL W=0.190000U L=0.050000U
+M_i_65 VDD net_004 net_003 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_72 net_004 net_003 VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_78 net_006 ISOLN VDD VDD PMOS_VTL W=0.230000U L=0.050000U
+M_i_85 VDD net_004 net_006 VDD PMOS_VTL W=0.230000U L=0.050000U
+M_i_91 Z net_006 VDD VDD PMOS_VTL W=0.230000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_LHEN_X2.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:47 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_LHEN_X2 A ISOLN Z VDD VDDL VSS 
+*.PININFO A:I ISOLN:I Z:O VDD:P VDDL:P VSS:G 
+*.EQN Z=(A * ISOLN)
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 net_001 net_000 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_13 net_002 ISOLN VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_18 net_003 net_001 net_002 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_24 net_005 net_000 net_004 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_29 VSS ISOLN net_005 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_35 net_007 ISOLN net_006 VSS NMOS_VTL W=0.130000U L=0.050000U
+M_i_40 VSS net_004 net_007 VSS NMOS_VTL W=0.130000U L=0.050000U
+M_i_46 Z net_006 VSS VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_53 VDDL A net_000 VDDL PMOS_VTL W=0.130000U L=0.050000U
+M_i_60 net_001 net_000 VDDL VDDL PMOS_VTL W=0.130000U L=0.050000U
+M_i_66 VDD net_004 net_003 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_73 net_004 net_003 VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_79 net_006 ISOLN VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_86 VDD net_004 net_006 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_92 Z net_006 VDD VDD PMOS_VTL W=0.270000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_LHEN_X4.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:48 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_LHEN_X4 A ISOLN Z VDD VDDL VSS 
+*.PININFO A:I ISOLN:I Z:O VDD:P VDDL:P VSS:G 
+*.EQN Z=(A * ISOLN)
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 net_001 net_000 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_13 net_002 ISOLN VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_18 net_003 net_001 net_002 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_24 net_005 net_000 net_004 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_29 VSS ISOLN net_005 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_35 net_007 ISOLN net_006 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_40 VSS net_004 net_007 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_46 Z net_006 VSS VSS NMOS_VTL W=0.350000U L=0.050000U
+M_i_53 VDDL A net_000 VDDL PMOS_VTL W=0.090000U L=0.050000U
+M_i_60 net_001 net_000 VDDL VDDL PMOS_VTL W=0.090000U L=0.050000U
+M_i_66 VDD net_004 net_003 VDD PMOS_VTL W=0.090000U L=0.050000U
+M_i_73 net_004 net_003 VDD VDD PMOS_VTL W=0.090000U L=0.050000U
+M_i_79 net_006 ISOLN VDD VDD PMOS_VTL W=0.100000U L=0.050000U
+M_i_86 VDD net_004 net_006 VDD PMOS_VTL W=0.100000U L=0.050000U
+M_i_92 Z net_006 VDD VDD PMOS_VTL W=0.590000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_LH_X1.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:48 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_LH_X1 A Z VDD VDDL VSS 
+*.PININFO A:I Z:O VDD:P VDDL:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 net_001 net_000 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_13 VSS net_000 net_002 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_20 net_003 net_001 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_26 Z net_003 VSS VSS NMOS_VTL W=0.120000U L=0.050000U
+M_i_33 VDDL A net_000 VDDL PMOS_VTL W=0.135000U L=0.050000U
+M_i_40 net_001 net_000 VDDL VDDL PMOS_VTL W=0.135000U L=0.050000U
+M_i_46 VDD net_003 net_002 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_52 net_003 net_002 VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_58 Z net_003 VDD VDD PMOS_VTL W=0.200000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_LH_X2.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:48 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_LH_X2 A Z VDD VDDL VSS 
+*.PININFO A:I Z:O VDD:P VDDL:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 net_001 net_000 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_13 VSS net_000 net_002 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_20 net_003 net_001 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_26 Z net_003 VSS VSS NMOS_VTL W=0.180000U L=0.050000U
+M_i_33 VDDL A net_000 VDDL PMOS_VTL W=0.130000U L=0.050000U
+M_i_40 net_001 net_000 VDDL VDDL PMOS_VTL W=0.130000U L=0.050000U
+M_i_46 VDD net_003 net_002 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_52 net_003 net_002 VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_58 Z net_003 VDD VDD PMOS_VTL W=0.270000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*                                                                              *
+* Cellname:   LS_LH_X4.                                                        *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Written on server08.nangate.com for user Giancarlo Franciscatto (gfr)        *
+* at 19:45:48 on Thu, 6 Jan 2011.                                              *
+*                                                                              *
+********************************************************************************
+.SUBCKT LS_LH_X4 A Z VDD VDDL VSS
+*.PININFO A:I Z:O VDD:P VDDL:P VSS:G 
+*.EQN Z=A
+M_i_0 VSS A net_000 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_7 net_001 net_000 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_13 VSS net_000 net_002 VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_20 net_003 net_001 VSS VSS NMOS_VTL W=0.090000U L=0.050000U
+M_i_26 Z net_003 VSS VSS NMOS_VTL W=0.330000U L=0.050000U
+M_i_33 VDDL A net_000 VDDL PMOS_VTL W=0.130000U L=0.050000U
+M_i_40 net_001 net_000 VDDL VDDL PMOS_VTL W=0.130000U L=0.050000U
+M_i_46 VDD net_003 net_002 VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_52 net_003 net_002 VDD VDD PMOS_VTL W=0.135000U L=0.050000U
+M_i_58 Z net_003 VDD VDD PMOS_VTL W=0.540000U L=0.050000U
+.ENDS 
+
+********************************************************************************
+*
+* END
+*
+********************************************************************************

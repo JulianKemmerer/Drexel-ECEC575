@@ -1,0 +1,100 @@
+# 
+# ******************************************************************************
+# *                                                                            *
+# *                   Copyright (C) 2004-2010, Nangate Inc.                    *
+# *                           All rights reserved.                             *
+# *                                                                            *
+# * Nangate and the Nangate logo are trademarks of Nangate Inc.                *
+# *                                                                            *
+# * All trademarks, logos, software marks, and trade names (collectively the   *
+# * "Marks") in this program are proprietary to Nangate or other respective    *
+# * owners that have granted Nangate the right and license to use such Marks.  *
+# * You are not permitted to use the Marks without the prior written consent   *
+# * of Nangate or such third party that may own the Marks.                     *
+# *                                                                            *
+# * This file has been provided pursuant to a License Agreement containing     *
+# * restrictions on its use. This file contains valuable trade secrets and     *
+# * proprietary information of Nangate Inc., and is protected by U.S. and      *
+# * international laws and/or treaties.                                        *
+# *                                                                            *
+# * The copyright notice(s) in this file does not indicate actual or intended  *
+# * publication of this file.                                                  *
+# *                                                                            *
+# *     NGLibraryCreator, v2010.08-HR32-SP3-2010-08-05 - build 1009061800      *
+# *                                                                            *
+# ******************************************************************************
+# 
+# 
+# Running on brazil06.nangate.com.br for user Giancarlo Franciscatto (gfr).
+# Local time is now Fri, 3 Dec 2010, 19:32:18.
+# Main process id is 27821.
+
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO NAND2_X4
+  CLASS core ;
+  FOREIGN NAND2_X4 0.0 0.0 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE FreePDK45_38x28_10R_NP_162NW_34O ;
+  SIZE 1.71 BY 1.4 ;
+  PIN A1
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.02275 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.0793 LAYER metal1 ;
+    ANTENNAGATEAREA 0.209 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 1.01 0.525 1.14 0.525 1.14 0.7 1.01 0.7  ;
+    END
+  END A1
+  PIN A2
+    DIRECTION INPUT ;
+    ANTENNAPARTIALMETALAREA 0.02275 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.0793 LAYER metal1 ;
+    ANTENNAGATEAREA 0.209 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.38 0.525 0.51 0.525 0.51 0.7 0.38 0.7  ;
+    END
+  END A2
+  PIN ZN
+    DIRECTION OUTPUT ;
+    ANTENNAPARTIALMETALAREA 0.208475 LAYER metal1 ;
+    ANTENNAPARTIALMETALSIDEAREA 0.7683 LAYER metal1 ;
+    ANTENNADIFFAREA 0.469 ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0.275 0.785 1.39 0.785 1.39 0.42 1 0.42 1 0.35 1.475 0.35 1.475 1.07 1.405 1.07 1.405 0.855 1.095 0.855 1.095 1.07 1.025 1.07 1.025 0.855 0.715 0.855 0.715 1.07 0.645 1.07 0.645 0.855 0.345 0.855 0.345 1.07 0.275 1.07  ;
+    END
+  END ZN
+  PIN VDD
+    DIRECTION INOUT ;
+    USE power ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 1.315 0.08 1.315 0.08 1.04 0.15 1.04 0.15 1.315 0.455 1.315 0.455 1.04 0.525 1.04 0.525 1.315 0.835 1.315 0.835 1.04 0.905 1.04 0.905 1.315 1.215 1.315 1.215 1.04 1.285 1.04 1.285 1.315 1.595 1.315 1.595 1.04 1.665 1.04 1.665 1.315 1.71 1.315 1.71 1.485 1.665 1.485 0 1.485  ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE ground ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        POLYGON 0 -0.085 1.71 -0.085 1.71 0.085 0.715 0.085 0.715 0.285 0.645 0.285 0.645 0.085 0.335 0.085 0.335 0.285 0.265 0.285 0.265 0.085 0 0.085  ;
+    END
+  END VSS
+  OBS
+      LAYER metal1 ;
+        POLYGON 0.085 0.15 0.155 0.15 0.155 0.355 0.455 0.355 0.455 0.15 0.525 0.15 0.525 0.355 0.835 0.355 0.835 0.15 1.665 0.15 1.665 0.425 1.595 0.425 1.595 0.22 0.905 0.22 0.905 0.425 0.085 0.425  ;
+  END
+END NAND2_X4
+
+END LIBRARY
+#
+# End of file
+#

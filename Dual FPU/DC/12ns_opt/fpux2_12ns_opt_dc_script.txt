@@ -1,0 +1,25 @@
+ource ./scripts/fpux2_3.tcl
+
+source ./scripts/fpu_3.con
+
+set_max_dynamic_power 0.0
+
+compile -power_effort high
+
+# Set clk to 12ns
+create_clock -period 12 [get_ports gclk]
+
+# Get rid of area constraint
+remove_attribute fpu max_area
+
+compile_ultra -gate_clock
+
+#placed into seperate script and used if needed
+#compile_ultra -incremental
+
+#placed in third script and run after timing is met
+#write -hier -f ddc -output mapped/fpux2_12ns.ddc
+#write -hier -f verilog -output mapped/fpux2_12ns.v
+
+
+

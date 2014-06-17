@@ -1,0 +1,1737 @@
+<html xmlns:xd="http://www.pnp-software.com/XSLTdoc">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MUX2_X2</title>
+<link rel="stylesheet" type="text/css" href="../resource/css/Basic.css">
+<link rel="stylesheet" type="text/css" href="../resource/css/CellLib.css">
+<link rel="stylesheet" type="text/css" href="../resource/css/BasicHtml.css">
+<link rel="stylesheet" type="text/css" href="../resource/css/CellLibHtml.css">
+<script type="text/javascript">
+        var openImg = "../resource/image/open_square.gif";
+        var closeImg = "../resource/image/close_square.gif";
+      </script><script type="text/javascript" src="../resource/js/main.js"></script><script>
+        function hidestatus(){
+        window.status='';
+        return true;
+        }
+        document.onmouseover=hidestatus;
+        document.onmouseout=hidestatus;
+      </script><style type="text/css" media="print">
+          .no-page-break {page-break-inside: avoid;}
+          TABLE.reduced	 {margin-left: 0mm;}
+          BODY {font-size: 10px;}
+          TD {font-size: 10px;}
+          TH {font-size: 10px;}
+          a:link    { color: #000000; text-decoration: none;}   
+          a:visited { color: #000000; text-decoration: none;}   
+          #screen-only { display : none; }           
+        </style>
+<style type="text/css" media="screen">
+          .no-page-break {}
+          TABLE.reduced	 {margin-top: 2mm; margin-left: 12mm;}
+          BODY {font-size: 12px;}
+          TD {font-size: 12px;}
+          TH {font-size: 12px;}
+          #print-only { display : none; } 
+        </style>
+</head>
+<body onLoad="NanInit();">
+<a id="PageInfo" RootPath=".." CellName="MUX2_X2" RefNode="" TrgNode="" FileExt=".html" Focus=""></a><div id="screen-only" name="screen-only"><table class="navigation" width="100%">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr class="navigation" colspan="2" align="center"></tr>
+<tr>
+<td align="left"><a href="http://www.nangate.com" target="_blank"><img src="../resource/image/NangateLogo.gif" border="0"></a></td>
+<td align="center"><p class="Title">MUX2_X2</p></td>
+<td align="right"><img src="../resource/image/Logo.png" border="0"></td>
+</tr>
+</table></div>
+<div id="print-only" name="print-only"><table class="navigation" width="100%">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr class="navigation" colspan="2" align="center"></tr>
+<tr>
+<td align="left"><a href="http://www.nangate.com" target="_blank"><img src="../resource/image/NangateLogo.gif" border="0"></a></td>
+<td align="center"><p class="Title">MUX2_X2</p></td>
+<td align="right"><img src="../resource/image/Logo.png" border="0"></td>
+</tr>
+</table></div>
+<div id="screen-only" name="screen-only">
+<hr class="navigation_tt">
+<table width="100%" summary="Navigation header" class="navigation"><tr>
+<td width="33%" align="left"><a href="MUX2_X1_NangateOpenCellLibrary_fast_fast.html">Previous (MUX2_X1)
+      </a></td>
+<td width="33%" align="center"><a href="../CornerList.html">Up (Table of Contents)
+      </a></td>
+<td width="33%" align="right"><a href="NAND2_X1_NangateOpenCellLibrary_fast_fast.html">Next (NAND2_X1)
+      </a></td>
+</tr></table>
+<hr class="navigation_tb">
+<table class="navigation" width="100%">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td align="left"><p class="copyright">Databook Build Date: Thursday Feb 10 22:32 2011</p></td>
+<td align="right"><p class="copyright">Copyright © 2004-2010 Nangate Inc.</p></td>
+</tr>
+</table>
+<p>
+          Datasheet for characterization corner: <span class="bold">NangateOpenCellLibrary_fast_fast</span>
+            , library <span class="bold">
+"NangateOpenCellLibrary"</span>.
+        <br>
+          Data for cell <span class="bold">MUX2_X2</span>
+            (Combinational)
+          
+          .
+        
+
+      Eventual numbers in <i>italic</i> show that the values have required interpolations due to internal data manipulation and/or non-matching LUT index templates.
+      
+      
+      
+      See <a href="#Notes">notes</a> for additional information.
+      
+    </p>
+</div>
+<div id="print-only" name="print-only">
+<hr>
+<table class="navigation" width="100%">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td align="left"><p class="copyright">Databook Build Date: Thursday Feb 10 22:32 2011</p></td>
+<td align="right"><p class="copyright">Copyright © 2004-2010 Nangate Inc.</p></td>
+</tr>
+</table>
+</div>
+<div id="screen-only" name="screen-only"><a name="Summary"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_Summary');"><a class="Caption" href="javascript:;"><span id="I_Summary"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td><a onClick="tBr('_Summary');" class="Caption" href="javascript:;">Summary</a></td>
+</tr>
+</table>
+<ul id="_Summary">
+<a name="sCellChars"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_CellChars');" class="Summary" href="#CellChars">- General Cell Characteristics</a></td></tr>
+</table></div>
+<span id="_CellChars"><table class="reduced"><tr>
+<td><table border="1" style="margin-left:0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th>Strength</th>
+<td>
+2</td>
+</tr>
+<tr>
+<th>Cell Area</th>
+<td>2.394 um<sup>2</sup>
+</td>
+</tr>
+<tr>
+<th>Equation</th>
+<td>
+<div id="screen-only" name="screen-only">
+Z = "((S &amp; B) | (A &amp; !S))"</div>
+<div id="print-only" name="print-only">
+Z = "((S &amp; B) | (A &amp; !S))"</div>
+</td>
+</tr>
+<tr>
+<th>Type</th>
+<td>
+Combinational</td>
+</tr>
+<tr>
+<th>Input</th>
+<td>
+A, 
+B, 
+S</td>
+</tr>
+<tr>
+<th>Output</th>
+<td>
+Z</td>
+</tr>
+<tr>
+<th>PG Pins</th>
+<td>
+VDD (primary_power), 
+VSS (primary_ground)</td>
+</tr>
+</tbody>
+</table></td>
+<td></td>
+<td><a class="Summary" href="#Schematic"><img border="0" src="symbols/MUX2_X2.png" alt="Symbol image not found."></a></td>
+<td></td>
+<td><table border="1" style="margin-left:0" class="reduced">
+<tr><th class="reduced_title" colspan="4">
+                        State Table
+                      </th></tr>
+<tr>
+<th width="30">A</th>
+<th width="30">B</th>
+<th width="30">S</th>
+<th width="30">Z</th>
+</tr>
+<tr align="center">
+<td>L</td>
+<td>-</td>
+<td>L</td>
+<td>L</td>
+</tr>
+<tr align="center">
+<td>H</td>
+<td>-</td>
+<td>L</td>
+<td>H</td>
+</tr>
+<tr align="center">
+<td>-</td>
+<td>L</td>
+<td>H</td>
+<td>L</td>
+</tr>
+<tr align="center">
+<td>-</td>
+<td>H</td>
+<td>H</td>
+<td>H</td>
+</tr>
+</table></td>
+</tr></table></span></a><a name="sSchematic"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Schematic');" class="Summary" href="#Schematic">- Schematic</a></td></tr>
+</table></div></a><a name="sCapacitance"><div id="screen-only" name="screen-only">
+<table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Capacitance');" class="Summary" href="#Capacitance">- Capacitance</a></td></tr>
+</table>
+<table border="1" class="reduced">
+<tr><th class="reduced_title" colspan="2"><a href="#Capacitance">
+              Capacitance [fF]</a></th></tr>
+<tr>
+<th>A</th>
+<td class="num"><div>1.6100</div></td>
+</tr>
+<tr>
+<th>B</th>
+<td class="num"><div>1.7885</div></td>
+</tr>
+<tr>
+<th>S</th>
+<td class="num"><div>2.6091</div></td>
+</tr>
+</table>
+</div>
+<span id="s_Capacitance"><ul class="SubItem">
+<a name="sGateCapacitance"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_GateCapacitance', '_Capacitance');" class="Summary" href="#GateCapacitance">- NLDM Capacitance</a></td>
+<td>        <span class="legend_summary">
+                  [input capacitance table (capacitance, [fall|rise]_capacitance and [fall|rise]_capacitance_range attributes)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sMaxCapacitance"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_MaxCapacitance', '_Capacitance');" class="Summary" href="#MaxCapacitance">- Max Capacitance</a></td>
+<td>        <span class="legend_summary">
+                  [maximum allowed output capacitance]
+                </span>
+</td>
+</tr>
+</table></div></a>
+</ul></span></a><a name="sTiming"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Timing');" class="Summary" href="#Timing">- Timing</a></td></tr>
+</table></div>
+<div id="print-only" name="print-only"><br></div>
+<div class="no-page-break"><table class="reduced"><tr>
+<td valign="top"><table border="1" class="inner">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr><th class="reduced_title" colspan="6"><a href="#PropagationDelay">Propagation Delay [ns]</a></th></tr>
+<tr>
+<th colspan="2">Input Transition [ns]</th>
+<th colspan="2">0.0009</th>
+<th colspan="2">0.1462</th>
+</tr>
+<tr>
+<th colspan="2">Load Capacitance [fF]</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+</tr>
+</thead>
+<tr>
+<th rowspan="2"> A to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.02</div></td>
+<td class="num"><div>0.09</div></td>
+<td class="num"><div>0.06</div></td>
+<td class="num"><div>0.13</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.02</div></td>
+<td class="num"><div>0.11</div></td>
+<td class="num"><div>0.04</div></td>
+<td class="num"><div>0.13</div></td>
+</tr>
+<tr>
+<th rowspan="2"> B to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.03</div></td>
+<td class="num"><div>0.09</div></td>
+<td class="num"><div>0.07</div></td>
+<td class="num"><div>0.14</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.02</div></td>
+<td class="num"><div>0.10</div></td>
+<td class="num"><div>0.02</div></td>
+<td class="num"><div>0.11</div></td>
+</tr>
+<tr>
+<th rowspan="2"> S to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.04</div></td>
+<td class="num"><div>0.10</div></td>
+<td class="num"><div>0.05</div></td>
+<td class="num"><div>0.13</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.03</div></td>
+<td class="num"><div>0.12</div></td>
+<td class="num"><div>0.07</div></td>
+<td class="num"><div>0.15</div></td>
+</tr>
+</table></td>
+<td width="5%"></td>
+<td valign="top"><table border="1" class="inner">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr><th class="reduced_title" colspan="6"><a href="#OutputTransition">Output Transition [ns]</a></th></tr>
+<tr>
+<th colspan="2">Input Transition [ns]</th>
+<th colspan="2">0.0009</th>
+<th colspan="2">0.1462</th>
+</tr>
+<tr>
+<th colspan="2">Load Capacitance [fF]</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+</tr>
+</thead>
+<tr>
+<th rowspan="2"> A to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.00</div></td>
+<td class="num"><div>0.05</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.00</div></td>
+<td class="num"><div>0.08</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.08</div></td>
+</tr>
+<tr>
+<th rowspan="2"> B to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.00</div></td>
+<td class="num"><div>0.08</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.08</div></td>
+</tr>
+<tr>
+<th rowspan="2"> S to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.00</div></td>
+<td class="num"><div>0.08</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.08</div></td>
+</tr>
+</table></td>
+</tr></table></div>
+<span id="s_Timing"><ul class="SubItem">
+<a name="sPropagationDelay"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_PropagationDelay', '_Timing');" class="Summary" href="#PropagationDelay">- Propagation Delay</a></td>
+<td>        <span class="legend_summary">
+                  [values from timing groups (cell_rise and cell_fall)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sOutputTransition"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_OutputTransition', '_Timing');" class="Summary" href="#OutputTransition">- Output Transition</a></td>
+<td>        <span class="legend_summary">
+                  [values from timing groups (rise_transition and fall_transition)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sFullCycleDelay"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_FullCycleDelay', '_Timing');" class="Summary" href="#FullCycleDelay">- Full-Cycle Delay</a></td>
+<td>        <span class="legend_summary">
+                  [values from cell_fall + cell_rise]
+                </span>
+</td>
+</tr>
+</table></div></a>
+</ul></span></a><div id="print-only" name="print-only">
+<br><div class="no-page-break"><table class="reduced"><tr>
+<td valign="top"><table border="1" class="reduced">
+<tr><th class="reduced_title" colspan="2"><a href="#Capacitance">
+              Capacitance [fF]</a></th></tr>
+<tr>
+<th>A</th>
+<td class="num"><div>1.6100</div></td>
+</tr>
+<tr>
+<th>B</th>
+<td class="num"><div>1.7885</div></td>
+</tr>
+<tr>
+<th>S</th>
+<td class="num"><div>2.6091</div></td>
+</tr>
+</table></td>
+<td width="10%"></td>
+<td valign="top"><table border="1" class="reduced">
+<tr colspan="2"><th class="reduced_title"><a href="#StaticPowerConsumption">
+              Leakage [nW]</a></th></tr>
+<tr colspan="2"><td class="num"><div>236.62</div></td></tr>
+</table></td>
+</tr></table></div>
+<br>
+</div>
+<a name="sPower"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Power');" class="Summary" href="#Power">- Power</a></td></tr>
+</table></div>
+<div id="screen-only" name="screen-only"><table border="1" class="reduced">
+<tr colspan="2"><th class="reduced_title"><a href="#StaticPowerConsumption">
+              Leakage [nW]</a></th></tr>
+<tr colspan="2"><td class="num"><div>236.62</div></td></tr>
+</table></div>
+<div class="no-page-break"><table class="reduced"><tr><td valign="top"><table style="margin-left:0"><tr><td><table border="1" class="inner">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr><th class="reduced_title" colspan="6"><a href="#DynamicPowerConsumption">Dynamic Power Consumption [uW/GHz]</a></th></tr>
+<tr>
+<th colspan="2">Input Transition [ns]</th>
+<th colspan="2">0.0009</th>
+<th colspan="2">0.1462</th>
+</tr>
+<tr>
+<th colspan="2">Load Capacitance [fF]</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+</tr>
+</thead>
+<tr>
+<th rowspan="2"> A to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>9.93</div></td>
+<td class="num"><div>11.16</div></td>
+<td class="num"><div>18.86</div></td>
+<td class="num"><div>18.76</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>6.96</div></td>
+<td class="num"><div>6.85</div></td>
+<td class="num"><div>20.86</div></td>
+<td class="num"><div>16.29</div></td>
+</tr>
+<tr>
+<th rowspan="2"> B to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>9.92</div></td>
+<td class="num"><div>10.93</div></td>
+<td class="num"><div>23.28</div></td>
+<td class="num"><div>21.48</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>5.21</div></td>
+<td class="num"><div>5.32</div></td>
+<td class="num"><div>16.01</div></td>
+<td class="num"><div>14.58</div></td>
+</tr>
+<tr>
+<th rowspan="2"> S to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>11.38</div></td>
+<td class="num"><div>12.35</div></td>
+<td class="num"><div>24.71</div></td>
+<td class="num"><div>25.34</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>9.37</div></td>
+<td class="num"><div>9.18</div></td>
+<td class="num"><div>22.78</div></td>
+<td class="num"><div>22.50</div></td>
+</tr>
+</table></td></tr></table></td></tr></table></div>
+<span id="s_Power"><ul class="SubItem">
+<a name="sStaticPowerConsumption"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_StaticPowerConsumption', '_Power');" class="Summary" href="#StaticPowerConsumption">- Static Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [leakage power data (leakage_power group and cell_leakage_power attribute)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sDynamicPowerConsumption"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_DynamicPowerConsumption', '_Power');" class="Summary" href="#DynamicPowerConsumption">- Dynamic Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [values from internal_power groups in output pins (rise_power, fall_power and power)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sFullCyclePower"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_FullCyclePower', '_Power');" class="Summary" href="#FullCyclePower">- Full-Cycle Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [values from fall_power + rise_power]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sTotalPower"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_TotalPower', '_Power');" class="Summary" href="#TotalPower">- Total Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [sum of internal_power groups from output and input pins (rise_power, fall_power and power)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sTotalFullCyclePower"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_TotalFullCyclePower', '_Power');" class="Summary" href="#TotalFullCyclePower">- Total Full-Cycle Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [values from total fall power + total rise power]
+                </span>
+</td>
+</tr>
+</table></div></a>
+</ul></span></a><div id="screen-only" name="screen-only">
+<div id="screen-only" name="screen-only"><a name="Notes"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Notes');" class="Summary" href="#Notes">- Notes</a></td></tr>
+</table>
+<span id="_Notes"><hr class="Title">
+<ul>
+<li>
+<span><a></a></span>Conditions for characterization library 
+            <span class="bold">NangateOpenCellLibrary</span>, corner 
+              <span class="bold">NangateOpenCellLibrary_fast_fast</span>: 
+            Vdd=
+              <span class="bold">1.25</span>V, Tj=
+              <span class="bold">.0</span> deg. C
+            .
+          <span><a></a></span>Additional corners:
+              <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_typical_typical.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_typical_typical]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_slow_slow.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_slow_slow]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_low_temp_low_temp.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_low_temp_low_temp]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_worst_low_worst_low.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_worst_low_worst_low]</a>.
+            <br xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
+</li>
+        Output transition is defined from 
+        <span class="bold">30%</span> to 
+        <span class="bold">70%</span> (rising) and from
+        <span class="bold">70%</span> to 
+        <span class="bold">30%</span> (falling) output voltage.
+        <br>
+        Propagation delay is measured from 
+        <span class="bold">50%</span> (input rise) or
+        <span class="bold">50%</span> (input fall) to
+        <span class="bold">50%</span> (output rise) or
+        <span class="bold">50%</span> (output fall).
+        <br>
+</ul></span></a></div>
+<div id="print-only" name="print-only">
+<span><a></a></span>Conditions for characterization library 
+            <span class="bold">NangateOpenCellLibrary</span>, corner 
+              <span class="bold">NangateOpenCellLibrary_fast_fast</span>: 
+            Vdd=
+              <span class="bold">1.25</span>V, Tj=
+              <span class="bold">.0</span> deg. C
+            .
+          <span><a></a></span>Additional corners:
+              <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_typical_typical.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_typical_typical]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_slow_slow.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_slow_slow]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_low_temp_low_temp.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_low_temp_low_temp]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_worst_low_worst_low.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_worst_low_worst_low]</a>.
+            <br xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
+        Output transition is defined from 
+        <span class="bold">30%</span> to 
+        <span class="bold">70%</span> (rising) and from
+        <span class="bold">70%</span> to 
+        <span class="bold">30%</span> (falling) output voltage.
+        <br>
+        Propagation delay is measured from 
+        <span class="bold">50%</span> (input rise) or
+        <span class="bold">50%</span> (input fall) to
+        <span class="bold">50%</span> (output rise) or
+        <span class="bold">50%</span> (output fall).
+        <br><br>
+</div>
+</div>
+</ul></a></div>
+<div id="print-only" name="print-only">
+<div id="screen-only" name="screen-only"><a name="Notes"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Notes');" class="Summary" href="#Notes">- Notes</a></td></tr>
+</table>
+<span id="_Notes"><hr class="Title">
+<ul>
+<li>
+<span><a></a></span>Conditions for characterization library 
+            <span class="bold">NangateOpenCellLibrary</span>, corner 
+              <span class="bold">NangateOpenCellLibrary_fast_fast</span>: 
+            Vdd=
+              <span class="bold">1.25</span>V, Tj=
+              <span class="bold">.0</span> deg. C
+            .
+          <span><a></a></span>Additional corners:
+              <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_typical_typical.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_typical_typical]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_slow_slow.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_slow_slow]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_low_temp_low_temp.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_low_temp_low_temp]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_worst_low_worst_low.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_worst_low_worst_low]</a>.
+            <br xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
+</li>
+        Output transition is defined from 
+        <span class="bold">30%</span> to 
+        <span class="bold">70%</span> (rising) and from
+        <span class="bold">70%</span> to 
+        <span class="bold">30%</span> (falling) output voltage.
+        <br>
+        Propagation delay is measured from 
+        <span class="bold">50%</span> (input rise) or
+        <span class="bold">50%</span> (input fall) to
+        <span class="bold">50%</span> (output rise) or
+        <span class="bold">50%</span> (output fall).
+        <br>
+</ul></span></a></div>
+<div id="print-only" name="print-only">
+<span><a></a></span>Conditions for characterization library 
+            <span class="bold">NangateOpenCellLibrary</span>, corner 
+              <span class="bold">NangateOpenCellLibrary_fast_fast</span>: 
+            Vdd=
+              <span class="bold">1.25</span>V, Tj=
+              <span class="bold">.0</span> deg. C
+            .
+          <span><a></a></span>Additional corners:
+              <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_typical_typical.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_typical_typical]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_slow_slow.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_slow_slow]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_low_temp_low_temp.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_low_temp_low_temp]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_worst_low_worst_low.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_worst_low_worst_low]</a>.
+            <br xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
+        Output transition is defined from 
+        <span class="bold">30%</span> to 
+        <span class="bold">70%</span> (rising) and from
+        <span class="bold">70%</span> to 
+        <span class="bold">30%</span> (falling) output voltage.
+        <br>
+        Propagation delay is measured from 
+        <span class="bold">50%</span> (input rise) or
+        <span class="bold">50%</span> (input fall) to
+        <span class="bold">50%</span> (output rise) or
+        <span class="bold">50%</span> (output fall).
+        <br><br>
+</div>
+<a name="sCellChars"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_CellChars');" class="Summary" href="#CellChars">- General Cell Characteristics</a></td></tr>
+</table></div>
+<span id="_CellChars"><table class="reduced"><tr>
+<td><table border="1" style="margin-left:0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th>Strength</th>
+<td>
+2</td>
+</tr>
+<tr>
+<th>Cell Area</th>
+<td>2.394 um<sup>2</sup>
+</td>
+</tr>
+<tr>
+<th>Equation</th>
+<td>
+<div id="screen-only" name="screen-only">
+Z = "((S &amp; B) | (A &amp; !S))"</div>
+<div id="print-only" name="print-only">
+Z = "((S &amp; B) | (A &amp; !S))"</div>
+</td>
+</tr>
+<tr>
+<th>Type</th>
+<td>
+Combinational</td>
+</tr>
+<tr>
+<th>Input</th>
+<td>
+A, 
+B, 
+S</td>
+</tr>
+<tr>
+<th>Output</th>
+<td>
+Z</td>
+</tr>
+<tr>
+<th>PG Pins</th>
+<td>
+VDD (primary_power), 
+VSS (primary_ground)</td>
+</tr>
+</tbody>
+</table></td>
+<td></td>
+<td><a class="Summary" href="#Schematic"><img border="0" src="symbols/MUX2_X2.png" alt="Symbol image not found."></a></td>
+<td></td>
+<td><table border="1" style="margin-left:0" class="reduced">
+<tr><th class="reduced_title" colspan="4">
+                        State Table
+                      </th></tr>
+<tr>
+<th width="30">A</th>
+<th width="30">B</th>
+<th width="30">S</th>
+<th width="30">Z</th>
+</tr>
+<tr align="center">
+<td>L</td>
+<td>-</td>
+<td>L</td>
+<td>L</td>
+</tr>
+<tr align="center">
+<td>H</td>
+<td>-</td>
+<td>L</td>
+<td>H</td>
+</tr>
+<tr align="center">
+<td>-</td>
+<td>L</td>
+<td>H</td>
+<td>L</td>
+</tr>
+<tr align="center">
+<td>-</td>
+<td>H</td>
+<td>H</td>
+<td>H</td>
+</tr>
+</table></td>
+</tr></table></span></a><a name="sSchematic"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Schematic');" class="Summary" href="#Schematic">- Schematic</a></td></tr>
+</table></div></a><a name="sCapacitance"><div id="screen-only" name="screen-only">
+<table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Capacitance');" class="Summary" href="#Capacitance">- Capacitance</a></td></tr>
+</table>
+<table border="1" class="reduced">
+<tr><th class="reduced_title" colspan="2"><a href="#Capacitance">
+              Capacitance [fF]</a></th></tr>
+<tr>
+<th>A</th>
+<td class="num"><div>1.6100</div></td>
+</tr>
+<tr>
+<th>B</th>
+<td class="num"><div>1.7885</div></td>
+</tr>
+<tr>
+<th>S</th>
+<td class="num"><div>2.6091</div></td>
+</tr>
+</table>
+</div>
+<span id="s_Capacitance"><ul class="SubItem">
+<a name="sGateCapacitance"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_GateCapacitance', '_Capacitance');" class="Summary" href="#GateCapacitance">- NLDM Capacitance</a></td>
+<td>        <span class="legend_summary">
+                  [input capacitance table (capacitance, [fall|rise]_capacitance and [fall|rise]_capacitance_range attributes)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sMaxCapacitance"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_MaxCapacitance', '_Capacitance');" class="Summary" href="#MaxCapacitance">- Max Capacitance</a></td>
+<td>        <span class="legend_summary">
+                  [maximum allowed output capacitance]
+                </span>
+</td>
+</tr>
+</table></div></a>
+</ul></span></a><a name="sTiming"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Timing');" class="Summary" href="#Timing">- Timing</a></td></tr>
+</table></div>
+<div id="print-only" name="print-only"><br></div>
+<div class="no-page-break"><table class="reduced"><tr>
+<td valign="top"><table border="1" class="inner">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr><th class="reduced_title" colspan="6"><a href="#PropagationDelay">Propagation Delay [ns]</a></th></tr>
+<tr>
+<th colspan="2">Input Transition [ns]</th>
+<th colspan="2">0.0009</th>
+<th colspan="2">0.1462</th>
+</tr>
+<tr>
+<th colspan="2">Load Capacitance [fF]</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+</tr>
+</thead>
+<tr>
+<th rowspan="2"> A to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.02</div></td>
+<td class="num"><div>0.09</div></td>
+<td class="num"><div>0.06</div></td>
+<td class="num"><div>0.13</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.02</div></td>
+<td class="num"><div>0.11</div></td>
+<td class="num"><div>0.04</div></td>
+<td class="num"><div>0.13</div></td>
+</tr>
+<tr>
+<th rowspan="2"> B to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.03</div></td>
+<td class="num"><div>0.09</div></td>
+<td class="num"><div>0.07</div></td>
+<td class="num"><div>0.14</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.02</div></td>
+<td class="num"><div>0.10</div></td>
+<td class="num"><div>0.02</div></td>
+<td class="num"><div>0.11</div></td>
+</tr>
+<tr>
+<th rowspan="2"> S to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.04</div></td>
+<td class="num"><div>0.10</div></td>
+<td class="num"><div>0.05</div></td>
+<td class="num"><div>0.13</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.03</div></td>
+<td class="num"><div>0.12</div></td>
+<td class="num"><div>0.07</div></td>
+<td class="num"><div>0.15</div></td>
+</tr>
+</table></td>
+<td width="5%"></td>
+<td valign="top"><table border="1" class="inner">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr><th class="reduced_title" colspan="6"><a href="#OutputTransition">Output Transition [ns]</a></th></tr>
+<tr>
+<th colspan="2">Input Transition [ns]</th>
+<th colspan="2">0.0009</th>
+<th colspan="2">0.1462</th>
+</tr>
+<tr>
+<th colspan="2">Load Capacitance [fF]</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+</tr>
+</thead>
+<tr>
+<th rowspan="2"> A to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.00</div></td>
+<td class="num"><div>0.05</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.00</div></td>
+<td class="num"><div>0.08</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.08</div></td>
+</tr>
+<tr>
+<th rowspan="2"> B to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.00</div></td>
+<td class="num"><div>0.08</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.08</div></td>
+</tr>
+<tr>
+<th rowspan="2"> S to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.05</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>0.00</div></td>
+<td class="num"><div>0.08</div></td>
+<td class="num"><div>0.01</div></td>
+<td class="num"><div>0.08</div></td>
+</tr>
+</table></td>
+</tr></table></div>
+<span id="s_Timing"><ul class="SubItem">
+<a name="sPropagationDelay"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_PropagationDelay', '_Timing');" class="Summary" href="#PropagationDelay">- Propagation Delay</a></td>
+<td>        <span class="legend_summary">
+                  [values from timing groups (cell_rise and cell_fall)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sOutputTransition"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_OutputTransition', '_Timing');" class="Summary" href="#OutputTransition">- Output Transition</a></td>
+<td>        <span class="legend_summary">
+                  [values from timing groups (rise_transition and fall_transition)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sFullCycleDelay"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_FullCycleDelay', '_Timing');" class="Summary" href="#FullCycleDelay">- Full-Cycle Delay</a></td>
+<td>        <span class="legend_summary">
+                  [values from cell_fall + cell_rise]
+                </span>
+</td>
+</tr>
+</table></div></a>
+</ul></span></a><div id="print-only" name="print-only">
+<br><div class="no-page-break"><table class="reduced"><tr>
+<td valign="top"><table border="1" class="reduced">
+<tr><th class="reduced_title" colspan="2"><a href="#Capacitance">
+              Capacitance [fF]</a></th></tr>
+<tr>
+<th>A</th>
+<td class="num"><div>1.6100</div></td>
+</tr>
+<tr>
+<th>B</th>
+<td class="num"><div>1.7885</div></td>
+</tr>
+<tr>
+<th>S</th>
+<td class="num"><div>2.6091</div></td>
+</tr>
+</table></td>
+<td width="10%"></td>
+<td valign="top"><table border="1" class="reduced">
+<tr colspan="2"><th class="reduced_title"><a href="#StaticPowerConsumption">
+              Leakage [nW]</a></th></tr>
+<tr colspan="2"><td class="num"><div>236.62</div></td></tr>
+</table></td>
+</tr></table></div>
+<br>
+</div>
+<a name="sPower"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Power');" class="Summary" href="#Power">- Power</a></td></tr>
+</table></div>
+<div id="screen-only" name="screen-only"><table border="1" class="reduced">
+<tr colspan="2"><th class="reduced_title"><a href="#StaticPowerConsumption">
+              Leakage [nW]</a></th></tr>
+<tr colspan="2"><td class="num"><div>236.62</div></td></tr>
+</table></div>
+<div class="no-page-break"><table class="reduced"><tr><td valign="top"><table style="margin-left:0"><tr><td><table border="1" class="inner">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr><th class="reduced_title" colspan="6"><a href="#DynamicPowerConsumption">Dynamic Power Consumption [uW/GHz]</a></th></tr>
+<tr>
+<th colspan="2">Input Transition [ns]</th>
+<th colspan="2">0.0009</th>
+<th colspan="2">0.1462</th>
+</tr>
+<tr>
+<th colspan="2">Load Capacitance [fF]</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+<th onclick="cHL(this);">0.3656</th>
+<th onclick="cHL(this);">120.85</th>
+</tr>
+</thead>
+<tr>
+<th rowspan="2"> A to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>9.93</div></td>
+<td class="num"><div>11.16</div></td>
+<td class="num"><div>18.86</div></td>
+<td class="num"><div>18.76</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>6.96</div></td>
+<td class="num"><div>6.85</div></td>
+<td class="num"><div>20.86</div></td>
+<td class="num"><div>16.29</div></td>
+</tr>
+<tr>
+<th rowspan="2"> B to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>9.92</div></td>
+<td class="num"><div>10.93</div></td>
+<td class="num"><div>23.28</div></td>
+<td class="num"><div>21.48</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>5.21</div></td>
+<td class="num"><div>5.32</div></td>
+<td class="num"><div>16.01</div></td>
+<td class="num"><div>14.58</div></td>
+</tr>
+<tr>
+<th rowspan="2"> S to Z</th>
+<th onclick="rHL(this);">fall</th>
+<td class="num"><div>11.38</div></td>
+<td class="num"><div>12.35</div></td>
+<td class="num"><div>24.71</div></td>
+<td class="num"><div>25.34</div></td>
+</tr>
+<tr>
+<th onclick="rHL(this);">rise</th>
+<td class="num"><div>9.37</div></td>
+<td class="num"><div>9.18</div></td>
+<td class="num"><div>22.78</div></td>
+<td class="num"><div>22.50</div></td>
+</tr>
+</table></td></tr></table></td></tr></table></div>
+<span id="s_Power"><ul class="SubItem">
+<a name="sStaticPowerConsumption"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_StaticPowerConsumption', '_Power');" class="Summary" href="#StaticPowerConsumption">- Static Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [leakage power data (leakage_power group and cell_leakage_power attribute)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sDynamicPowerConsumption"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_DynamicPowerConsumption', '_Power');" class="Summary" href="#DynamicPowerConsumption">- Dynamic Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [values from internal_power groups in output pins (rise_power, fall_power and power)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sFullCyclePower"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_FullCyclePower', '_Power');" class="Summary" href="#FullCyclePower">- Full-Cycle Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [values from fall_power + rise_power]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sTotalPower"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_TotalPower', '_Power');" class="Summary" href="#TotalPower">- Total Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [sum of internal_power groups from output and input pins (rise_power, fall_power and power)]
+                </span>
+</td>
+</tr>
+</table></div></a><a name="sTotalFullCyclePower"><div id="screen-only" name="screen-only"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td><a onClick="oBrs('_TotalFullCyclePower', '_Power');" class="Summary" href="#TotalFullCyclePower">- Total Full-Cycle Power Consumption</a></td>
+<td>        <span class="legend_summary">
+                  [values from total fall power + total rise power]
+                </span>
+</td>
+</tr>
+</table></div></a>
+</ul></span></a><div id="screen-only" name="screen-only">
+<div id="screen-only" name="screen-only"><a name="Notes"><table class="Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr><td><a onClick="oBr('_Notes');" class="Summary" href="#Notes">- Notes</a></td></tr>
+</table>
+<span id="_Notes"><hr class="Title">
+<ul>
+<li>
+<span><a></a></span>Conditions for characterization library 
+            <span class="bold">NangateOpenCellLibrary</span>, corner 
+              <span class="bold">NangateOpenCellLibrary_fast_fast</span>: 
+            Vdd=
+              <span class="bold">1.25</span>V, Tj=
+              <span class="bold">.0</span> deg. C
+            .
+          <span><a></a></span>Additional corners:
+              <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_typical_typical.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_typical_typical]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_slow_slow.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_slow_slow]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_low_temp_low_temp.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_low_temp_low_temp]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_worst_low_worst_low.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_worst_low_worst_low]</a>.
+            <br xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
+</li>
+        Output transition is defined from 
+        <span class="bold">30%</span> to 
+        <span class="bold">70%</span> (rising) and from
+        <span class="bold">70%</span> to 
+        <span class="bold">30%</span> (falling) output voltage.
+        <br>
+        Propagation delay is measured from 
+        <span class="bold">50%</span> (input rise) or
+        <span class="bold">50%</span> (input fall) to
+        <span class="bold">50%</span> (output rise) or
+        <span class="bold">50%</span> (output fall).
+        <br>
+</ul></span></a></div>
+<div id="print-only" name="print-only">
+<span><a></a></span>Conditions for characterization library 
+            <span class="bold">NangateOpenCellLibrary</span>, corner 
+              <span class="bold">NangateOpenCellLibrary_fast_fast</span>: 
+            Vdd=
+              <span class="bold">1.25</span>V, Tj=
+              <span class="bold">.0</span> deg. C
+            .
+          <span><a></a></span>Additional corners:
+              <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_typical_typical.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_typical_typical]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_slow_slow.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_slow_slow]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_low_temp_low_temp.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_low_temp_low_temp]</a>, <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="MUX2_X2_NangateOpenCellLibrary_worst_low_worst_low.html#Notes">NangateOpenCellLibrary [NangateOpenCellLibrary_worst_low_worst_low]</a>.
+            <br xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
+        Output transition is defined from 
+        <span class="bold">30%</span> to 
+        <span class="bold">70%</span> (rising) and from
+        <span class="bold">70%</span> to 
+        <span class="bold">30%</span> (falling) output voltage.
+        <br>
+        Propagation delay is measured from 
+        <span class="bold">50%</span> (input rise) or
+        <span class="bold">50%</span> (input fall) to
+        <span class="bold">50%</span> (output rise) or
+        <span class="bold">50%</span> (output fall).
+        <br><br>
+</div>
+</div>
+</div>
+<div id="screen-only" name="screen-only">
+<br><br><br><br><hr>
+<br><br><a name="Schematic"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_Schematic');"><a class="Caption" href="javascript:;"><span id="I_Schematic"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_Schematic');" class="Caption" href="javascript:;">Schematic</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+</tr>
+</table></div>
+<span id="_Schematic"><hr class="Title">
+<div><img src="../../../../Back_End/schematic/MUX2_X2.png" alt="Schematic image not found."></div></span></a><a name="Capacitance"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_Capacitance');"><a class="Caption" href="javascript:;"><span id="I_Capacitance"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_Capacitance');" class="Caption" href="javascript:;">Capacitance</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+</tr>
+</table></div>
+<span id="_Capacitance"><ul class="SubItem">
+<a name="GateCapacitance"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_GateCapacitance');"><a class="Caption" href="javascript:;"><span id="I_GateCapacitance"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_GateCapacitance');" class="Caption" href="javascript:;">NLDM Capacitance</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="legend">
+                  [input capacitance table (capacitance, [fall|rise]_capacitance and [fall|rise]_capacitance_range attributes)]
+                </span>
+</td>
+</tr>
+</table></div>
+<span hide="false" id="_GateCapacitance"><p><a href="../Capacitance_NangateOpenCellLibrary_fast_fast.html">Gate Capacitance for All Cells
+                  </a></p>
+<div ngTable="capGr" capGr="nldm" ext="y" unit="[fF]" entries="A;1.6100;1.6100;1.6100;1.6100;1.6054;1.6054;1.6054;$B;1.7885;1.5165;1.5165;1.5165;1.7885;1.7885;1.7885;$S;2.6091;2.5589;2.5589;2.5589;2.6091;2.6091;2.6091;$"></div></span></a><a name="MaxCapacitance"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_MaxCapacitance');"><a class="Caption" href="javascript:;"><span id="I_MaxCapacitance"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_MaxCapacitance');" class="Caption" href="javascript:;">Max Capacitance</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="legend">
+                  [maximum allowed output capacitance]
+                </span>
+</td>
+</tr>
+</table></div>
+<span hide="false" id="_MaxCapacitance"><p><a href="../MaxCapacitance_NangateOpenCellLibrary_fast_fast.html">Maximum Capacitance for All Cells
+                  </a></p>
+<div ngTable="capGr" capGr="max" unit="[fF]" hasFileCap="y" hasFileFO="y" entries="Z;120.8500;46;;;;;;;;;$"></div></span></a>
+</ul></span></a><a name="Timing"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_Timing');"><a class="Caption" href="javascript:;"><span id="I_Timing"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_Timing');" class="Caption" href="javascript:;">Timing</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+</tr>
+</table></div>
+<span id="_Timing"><ul class="SubItem">
+<a name="PropagationDelay"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_PropagationDelay');"><a class="Caption" href="javascript:;"><span id="I_PropagationDelay"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_PropagationDelay');" class="Caption" href="javascript:;">Propagation Delay</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="extra"><a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="javascript:openctpPage('..','3','binate','rise','50','50','50');">rise</a> / <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="javascript:openctpPage('..','3','binate','fall','50','50','50');">fall</a></span>
+</td>
+<td>        <span class="legend">
+                  [values from timing groups (cell_rise and cell_fall)]
+                </span>
+</td>
+</tr>
+</table></div>
+<span id="_PropagationDelay" hide="false" eName="Propagation Delay"><p><a href="../PropagationDelay_NangateOpenCellLibrary_fast_fast.html">Propagation Delay for All Cells
+            </a></p>
+<hr class="Title">
+<div ngTable="tGr" tGr="2" ctx="A;positive_unate;!B &amp; !S;(B == 1'b0) &amp;&amp; (S == 1'b0);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z">
+<div t="fall [ns]" id="3ad9c" el="0.02;0.02;0.03;0.03;0.04;0.06;0.09;0.02;0.03;0.03;0.03;0.04;0.06;0.09;0.03;0.03;0.03;0.04;0.04;0.06;0.09;0.03;0.03;0.04;0.04;0.05;0.07;0.10;0.04;0.04;0.04;0.05;0.06;0.07;0.10;0.05;0.05;0.05;0.06;0.07;0.08;0.11;0.06;0.06;0.06;0.07;0.08;0.10;0.13;"></div>
+<div t="rise [ns]" id="3ad9d" el="0.02;0.02;0.03;0.03;0.04;0.06;0.11;0.02;0.02;0.03;0.03;0.04;0.07;0.11;0.02;0.03;0.03;0.04;0.05;0.07;0.11;0.03;0.03;0.04;0.04;0.05;0.07;0.11;0.03;0.04;0.04;0.05;0.06;0.08;0.12;0.04;0.04;0.04;0.05;0.06;0.08;0.12;0.04;0.04;0.05;0.05;0.07;0.09;0.13;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="A;positive_unate;B &amp; !S;(B == 1'b1) &amp;&amp; (S == 1'b0);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z">
+<div t="fall [ns]" id="3ada2" el="0.02;0.03;0.03;0.04;0.04;0.06;0.09;0.03;0.03;0.03;0.04;0.05;0.06;0.09;0.03;0.03;0.03;0.04;0.05;0.06;0.09;0.03;0.04;0.04;0.04;0.05;0.07;0.10;0.04;0.04;0.05;0.05;0.06;0.08;0.11;0.05;0.05;0.06;0.06;0.07;0.09;0.12;0.06;0.06;0.07;0.07;0.08;0.10;0.13;"></div>
+<div t="rise [ns]" id="3ada3" el="0.02;0.02;0.03;0.03;0.04;0.06;0.10;0.02;0.02;0.03;0.03;0.04;0.06;0.10;0.02;0.03;0.03;0.04;0.05;0.07;0.11;0.03;0.03;0.03;0.04;0.05;0.07;0.11;0.03;0.04;0.04;0.04;0.05;0.07;0.12;0.03;0.04;0.04;0.05;0.06;0.08;0.12;0.04;0.04;0.04;0.05;0.06;0.08;0.12;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="B;positive_unate;!A &amp; S;(A == 1'b0) &amp;&amp; (S == 1'b1);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z">
+<div t="fall [ns]" id="3ada8" el="0.02;0.02;0.02;0.03;0.04;0.05;0.08;0.02;0.02;0.02;0.03;0.04;0.05;0.08;0.02;0.03;0.03;0.03;0.04;0.06;0.09;0.03;0.03;0.04;0.04;0.05;0.06;0.09;0.04;0.04;0.04;0.05;0.06;0.07;0.10;0.05;0.05;0.06;0.06;0.07;0.08;0.11;0.06;0.06;0.07;0.07;0.08;0.10;0.13;"></div>
+<div t="rise [ns]" id="3ada9" el="0.02;0.02;0.02;0.03;0.04;0.06;0.10;0.02;0.02;0.02;0.03;0.04;0.06;0.10;0.02;0.02;0.03;0.03;0.04;0.06;0.10;0.02;0.02;0.03;0.03;0.04;0.06;0.10;0.02;0.03;0.03;0.04;0.05;0.07;0.11;0.02;0.03;0.03;0.04;0.05;0.07;0.11;0.02;0.02;0.03;0.03;0.05;0.07;0.11;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="B;positive_unate;A &amp; S;(A == 1'b1) &amp;&amp; (S == 1'b1);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z">
+<div t="fall [ns]" id="3adae" el="0.03;0.03;0.03;0.04;0.05;0.06;0.09;0.03;0.03;0.03;0.04;0.05;0.06;0.09;0.03;0.03;0.04;0.04;0.05;0.07;0.10;0.04;0.04;0.04;0.05;0.06;0.07;0.10;0.05;0.05;0.05;0.06;0.07;0.08;0.11;0.06;0.06;0.07;0.07;0.08;0.10;0.13;0.07;0.08;0.08;0.09;0.10;0.11;0.14;"></div>
+<div t="rise [ns]" id="3adaf" el="0.02;0.02;0.02;0.03;0.04;0.06;0.10;0.02;0.02;0.02;0.03;0.04;0.06;0.10;0.02;0.02;0.03;0.03;0.04;0.06;0.10;0.02;0.03;0.03;0.03;0.05;0.07;0.11;0.02;0.03;0.03;0.04;0.05;0.07;0.11;0.02;0.03;0.03;0.04;0.05;0.07;0.11;0.02;0.02;0.03;0.03;0.05;0.07;0.11;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="S;negative_unate;A &amp; !B;(A == 1'b1) &amp;&amp; (B == 1'b0);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z">
+<div t="fall [ns]" id="3adba" el="0.04;0.04;0.04;0.05;0.06;0.07;0.10;0.04;0.04;0.04;0.05;0.06;0.07;0.10;0.04;0.04;0.05;0.05;0.06;0.08;0.11;0.04;0.04;0.05;0.05;0.06;0.08;0.11;0.04;0.05;0.05;0.05;0.06;0.08;0.11;0.04;0.05;0.05;0.05;0.06;0.08;0.11;0.04;0.04;0.05;0.05;0.06;0.08;0.11;"></div>
+<div t="rise [ns]" id="3adbb" el="0.03;0.03;0.04;0.04;0.05;0.07;0.12;0.03;0.04;0.04;0.04;0.05;0.08;0.12;0.04;0.04;0.04;0.05;0.06;0.08;0.12;0.04;0.05;0.05;0.05;0.07;0.09;0.13;0.05;0.05;0.06;0.06;0.07;0.09;0.13;0.06;0.06;0.07;0.07;0.08;0.10;0.14;0.07;0.07;0.08;0.08;0.09;0.11;0.15;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="S;positive_unate;!A &amp; B;(A == 1'b0) &amp;&amp; (B == 1'b1);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z">
+<div t="fall [ns]" id="3adb4" el="0.02;0.02;0.02;0.03;0.04;0.05;0.08;0.02;0.02;0.02;0.03;0.04;0.05;0.08;0.02;0.02;0.03;0.03;0.04;0.06;0.09;0.03;0.03;0.03;0.04;0.05;0.06;0.09;0.04;0.04;0.04;0.05;0.06;0.07;0.10;0.04;0.05;0.05;0.06;0.07;0.08;0.11;0.05;0.06;0.06;0.07;0.08;0.10;0.13;"></div>
+<div t="rise [ns]" id="3adb5" el="0.02;0.02;0.02;0.03;0.04;0.06;0.10;0.02;0.02;0.02;0.03;0.04;0.06;0.10;0.02;0.02;0.03;0.03;0.04;0.06;0.10;0.02;0.03;0.03;0.03;0.04;0.07;0.11;0.02;0.03;0.03;0.04;0.05;0.07;0.11;0.03;0.03;0.03;0.04;0.05;0.07;0.11;0.02;0.03;0.03;0.04;0.05;0.07;0.11;"></div>
+</div></span></a><a name="OutputTransition"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_OutputTransition');"><a class="Caption" href="javascript:;"><span id="I_OutputTransition"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_OutputTransition');" class="Caption" href="javascript:;">Output Transition</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="extra"><a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="javascript:openctpPage('..','1','binate','rise','70','30','');">rise</a> / <a xmlns:fn="http://www.w3.org/2005/02/xpath-functions" href="javascript:openctpPage('..','1','binate','fall','70','30','');">fall</a></span>
+</td>
+<td>        <span class="legend">
+                  [values from timing groups (rise_transition and fall_transition)]
+                </span>
+</td>
+</tr>
+</table></div>
+<span id="_OutputTransition" hide="false" eName="Output Transition"><p><a href="../OutputTransition_NangateOpenCellLibrary_fast_fast.html">Output Transition for All Cells
+            </a></p>
+<hr class="Title">
+<div ngTable="tGr" tGr="2" ctx="A;positive_unate;!B &amp; !S;(B == 1'b0) &amp;&amp; (S == 1'b0);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z">
+<div t="fall [ns]" id="3ad9e" el="0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;"></div>
+<div t="rise [ns]" id="3ada0" el="0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.02;0.02;0.04;0.08;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="A;positive_unate;B &amp; !S;(B == 1'b1) &amp;&amp; (S == 1'b0);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z">
+<div t="fall [ns]" id="3ada4" el="0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;"></div>
+<div t="rise [ns]" id="3ada6" el="0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.02;0.02;0.04;0.08;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="B;positive_unate;!A &amp; S;(A == 1'b0) &amp;&amp; (S == 1'b1);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z">
+<div t="fall [ns]" id="3adaa" el="0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;"></div>
+<div t="rise [ns]" id="3adac" el="0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.02;0.02;0.04;0.08;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="B;positive_unate;A &amp; S;(A == 1'b1) &amp;&amp; (S == 1'b1);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z">
+<div t="fall [ns]" id="3adb0" el="0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;"></div>
+<div t="rise [ns]" id="3adb2" el="0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.02;0.02;0.04;0.08;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="S;negative_unate;A &amp; !B;(A == 1'b1) &amp;&amp; (B == 1'b0);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z">
+<div t="fall [ns]" id="3adbc" el="0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;"></div>
+<div t="rise [ns]" id="3adbe" el="0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="S;positive_unate;!A &amp; B;(A == 1'b0) &amp;&amp; (B == 1'b1);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z">
+<div t="fall [ns]" id="3adb6" el="0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.00;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.01;0.02;0.03;0.05;0.01;0.01;0.01;0.02;0.02;0.03;0.05;"></div>
+<div t="rise [ns]" id="3adb8" el="0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.00;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.01;0.02;0.04;0.08;0.01;0.01;0.01;0.02;0.02;0.04;0.08;"></div>
+</div></span></a><a name="FullCycleDelay"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_FullCycleDelay');"><a class="Caption" href="javascript:;"><span id="I_FullCycleDelay"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_FullCycleDelay');" class="Caption" href="javascript:;">Full-Cycle Delay</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="legend">
+                  [values from cell_fall + cell_rise]
+                </span>
+</td>
+</tr>
+</table></div>
+<span id="_FullCycleDelay" hide="false" eName="Full-Cycle Delay"><p><a href="../FullCycleDelay_NangateOpenCellLibrary_fast_fast.html">Full-Cycle Delay for All Cells
+            </a></p>
+<hr class="Title">
+<div ngTable="tGr" tGr="1" ctx="A;positive_unate;!B &amp; !S;(B == 1'b0) &amp;&amp; (S == 1'b0);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z"><div t="delay [ns]" id="3dda0" el="0.04;0.05;0.05;0.07;0.08;0.12;0.19;0.04;0.05;0.06;0.07;0.09;0.12;0.19;0.05;0.06;0.06;0.07;0.09;0.13;0.20;0.06;0.07;0.07;0.08;0.10;0.14;0.21;0.07;0.08;0.09;0.10;0.12;0.15;0.22;0.08;0.09;0.10;0.11;0.13;0.17;0.24;0.10;0.10;0.11;0.12;0.14;0.18;0.25;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="A;positive_unate;B &amp; !S;(B == 1'b1) &amp;&amp; (S == 1'b0);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z"><div t="delay [ns]" id="3dda2" el="0.04;0.05;0.06;0.07;0.09;0.12;0.19;0.05;0.05;0.06;0.07;0.09;0.13;0.20;0.05;0.06;0.06;0.07;0.09;0.13;0.20;0.06;0.07;0.07;0.08;0.10;0.14;0.21;0.07;0.08;0.08;0.10;0.12;0.15;0.22;0.08;0.09;0.10;0.11;0.13;0.17;0.24;0.09;0.10;0.11;0.12;0.14;0.18;0.25;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="B;positive_unate;!A &amp; S;(A == 1'b0) &amp;&amp; (S == 1'b1);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z"><div t="delay [ns]" id="3dda4" el="0.03;0.04;0.05;0.06;0.08;0.11;0.18;0.04;0.04;0.05;0.06;0.08;0.11;0.18;0.04;0.05;0.05;0.06;0.08;0.12;0.19;0.05;0.06;0.06;0.07;0.09;0.13;0.20;0.06;0.07;0.07;0.08;0.10;0.14;0.21;0.07;0.08;0.09;0.10;0.12;0.15;0.22;0.08;0.09;0.10;0.11;0.13;0.17;0.24;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="B;positive_unate;A &amp; S;(A == 1'b1) &amp;&amp; (S == 1'b1);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z"><div t="delay [ns]" id="3dda6" el="0.04;0.05;0.06;0.07;0.09;0.12;0.19;0.04;0.05;0.06;0.07;0.09;0.12;0.19;0.05;0.06;0.06;0.07;0.09;0.13;0.20;0.06;0.07;0.07;0.08;0.10;0.14;0.21;0.07;0.08;0.08;0.10;0.12;0.15;0.22;0.08;0.09;0.10;0.11;0.13;0.17;0.24;0.09;0.10;0.11;0.12;0.14;0.18;0.25;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="S;negative_unate;A &amp; !B;(A == 1'b1) &amp;&amp; (B == 1'b0);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z"><div t="delay [ns]" id="3dda8" el="0.07;0.07;0.08;0.09;0.11;0.15;0.22;0.07;0.08;0.08;0.09;0.11;0.15;0.22;0.08;0.08;0.09;0.10;0.12;0.16;0.23;0.08;0.09;0.10;0.11;0.13;0.16;0.23;0.09;0.10;0.10;0.12;0.14;0.17;0.24;0.10;0.11;0.11;0.12;0.14;0.18;0.25;0.11;0.12;0.12;0.13;0.15;0.19;0.26;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="S;positive_unate;!A &amp; B;(A == 1'b0) &amp;&amp; (B == 1'b1);combinational;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z"><div t="delay [ns]" id="3ddaa" el="0.03;0.04;0.05;0.06;0.08;0.11;0.18;0.03;0.04;0.05;0.06;0.08;0.11;0.18;0.04;0.05;0.05;0.06;0.08;0.12;0.19;0.05;0.06;0.06;0.07;0.09;0.13;0.20;0.06;0.07;0.07;0.08;0.10;0.14;0.21;0.07;0.08;0.08;0.10;0.12;0.15;0.22;0.08;0.09;0.09;0.11;0.13;0.17;0.24;"></div></div></span></a>
+</ul></span></a><div id="print-only" name="print-only"></div>
+<a name="Power"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_Power');"><a class="Caption" href="javascript:;"><span id="I_Power"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_Power');" class="Caption" href="javascript:;">Power</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+</tr>
+</table></div>
+<span id="_Power"><ul class="SubItem">
+<a name="StaticPowerConsumption"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_StaticPowerConsumption');"><a class="Caption" href="javascript:;"><span id="I_StaticPowerConsumption"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_StaticPowerConsumption');" class="Caption" href="javascript:;">Static Power Consumption</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="legend">
+                  [leakage power data (leakage_power group and cell_leakage_power attribute)]
+                </span>
+</td>
+</tr>
+</table></div>
+<span id="_StaticPowerConsumption" hide="false"><p><a href="../StaticPowerConsumption_NangateOpenCellLibrary_fast_fast.html">Static Power Consumption for All Cells
+                  </a></p>
+<hr class="Title">
+<table border="1">
+<tr colspan="2"><th>Leakage [nW]</th></tr>
+<tr colspan="2"><td class="num"><div>236.62</div></td></tr>
+</table>
+<div ngTable="leakGrp" leakGrp="8" lTitles="When;Leakage [nW];" entries="!A &amp; !B &amp; !S$ 242.91$# !A &amp; !B &amp; S$ 191.85$# !A &amp; B &amp; !S$ 311.15$# !A &amp; B &amp; S$ 246.02$# A &amp; !B &amp; !S$ 190.80$# A &amp; !B &amp; S$ 194.39$# A &amp; B &amp; !S$ 230.01$# A &amp; B &amp; S$ 285.84$#"></div></span></a><a name="DynamicPowerConsumption"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_DynamicPowerConsumption');"><a class="Caption" href="javascript:;"><span id="I_DynamicPowerConsumption"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_DynamicPowerConsumption');" class="Caption" href="javascript:;">Dynamic Power Consumption</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="legend">
+                  [values from internal_power groups in output pins (rise_power, fall_power and power)]
+                </span>
+</td>
+</tr>
+</table></div>
+<span id="_DynamicPowerConsumption" hide="false" eName="Dynamic Power Consumption"><p><a href="../PowerFall_NangateOpenCellLibrary_fast_fast.html">Dynamic Power Consumption (fall) for All Cells
+            </a></p>
+<p><a href="../PowerRise_NangateOpenCellLibrary_fast_fast.html">Dynamic Power Consumption (rise) for All Cells
+            </a></p>
+<hr class="Title">
+<div ngTable="tGr" tGr="2" ctx="A;;!B &amp; !S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z">
+<div t="fall [uW/GHz]" id="3adc0" el="9.88;10.22;10.55;10.99;11.34;11.45;11.45;9.79;10.17;10.45;10.90;11.24;11.36;11.36;9.74;10.04;10.32;10.76;11.12;11.23;11.24;10.51;10.82;11.01;11.33;11.59;11.65;11.62;12.21;12.38;12.43;12.76;13.07;13.06;12.96;15.15;15.31;15.25;15.35;15.57;15.70;15.50;19.04;19.20;19.15;19.04;19.26;19.38;19.31;"></div>
+<div t="rise [uW/GHz]" id="3adc1" el="7.11;7.18;7.27;7.18;7.10;6.89;6.68;7.05;7.10;7.22;7.13;7.18;6.80;7.00;7.23;7.31;7.35;7.21;7.30;7.18;6.36;8.70;8.67;8.56;8.47;8.18;8.03;7.77;11.65;11.33;11.20;10.89;10.30;9.54;9.75;15.79;15.28;15.05;14.55;14.06;12.75;12.18;21.02;20.31;20.04;19.53;18.81;18.16;16.64;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="A;;B &amp; !S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z">
+<div t="fall [uW/GHz]" id="3adc2" el="9.99;10.11;10.20;10.50;10.78;10.87;10.86;9.89;10.02;10.16;10.40;10.69;10.78;10.77;9.79;9.93;10.02;10.28;10.55;10.65;10.64;10.56;10.62;10.60;10.77;10.98;11.01;10.97;12.09;12.07;12.05;12.12;12.34;12.30;12.19;14.91;14.87;14.74;14.62;14.72;14.78;14.58;18.67;18.69;18.52;18.25;18.26;18.30;18.21;"></div>
+<div t="rise [uW/GHz]" id="3adc3" el="6.82;6.96;7.05;7.05;7.04;6.92;7.01;6.78;6.90;6.99;7.01;6.93;7.01;6.67;6.90;7.05;7.05;7.07;6.85;6.99;6.70;8.51;8.40;8.37;8.28;8.08;7.57;6.97;11.46;11.10;10.98;10.69;10.08;9.25;8.71;15.60;15.06;14.80;14.42;13.77;12.64;11.67;20.70;20.08;19.69;19.22;18.71;17.78;15.94;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="B;;!A &amp; S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z">
+<div t="fall [uW/GHz]" id="3adc4" el="9.06;9.34;9.61;9.97;10.21;10.29;10.31;9.01;9.29;9.54;9.92;10.16;10.24;10.26;9.38;9.63;9.86;10.21;10.43;10.51;10.54;11.14;11.26;11.36;11.56;11.67;11.66;11.63;13.80;13.83;13.76;13.89;13.99;13.88;13.76;17.91;17.81;17.61;17.46;17.38;17.30;17.07;23.19;23.06;22.78;22.42;22.19;21.87;21.66;"></div>
+<div t="rise [uW/GHz]" id="3adc5" el="5.10;5.26;5.29;5.30;5.12;5.28;5.41;5.02;5.18;5.24;5.23;5.08;4.97;5.20;5.19;5.30;5.30;5.33;5.32;5.24;5.31;6.45;6.34;6.34;6.22;5.91;5.45;5.65;8.90;8.74;8.71;8.56;7.94;7.72;7.70;12.13;11.86;11.85;11.80;11.79;10.80;10.52;15.98;15.73;15.73;15.85;16.24;16.15;14.97;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="B;;A &amp; S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z">
+<div t="fall [uW/GHz]" id="3adc6" el="10.78;10.95;10.98;11.19;11.47;11.57;11.56;10.75;10.88;10.92;11.16;11.41;11.52;11.51;10.98;11.12;11.13;11.34;11.61;11.71;11.70;12.33;12.40;12.39;12.47;12.63;12.65;12.61;14.90;14.89;14.75;14.69;14.70;14.59;14.43;18.60;18.44;18.17;17.88;17.74;17.59;17.29;23.37;23.29;22.97;22.43;22.00;21.65;21.31;"></div>
+<div t="rise [uW/GHz]" id="3adc7" el="5.32;5.39;5.43;5.42;5.28;5.30;5.23;5.33;5.35;5.35;5.43;5.27;5.25;5.33;5.51;5.48;5.55;5.48;5.37;4.89;5.40;6.69;6.55;6.40;6.31;6.23;6.02;5.63;9.12;8.84;8.72;8.56;8.15;7.27;7.55;12.34;11.96;11.82;11.70;11.22;10.92;10.47;16.05;15.65;15.54;15.49;15.55;15.28;14.18;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="S;;!A &amp; B;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z">
+<div t="fall [uW/GHz]" id="3adc8" el="11.25;11.51;11.74;12.05;12.36;12.47;12.48;11.16;11.41;11.65;11.97;12.28;12.40;12.40;11.74;11.95;12.15;12.44;12.76;12.87;12.87;14.01;14.32;14.37;14.51;14.66;14.69;14.63;17.97;18.04;18.01;18.08;18.27;18.18;18.03;23.82;23.91;23.88;23.67;23.68;23.70;23.42;31.42;31.52;31.49;31.25;31.23;31.20;31.03;"></div>
+<div t="rise [uW/GHz]" id="3adc9" el="6.27;6.41;6.40;6.46;6.30;6.13;6.34;6.26;6.37;6.39;6.42;6.26;6.53;6.18;6.75;6.83;6.84;6.82;6.82;6.29;5.71;9.09;8.91;8.78;8.59;8.28;7.70;8.01;13.30;13.06;12.89;12.54;12.12;11.77;11.36;19.06;18.68;18.72;18.65;18.38;17.27;16.93;26.07;25.71;25.57;25.91;26.40;25.82;24.98;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="S;;A &amp; !B;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z">
+<div t="fall [uW/GHz]" id="3adca" el="11.51;11.67;11.70;11.87;12.13;12.24;12.23;11.50;11.64;11.64;11.86;12.12;12.22;12.21;11.59;11.71;11.73;11.94;12.20;12.30;12.30;12.03;12.18;12.26;12.47;12.76;12.86;12.87;13.53;13.64;13.63;13.83;14.08;14.21;14.23;15.63;15.82;15.93;16.18;16.47;16.47;16.46;18.00;18.28;18.45;18.91;19.50;19.79;19.66;"></div>
+<div t="rise [uW/GHz]" id="3adcb" el="12.48;12.54;12.64;12.56;12.50;12.00;12.02;12.51;12.53;12.59;12.51;12.53;12.54;12.26;12.77;12.81;12.87;12.77;12.77;12.49;12.31;13.38;13.49;13.54;13.55;13.51;13.32;13.01;14.63;14.81;14.95;14.91;14.63;14.65;14.50;16.72;16.92;17.02;17.05;17.22;16.77;16.52;19.49;19.72;19.94;20.15;20.27;20.30;20.02;"></div>
+</div></span></a><a name="FullCyclePower"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_FullCyclePower');"><a class="Caption" href="javascript:;"><span id="I_FullCyclePower"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_FullCyclePower');" class="Caption" href="javascript:;">Full-Cycle Power Consumption</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="legend">
+                  [values from fall_power + rise_power]
+                </span>
+</td>
+</tr>
+</table></div>
+<span id="_FullCyclePower" hide="false" eName="Full-Cycle Power Consumption"><p><a href="../FullCyclePower_NangateOpenCellLibrary_fast_fast.html">Full-Cycle Power Consumption for All Cells
+            </a></p>
+<hr class="Title">
+<div ngTable="tGr" tGr="1" ctx="A;;!B &amp; !S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z"><div t="power [uW/GHz]" id="3dd7c" el="16.98;17.40;17.82;18.17;18.44;18.34;18.14;16.84;17.26;17.67;18.03;18.42;18.16;18.36;16.97;17.35;17.67;17.97;18.42;18.41;17.60;19.21;19.49;19.57;19.80;19.77;19.68;19.40;23.87;23.71;23.63;23.64;23.37;22.60;22.71;30.93;30.59;30.30;29.89;29.63;28.45;27.67;40.06;39.51;39.18;38.57;38.07;37.55;35.95;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="A;;B &amp; !S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z"><div t="power [uW/GHz]" id="3dd82" el="16.81;17.07;17.26;17.55;17.82;17.79;17.87;16.67;16.92;17.14;17.41;17.62;17.79;17.43;16.69;16.98;17.08;17.35;17.41;17.64;17.35;19.07;19.02;18.97;19.05;19.05;18.58;17.95;23.54;23.17;23.03;22.81;22.42;21.55;20.90;30.51;29.92;29.53;29.04;28.49;27.42;26.26;39.37;38.77;38.21;37.47;36.97;36.08;34.15;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="B;;!A &amp; S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z"><div t="power [uW/GHz]" id="3dd88" el="14.16;14.59;14.90;15.27;15.33;15.57;15.72;14.03;14.47;14.78;15.16;15.24;15.20;15.46;14.57;14.93;15.16;15.53;15.75;15.75;15.84;17.59;17.60;17.70;17.78;17.58;17.11;17.28;22.71;22.57;22.47;22.45;21.93;21.60;21.46;30.04;29.67;29.46;29.26;29.17;28.10;27.59;39.17;38.79;38.51;38.28;38.43;38.03;36.63;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="B;;A &amp; S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z"><div t="power [uW/GHz]" id="3dd8e" el="16.10;16.35;16.41;16.61;16.74;16.87;16.79;16.08;16.23;16.27;16.59;16.68;16.77;16.84;16.49;16.60;16.68;16.82;16.98;16.60;17.10;19.03;18.95;18.79;18.79;18.86;18.67;18.24;24.02;23.73;23.46;23.24;22.85;21.86;21.98;30.94;30.40;30.00;29.58;28.96;28.51;27.76;39.42;38.94;38.51;37.92;37.55;36.93;35.49;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="S;;!A &amp; B;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z"><div t="power [uW/GHz]" id="3dd94" el="17.52;17.92;18.14;18.51;18.67;18.61;18.82;17.42;17.78;18.04;18.39;18.54;18.93;18.58;18.49;18.78;18.99;19.26;19.58;19.15;18.58;23.10;23.22;23.14;23.09;22.94;22.39;22.64;31.26;31.10;30.90;30.62;30.39;29.95;29.39;42.87;42.59;42.60;42.31;42.06;40.96;40.34;57.49;57.24;57.06;57.17;57.63;57.02;56.01;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="S;;A &amp; !B;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z"><div t="power [uW/GHz]" id="3dd9a" el="23.99;24.21;24.34;24.43;24.62;24.24;24.24;24.01;24.17;24.23;24.36;24.65;24.76;24.47;24.36;24.52;24.61;24.71;24.98;24.79;24.61;25.41;25.67;25.80;26.02;26.27;26.19;25.88;28.16;28.45;28.58;28.74;28.71;28.86;28.73;32.35;32.74;32.95;33.23;33.69;33.24;32.99;37.49;38.00;38.40;39.07;39.77;40.09;39.67;"></div></div></span></a><a name="TotalPower"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_TotalPower');"><a class="Caption" href="javascript:;"><span id="I_TotalPower"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_TotalPower');" class="Caption" href="javascript:;">Total Power Consumption</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="legend">
+                  [sum of internal_power groups from output and input pins (rise_power, fall_power and power)]
+                </span>
+</td>
+</tr>
+</table></div>
+<span id="_TotalPower" hide="false" eName="Total Power Consumption"><p><a href="../TotalPowerFall_NangateOpenCellLibrary_fast_fast.html">Total Power Consumption (fall) for All Cells
+            </a></p>
+<p><a href="../TotalPowerRise_NangateOpenCellLibrary_fast_fast.html">Total Power Consumption (rise) for All Cells
+            </a></p>
+<hr class="Title">
+<div ngTable="tGr" tGr="2" ctx="A;;!B &amp; !S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z">
+<div t="fall [uW/GHz]" id="3dd7d" el="9.88;10.22;10.55;10.99;11.34;11.45;11.45;9.79;10.17;10.45;10.90;11.24;11.36;11.36;9.74;10.04;10.32;10.76;11.12;11.23;11.24;10.51;10.82;11.01;11.33;11.59;11.65;11.62;12.21;12.38;12.43;12.76;13.07;13.06;12.96;15.15;15.31;15.25;15.35;15.57;15.70;15.50;19.04;19.20;19.15;19.04;19.26;19.38;19.31;"></div>
+<div t="rise [uW/GHz]" id="3dd7e" el="7.11;7.18;7.27;7.18;7.10;6.89;6.68;7.05;7.10;7.22;7.13;7.18;6.80;7.00;7.23;7.31;7.35;7.21;7.30;7.18;6.36;8.70;8.67;8.56;8.47;8.18;8.03;7.77;11.65;11.33;11.20;10.89;10.30;9.54;9.75;15.79;15.28;15.05;14.55;14.06;12.75;12.18;21.02;20.31;20.04;19.53;18.81;18.16;16.64;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="A;;B &amp; !S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z">
+<div t="fall [uW/GHz]" id="3dd83" el="9.99;10.11;10.20;10.50;10.78;10.87;10.86;9.89;10.02;10.16;10.40;10.69;10.78;10.77;9.79;9.93;10.02;10.28;10.55;10.65;10.64;10.56;10.62;10.60;10.77;10.98;11.01;10.97;12.09;12.07;12.05;12.12;12.34;12.30;12.19;14.91;14.87;14.74;14.62;14.72;14.78;14.58;18.67;18.69;18.52;18.25;18.26;18.30;18.21;"></div>
+<div t="rise [uW/GHz]" id="3dd84" el="6.82;6.96;7.05;7.05;7.04;6.92;7.01;6.78;6.90;6.99;7.01;6.93;7.01;6.67;6.90;7.05;7.05;7.07;6.85;6.99;6.70;8.51;8.40;8.37;8.28;8.08;7.57;6.97;11.46;11.10;10.98;10.69;10.08;9.25;8.71;15.60;15.06;14.80;14.42;13.77;12.64;11.67;20.70;20.08;19.69;19.22;18.71;17.78;15.94;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="B;;!A &amp; S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z">
+<div t="fall [uW/GHz]" id="3dd89" el="9.06;9.34;9.61;9.97;10.21;10.29;10.31;9.01;9.29;9.54;9.92;10.16;10.24;10.26;9.38;9.63;9.86;10.21;10.43;10.51;10.54;11.14;11.26;11.36;11.56;11.67;11.66;11.63;13.80;13.83;13.76;13.89;13.99;13.88;13.76;17.91;17.81;17.61;17.46;17.38;17.30;17.07;23.19;23.06;22.78;22.42;22.19;21.87;21.66;"></div>
+<div t="rise [uW/GHz]" id="3dd8a" el="5.10;5.26;5.29;5.30;5.12;5.28;5.41;5.02;5.18;5.24;5.23;5.08;4.97;5.20;5.19;5.30;5.30;5.33;5.32;5.24;5.31;6.45;6.34;6.34;6.22;5.91;5.45;5.65;8.90;8.74;8.71;8.56;7.94;7.72;7.70;12.13;11.86;11.85;11.80;11.79;10.80;10.52;15.98;15.73;15.73;15.85;16.24;16.15;14.97;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="B;;A &amp; S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z">
+<div t="fall [uW/GHz]" id="3dd8f" el="10.78;10.95;10.98;11.19;11.47;11.57;11.56;10.75;10.88;10.92;11.16;11.41;11.52;11.51;10.98;11.12;11.13;11.34;11.61;11.71;11.70;12.33;12.40;12.39;12.47;12.63;12.65;12.61;14.90;14.89;14.75;14.69;14.70;14.59;14.43;18.60;18.44;18.17;17.88;17.74;17.59;17.29;23.37;23.29;22.97;22.43;22.00;21.65;21.31;"></div>
+<div t="rise [uW/GHz]" id="3dd90" el="5.32;5.39;5.43;5.42;5.28;5.30;5.23;5.33;5.35;5.35;5.43;5.27;5.25;5.33;5.51;5.48;5.55;5.48;5.37;4.89;5.40;6.69;6.55;6.40;6.31;6.23;6.02;5.63;9.12;8.84;8.72;8.56;8.15;7.27;7.55;12.34;11.96;11.82;11.70;11.22;10.92;10.47;16.05;15.65;15.54;15.49;15.55;15.28;14.18;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="S;;!A &amp; B;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z">
+<div t="fall [uW/GHz]" id="3dd95" el="11.25;11.51;11.74;12.05;12.36;12.47;12.48;11.16;11.41;11.65;11.97;12.28;12.40;12.40;11.74;11.95;12.15;12.44;12.76;12.87;12.87;14.01;14.32;14.37;14.51;14.66;14.69;14.63;17.97;18.04;18.01;18.08;18.27;18.18;18.03;23.82;23.91;23.88;23.67;23.68;23.70;23.42;31.42;31.52;31.49;31.25;31.23;31.20;31.03;"></div>
+<div t="rise [uW/GHz]" id="3dd96" el="6.27;6.41;6.40;6.46;6.30;6.13;6.34;6.26;6.37;6.39;6.42;6.26;6.53;6.18;6.75;6.83;6.84;6.82;6.82;6.29;5.71;9.09;8.91;8.78;8.59;8.28;7.70;8.01;13.30;13.06;12.89;12.54;12.12;11.77;11.36;19.06;18.68;18.72;18.65;18.38;17.27;16.93;26.07;25.71;25.57;25.91;26.40;25.82;24.98;"></div>
+</div>
+<div ngTable="tGr" tGr="2" ctx="S;;A &amp; !B;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z">
+<div t="fall [uW/GHz]" id="3dd9b" el="11.51;11.67;11.70;11.87;12.13;12.24;12.23;11.50;11.64;11.64;11.86;12.12;12.22;12.21;11.59;11.71;11.73;11.94;12.20;12.30;12.30;12.03;12.18;12.26;12.47;12.76;12.86;12.87;13.53;13.64;13.63;13.83;14.08;14.21;14.23;15.63;15.82;15.93;16.18;16.47;16.47;16.46;18.00;18.28;18.45;18.91;19.50;19.79;19.66;"></div>
+<div t="rise [uW/GHz]" id="3dd9c" el="12.48;12.54;12.64;12.56;12.50;12.00;12.02;12.51;12.53;12.59;12.51;12.53;12.54;12.26;12.77;12.81;12.87;12.77;12.77;12.49;12.31;13.38;13.49;13.54;13.55;13.51;13.32;13.01;14.63;14.81;14.95;14.91;14.63;14.65;14.50;16.72;16.92;17.02;17.05;17.22;16.77;16.52;19.49;19.72;19.94;20.15;20.27;20.30;20.02;"></div>
+</div></span></a><a name="TotalFullCyclePower"><div id="screen-only" name="screen-only"><table class="Caption">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td onClick="tBr('_TotalFullCyclePower');"><a class="Caption" href="javascript:;"><span id="I_TotalFullCyclePower"><img border="0" src="../resource/image/open_square.gif"></span>  
+                </a></td>
+<td>
+<a onClick="tBr('_TotalFullCyclePower');" class="Caption" href="javascript:;">Total Full-Cycle Power Consumption</a>   <a onClick="oBr('_Summary')" href="#"><img border="0" src="../resource/image/to_summary.png"></a>
+</td>
+<td>        <span class="legend">
+                  [values from total fall power + total rise power]
+                </span>
+</td>
+</tr>
+</table></div>
+<span id="_TotalFullCyclePower" hide="false" eName="Total Full-Cycle Power Consumption"><p><a href="../TotalFullCyclePower_NangateOpenCellLibrary_fast_fast.html">Total Full-Cycle Power Consumption for All Cells
+            </a></p>
+<hr class="Title">
+<div ngTable="tGr" tGr="1" ctx="A;;!B &amp; !S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z"><div t="power [uW/GHz]" id="3dd80" el="16.98;17.40;17.82;18.17;18.44;18.34;18.14;16.84;17.26;17.67;18.03;18.42;18.16;18.36;16.97;17.35;17.67;17.97;18.42;18.41;17.60;19.21;19.49;19.57;19.80;19.77;19.68;19.40;23.87;23.71;23.63;23.64;23.37;22.60;22.71;30.93;30.59;30.30;29.89;29.63;28.45;27.67;40.06;39.51;39.18;38.57;38.07;37.55;35.95;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="A;;B &amp; !S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="A to Z"><div t="power [uW/GHz]" id="3dd86" el="16.81;17.07;17.26;17.55;17.82;17.79;17.87;16.67;16.92;17.14;17.41;17.62;17.79;17.43;16.69;16.98;17.08;17.35;17.41;17.64;17.35;19.07;19.02;18.97;19.05;19.05;18.58;17.95;23.54;23.17;23.03;22.81;22.42;21.55;20.90;30.51;29.92;29.53;29.04;28.49;27.42;26.26;39.37;38.77;38.21;37.47;36.97;36.08;34.15;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="B;;!A &amp; S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z"><div t="power [uW/GHz]" id="3dd8c" el="14.16;14.59;14.90;15.27;15.33;15.57;15.72;14.03;14.47;14.78;15.16;15.24;15.20;15.46;14.57;14.93;15.16;15.53;15.75;15.75;15.84;17.59;17.60;17.70;17.78;17.58;17.11;17.28;22.71;22.57;22.47;22.45;21.93;21.60;21.46;30.04;29.67;29.46;29.26;29.17;28.10;27.59;39.17;38.79;38.51;38.28;38.43;38.03;36.63;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="B;;A &amp; S;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="B to Z"><div t="power [uW/GHz]" id="3dd92" el="16.10;16.35;16.41;16.61;16.74;16.87;16.79;16.08;16.23;16.27;16.59;16.68;16.77;16.84;16.49;16.60;16.68;16.82;16.98;16.60;17.10;19.03;18.95;18.79;18.79;18.86;18.67;18.24;24.02;23.73;23.46;23.24;22.85;21.86;21.98;30.94;30.40;30.00;29.58;28.96;28.51;27.76;39.42;38.94;38.51;37.92;37.55;36.93;35.49;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="S;;!A &amp; B;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z"><div t="power [uW/GHz]" id="3dd98" el="17.52;17.92;18.14;18.51;18.67;18.61;18.82;17.42;17.78;18.04;18.39;18.54;18.93;18.58;18.49;18.78;18.99;19.26;19.58;19.15;18.58;23.10;23.22;23.14;23.09;22.94;22.39;22.64;31.26;31.10;30.90;30.62;30.39;29.95;29.39;42.87;42.59;42.60;42.31;42.06;40.96;40.34;57.49;57.24;57.06;57.17;57.63;57.02;56.01;"></div></div>
+<div ngTable="tGr" tGr="1" ctx="S;;A &amp; !B;;;;;;;;" i1="Input Transition;[ns];0.0009;0.0035;0.0127;0.0302;0.0575;0.0958;0.1462;" i2="Load Capacitance;[fF];0.3656;3.7766;7.5531;15.1063;30.2125;60.425;120.85;" arc="S to Z"><div t="power [uW/GHz]" id="3dd9e" el="23.99;24.21;24.34;24.43;24.62;24.24;24.24;24.01;24.17;24.23;24.36;24.65;24.76;24.47;24.36;24.52;24.61;24.71;24.98;24.79;24.61;25.41;25.67;25.80;26.02;26.27;26.19;25.88;28.16;28.45;28.58;28.74;28.71;28.86;28.73;32.35;32.74;32.95;33.23;33.69;33.24;32.99;37.49;38.00;38.40;39.07;39.77;40.09;39.67;"></div></div></span></a>
+</ul></span></a><div id="screen-only" name="screen-only"></div>
+<hr class="navigation_bt">
+<table width="100%" summary="Navigation header" class="navigation"><tr>
+<td width="33%" align="left"><a href="MUX2_X1_NangateOpenCellLibrary_fast_fast.html">Previous (MUX2_X1)
+      </a></td>
+<td width="33%" align="center"><a href="../CornerList.html">Up (Table of Contents)
+      </a></td>
+<td width="33%" align="right"><a href="NAND2_X1_NangateOpenCellLibrary_fast_fast.html">Next (NAND2_X1)
+      </a></td>
+</tr></table>
+<hr class="navigation_bb">
+<table class="navigation" width="100%">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td align="left"><p class="copyright">Databook Build Date: Thursday Feb 10 22:32 2011</p></td>
+<td align="right"><p class="copyright">Copyright © 2004-2010 Nangate Inc.</p></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

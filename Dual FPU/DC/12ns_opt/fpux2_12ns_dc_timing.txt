@@ -1,0 +1,122 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : plusplusfpu
+Version: H-2013.03-SP1
+Date   : Wed Jun  4 12:02:56 2014
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: fpu2/fpu_add/fpu_add_frac_dp/i_a3stg_frac2/q_reg[0]
+              (rising edge-triggered flip-flop clocked by gclk)
+  Endpoint: fpu2/fpu_add/fpu_add_frac_dp/i_a4stg_rnd_frac_pre1/q_reg[2]
+            (rising edge-triggered flip-flop clocked by gclk)
+  Path Group: gclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu_add_frac_dp_1  ForQA                 saed90nm_typ
+  fpu_add_1          ForQA                 saed90nm_typ
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock gclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  fpu2/fpu_add/fpu_add_frac_dp/i_a3stg_frac2/q_reg[0]/CLK (DFFX1)
+                                                          0.00       0.30 r
+  fpu2/fpu_add/fpu_add_frac_dp/i_a3stg_frac2/q_reg[0]/Q (DFFX1)
+                                                          0.19       0.49 r
+  fpu2/fpu_add/fpu_add_frac_dp/U12/CO (FADDX1)            0.31       0.80 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1155/Q (AO222X1)          0.15       0.96 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1156/Q (AO222X1)          0.15       1.11 r
+  fpu2/fpu_add/fpu_add_frac_dp/intadd_17/U4/CO (FADDX1)
+                                                          0.24       1.34 r
+  fpu2/fpu_add/fpu_add_frac_dp/U939/CO (FADDX1)           0.23       1.58 r
+  fpu2/fpu_add/fpu_add_frac_dp/intadd_17/U2/CO (FADDX1)
+                                                          0.23       1.81 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1157/Q (AO222X1)          0.15       1.96 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1158/Q (AO222X1)          0.16       2.12 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1161/QN (OAI221X1)        0.17       2.29 f
+  fpu2/fpu_add/fpu_add_frac_dp/U72/QN (NAND2X1)           0.09       2.38 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1164/Q (AO221X1)          0.15       2.53 r
+  fpu2/fpu_add/fpu_add_frac_dp/U693/Q (OA21X1)            0.10       2.63 r
+  fpu2/fpu_add/fpu_add_frac_dp/U938/CO (FADDX1)           0.23       2.86 r
+  fpu2/fpu_add/fpu_add_frac_dp/U3/CO (FADDX1)             0.24       3.11 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1165/Q (OR2X1)            0.11       3.22 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1167/Q (AO221X1)          0.14       3.36 r
+  fpu2/fpu_add/fpu_add_frac_dp/U71/QN (NAND2X1)           0.09       3.45 f
+  fpu2/fpu_add/fpu_add_frac_dp/U945/QN (AOI221X1)         0.17       3.62 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1172/Q (AO21X1)           0.10       3.72 r
+  fpu2/fpu_add/fpu_add_frac_dp/U937/CO (FADDX1)           0.23       3.95 r
+  fpu2/fpu_add/fpu_add_frac_dp/U4/CO (FADDX1)             0.24       4.20 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1173/Q (AO222X1)          0.15       4.35 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1174/Q (AO222X1)          0.16       4.50 r
+  fpu2/fpu_add/fpu_add_frac_dp/U691/QN (NAND2X0)          0.08       4.58 f
+  fpu2/fpu_add/fpu_add_frac_dp/U1176/QN (NAND3X0)         0.09       4.67 r
+  fpu2/fpu_add/fpu_add_frac_dp/U690/QN (NAND2X0)          0.07       4.74 f
+  fpu2/fpu_add/fpu_add_frac_dp/U9/QN (NAND2X0)            0.09       4.83 r
+  fpu2/fpu_add/fpu_add_frac_dp/U936/CO (FADDX1)           0.24       5.07 r
+  fpu2/fpu_add/fpu_add_frac_dp/U5/CO (FADDX1)             0.24       5.31 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1178/Q (AO222X1)          0.15       5.47 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1179/Q (AO222X1)          0.15       5.62 r
+  fpu2/fpu_add/fpu_add_frac_dp/intadd_13/U9/CO (FADDX1)
+                                                          0.24       5.85 r
+  fpu2/fpu_add/fpu_add_frac_dp/U935/CO (FADDX1)           0.23       6.09 r
+  fpu2/fpu_add/fpu_add_frac_dp/U934/CO (FADDX1)           0.23       6.32 r
+  fpu2/fpu_add/fpu_add_frac_dp/U933/CO (FADDX1)           0.23       6.56 r
+  fpu2/fpu_add/fpu_add_frac_dp/U932/CO (FADDX1)           0.23       6.79 r
+  fpu2/fpu_add/fpu_add_frac_dp/U931/CO (FADDX1)           0.23       7.02 r
+  fpu2/fpu_add/fpu_add_frac_dp/intadd_13/U3/CO (FADDX1)
+                                                          0.23       7.26 r
+  fpu2/fpu_add/fpu_add_frac_dp/intadd_13/U2/CO (FADDX1)
+                                                          0.23       7.49 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1180/Q (AO222X1)          0.15       7.64 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1181/Q (AO222X1)          0.15       7.78 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1182/Q (AO222X1)          0.15       7.93 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1183/Q (AO222X1)          0.15       8.08 r
+  fpu2/fpu_add/fpu_add_frac_dp/U930/CO (FADDX1)           0.24       8.32 r
+  fpu2/fpu_add/fpu_add_frac_dp/U929/CO (FADDX1)           0.23       8.55 r
+  fpu2/fpu_add/fpu_add_frac_dp/intadd_18/U2/CO (FADDX1)
+                                                          0.23       8.78 r
+  fpu2/fpu_add/fpu_add_frac_dp/U684/QN (NAND2X0)          0.08       8.86 f
+  fpu2/fpu_add/fpu_add_frac_dp/U1187/Q (AO221X1)          0.14       9.00 f
+  fpu2/fpu_add/fpu_add_frac_dp/U681/QN (NAND2X0)          0.09       9.09 r
+  fpu2/fpu_add/fpu_add_frac_dp/U6/CO (FADDX1)             0.25       9.34 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1188/Q (AO222X1)          0.15       9.49 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1189/Q (AO222X1)          0.14       9.63 r
+  fpu2/fpu_add/fpu_add_frac_dp/U680/Q (OA21X1)            0.09       9.72 r
+  fpu2/fpu_add/fpu_add_frac_dp/U1192/Q (AO221X1)          0.15       9.87 r
+  fpu2/fpu_add/fpu_add_frac_dp/U928/CO (FADDX1)           0.24      10.10 r
+  fpu2/fpu_add/fpu_add_frac_dp/U927/CO (FADDX1)           0.23      10.34 r
+  fpu2/fpu_add/fpu_add_frac_dp/U926/CO (FADDX1)           0.23      10.57 r
+  fpu2/fpu_add/fpu_add_frac_dp/U925/CO (FADDX1)           0.23      10.80 r
+  fpu2/fpu_add/fpu_add_frac_dp/U924/CO (FADDX1)           0.23      11.04 r
+  fpu2/fpu_add/fpu_add_frac_dp/intadd_14/U2/CO (FADDX1)
+                                                          0.22      11.26 r
+  fpu2/fpu_add/fpu_add_frac_dp/U15/Q (XOR2X1)             0.15      11.42 r
+  fpu2/fpu_add/fpu_add_frac_dp/U597/QN (NAND2X0)          0.10      11.52 f
+  fpu2/fpu_add/fpu_add_frac_dp/U759/QN (NOR4X0)           0.16      11.68 r
+  fpu2/fpu_add/fpu_add_frac_dp/U7/ZN (INVX2)              0.32      12.00 f
+  fpu2/fpu_add/fpu_add_frac_dp/U3244/QN (NOR2X0)          0.21      12.21 r
+  fpu2/fpu_add/fpu_add_frac_dp/i_a4stg_rnd_frac_pre1/q_reg[2]/D (DFFX1)
+                                                          0.03      12.24 r
+  data arrival time                                                 12.24
+
+  clock gclk (rise edge)                                 12.00      12.00
+  clock network delay (ideal)                             0.30      12.30
+  fpu2/fpu_add/fpu_add_frac_dp/i_a4stg_rnd_frac_pre1/q_reg[2]/CLK (DFFX1)
+                                                          0.00      12.30 r
+  library setup time                                     -0.06      12.24
+  data required time                                                12.24
+  --------------------------------------------------------------------------
+  data required time                                                12.24
+  data arrival time                                                -12.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00

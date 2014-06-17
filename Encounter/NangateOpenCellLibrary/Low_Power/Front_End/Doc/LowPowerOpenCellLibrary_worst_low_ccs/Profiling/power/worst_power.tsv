@@ -1,0 +1,42 @@
+PROFILING Worst_Power			uW/GHz
+
+Worst_Power	"(-inf, -72.2805uW/GHz]"	none
+	"(-72.2805uW/GHz, 28.567uW/GHz]"	31 elements
+		AON_INV_X1	0.380727	"A to Z -> rise (179.199ps, 2.07093fF)"
+		AON_INV_X2	0.73984	"A to Z -> rise (179.199ps, 0.365616fF)"
+		LS_HL_X1	0.856284	"A to Z -> fall (1.23599ps, 13.9236fF)"
+		ISO_FENCE1N_X1	0.881694	"EN to Z -> rise (179.199ps, 5.00886fF)"
+		ISO_FENCE0_X1	0.933839	"EN to Z -> rise (1.23599ps, 10.2997fF)"
+		HEADER_OE_X1	0.938917	"SLEEP to SLEEPOUT -> fall (1.23599ps, 3.78305fF)"
+		AON_BUF_X1	0.961563	"A to Z -> fall (179.199ps, 11.6921fF)"
+		AON_BUF_X2	1.10058	"A to Z -> fall (179.199ps, 25.4822fF)"
+		LS_HLEN_X1	1.14018	"ISOLN to Z -> fall (1.23599ps, 13.8473fF)"
+		LS_HL_X2	1.1817	"A to Z -> fall (1.23599ps, 28.9917fF)"
+		HEADER_OE_X2	1.31861	"SLEEP to SLEEPOUT -> fall (1.23599ps, 6.34193fF)"
+		AON_INV_X4	1.32824	"A to Z -> rise (179.199ps, 0.365616fF)"
+		LS_HLEN_X2	1.45332	"ISOLN to Z -> fall (1.23599ps, 28.9154fF)"
+		ISO_FENCE1_X1	1.61916	"EN to Z -> fall (1.23599ps, 19.0353fF)"
+		ISO_FENCE1N_X2	1.65471	"EN to Z -> rise (179.199ps, 4.82559fF)"
+		ISO_FENCE0N_X1	1.66863	"EN to Z -> fall (179.199ps, 18.959fF)"
+		AON_BUF_X4	1.76045	"A to Z -> fall (179.199ps, 50.7355fF)"
+		ISO_FENCE0_X2	1.78825	"EN to Z -> rise (1.23599ps, 21.3623fF)"
+		LS_HL_X4	1.91454	"A to Z -> fall (1.23599ps, 57.6782fF)"
+		HEADER_OE_X4	1.9601	"SLEEP to SLEEPOUT -> fall (1.23599ps, 12.9509fF)"
+		ISO_FENCE1_X2	2.07584	"EN to Z -> fall (1.23599ps, 39.5966fF)"
+		ISO_FENCE0N_X2	2.0811	"EN to Z -> fall (179.199ps, 39.5203fF)"
+		LS_HLEN_X4	2.70913	"ISOLN to Z -> fall (1.23599ps, 57.6782fF)"
+		ISO_FENCE1N_X4	3.42597	"EN to Z -> rise (179.199ps, 38.6047fF)"
+		ISO_FENCE0_X4	3.45969	"EN to Z -> rise (1.23599ps, 21.3623fF)"
+		ISO_FENCE1_X4	3.7818	"EN to Z -> fall (1.23599ps, 79.0405fF)"
+		ISO_FENCE0N_X4	3.90592	"EN to Z -> fall (179.199ps, 79.0405fF)"
+		LS_LHEN_X4	8.97838	"A to Z -> fall (179.199ps, 56.4575fF)"
+		LS_LH_X1	11.0137	"A to Z -> rise (1.23599ps, 1.35512fF)"
+		LS_LH_X2	11.6866	"A to Z -> rise (1.23599ps, 1.59025fF)"
+		LS_LH_X4	13.3366	"A to Z -> rise (1.23599ps, 3.24249fF)"
+	"(28.567uW/GHz, 129.415uW/GHz]"	none
+	"(129.415uW/GHz, +inf)"	2 elements
+		LS_LHEN_X2	418.184	"A to Z -> rise (1.23599ps, 25.4059fF)"
+		LS_LHEN_X1	432.491	"A to Z -> rise (1.23599ps, 1.4221fF)"
+
+Profiling Statistics	Average	28.567
+	Standard Deviation	100.848

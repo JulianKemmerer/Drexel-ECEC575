@@ -1,0 +1,49 @@
+se::start_metric verifyGeometry {}
+se::save_metric verify.geom.cell {0}
+se::save_metric verify.geom.samenet {0}
+se::save_metric verify.geom.wiring {0}
+se::save_metric verify.geom.antenna {0}
+se::save_metric verify.geom.short {0}
+se::save_metric verify.geom.overlap {0}
+se::save_metric verify.geom.total {0}
+se::end_metric verifyGeometry {}
+se::start_metric placeDesign {}
+se::save_metric design.numStandardCell {34565}
+se::save_metric design.numNet {36166}
+se::save_metric design.numFloatBlock {0}
+se::save_metric design.numFixedBlock {0}
+se::save_metric design.numSingleRowCell {34565}
+se::save_metric design.numDoubleRowCell {0}
+se::save_metric design.numMultiRowCell {0}
+se::save_metric design.numIoInst {0}
+se::save_metric design.numFixedIo {0}
+se::save_metric design.numFloatIo {0}
+se::save_metric design.numTerm {129136}
+se::save_metric design.numTermPerNet {3.57}
+se::save_metric design.util {89.753 %}
+se::save_metric design.pinDensity {0.492}
+se::save_metric place.totalNetLength {3.09e+05 um}
+se::save_metric cputime {0:4:10}
+se::save_metric realtime {0:2:28}
+se::save_metric mem {649.2M}
+se::end_metric placeDesign {}
+se::start_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}
+se::save_metric clock.gclk.numBuffer {203}
+se::save_metric clock.gclk.areaBuffer {245.518}
+se::save_metric clock.gclk.maxLevel {10}
+se::save_metric clock.gclk.maxLatency {301.2 ps}
+se::save_metric clock.gclk.minLatency {209.4 ps}
+se::save_metric clock.gclk.maxSkew.my_analysis_view_setup {91.8 ps}
+se::save_metric clock.gclk.maxRiseBufferTran {52.5 ps}
+se::save_metric clock.gclk.maxFallBufferTran {50.7 ps}
+se::save_metric clock.gclk.maxRiseSinkTran {86.3 ps}
+se::save_metric clock.gclk.maxFallSinkTran {49.2 ps}
+se::save_metric clock.gclk.minRiseBufferTran {3.6 ps}
+se::save_metric clock.gclk.minFallBufferTran {2.5 ps}
+se::save_metric clock.gclk.minRiseSinkTran {14.8 ps}
+se::save_metric clock.gclk.minFallSinkTran {8.9 ps}
+se::save_metric clock.gclk.maxSkew.my_analysis_view_hold {66.6 ps}
+se::save_metric cputime {0:05:35}
+se::save_metric realtime {0:05:07}
+se::save_metric mem {857.8M}
+se::end_metric clockDesign {-specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS}

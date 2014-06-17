@@ -1,0 +1,26 @@
+****************************************
+Report : area
+Design : fpu
+Version: E-2010.12-ICC-SP5
+Date   : Tue Jun  3 20:05:47 2014
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /home/DREXEL/kjj39/classes/ECEC475/OpenSPARC/OpenSPARC/OpenSPARC_data/Icc_ASIC/Models/saed90nm_typ.db)
+
+Number of ports:                          290
+Number of nets:                          1413
+Number of cells:                          561
+Number of combinational cells:            456
+Number of sequential cells:               100
+Number of macros:                           0
+Number of buf/inv:                         61
+Number of references:                      35
+
+Combinational area:       236941.518367
+Noncombinational area:    172238.745649
+Net Interconnect area:    92522.800055
+
+Total cell area:          409180.264016
+Total area:               501703.064071
